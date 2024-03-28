@@ -51,7 +51,6 @@
 
 Download :
 
-https://mega.nz/file/Ra9wBabY#wpxf1OK8H43wzqGlrpjFrnWA3zCD27L0erjQnceSnYQ
-https://drive.google.com/file/d/19czcn4qE4xi3A4wOtxGxyaB2lFhFY-BB/view?usp=sharing
+https://github.com/Alice2100/FTFrame-Api-Builder/releases/tag/v11.0.0
 
 Mail: d4soft@gmail.com
