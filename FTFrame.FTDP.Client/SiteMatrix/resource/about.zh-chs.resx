@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="cancel" xml:space="preserve">
+    <value>确定(&amp;O)</value>
+  </data>
+  <data name="errorText" xml:space="preserve">
+    <value>版权所有：FTDP</value>
+  </data>
+  <data name="label1" xml:space="preserve">
+    <value>版权信息</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>确定(&amp;O)</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>取消(&amp;C)</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>测试(&amp;T)</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>未设置连接数据库字符串，可在工具-》选项-》系统 进行设置</value>
+  </data>
+  <data name="_this" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>宽度和居中（中间用;隔开，例如：30%;center）</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>列头排序（不为空时点击列头按此字段排序）</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>开关条件（设定列的开关条件）</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>点击后的js（支持@和[]语法）</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>(已取消)链接目标</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>开关说明：支持@语法，例如@session[abc]=="1"、@session[abc]!="1"、
+@session[abc]=?",1,"、@session[abc]!?",1,"（=?表示包含,!?表示不包含）</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>数据说明：支持以下几种方式，多种方式用;隔开 右括号用#)#代替，右大括号用 #}#代替
+字段：直接输出该字段数据，例如：fmem;addtime等，同@str([col])
+@str：输出常量，支持@和[col]语法，例如：@str(hi@session[abc]ok[fmem])
+@SQL{}：输出该SQL查询结果，json输出时自动匹配结果集格式，支持@p1@和[col]语法
+@KeyValue{col,1,sql}:根据keyValue的sql语句，对列进行转义，第2参数0全部转义，1仅导出转义，2仅列表转义
+$开头：例如$0|0|文字|地址|_self，表示链接文字或按钮，第一个数字为状态值匹配（支持多状态值例如0,1,2），为空为所有状态值，第二个数字为0为链接文字1为按钮，第三个参数为显示文字，支持@getConst语法，第四个字符为链接地址，支持@和[]语法，第五个参数为打开方式
+~开头：例如~0|(0|a1)(1|a2)(other|a3)表示0级流程在不同状态值时显示的图文，支持[]和@getConst语法
+!开头：例如!abc(null|x1)(|x2)(val0|x3)(other|x4)表示列abc的值分别为不存在、为空、val0或其他时显示的图文，支持[]和@getConst语法，)用#}代替
+@code:代码接口，例如@code(sql.vvv.ddd,1;[fid];@request[id]) 
+@api:Json接口，例如@api_/yanshi/dic/?GetList/[p1]/[p2]
+@getConst：输出1到24的图文常量，例如：@getConst(1)
+@getValueAll：输出该字段所有动态新增行数据，例如：@getValueAll(col)
+@getPValue：输出该数据父表单指定数据，例如：@getPValue(data,col)
+@getPValueAll：输出该数据父表单指定字段所有动态新增行数据，例如@getPValueAll(data,col)</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>取值查询SQL，支持@语法，其他变量：@siteid@,@controlid@，
+可用js参数为@para1@至@para10@，此十个参数对应调用js的
+dsBackValue方法的参数。</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>赋值方式</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>支持以下几种赋值方式：
+ele(id1)=val(0)：单个元素赋值，用;隔开表示同时对多个元素赋值
+dimele(id)=val(0,1)：维度数据赋值，例如对selece下拉框赋值
+checkboxele(name)=val(0,1)：对复选框赋值
+radioele(name)=val(0,1)：对单选框赋值
+eles(id1,id2,id3)：则多条记录的首列同时给多个元素赋值
+其中id,name为元素id和name属性,val参数可为列索引或列名</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>列名（可为空）</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>显示数据（多个数据用;隔开）</value>
+  </data>
+</root>

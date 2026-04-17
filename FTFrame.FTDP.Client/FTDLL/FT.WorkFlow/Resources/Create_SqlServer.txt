@@ -1,0 +1,172 @@
+/****** Object:  Table [dbo].[FC_WorkFlow_User_Except]    Script Date: 03/01/2015 22:35:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[FC_WorkFlow_User_Except]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[FC_WorkFlow_User_Except](
+	[FlowFID] [varchar](36) NOT NULL,
+	[StepID] [int] NOT NULL,
+	[UserID] [varchar](36) NOT NULL,
+ CONSTRAINT [PK_FC_WorkFlow_User_Except] PRIMARY KEY CLUSTERED 
+(
+	[FlowFID] ASC,
+	[StepID] ASC,
+	[UserID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+END
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[FC_WorkFlow_User_Dy]    Script Date: 03/01/2015 22:35:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[FC_WorkFlow_User_Dy]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[FC_WorkFlow_User_Dy](
+	[WORKID] [varchar](36) NOT NULL,
+	[USERID] [varchar](36) NOT NULL,
+	[ADDTIME] [datetime] NOT NULL,
+	[FLOWFID] [varchar](36) NOT NULL,
+ CONSTRAINT [PK_FC_WorkFlow_User_Dy] PRIMARY KEY CLUSTERED 
+(
+	[WORKID] ASC,
+	[USERID] ASC,
+	[ADDTIME] ASC,
+	[FLOWFID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+END
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[FC_WorkFlow_User]    Script Date: 03/01/2015 22:35:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[FC_WorkFlow_User]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[FC_WorkFlow_User](
+	[FlowFID] [varchar](36) NOT NULL,
+	[StepID] [int] NOT NULL,
+	[UserID] [varchar](36) NOT NULL,
+ CONSTRAINT [PK_FC_WorkFlow_User] PRIMARY KEY CLUSTERED 
+(
+	[FlowFID] ASC,
+	[StepID] ASC,
+	[UserID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+END
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[FC_WorkFlow_Step]    Script Date: 03/01/2015 22:35:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[FC_WorkFlow_Step]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[FC_WorkFlow_Step](
+	[FlowFID] [varchar](36) NOT NULL,
+	[StepID] [int] NOT NULL,
+	[RoleName] [nvarchar](100) NULL,
+	[DepartID] [varchar](36) NULL,
+ CONSTRAINT [PK_FC_WorkFlow_Step] PRIMARY KEY CLUSTERED 
+(
+	[FlowFID] ASC,
+	[StepID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+END
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[FC_WorkFlow_List]    Script Date: 03/01/2015 22:35:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[FC_WorkFlow_List]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[FC_WorkFlow_List](
+	[FID] [varchar](36) NOT NULL,
+	[FlowNum] [int] NULL,
+	[FlowName] [nvarchar](100) NULL,
+	[OrderRank] [int] NULL,
+	[Mimo] [nvarchar](255) NULL,
+	[DicFid] [varchar](36) NULL,
+	[pid] [varchar](36) NULL,
+	[fmem] [varchar](36) NULL,
+	[modfmem] [varchar](36) NULL,
+	[addtime] [datetime] NULL,
+	[updatetime] [datetime] NULL,
+	[dydata] [nvarchar](255) NULL,
+	[stat] [smallint] NULL,
+	[flow] [int] NULL,
+	[flowpos] [int] NULL,
+ CONSTRAINT [PK_FC_WorkFlow_List] PRIMARY KEY CLUSTERED 
+(
+	[FID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+END
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[FC_WorkFlow_Detail]    Script Date: 03/01/2015 22:35:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[FC_WorkFlow_Detail]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[FC_WorkFlow_Detail](
+	[WORKID] [varchar](36) NOT NULL,
+	[FLOWFID] [varchar](36) NOT NULL,
+	[STEPID] [int] NOT NULL,
+	[ALTERTIME] [datetime] NOT NULL,
+	[USERID] [varchar](36) NULL,
+	[FLRESULT] [nvarchar](50) NULL,
+	[FLMIMO] [nvarchar](1050) NULL,
+ CONSTRAINT [PK_FC_WorkFlow_His] PRIMARY KEY CLUSTERED 
+(
+	[WORKID] ASC,
+	[FLOWFID] ASC,
+	[STEPID] ASC,
+	[ALTERTIME] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+END
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Default [DF_FC_WorkFlow_List_dydata]    Script Date: 03/01/2015 22:35:07 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_FC_WorkFlow_List_dydata]') AND parent_object_id = OBJECT_ID(N'[dbo].[FC_WorkFlow_List]'))
+Begin
+IF NOT EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_FC_WorkFlow_List_dydata]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[FC_WorkFlow_List] ADD  CONSTRAINT [DF_FC_WorkFlow_List_dydata]  DEFAULT ('') FOR [dydata]
+END
+
+
+End
+GO

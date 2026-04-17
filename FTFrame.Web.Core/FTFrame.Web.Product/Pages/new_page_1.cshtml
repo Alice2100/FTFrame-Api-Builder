@@ -1,0 +1,147 @@
+﻿@page
+@namespace ftdp.Pages._new_page_1
+@using FTFrame;
+@using FTFrame.Tool;
+@using FTFrame.DBClient;
+@using FTFrame.Project.Core;
+@using Microsoft.AspNetCore.Http.Extensions;
+@{
+    Layout = null;
+}
+@{
+    Response.ContentType = "application/Json;charset=utf-8";
+    string[] paras = FTFrame.Project.Core.Api.Paras(HttpContext);
+    if (paras == null)
+    {
+        Output.Write("{\"code\":203,\"msg\":\"no path\"}");
+        return;
+    }
+    string json = "";
+    string key = paras[0];
+    Dictionary<string, object> reqDic = new Dictionary<string, object>();
+    reqDic.Add("_userinfo_", new FTFrame.Project.Core.LoginInfo(HttpContext));
+    if (0 > 1) { }
+    else if (key == "list")
+    {
+        if (!FTFrame.Project.Core.Api.Auth("List", "/new_page_1", paras, HttpContext, reqDic)) json = FTFrame.Project.Core.Api.AuthFailedJson("List", "/new_page_1", paras, HttpContext);
+        else
+        {
+            Dictionary<string, string> setDic = new Dictionary<string, string>(){
+{"partid","28c496f2_dc85_4c99_84ad_3cd37923180f_part"},
+{"Order","order by id desc"},
+{"schdefine",""},
+{"SiteID","ftdp"},
+{"InputType","json"},
+{"sql","SELECT * FROM tb_client WHERE 1=1"},
+{"sqlCount",""},
+{"RowAll","id#U7WOCyyikHc41Ji1f+sCzQ==#auto;left###Primary Key##0&&&|||name#VJSB+IWuUQPNl36JIqPfXg==#auto;left###Name##0&&&|||phone#eFeLkczR4PrVqadCSkL72A==#auto;left###Phone Number##0&&&|||sex#JcQmZcb6zPlnc/c0AWN3QQ==#auto;left###Sex##0&&&|||education#xLpvpPZrjYnE7GfmwddLfQ==#auto;left###Education Background##0&&&|||mimo#x8Jz8jwIbCSOzxdtird+yQ==#auto;left###notes##0&&&|||stat#scmvmxxJkJopsU0oHwGzWQ==#auto;left###State##0&&&|||_add_time#fj7kDnzUiPCFdr83wPpSmA==#auto;left###Add Time##0&&&|||_update_time#VHkhd06U/DnxFCROW8Af7g==#auto;left###Update Time##0&&&|||_add_user#BFkQqmhSEqZfRe1a9ZhK+Q==#auto;left###Add by UserId##0&&&|||_update_user#IiqHgZFsNB9FBzRN45BK5A==#auto;left###Update by UserId##0&&&|||_available_flag#InS/pdtaD/AJpF5UoQH6iQ==#auto;left###Available Flag##0&&&"},
+{"Consts","################################################"},
+{"BlockDataDefine",""},
+{"UserCusCdn",""},
+{"CacuRowData",""},
+{"CustomConnection",""},
+{"MainTable","@tb_client"},
+{"NumsPerPage","8"},
+{"KeyName",""},
+{"Col1ReqName",""},
+{"Col2ReqName",""},
+{"Col3ReqName",""},
+{"Col1Name",""},
+{"Col2Name",""},
+{"Col3Name",""},
+{"ExecBefore",""},
+{"ExecAfter",""},
+{"KeyValueSet","ExportFileName[::][;;]"},
+};
+            json = FTFrame.Server.Core.Api.Json("List", HttpContext, setDic, paras, false, null, 0, "", reqDic);
+            setDic.Clear(); setDic = null;
+        }
+    }
+    else if (key == "add")
+    {
+        if (!FTFrame.Project.Core.Api.Auth("DataOP", "/new_page_1", paras, HttpContext, reqDic)) json = FTFrame.Project.Core.Api.AuthFailedJson("DataOP", "/new_page_1", paras, HttpContext);
+        else
+        {
+            Dictionary<string, string> setDic = new Dictionary<string, string>(){
+{"partid","275c0482_3594_470e_a4ba_074b7359c3f8_part"},
+{"ApiDefine","add[##]tb_client_Add[##]name[#]phone[#]sex[#]education[#]mimo[#]stat[#]client_deals[##]name[#]phone[#]sex[#]education[#]mimo[#]stat[#]client_deals[##]Name[#]Phone Number[#]Sex[#]Education Background[#]notes[#]State[#][##]json"},
+{"defaultfid",""},
+{"SiteID","ftdp"},
+{"InputType","json"},
+{"DefineStr","Name##name##heOJlltFN/SbgyIv2m6M2w==##ckbaz6NNvOcIOCf1mwZpow==######add_name##m1U8o6GpviGj96AwAELxMw==##[]|||Phone Number##phone##wGUBXD7N0ntJWzivSlBQcpD/8nwR/68nNYmSLf+FnnE=##ckbaz6NNvOcIOCf1mwZpow==######add_phone##m1U8o6GpviGj96AwAELxMw==##[]|||Sex##sex##UoPFQBr+OYB6x0fkWQirbA==##ckbaz6NNvOcIOCf1mwZpow==######add_sex##m1U8o6GpviGj96AwAELxMw==##[]|||Education Background##education##DE2art4ea3daAUw12iNVhCcSX7k0ZKJR+0+xm4V1rm4=##ckbaz6NNvOcIOCf1mwZpow==######add_education##m1U8o6GpviGj96AwAELxMw==##[]|||notes##mimo##nX8MehLmEZhF+DphzyMJig==##ckbaz6NNvOcIOCf1mwZpow==######add_mimo##m1U8o6GpviGj96AwAELxMw==##[]|||State##stat##AvoJTi2Ygs4ufAt+n2F6xw==##ckbaz6NNvOcIOCf1mwZpow==######add_stat##m1U8o6GpviGj96AwAELxMw==##[]"},
+{"opid",""},
+{"jssuc",""},
+{"codebefore",""},
+{"codeafter",""},
+{"cdnsql",""},
+{"cdncode",""},
+{"cdnjs","Verification failed"},
+{"execsqlbefore",""},
+{"execsqlafter",""},
+{"FidCol",""},
+{"OpDefaultCol","1"},
+{"CustomConnection",""},
+};
+            json = FTFrame.Server.Core.Api.Json("DataOP", HttpContext, setDic, paras, false, null, 0, "", reqDic);
+            setDic.Clear(); setDic = null;
+        }
+    }
+    else if (key == "mod")
+    {
+        if (!FTFrame.Project.Core.Api.Auth("DataOP", "/new_page_1", paras, HttpContext, reqDic)) json = FTFrame.Project.Core.Api.AuthFailedJson("DataOP", "/new_page_1", paras, HttpContext);
+        else
+        {
+            Dictionary<string, string> setDic = new Dictionary<string, string>(){
+{"partid","48d584b0_1b9c_4c12_a7f8_c55c7e7480e5_part"},
+{"ApiDefine","mod[##]tb_client_Modify , parameter 1 is primary key value[##]name[#]phone[#]sex[#]education[#]mimo[#]stat[##]name[#]phone[#]sex[#]education[#]mimo[#]stat[##]Name[#]Phone Number[#]Sex[#]Education Background[#]notes[#]State[##]json"},
+{"defaultfid",""},
+{"SiteID","ftdp"},
+{"InputType","json"},
+{"DefineStr","Name##name##heOJlltFN/SbgyIv2m6M2w==##EWKfnaUnNCQFB/bjnkv1pw==######mod_name##m1U8o6GpviGj96AwAELxMw==##[]|||Phone Number##phone##wGUBXD7N0ntJWzivSlBQcpD/8nwR/68nNYmSLf+FnnE=##EWKfnaUnNCQFB/bjnkv1pw==######mod_phone##m1U8o6GpviGj96AwAELxMw==##[]|||Sex##sex##UoPFQBr+OYB6x0fkWQirbA==##EWKfnaUnNCQFB/bjnkv1pw==######mod_sex##m1U8o6GpviGj96AwAELxMw==##[]|||Education Background##education##DE2art4ea3daAUw12iNVhCcSX7k0ZKJR+0+xm4V1rm4=##EWKfnaUnNCQFB/bjnkv1pw==######mod_education##m1U8o6GpviGj96AwAELxMw==##[]|||notes##mimo##nX8MehLmEZhF+DphzyMJig==##EWKfnaUnNCQFB/bjnkv1pw==######mod_mimo##m1U8o6GpviGj96AwAELxMw==##[]|||State##stat##AvoJTi2Ygs4ufAt+n2F6xw==##EWKfnaUnNCQFB/bjnkv1pw==######mod_stat##m1U8o6GpviGj96AwAELxMw==##[]"},
+{"opid",""},
+{"jssuc",""},
+{"codebefore",""},
+{"codeafter",""},
+{"cdnsql",""},
+{"cdncode",""},
+{"cdnjs","Verification failed"},
+{"execsqlbefore",""},
+{"execsqlafter",""},
+{"FidCol",""},
+{"OpDefaultCol","1"},
+{"CustomConnection",""},
+};
+            json = FTFrame.Server.Core.Api.Json("DataOP", HttpContext, setDic, paras, false, null, 0, "", reqDic);
+            setDic.Clear(); setDic = null;
+        }
+    }
+    else if (key == "get")
+    {
+        if (!FTFrame.Project.Core.Api.Auth("DyValue", "/new_page_1", paras, HttpContext, reqDic)) json = FTFrame.Project.Core.Api.AuthFailedJson("DyValue", "/new_page_1", paras, HttpContext);
+        else
+        {
+            Dictionary<string, string> setDic = new Dictionary<string, string>(){
+{"partid","d07ece78_bbb7_4307_8274_6dc98141afcd_part"},
+{"DefaultFID",""},
+{"DefineStr","Primary Key##id##Vq74DFdFXmPSd4UujzL3Jg==####1##0##0##m1U8o6GpviGj96AwAELxMw==|||Name##name##heOJlltFN/SbgyIv2m6M2w==####1##0##0##m1U8o6GpviGj96AwAELxMw==|||Phone Number##phone##wGUBXD7N0ntJWzivSlBQcpD/8nwR/68nNYmSLf+FnnE=####1##0##0##m1U8o6GpviGj96AwAELxMw==|||Sex##sex##UoPFQBr+OYB6x0fkWQirbA==####1##0##0##m1U8o6GpviGj96AwAELxMw==|||Education Background##education##DE2art4ea3daAUw12iNVhCcSX7k0ZKJR+0+xm4V1rm4=####1##0##0##m1U8o6GpviGj96AwAELxMw==|||notes##mimo##nX8MehLmEZhF+DphzyMJig==####1##0##0##m1U8o6GpviGj96AwAELxMw==|||State##stat##AvoJTi2Ygs4ufAt+n2F6xw==####1##0##0##m1U8o6GpviGj96AwAELxMw==|||Add Time##_add_time##m52eaeTpKwziNbik4XW63Kp7vW8ryOGa12a2OGVRA/8=####1##0##0##m1U8o6GpviGj96AwAELxMw==|||Update Time##_update_time##+5aOceLtHGN6vIMNl0I6XLMRSsyZdyNLcFhp6jnNVJg=####1##0##0##m1U8o6GpviGj96AwAELxMw==|||Add by UserId##_add_user##m52eaeTpKwziNbik4XW63GIHaLafLuIl8NHzswgiuLg=####1##0##0##m1U8o6GpviGj96AwAELxMw==|||Update by UserId##_update_user##+5aOceLtHGN6vIMNl0I6XF2i+cqyZc3hWUj6BZnlH6Y=####1##0##0##m1U8o6GpviGj96AwAELxMw==|||Available Flag##_available_flag##1rx5kHCQLfDtUjFWSjLZoRhSo9xnTXusWJel4vR8Otc=####1##0##0##m1U8o6GpviGj96AwAELxMw=="},
+{"SiteID","ftdp"},
+{"ApiDefine","get[##]tb_client_Detail , parameter 1 is primary key value[##]id[#]name[#]phone[#]sex[#]education[#]mimo[#]stat[#]_add_time[#]_update_time[#]_add_user[#]_update_user[#]_available_flag[##]id[#]name[#]phone[#]sex[#]education[#]mimo[#]stat[#]_add_time[#]_update_time[#]_add_user[#]_update_user[#]_available_flag[##]Primary Key[#]Name[#]Phone Number[#]Sex[#]Education Background[#]notes[#]State[#]Add Time[#]Update Time[#]Add by UserId[#]Update by UserId[#]Available Flag[##][#][#][#][#][#][#][#][#][#][#][#]"},
+{"FidCol",""},
+{"OpDefaultCol","1"},
+{"ExecBefore",""},
+{"ExecAfter",""},
+{"CustomConnection",""},
+};
+            json = FTFrame.Server.Core.Api.Json("DyValue", HttpContext, setDic, paras, false, null, 0, "", reqDic);
+            setDic.Clear(); setDic = null;
+        }
+    }
+    else
+    {
+        json = "{\"code\":203,\"msg\":\"wrong key\"}";
+    }
+    reqDic.Clear();
+    reqDic = null;
+    Output.Write(json);
+    return;
+}

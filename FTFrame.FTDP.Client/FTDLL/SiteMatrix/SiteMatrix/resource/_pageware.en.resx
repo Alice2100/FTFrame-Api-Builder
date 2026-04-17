@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessActive" xml:space="preserve">
+    <value>Available</value>
+    <comment>Available</comment>
+  </data>
+  <data name="AccessActiveNot" xml:space="preserve">
+    <value>Unavailable</value>
+    <comment>Unavailable</comment>
+  </data>
+  <data name="AccessIP" xml:space="preserve">
+    <value>IP access control</value>
+    <comment>IP access control</comment>
+  </data>
+  <data name="AccessIP_Des" xml:space="preserve">
+    <value>Set IP access control condition</value>
+    <comment>Set IP access control condition</comment>
+  </data>
+  <data name="AccessIPCondition" xml:space="preserve">
+    <value>IP condition</value>
+    <comment>IP condition</comment>
+  </data>
+  <data name="AccessIPCondition_Des" xml:space="preserve">
+    <value>Part is allowed to access only in the case that  ip condition was ture.Tips:[IP],or[IP]-[IP].The conditions are seperated by ";". eg: 10.10.9.8;10.10.9.8-10.10.9.18</value>
+    <comment>Part is allowed to access only in the case that  ip condition was ture.Tips:[IP],or[IP]-[IP].The conditions can be seperated by ";". eg: 10.10.9.8;10.10.9.8-10.10.9.18</comment>
+  </data>
+  <data name="AccessIPConditionSide" xml:space="preserve">
+    <value>IP condition inverse</value>
+    <comment>IP条件置反</comment>
+  </data>
+  <data name="AccessIPConditionSide_Des" xml:space="preserve">
+    <value>If the inverse condition is true, the part will be allowed to access.</value>
+    <comment>把允许条件置反，之后允许条件的相反条件才可以访问</comment>
+  </data>
+  <data name="AccessIPControl" xml:space="preserve">
+    <value>IP control</value>
+    <comment>IP control</comment>
+  </data>
+  <data name="AccessIPControl_Des" xml:space="preserve">
+    <value>Set IP control available</value>
+    <comment>Set IP control available</comment>
+  </data>
+  <data name="AccessJump" xml:space="preserve">
+    <value>Redirection</value>
+    <comment>Redirection</comment>
+  </data>
+  <data name="AccessJump_Des" xml:space="preserve">
+    <value>Redirect when part is not allowed to access</value>
+    <comment>Redirect when part is not allowed to access</comment>
+  </data>
+  <data name="AccessJumpAddress" xml:space="preserve">
+    <value>Redirect address</value>
+    <comment>Redirect address</comment>
+  </data>
+  <data name="AccessJumpAddress_Des" xml:space="preserve">
+    <value>Set redirect address</value>
+    <comment>Set redirect address</comment>
+  </data>
+  <data name="AccessJumpControl" xml:space="preserve">
+    <value>Redirection setting </value>
+    <comment>Redirection setting </comment>
+  </data>
+  <data name="AccessJumpControl_Des" xml:space="preserve">
+    <value>Set redirection available</value>
+    <comment>Set redirection available</comment>
+  </data>
+  <data name="AccessMain" xml:space="preserve">
+    <value>Access control</value>
+    <comment>Access control</comment>
+  </data>
+  <data name="AccessMain_Des" xml:space="preserve">
+    <value>Set access control function</value>
+    <comment>Set access control function</comment>
+  </data>
+  <data name="AccessNormal" xml:space="preserve">
+    <value>Normal</value>
+    <comment>Normal</comment>
+  </data>
+  <data name="AccessNormalNot" xml:space="preserve">
+    <value>Condition inverse</value>
+    <comment>置反</comment>
+  </data>
+  <data name="AccessSession" xml:space="preserve">
+    <value>Session access control</value>
+    <comment>Session access control</comment>
+  </data>
+  <data name="AccessSession_Des" xml:space="preserve">
+    <value>Set session access control</value>
+    <comment>Set session access control</comment>
+  </data>
+  <data name="AccessSessionCondition" xml:space="preserve">
+    <value>Session </value>
+    <comment>Session </comment>
+  </data>
+  <data name="AccessSessionCondition_Des" xml:space="preserve">
+    <value>If session is true,access was allowed.eg:[sessionname]=[value],or [sessionname]!=[value].The conditions are desperated by ";"</value>
+    <comment>If session is true,access was allowed.eg:[sessionname]=[value],or [sessionname]!=[value].The conditions are desperated by ";"</comment>
+  </data>
+  <data name="AccessSessionConditionSide" xml:space="preserve">
+    <value>Session condition inverse</value>
+    <comment>会话条件置反</comment>
+  </data>
+  <data name="AccessSessionConditionSide_Des" xml:space="preserve">
+    <value>If the inverse condition is true, the part will be allowed to access.</value>
+    <comment>把允许条件置反，之后允许条件的相反条件才可以访问</comment>
+  </data>
+  <data name="AccessSessionControl" xml:space="preserve">
+    <value>Session control</value>
+    <comment>Session control</comment>
+  </data>
+  <data name="AccessSessionControl_Des" xml:space="preserve">
+    <value>Set session setting available</value>
+    <comment>Set session setting available</comment>
+  </data>
+  <data name="AccessTip" xml:space="preserve">
+    <value>DialogWindow</value>
+    <comment>DialogWindow</comment>
+  </data>
+  <data name="AccessTip_Des" xml:space="preserve">
+    <value>Set message when part is not allowed to access</value>
+    <comment>Set message when part is not allowed to access</comment>
+  </data>
+  <data name="AccessTipContent" xml:space="preserve">
+    <value>Message</value>
+    <comment>Message</comment>
+  </data>
+  <data name="AccessTipContent_Des" xml:space="preserve">
+    <value>Set Message </value>
+    <comment>Set Message </comment>
+  </data>
+  <data name="AccessTipControl" xml:space="preserve">
+    <value>Set message</value>
+    <comment>Set message</comment>
+  </data>
+  <data name="AccessTipControl_Des" xml:space="preserve">
+    <value>Set message available</value>
+    <comment>Set message available</comment>
+  </data>
+  <data name="b1" xml:space="preserve">
+    <value>Set Part Width</value>
+  </data>
+  <data name="b10" xml:space="preserve">
+    <value>the Back Parts</value>
+  </data>
+  <data name="b2" xml:space="preserve">
+    <value>Set part Height</value>
+  </data>
+  <data name="b3" xml:space="preserve">
+    <value>Set as Container</value>
+  </data>
+  <data name="b4" xml:space="preserve">
+    <value>Set Control Name</value>
+  </data>
+  <data name="b5" xml:space="preserve">
+    <value>Set Control Datasource</value>
+  </data>
+  <data name="b6" xml:space="preserve">
+    <value>Set Control Data Share Type</value>
+  </data>
+  <data name="b7" xml:space="preserve">
+    <value>the Control Info</value>
+  </data>
+  <data name="b8" xml:space="preserve">
+    <value>the Part Info</value>
+  </data>
+  <data name="b9" xml:space="preserve">
+    <value>the Fore Parts</value>
+  </data>
+  <data name="c1" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="c10" xml:space="preserve">
+    <value>Part Height</value>
+  </data>
+  <data name="c11" xml:space="preserve">
+    <value>Part Width</value>
+  </data>
+  <data name="c12" xml:space="preserve">
+    <value>As Container</value>
+  </data>
+  <data name="c13" xml:space="preserve">
+    <value>Style</value>
+  </data>
+  <data name="c2" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="c3" xml:space="preserve">
+    <value>Control Info</value>
+  </data>
+  <data name="c4" xml:space="preserve">
+    <value>Part Info</value>
+  </data>
+  <data name="c5" xml:space="preserve">
+    <value>Fore Parts</value>
+  </data>
+  <data name="c6" xml:space="preserve">
+    <value>Back Parts</value>
+  </data>
+  <data name="c7" xml:space="preserve">
+    <value>Control Data</value>
+  </data>
+  <data name="c8" xml:space="preserve">
+    <value>Data Share</value>
+  </data>
+  <data name="c9" xml:space="preserve">
+    <value>Control Name</value>
+  </data>
+  <data name="ctlpara" xml:space="preserve">
+    <value>Control Parameter</value>
+  </data>
+  <data name="m1" xml:space="preserve">
+    <value>Control ID unavailable when clone!</value>
+    <comment>Controlid not found when clone!</comment>
+  </data>
+  <data name="m2" xml:space="preserve">
+    <value>getPartHtml Error!</value>
+  </data>
+  <data name="m3" xml:space="preserve">
+    <value>part id or editor is null when add part to editor!</value>
+  </data>
+  <data name="m4" xml:space="preserve">
+    <value>Part Element Lost!</value>
+  </data>
+  <data name="NotSet" xml:space="preserve">
+    <value>(NotSet)</value>
+  </data>
+</root>

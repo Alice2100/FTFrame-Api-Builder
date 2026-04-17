@@ -1,0 +1,938 @@
+﻿<html>
+<head>
+	<title>Flow Custom</title>
+	<link rel="stylesheet" href="css/wordpress.css" type="text/css" media="screen" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css" media="screen">
+		#page {
+			background: url("images/draw/drawbg.jpg") repeat-y top;
+			border: none;
+		}
+	</style>
+	<script src="/_ft/_ftres/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+		mxBasePath = '../../src';
+	</script>
+	<script type="text/javascript" src="../../src/js/mxClient.js"></script>
+	<script type="text/javascript" src="js/mxApplication.js"></script>
+	<script type="text/javascript">
+		// Program starts here. The document.onLoad executes the
+		// mxApplication constructor with a given configuration.
+		// In the config file, the mxEditor.onInit method is
+		// overridden to invoke this global function as the
+		// last step in the editor constructor.
+		function onInit(editor) {
+			// Crisp rendering in SVG except for connectors, actors, cylinder, ellipses
+			mxShape.prototype.crisp = true;
+			mxActor.prototype.crisp = false;
+			mxCylinder.prototype.crisp = false;
+			mxEllipse.prototype.crisp = false;
+			mxDoubleEllipse.prototype.crisp = false;
+			mxConnector.prototype.crisp = false;
+
+			// Enables guides
+			mxGraphHandler.prototype.guidesEnabled = true;
+
+			// Alt disables guides
+			mxGuide.prototype.isEnabledForEvent = function (evt) {
+				return !mxEvent.isAltDown(evt);
+			};
+
+			// Enables snapping waypoints to terminals
+			mxEdgeHandler.prototype.snapToTerminals = true;
+
+			// Defines an icon for creating new connections in the connection handler.
+			// This will automatically disable the highlighting of the source vertex.
+			mxConnectionHandler.prototype.connectImage = new mxImage('images/connector.gif', 16, 16);
+
+			// Enables connections in the graph and disables
+			// reset of zoom and translate on root change
+			// (ie. switch between XML and graphical mode).
+			editor.graph.setConnectable(true);
+
+			// Clones the source if new connection has no target
+			editor.graph.connectionHandler.setCreateTarget(true);
+
+			// Displays information about the session
+			// in the status bar
+			editor.addListener(mxEvent.SESSION, function (editor, evt) {
+				var session = evt.getProperty('session');
+
+				if (session.connected) {
+					var tstamp = new Date().toLocaleString();
+					editor.setStatus(tstamp + ':' +
+						' ' + session.sent + ' bytes sent, ' +
+						' ' + session.received + ' bytes received');
+				}
+				else {
+					editor.setStatus('Not connected');
+				}
+			});
+
+			// Updates the title if the root changes
+			var title = document.getElementById('title');
+
+			if (title != null) {
+				var f = function (sender) {
+					//title.innerHTML = 'Flow Custom - ' + sender.getTitle();
+					title.innerHTML = 'Flow Custom';
+				};
+
+				editor.addListener(mxEvent.ROOT, f);
+				f(editor);
+			}
+
+			// Changes the zoom on mouseWheel events
+			mxEvent.addMouseWheelListener(function (evt, up) {
+				if (!mxEvent.isConsumed(evt)) {
+					if (up) {
+						editor.execute('zoomIn');
+					}
+					else {
+						editor.execute('zoomOut');
+					}
+
+					mxEvent.consume(evt);
+				}
+			});
+
+			// Defines a new action to switch between
+			// XML and graphical display
+			var textNode = document.getElementById('xml');
+			var graphNode = editor.graph.container;
+			var sourceInput = document.getElementById('source');
+			sourceInput.checked = false;
+
+			var funct = function (editor) {
+				if (sourceInput.checked) {
+					graphNode.style.display = 'none';
+					textNode.style.display = 'inline';
+
+					var enc = new mxCodec();
+					var node = enc.encode(editor.graph.getModel());
+					textNode.value = mxUtils.getPrettyXml(node);
+					textNode.originalValue = textNode.value;
+					textNode.focus();
+				}
+				else {
+					graphNode.style.display = '';
+
+					if (textNode.value != textNode.originalValue) {
+						var doc = mxUtils.parseXml(textNode.value);
+						var dec = new mxCodec(doc);
+						dec.decode(doc.documentElement, editor.graph.getModel());
+					}
+
+					textNode.originalValue = null;
+
+					// Makes sure nothing is selected in IE
+					if (mxClient.IS_IE) {
+						mxUtils.clearSelection();
+					}
+
+					textNode.style.display = 'none';
+
+					// Moves the focus back to the graph
+					textNode.blur();
+					editor.graph.container.focus();
+				}
+			};
+
+			editor.addAction('switchView', funct);
+
+			// Client-side code for new image export
+			var newExportImage = function (editor) {
+				var scale = 1;
+				var bounds = editor.graph.getGraphBounds();
+
+				// Creates XML node to hold output
+				var xmlDoc = mxUtils.createXmlDocument();
+				var root = xmlDoc.createElement('output');
+				xmlDoc.appendChild(root);
+
+				// Creates interface for rendering output
+				var xmlCanvas = new mxXmlCanvas2D(root);
+				xmlCanvas.scale(scale);
+				xmlCanvas.translate(Math.round(-bounds.x * scale), Math.round(-bounds.y * scale));
+
+				// Renders output to interface
+				var imgExport = new mxImageExport();
+				imgExport.drawState(editor.graph.getView().getState(editor.graph.model.root), xmlCanvas);
+
+				// Puts request data together
+				var filename = 'export.png';
+				var format = 'png';
+				var bg = '#FFFFFF';
+				var w = Math.round((bounds.width + 4) * scale);
+				var h = Math.round((bounds.height + 4) * scale);
+				var xml = mxUtils.getXml(root);
+
+				// Compression is currently not used in this example
+				// Requires base64.js and redeflate.js
+				// xml = encodeURIComponent(Base64.encode(RawDeflate.deflate(xml), true));
+
+				new mxXmlRequest('/New' + editor.urlImage.substring(1), 'filename=' + filename +
+					'&format=' + format + '&bg=' + bg + '&w=' + w + '&h=' + h + '&xml=' +
+					encodeURIComponent(xml)).simulate(document, '_blank');
+			};
+
+			editor.addAction('newExportImage', newExportImage);
+
+			// Defines a new action to switch between
+			// XML and graphical display
+			mxEvent.addListener(sourceInput, 'click', function () {
+				editor.execute('switchView');
+			});
+
+			// Create select actions in page
+			var node = document.getElementById('mainActions');
+			var buttons = ['group', 'delete', 'undo', 'print', 'redo', 'ungroup', 'cut', 'copy', 'paste', 'show'];
+
+			for (var i = 0; i < buttons.length; i++) {
+				var button = document.createElement('button');
+				mxUtils.write(button, mxResources.get(buttons[i]));
+
+				var factory = function (name) {
+					return function () {
+						editor.execute(name);
+					};
+				};
+
+				mxEvent.addListener(button, 'click', factory(buttons[i]));
+				node.appendChild(button);
+			}
+			/*
+			var select = document.createElement('select');
+			var option = document.createElement('option');
+			mxUtils.writeln(option, '更多操作...');
+			select.appendChild(option);
+
+			//var items = ['redo', 'ungroup', 'cut', 'copy', 'paste', 'show', 'exportImage', 'newExportImage'];
+			var items = ['redo', 'ungroup', 'cut', 'copy', 'paste', 'show'];
+
+			for (var i=0; i<items.length; i++)
+			{
+				var option = document.createElement('option');
+				mxUtils.writeln(option, mxResources.get(items[i]));
+				option.setAttribute('value', items[i]);
+				select.appendChild(option);
+			}
+
+			mxEvent.addListener(select, 'change', function(evt)
+			{
+				if (select.selectedIndex > 0)
+				{
+					var option = select.options[select.selectedIndex];
+					select.selectedIndex = 0;
+
+					if (option.value != null)
+					{
+						editor.execute(option.value);
+					}
+				}
+			});
+
+			node.appendChild(select);
+			*/
+
+			// Create select actions in page
+			var node = document.getElementById('selectActions');
+			mxUtils.write(node, '选择: ');
+			mxUtils.linkAction(node, '全选', editor, 'selectAll');
+			mxUtils.write(node, ', ');
+			mxUtils.linkAction(node, '无', editor, 'selectNone');
+			mxUtils.write(node, ', ');
+			mxUtils.linkAction(node, '对象', editor, 'selectVertices');
+			mxUtils.write(node, ', ');
+			mxUtils.linkAction(node, '连接', editor, 'selectEdges');
+
+			// Create select actions in page
+			var node = document.getElementById('zoomActions');
+			mxUtils.write(node, '缩放: ');
+			mxUtils.linkAction(node, '放大', editor, 'zoomIn');
+			mxUtils.write(node, ', ');
+			mxUtils.linkAction(node, '缩小', editor, 'zoomOut');
+			mxUtils.write(node, ', ');
+			mxUtils.linkAction(node, '实际大小', editor, 'actualSize');
+			mxUtils.write(node, ', ');
+			mxUtils.linkAction(node, '自适应', editor, 'fit');
+
+			open();
+		}
+
+		window.onbeforeunload = function () { return mxResources.get('changesLost'); };
+	</script>
+</head>
+<body onload="new mxApplication('config/diagrameditor.xml');">
+	<div align=center style="width:96%">
+		<!--div id="header">
+			<div id="headerimg" style="overflow:hidden;">
+				<h1 id="title"></h1>
+			</div>
+		</div-->
+		<div id="mainActions"
+			 style="width:100%;padding-top:8px;padding-left:24px;padding-bottom:8px;">
+		</div>
+		<div id="selectActions" style="width:100%;padding-left:54px;padding-bottom:4px;">
+		</div>
+		<table border="0" width="100%">
+			<tr>
+				<td id="toolbar" style="width:16px;padding-left:20px;" valign="top">
+					<!-- Toolbar Here -->
+				</td>
+				<td valign="top" style="border-width:1px;border-style:solid;border-color:black;">
+					<div id="graph" style="position:relative;height:480px;width:100%;overflow:auto;cursor:default;background:#ffffff url('images/grid.gif');">
+						<!-- Graph Here -->
+						<center id="splash" style="padding-top:230px;">
+							<img src="images/loading.gif">
+						</center>
+					</div>
+					<textarea id="xml" style="height:480px;width:100%;display:none;border-style:none;"></textarea>
+				</td>
+			</tr>
+		</table>
+		<span style="float:right;padding-right:36px;" ondblclick="document.getElementById('source').style.display=''">
+			<input id="source" type="checkbox" style="display:none" />
+			<input type="button" value="示例" onclick="document.getElementById('source').click();document.getElementById('xml').value=document.getElementById('demo1').value;document.getElementById('source').click();" />
+			<input type=button value="保存" onclick="save()" />
+		</span>
+		<div id="zoomActions" style="width:100%;padding-left:54px;padding-top:4px;">
+		</div>
+		<!--div id="footer">
+			<p id="status">
+				Loading...
+			</p>
+			<br/>
+		</div-->
+	</div>
+	<script type="text/javascript">
+		function open() {
+			var refstr = location.href.substring(location.href.indexOf('?') + 1).split('&');
+			var id = refstr[0];
+			var setXml = parent.document.getElementById(id).value;
+			if (setXml == "") {
+				setXml = document.getElementById('demo0').value;
+			}
+			document.getElementById('source').click(); document.getElementById('xml').value = setXml; document.getElementById('source').click();
+		}
+		function save() {
+			var refstr = location.href.substring(location.href.indexOf('?') + 1).split('&');
+			var id = refstr[0];
+			var iframeId = refstr[1];
+			document.getElementById('source').click();
+			document.getElementById('source').click();
+			parent.document.getElementById(id).value = document.getElementById('xml').value;
+			parent.closeDialog(iframeId);
+		}
+	</script>
+	<textarea style="display:none" id="demo0">
+	<mxGraphModel>
+	<root>
+	<Diagram label="FTDP" href="" id="0">
+	<mxCell />
+
+    </Diagram>
+	<Layer label="Default Layer" id="1">
+	<mxCell parent="0" />
+
+    </Layer>
+	<Rect label="开始" href="" id="2">
+	<mxCell style="gradientColor=white;strokeColor=orange;fillColor=orange" parent="1" vertex="1">
+	<mxGeometry x="30" y="220" width="110" height="40" isStart="1" statValue="0" as="geometry" />
+
+      </mxCell>
+    </Rect>
+	<Rect label="结束" href="" id="999">
+	<mxCell style="gradientColor=white;strokeColor=orange;fillColor=orange" parent="1" vertex="1">
+	<mxGeometry x="390" y="220" width="110" height="40" isEnd="1" statValue="999" as="geometry" />
+
+      </mxCell>
+    </Rect>
+	<Connector label="" href="" id="1001">
+	<mxCell edge="1" parent="1" source="2" target="999">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+  </root>
+</mxGraphModel>
+	</textarea>
+	<textarea style="display:none" id="demo1">
+	<mxGraphModel>
+	<root>
+	<Diagram label="FTDP" href="" id="0">
+	<mxCell />
+
+    </Diagram>
+	<Layer label="Default Layer" id="1">
+	<mxCell parent="0" />
+
+    </Layer>
+	<Rect label="开始" href="" id="2">
+	<mxCell style="gradientColor=white;strokeColor=orange;fillColor=orange" parent="1" vertex="1">
+	<mxGeometry x="30" y="130" width="110" height="40" isStart="1" isEnd="0" statValue="" operateIn="" operateOut="" stepRole="" stepDepart="" stepUser="" stepCode="" as="geometry" />
+
+      </mxCell>
+    </Rect>
+	<Container label="项目组" href="" id="3">
+	<mxCell style="swimlane;strokeColor=#999999" parent="1" vertex="1" connectable="0">
+	<mxGeometry x="160" y="20" width="180" height="280" as="geometry" />
+
+      </mxCell>
+    </Container>
+	<Roundrect label="子项目经理" href="" id="4">
+	<mxCell style="rounded" parent="3" vertex="1">
+	<mxGeometry x="30" y="50" width="90" height="40" isStart="0" isEnd="0" statValue="1" operateIn="FlowStat=1&amp;#xa;@code($a,{workid}|{flowid})" operateOut="FlowStat=2&amp;#xa;@code($b,{workid}|{flowid})" stepRole="项目经理" stepDepart="上海分公司|北京分公司" stepUser="" stepCode="" as="geometry" />
+
+      </mxCell>
+    </Roundrect>
+	<Roundrect label="项目经理" href="" id="5">
+	<mxCell style="rounded" parent="3" vertex="1">
+	<mxGeometry x="25" y="170" width="85" height="40" stattype="0" statvalue="" as="geometry" />
+
+      </mxCell>
+    </Roundrect>
+	<Connector label="" href="" id="8">
+	<mxCell parent="3" source="4" target="5" edge="1">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Connector label="" href="" id="6">
+	<mxCell parent="1" source="2" target="4" edge="1">
+	<mxGeometry relative="1" codectn="@code($c,{workid}|{flowid})" sqlctn="" sqllr="2" sqlval="0" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Connector label="" href="" id="7">
+	<mxCell parent="1" source="2" target="5" edge="1">
+	<mxGeometry relative="1" flowtype="0" mustlogin="1" sqlctn="select a from table1 where id=&#39;{workid}&#39;" sqllr="2" sqlval="0" codectn="" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Container label="评审委员会" href="" id="10">
+	<mxCell style="swimlane;strokeColor=#999999" parent="1" vertex="1" connectable="0">
+	<mxGeometry x="630" y="20" width="190" height="280" as="geometry" />
+
+      </mxCell>
+    </Container>
+	<Roundrect label="评审组长" href="" id="14">
+	<mxCell style="rounded" parent="10" vertex="1">
+	<mxGeometry x="42.5" y="40" width="120" height="40" as="geometry" />
+
+      </mxCell>
+    </Roundrect>
+	<Roundrect label="评审副组长" href="" id="20">
+	<mxCell style="rounded" parent="10" vertex="1">
+	<mxGeometry x="40" y="110" width="120" height="40" as="geometry" />
+
+      </mxCell>
+    </Roundrect>
+	<Roundrect label="评审委员" href="" id="21">
+	<mxCell style="rounded" parent="10" vertex="1">
+	<mxGeometry x="40" y="180" width="120" height="40" as="geometry" />
+
+      </mxCell>
+    </Roundrect>
+	<Connector label="" href="" id="25">
+	<mxCell parent="10" source="21" target="21" edge="1">
+	<mxGeometry relative="1" as="geometry">
+	<mxPoint x="80" y="210" as="sourcePoint" />
+
+	<mxPoint x="80" y="230" as="targetPoint" />
+
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+	<Shape label="公司初审" href="" id="18">
+	<mxCell style="rhombus" parent="1" vertex="1">
+	<mxGeometry x="542.5" y="120" width="80" height="60" as="geometry" />
+
+      </mxCell>
+    </Shape>
+	<Connector label="" href="" id="19">
+	<mxCell parent="1" source="5" target="60" edge="1">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Connector label="" href="" id="22">
+	<mxCell parent="1" source="18" target="14" edge="1">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Connector label="" href="" id="23">
+	<mxCell parent="1" source="18" target="20" edge="1">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Connector label="" href="" id="24">
+	<mxCell parent="1" source="18" target="21" edge="1">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Roundrect label="副总经理" href="" id="30">
+	<mxCell style="rounded" parent="1" vertex="1">
+	<mxGeometry x="895" y="370" width="80" height="40" as="geometry" />
+
+      </mxCell>
+    </Roundrect>
+	<Roundrect label="总经理" href="" id="31">
+	<mxCell style="rounded" parent="1" vertex="1">
+	<mxGeometry x="582.5" y="320" width="80" height="40" as="geometry" />
+
+      </mxCell>
+    </Roundrect>
+	<Shape label="备案" href="" id="33">
+	<mxCell style="ellipse" parent="1" vertex="1">
+	<mxGeometry x="900" y="110" width="70" height="60" as="geometry" />
+
+      </mxCell>
+    </Shape>
+	<Connector label="" href="" id="34">
+	<mxCell parent="1" source="14" target="33" edge="1">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Connector label="" href="" id="35">
+	<mxCell parent="1" source="20" target="33" edge="1">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Connector label="" href="" id="36">
+	<mxCell parent="1" source="21" target="33" edge="1">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Connector label="" href="" id="39">
+	<mxCell parent="1" source="63" target="30" edge="1">
+	<mxGeometry relative="1" as="geometry">
+	<mxPoint x="931.5" y="270.21977909015317" as="sourcePoint" />
+
+	<mxPoint x="931.5" y="369.7802209098469" as="targetPoint" />
+
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+	<Connector label="" href="" id="40">
+	<mxCell parent="1" source="63" target="31" edge="1">
+	<mxGeometry relative="1" as="geometry">
+	<Array as="points">
+	<mxPoint x="860" y="310" />
+
+          </Array>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+	<Rect label="结束" href="" id="43">
+	<mxCell style="gradientColor=white;strokeColor=orange;fillColor=orange" parent="1" vertex="1">
+	<mxGeometry x="30" y="370" width="110" height="40" isStart="0" isEnd="1" statValue="" operateIn="" operateOut="" stepRole="" stepDepart="" stepUser="" stepCode="" as="geometry" />
+
+      </mxCell>
+    </Rect>
+	<Roundrect label="文书" href="" id="44">
+	<mxCell style="rounded" parent="1" vertex="1">
+	<mxGeometry x="430" y="370" width="80" height="40" as="geometry" />
+
+      </mxCell>
+    </Roundrect>
+	<Connector label="" href="" id="45">
+	<mxCell parent="1" source="31" target="44" edge="1">
+	<mxGeometry relative="1" as="geometry">
+	<Array as="points">
+	<mxPoint x="470" y="370" />
+
+          </Array>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+	<Connector label="" href="" id="48">
+	<mxCell parent="1" source="30" target="44" edge="1">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Shape label="入库" href="" id="51">
+	<mxCell style="cylinder" parent="1" vertex="1">
+	<mxGeometry x="300" y="360" width="65" height="60" as="geometry" />
+
+      </mxCell>
+    </Shape>
+	<Connector label="" href="" id="52">
+	<mxCell parent="1" source="44" target="51" edge="1">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Shape label="公告" href="" id="53">
+	<mxCell style="actor" parent="1" vertex="1">
+	<mxGeometry x="205" y="360" width="40" height="60" as="geometry" />
+
+      </mxCell>
+    </Shape>
+	<Connector label="" href="" id="57">
+	<mxCell parent="1" source="51" target="53" edge="1">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Connector label="" href="" id="58">
+	<mxCell parent="1" source="53" target="43" edge="1">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Container label="部门" href="" id="59">
+	<mxCell style="swimlane;strokeColor=#999999" parent="1" vertex="1" connectable="0">
+	<mxGeometry x="350" y="20" width="180" height="280" as="geometry" />
+
+      </mxCell>
+    </Container>
+	<Roundrect label="部门评审小组" href="" id="60">
+	<mxCell style="rounded" parent="59" vertex="1">
+	<mxGeometry x="30" y="50" width="90" height="40" as="geometry" />
+
+      </mxCell>
+    </Roundrect>
+	<Roundrect label="部门经理" href="" id="61">
+	<mxCell style="rounded" parent="59" vertex="1">
+	<mxGeometry x="35" y="170" width="85" height="40" stattype="0" statvalue="" as="geometry" />
+
+      </mxCell>
+    </Roundrect>
+	<Connector label="" href="" id="62">
+	<mxCell parent="59" source="60" target="61" edge="1">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Connector label="" href="" id="65">
+	<mxCell parent="59" source="60" target="60" edge="1">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Shape label="财务部" href="" id="63">
+	<mxCell style="doubleEllipse;strokeColor=#ffcccc;fillColor=#ffcccc" parent="1" vertex="1">
+	<mxGeometry x="895" y="230" width="80" height="60" as="geometry" />
+
+      </mxCell>
+    </Shape>
+	<Connector label="" href="" id="64">
+	<mxCell parent="1" source="33" target="63" edge="1">
+	<mxGeometry relative="1" as="geometry">
+	<mxPoint x="935" y="170" as="sourcePoint" />
+
+	<mxPoint x="860" y="370" as="targetPoint" />
+
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+	<Connector label="" href="" id="66">
+	<mxCell parent="1" source="61" target="18" edge="1">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+  </root>
+</mxGraphModel>
+</textarea>
+	<textarea style="display:none" id="demo2">
+<mxGraphModel>
+	<root>
+	<Diagram label="FTDP" href="" id="0">
+	<mxCell />
+
+    </Diagram>
+	<Layer label="Default Layer" id="1">
+	<mxCell parent="0" />
+
+    </Layer>
+	<Rect label="开始" href="" id="2">
+	<mxCell style="gradientColor=white;strokeColor=orange;fillColor=orange" vertex="1" parent="1">
+	<mxGeometry x="30" y="130" width="110" height="40" as="geometry" />
+
+      </mxCell>
+    </Rect>
+	<Container label="项目组" href="" id="3">
+	<mxCell style="swimlane;strokeColor=#999999" vertex="1" connectable="0" parent="1">
+	<mxGeometry x="160" y="20" width="180" height="280" as="geometry" />
+
+      </mxCell>
+    </Container>
+	<Roundrect label="子项目经理" href="" id="4">
+	<mxCell style="rounded" vertex="1" parent="3">
+	<mxGeometry x="30" y="50" width="90" height="40" as="geometry" />
+
+      </mxCell>
+    </Roundrect>
+	<Roundrect label="项目经理" href="" id="5">
+	<mxCell style="rounded" vertex="1" parent="3">
+	<mxGeometry x="25" y="170" width="85" height="40" stattype="0" statvalue="" as="geometry" />
+
+      </mxCell>
+    </Roundrect>
+	<Connector label="" href="" id="8">
+	<mxCell edge="1" parent="3" source="4" target="5">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Connector label="" href="" id="6">
+	<mxCell edge="1" parent="1" source="2" target="4">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Connector label="" href="" id="7">
+	<mxCell edge="1" parent="1" source="2" target="5">
+	<mxGeometry relative="1" flowtype="0" mustlogin="1" sqlctn="" sqllr="2" sqlval="0" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Container label="评审委员会" href="" id="10">
+	<mxCell style="swimlane;strokeColor=#999999" vertex="1" connectable="0" parent="1">
+	<mxGeometry x="630" y="20" width="190" height="280" as="geometry" />
+
+      </mxCell>
+    </Container>
+	<Roundrect label="评审组长" href="" id="14">
+	<mxCell style="rounded" vertex="1" parent="10">
+	<mxGeometry x="42.5" y="40" width="120" height="40" as="geometry" />
+
+      </mxCell>
+    </Roundrect>
+	<Roundrect label="评审副组长" href="" id="20">
+	<mxCell style="rounded" vertex="1" parent="10">
+	<mxGeometry x="40" y="110" width="120" height="40" as="geometry" />
+
+      </mxCell>
+    </Roundrect>
+	<Roundrect label="评审委员" href="" id="21">
+	<mxCell style="rounded" vertex="1" parent="10">
+	<mxGeometry x="40" y="180" width="120" height="40" as="geometry" />
+
+      </mxCell>
+    </Roundrect>
+	<Connector label="" href="" id="25">
+	<mxCell edge="1" parent="10" source="21" target="21">
+	<mxGeometry relative="1" as="geometry">
+	<mxPoint x="80" y="210" as="sourcePoint" />
+
+	<mxPoint x="80" y="230" as="targetPoint" />
+
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+	<Shape label="公司初审" href="" id="18">
+	<mxCell style="rhombus" vertex="1" parent="1">
+	<mxGeometry x="542.5" y="120" width="80" height="60" as="geometry" />
+
+      </mxCell>
+    </Shape>
+	<Connector label="" href="" id="19">
+	<mxCell edge="1" parent="1" source="5" target="60">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Connector label="" href="" id="22">
+	<mxCell edge="1" parent="1" source="18" target="14">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Connector label="" href="" id="23">
+	<mxCell edge="1" parent="1" source="18" target="20">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Connector label="" href="" id="24">
+	<mxCell edge="1" parent="1" source="18" target="21">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Roundrect label="副总经理" href="" id="30">
+	<mxCell style="rounded" vertex="1" parent="1">
+	<mxGeometry x="895" y="370" width="80" height="40" as="geometry" />
+
+      </mxCell>
+    </Roundrect>
+	<Roundrect label="总经理" href="" id="31">
+	<mxCell style="rounded" vertex="1" parent="1">
+	<mxGeometry x="582.5" y="320" width="80" height="40" as="geometry" />
+
+      </mxCell>
+    </Roundrect>
+	<Shape label="备案" href="" id="33">
+	<mxCell style="ellipse" vertex="1" parent="1">
+	<mxGeometry x="900" y="110" width="70" height="60" as="geometry" />
+
+      </mxCell>
+    </Shape>
+	<Connector label="" href="" id="34">
+	<mxCell edge="1" parent="1" source="14" target="33">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Connector label="" href="" id="35">
+	<mxCell edge="1" parent="1" source="20" target="33">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Connector label="" href="" id="36">
+	<mxCell edge="1" parent="1" source="21" target="33">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Connector label="" href="" id="39">
+	<mxCell edge="1" parent="1" source="63" target="30">
+	<mxGeometry relative="1" as="geometry">
+	<mxPoint x="931.5" y="270.21977909015317" as="sourcePoint" />
+
+	<mxPoint x="931.5" y="369.7802209098469" as="targetPoint" />
+
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+	<Connector label="" href="" id="40">
+	<mxCell edge="1" parent="1" source="63" target="31">
+	<mxGeometry relative="1" as="geometry">
+	<Array as="points">
+	<mxPoint x="860" y="310" />
+
+          </Array>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+	<Rect label="结束" href="" id="43">
+	<mxCell style="gradientColor=white;strokeColor=orange;fillColor=orange" vertex="1" parent="1">
+	<mxGeometry x="30" y="370" width="110" height="40" as="geometry" />
+
+      </mxCell>
+    </Rect>
+	<Roundrect label="文书" href="" id="44">
+	<mxCell style="rounded" vertex="1" parent="1">
+	<mxGeometry x="430" y="370" width="80" height="40" as="geometry" />
+
+      </mxCell>
+    </Roundrect>
+	<Connector label="" href="" id="45">
+	<mxCell edge="1" parent="1" source="31" target="44">
+	<mxGeometry relative="1" as="geometry">
+	<Array as="points">
+	<mxPoint x="470" y="370" />
+
+          </Array>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+	<Connector label="" href="" id="48">
+	<mxCell edge="1" parent="1" source="30" target="44">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Shape label="入库" href="" id="51">
+	<mxCell style="cylinder" vertex="1" parent="1">
+	<mxGeometry x="300" y="360" width="65" height="60" as="geometry" />
+
+      </mxCell>
+    </Shape>
+	<Connector label="" href="" id="52">
+	<mxCell edge="1" parent="1" source="44" target="51">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Shape label="公告" href="" id="53">
+	<mxCell style="actor" vertex="1" parent="1">
+	<mxGeometry x="205" y="360" width="40" height="60" as="geometry" />
+
+      </mxCell>
+    </Shape>
+	<Connector label="" href="" id="57">
+	<mxCell edge="1" parent="1" source="51" target="53">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Connector label="" href="" id="58">
+	<mxCell edge="1" parent="1" source="53" target="43">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Container label="部门" href="" id="59">
+	<mxCell style="swimlane;strokeColor=#999999" vertex="1" connectable="0" parent="1">
+	<mxGeometry x="350" y="20" width="180" height="280" as="geometry" />
+
+      </mxCell>
+    </Container>
+	<Roundrect label="部门评审小组" href="" id="60">
+	<mxCell style="rounded" vertex="1" parent="59">
+	<mxGeometry x="30" y="50" width="90" height="40" as="geometry" />
+
+      </mxCell>
+    </Roundrect>
+	<Roundrect label="部门经理" href="" id="61">
+	<mxCell style="rounded" vertex="1" parent="59">
+	<mxGeometry x="35" y="170" width="85" height="40" stattype="0" statvalue="" as="geometry" />
+
+      </mxCell>
+    </Roundrect>
+	<Connector label="" href="" id="62">
+	<mxCell edge="1" parent="59" source="60" target="61">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Connector label="" href="" id="65">
+	<mxCell edge="1" parent="59" source="60" target="60">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+	<Shape label="财务部" href="" id="63">
+	<mxCell style="doubleEllipse;strokeColor=#ffcccc;fillColor=#ffcccc" vertex="1" parent="1">
+	<mxGeometry x="895" y="230" width="80" height="60" as="geometry" />
+
+      </mxCell>
+    </Shape>
+	<Connector label="" href="" id="64">
+	<mxCell edge="1" parent="1" source="33" target="63">
+	<mxGeometry relative="1" as="geometry">
+	<mxPoint x="935" y="170" as="sourcePoint" />
+
+	<mxPoint x="860" y="370" as="targetPoint" />
+
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+	<Connector label="" href="" id="66">
+	<mxCell edge="1" parent="1" source="61" target="18">
+	<mxGeometry relative="1" as="geometry" />
+
+      </mxCell>
+    </Connector>
+  </root>
+</mxGraphModel>
+</textarea>
+	<script>
+		//$(function(){
+			//setTimeout(open,2000);
+		//});
+	</script>
+</body>
+</html>

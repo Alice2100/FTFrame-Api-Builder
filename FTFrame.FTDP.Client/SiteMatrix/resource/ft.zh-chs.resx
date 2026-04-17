@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="FBE.001" xml:space="preserve">
+    <value>查询</value>
+  </data>
+  <data name="FBE.002" xml:space="preserve">
+    <value>重置</value>
+  </data>
+  <data name="FBE.003" xml:space="preserve">
+    <value>批量</value>
+  </data>
+  <data name="FBE.004" xml:space="preserve">
+    <value>导出</value>
+  </data>
+  <data name="FBE.005" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="FBE.006" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="FBE.007" xml:space="preserve">
+    <value>schStrict定义规则：
+	a:b定义，多个时用;隔开。
+	1、b为空时忽略
+	2、b为null则条件a is null
+	3、b为empty则条件为a=''
+	4、b为!null则条件a is not null
+	5、b为in起始则条件a b
+	6、b为!c则条件为a!=c
+	7、b为&gt;=c则条件为a&gt;=c
+	8、b为&lt;=c则条件为a&lt;=c
+	9、b为&gt;c则条件为a&gt;c
+	10、b为&lt;c则条件为a&lt;c
+	11、b为包含%则条件为a like b
+	12、其他则条件为a=b
+
+schText定义规则：
+	1、未包含:的字符串，则为根据接口定义的多字段模糊查询；
+	2、若为a1:b1;a2:b2形式，则为自定义多字段模糊查询；</value>
+  </data>
+  <data name="FBE.008" xml:space="preserve">
+    <value>说明</value>
+  </data>
+  <data name="FBE.button1" xml:space="preserve">
+    <value>生成schStrict定义</value>
+  </data>
+  <data name="FBE.button2" xml:space="preserve">
+    <value>查询的配置说明</value>
+  </data>
+  <data name="FBE.label1" xml:space="preserve">
+    <value>事件类型</value>
+  </data>
+  <data name="FBE.label2" xml:space="preserve">
+    <value>参数组织 （当事件类型为其他时，为Js函数，this.$parent为vue父组件）,函数在自定义中定义，附加在methods节点中。
+定义监听函数可直接写例如 $emit('add', null)</value>
+  </data>
+  <data name="FBE.label3" xml:space="preserve">
+    <value>（当事件类型为导出时，参数组织0为不限制导出数量，其他数字为导出的最大条数）</value>
+  </data>
+  <data name="FCCS.001" xml:space="preserve">
+    <value>未设置组件或该组件为外部组件</value>
+  </data>
+  <data name="FCCS.002" xml:space="preserve">
+    <value>选择回调</value>
+  </data>
+  <data name="FCCS.003" xml:space="preserve">
+    <value>@beforeLoad : 从接口获取数据之前的事件，可选参数为组件对象</value>
+  </data>
+  <data name="FCCS.004" xml:space="preserve">
+    <value>@beforeSet : 从接口获取数据之后，但还未赋值的事件，可选参数为组件对象</value>
+  </data>
+  <data name="FCCS.005" xml:space="preserve">
+    <value>@afterLoad : 赋值后事件，可选参数为组件对象</value>
+  </data>
+  <data name="FCCS.006" xml:space="preserve">
+    <value>@beforeGet : 从接口获取数据之前的事件，可选参数为组件对象</value>
+  </data>
+  <data name="FCCS.007" xml:space="preserve">
+    <value>@beforeSet : 从接口获取数据之后，但还未赋值的事件，可选参数为组件对象</value>
+  </data>
+  <data name="FCCS.008" xml:space="preserve">
+    <value>@afterSet : 赋值后事件，可选参数为组件对象</value>
+  </data>
+  <data name="FCCS.009" xml:space="preserve">
+    <value>@beforeSubmit : 提交前事件，可选参数为组件对象</value>
+  </data>
+  <data name="FCCS.010" xml:space="preserve">
+    <value>@afterSubmit : 提交成功后事件，可选参数为组件对象</value>
+  </data>
+  <data name="FFCVali.001" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="FFCVali.002" xml:space="preserve">
+    <value>不能为空</value>
+  </data>
+  <data name="FFCVali.003" xml:space="preserve">
+    <value>整数</value>
+  </data>
+  <data name="FFCVali.004" xml:space="preserve">
+    <value>数字</value>
+  </data>
+  <data name="FFCVali.005" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="FFCVali.006" xml:space="preserve">
+    <value>手机号码</value>
+  </data>
+  <data name="FFCVali.007" xml:space="preserve">
+    <value>电子邮箱</value>
+  </data>
+  <data name="FFCVali.008" xml:space="preserve">
+    <value>身份证号</value>
+  </data>
+  <data name="FFCVali.009" xml:space="preserve">
+    <value>网址</value>
+  </data>
+  <data name="FFCVali.010" xml:space="preserve">
+    <value>包含中文</value>
+  </data>
+  <data name="FFCVali.011" xml:space="preserve">
+    <value>长度介于</value>
+  </data>
+  <data name="FFCVali.012" xml:space="preserve">
+    <value>(自定义)</value>
+  </data>
+  <data name="FFCVali.label1" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="FFCVali.label2" xml:space="preserve">
+    <value>自定义校验逻辑</value>
+  </data>
+  <data name="FFCVali.label3" xml:space="preserve">
+    <value>例如：[{ required: true, pattern:/\S/, 
+message: '不能为空', trigger: 'blur' } ]</value>
+  </data>
+  <data name="FIInter.dgv.col.0" xml:space="preserve">
+    <value>显示</value>
+  </data>
+  <data name="FIInter.dgv.col.1" xml:space="preserve">
+    <value>值</value>
+  </data>
+  <data name="FIInter.dgv.col.2" xml:space="preserve">
+    <value>绑定</value>
+  </data>
+  <data name="FIInter.fugai" xml:space="preserve">
+    <value>覆盖</value>
+  </data>
+  <data name="FIInter.label2" xml:space="preserve">
+    <value>多个参数按序列填写 
+
+或 用 | 隔开
+
+字符 | 用 [##] 转义</value>
+  </data>
+  <data name="FIInter2.button1" xml:space="preserve">
+    <value>定 义</value>
+  </data>
+  <data name="FIInter2.button11" xml:space="preserve">
+    <value>选 择</value>
+  </data>
+  <data name="FIInter2.label1" xml:space="preserve">
+    <value>静态数据 （选项类型的数据格式为：{value:'[value1]',label:'[label1]'},...</value>
+  </data>
+  <data name="FIInter2.label2" xml:space="preserve">
+    <value>从接口获取</value>
+  </data>
+  <data name="FIInter2.label3" xml:space="preserve">
+    <value>注：选项数据为两者组合，支持@para{key,[para]...}</value>
+  </data>
+</root>

@@ -1,0 +1,327 @@
+.ftdp_list {
+	font-family: 'Microsoft YaHei','微软雅黑','宋体','黑体';
+	color: rgb(11, 11, 11);
+	font-size: 12px;
+}
+
+	.ftdp_list input:not([type]), .ftdp_list input[type=text], .ftdp_list input[type=password], .ftdp_list select, .ftdp_list textarea {
+		padding: 2px;
+		border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		min-width: 30px;
+	}
+
+	.ftdp_list table, .ftselect table {
+		border-bottom: solid 0px red;
+		BORDER-COLLAPSE: collapse;
+	}
+
+	.ftdp_list th {
+		font-size: 100%;
+		font-weight: bold;
+		background-color: #fafafa;
+		min-height: 28px;
+		height: 28px;
+		VERTICAL-ALIGN: middle;
+		text-align: left;
+		padding: 2px 4px;
+	}
+
+	.ftdp_list td {
+		font-size: 100%;
+		min-height: 25px;
+		height: 25px;
+		VERTICAL-ALIGN: middle;
+	}
+
+	.ftdp_list tr {
+		border-bottom: solid 1px #f1f1f1;
+	}
+
+	.ftdp_list .ft_list_search {
+		color: #999;
+		font-weight: bold;
+		margin-right: 6px;
+	}
+
+.ftdp_list_report td, .ftdp_list_report th {
+	border-right: solid 1px #f1f1f1;
+}
+
+.ftdiv .ftdp_list_modal th {
+	font-size: 100%;
+	font-weight: bold;
+	background-color: #fafafa;
+	min-height: 25px;
+	height: 25px;
+	VERTICAL-ALIGN: middle;
+	padding: 4px 2px;
+}
+
+.ftdiv .ftdp_list_modal td {
+	font-size: 100%;
+	min-height: 25px;
+	height: 25px;
+	VERTICAL-ALIGN: middle;
+	padding: 4px 2px;
+}
+
+.ftdp_list_modal .ft_list_search {
+	color: #999;
+	font-weight: bold;
+	margin-right: 6px;
+}
+
+.ftdiv {
+	font-family: 'Microsoft YaHei','微软雅黑','宋体','黑体';
+	color: rgb(11, 11, 11);
+	font-size: 12px;
+	padding: 0px;
+}
+
+.ht24 input:not([type]), .ht24 input[type=text] {
+	height: 24px;
+}
+
+.ht24 select {
+	height: 30px;
+}
+
+.ftdiv input:not([type]), .ftdiv input[type=text], .ftdiv input[type=password], .ftdiv select, .ftdiv textarea, ._input, ._select {
+	font-family: 'Microsoft YaHei','微软雅黑','宋体','黑体';
+	color: rgb(11, 11, 11);
+	border: solid 1px #aaaaaa;
+	padding: 2px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	height: 25px;
+}
+
+.ftdiv div {
+	padding: 0px;
+}
+
+.ftdiv ._tabdiv {
+	padding: 0px;
+}
+
+.ftdiv ._tabdiv_left {
+	padding-top: 10px 0px 0px 0px;
+}
+
+.ftdiv a, .ftdiv a:link {
+	color: #57a000;
+	text-decoration: none;
+}
+
+	.ftdiv a:hover {
+		color: #000;
+	}
+
+	.ftdiv a:active {
+		color: #777;
+	}
+
+	.ftdiv a:focus {
+		outline: 1px;
+	}
+
+.ftdiv td, .ftdiv th {
+	padding: 4px 0px 4px 10px;
+	border-bottom: solid 1px #eeeeee;
+	min-height: 30px;
+	height: 30px;
+	VERTICAL-ALIGN: middle;
+}
+
+.ftdiv .ftnopadding td, .ftdiv .ftnopadding th {
+	padding: 0;
+}
+
+.ftdiv .ftpadding4 td, .ftdiv .ftpadding4 th {
+	padding: 4px;
+}
+
+.bgwhite, .ftdiv .bgwhite {
+	background-color: #ffffff
+}
+
+.bggray, .ftdiv .bggray {
+	background-color: #f6f6f6
+}
+
+.bglight, .ftdiv .bglight {
+	background-color: #fcfcfc
+}
+
+.bghot, .ftdiv .bghot {
+	background-color: #ffd9b3
+}
+
+.ftselect {
+	font-family: 'Microsoft YaHei','微软雅黑','宋体','黑体';
+	color: rgb(11, 11, 11);
+	font-size: 12px;
+}
+
+	.ftselect div {
+		padding: 0px;
+	}
+
+	.ftselect a {
+		color: #57a000;
+		text-decoration: none;
+	}
+
+		.ftselect a:hover {
+			color: #000;
+		}
+
+		.ftselect a:active {
+			color: #777;
+		}
+
+		.ftselect a:focus {
+			outline: 1px;
+		}
+
+	.ftselect th, .ftselect td {
+		padding: 4px 6px 4px 6px;
+		border-top: solid 1px #eeeeee;
+		min-height: 20px;
+		VERTICAL-ALIGN: middle;
+		min-height: 20px;
+		height: 20px;
+	}
+
+	.ftselect th {
+		font-weight: bold;
+		background-color: #fafafa;
+	}
+
+	.ftselect input:not([type]), .ftselect input[type=text], .ftselect input[type=password], .ftselect select, .ftselect textarea {
+		font-family: 'Microsoft YaHei','微软雅黑','宋体','黑体';
+		color: #555;
+		padding: 2px;
+		border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+	}
+
+.fttip, .ftdiv .fttip {
+	color: #999999;
+	font-size: 100%;
+	margin-left: 4px;
+}
+
+.padmar0 {
+	padding: 0px;
+	margin: 0px;
+}
+
+.infohead, .ftdiv .infohead {
+	font-weight: bold;
+	color: #6666ff;
+}
+
+.infored, .ftdiv .infored {
+	font-weight: normal;
+	color: red;
+}
+
+.infoblue, .ftdiv .infoblue {
+	font-weight: normal;
+	color: blue;
+}
+
+.infogray, .ftdiv .infogray {
+	font-weight: normal;
+	color: #666666;
+}
+
+.infopink, .ftdiv .infopink {
+	font-weight: normal;
+	color: #ff6600;
+}
+
+input.inputsel, .ftdp_list input.inputsel, .ftdiv input.inputsel, .ftselect input.inputsel {
+	background-image: url(/_ft/_pro/img/page/find.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	padding-right: 22px;
+	min-width: 63px;
+}
+
+input.usersel, .ftdp_list input.usersel, .ftdiv input.usersel, .ftselect input.usersel {
+	background-image: url(/_ft/_pro/img/page/user.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	padding-right: 22px;
+	min-width: 63px;
+}
+
+input.dateget, .ftdp_list input.dateget, .ftdiv input.dateget, .ftselect input.dateget {
+	background-image: url(/_ft/_pro/img/page/date.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	padding-right: 22px;
+	min-width: 63px;
+}
+
+.nowrap, .nowrap th, .nowrap td, .nowrap div, .nowrap span, .nowrap label {
+	white-space: nowrap;
+}
+
+.wrapall, .wrapall th, .wrapall td, .wrapall div, .wrapall span, .wrapall label {
+	word-wrap: break-word;
+	word-break: normal;
+}
+
+.plustable th {
+	background-color: #f6f6f6;
+	color: #666666;
+}
+
+.plustable td {
+	background-color: #fafafa;
+	color: #666666;
+}
+
+.graytable table {
+	BORDER-COLLAPSE: collapse;
+}
+
+.graytable tr {
+	background-color: #f8f8f8;
+}
+
+.graytable th, .graytable td {
+	border: solid 1px #eeeeee;
+	padding-left: 4px;
+	padding-right: 2px;
+}
+
+.baseftclr, .baseftclr td, .baseftclr th, .baseftclr div, .baseftclr label, .baseftclr li, .baseftclr a:link {
+	color: #0b0b0b;
+}
+
+.list_b_rb {
+	BORDER-RIGHT: #f1f1f1 1px solid;
+	BORDER-BOTTOM: #f1f1f1 1px solid;
+}
+
+.list_b_rbl {
+	BORDER-RIGHT: #f1f1f1 1px solid;
+	BORDER-BOTTOM: #f1f1f1 1px solid;
+	BORDER-LEFT: #f1f1f1 1px solid;
+}
+
+.list_b_rl {
+	BORDER-RIGHT: #f1f1f1 1px solid;
+	BORDER-LEFT: #f1f1f1 1px solid;
+}

@@ -1,0 +1,45 @@
+﻿@page "~/bb"
+@namespace FTFrame.Web.Core.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FTFrame.Web.Core</title>
+    <base href="~/" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link href="css/site.css" rel="stylesheet" />
+       @if (Request.Path.Value == "/bb") {
+    <script>
+       window.GetValById = (id) => {
+           return document.getElementById(id).value;
+       };
+       function GetValueById(id) {
+           return document.getElementById(id).value;
+       }
+       function GetValueByElement(obj) {
+           return obj.value;
+       }
+       function InnerHTML(id,html) {
+           document.getElementById(id).innerHTML = html;
+       }
+       function AddUser() {
+           //DotNet.invokeMethod 同步执行
+           InnerHTML("msgarea", "Waiting...");
+           DotNet.invokeMethodAsync('FTFrame.Web.Core','AddUserName', GetValueById("newUserName2")).then(data => {
+               if (data != null) alert(data);
+               else alert('操作成功');
+               InnerHTML("msgarea", "Waiting...OK");
+           });
+        }
+    </script>
+}
+</head>
+<body style="background-color:gainsboro">
+    <app>@(await Html.RenderComponentAsync<App>())</app>
+
+    <script src="_framework/blazor.server.js"></script>
+
+</body>
+</html>

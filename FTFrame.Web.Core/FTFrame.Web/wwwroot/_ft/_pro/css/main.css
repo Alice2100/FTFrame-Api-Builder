@@ -1,0 +1,260 @@
+﻿body {
+	margin: 0px; padding: 0px; color: rgb(11, 11, 11); font-family: "微软雅黑","宋体",airal,verdana,tahoma,helvetica; font-size: 12px; word-wrap: break-word;
+}
+input,button,th,td,p,div,textarea,label,h3,h2,h1,a,li,span,div{font-family:"微软雅黑","宋体",airal,verdana,tahoma,helvetica; font-size: 12px;}
+img{border:solid 0px;}
+ul {
+	margin: 0px; padding: 0px; list-style-type: none;
+}
+li {
+	margin: 0px; padding: 0px; list-style-type: none;
+}
+dl {
+	margin: 0px; padding: 0px; list-style-type: none;
+}
+dt {
+	margin: 0px; padding: 0px; list-style-type: none;
+}
+dd {
+	margin: 0px; padding: 0px; list-style-type: none;
+}
+p {
+	margin: 0px; padding: 0px;
+}
+input {
+	margin: 0px; padding: 0px;
+}
+form {
+	margin: 0px; padding: 0px;
+}
+h1 {
+	margin: 0px; padding: 0px; font-size: 12px; font-weight: normal;
+}
+h2 {
+	margin: 0px; padding: 0px; font-size: 12px; font-weight: normal;
+}
+h3 {
+	margin: 0px; padding: 0px; font-size: 12px; font-weight: normal;
+}
+h4 {
+	margin: 0px; padding: 0px; font-size: 12px; font-weight: normal;
+}
+h5 {
+	margin: 0px; padding: 0px; font-size: 12px; font-weight: normal;
+}
+h6 {
+	margin: 0px; padding: 0px; font-size: 12px; font-weight: normal;
+}
+img {
+	border: 0px currentColor;
+}
+a              { color: #57a000; text-decoration: none; }
+a:hover     { color: #000; }
+a:active     { color: #777; }
+a:focus     { outline: 1px; }
+.topradius{border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px;}
+.bottomradius{border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px;}
+.radius{border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px;border-bottom-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px;}
+.rightradius{border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px;}
+.leftmar{margin-left:20px;}
+.clear{clear:both;}
+#menutd{
+width:210px;height:100%;padding:0px 1px;vertical-align:top;
+}
+#bodytd{
+padding:0px;vertical-align:top;height:100%;
+}
+.body{
+padding:0px;vertical-align:top;height:100%;
+}
+#menutd .logodiv{height:54px;cursor:pointer;}
+#menutd .updown{height:18px;text-align:center;padding-top:2px;padding-bottom:3px;margin:0px 3px}
+#menutd #menudiv{width:100%;overflow:hidden;padding:0px;margin:0px}
+#menutd #menudiv .menu{height:32px;text-align:center;padding:8px 11px 0px 12px;margin:3px;font-size:130%;background:#2b2b2b no-repeat 10px 8px;color:#d2d2d2;cursor:pointer;}
+#menutd #menudiv .menu img{display:none;float:right;margin:7px 6px 0px 0px;cursor:pointer}
+.submenu{display:none;position:absolute;top:0px;left:40px;background-color:#212121;z-index:99999;color:#d2d2d2;padding:2px 1px 2px 0px;}
+.submenu .smcate{border-right:dashed 1px #666666;float:left;width:180px;}
+.submenu .smitem{padding:0px 8px;background-color:#2b2b2b;margin:2px;font-size:125%;line-height:200%;cursor:pointer;}
+.submenu .smhead{padding:0px 8px;font-weight:bold;background-color:#353535;margin:2px;font-size:135%;line-height:200%;color:#20A0E9;}
+.title{float:left;font-size:180%;padding:2px 0px 4px 12px;}
+.logout{float:right;padding:6px 12px 3px 0px;}
+/*************** Content Box ***************/
+
+.content-box {
+                border: 1px solid #ccc;
+                margin: 10px 0 10px 0;
+                background: #fff;
+                }
+
+.content-box-header {
+                background: #e5e5e5 url('../img/pro/bg-content-box.gif') top left repeat-x;
+                margin-top: 1px;
+                height: 32px;
+                }
+
+.content-box-header h3 {
+                padding: 5px 0px 14px 12px;font-size:130%;font-weight:bold;
+                float: left;
+                }
+.content-box-header .content-box-updown {
+                float:right;width:20px;padding:8px 8px 6px 0px;
+                }
+.content-box-icon {
+	float:right;padding:10px 10px 0px 0px;
+}
+ul.content-box-tabs {
+                float: right;
+                padding: 7px 13px 0 0 !important;
+				margin: 0 !important;
+                }
+
+ul.content-box-tabs li {
+                float: left;
+                margin: 0;
+                padding: 0 !important;
+                background-image: none !important;
+                }
+                
+ul.content-box-tabs li a {
+                color: rgb(11, 11, 11);
+                padding: 3px 10px 5px 10px;
+                display: block;
+                margin: 1px;
+                border-bottom: 0;
+				border-top-left-radius: 3px; -moz-border-radius-topleft: 3px; -webkit-border-top-left-radius: 3px; border-top-right-radius: 3px; -moz-border-radius-topright: 3px; -webkit-border-top-right-radius: 3px;
+                }
+
+ul.content-box-tabs li a:hover {
+                color: #57a000;
+                }              
+                
+ul.content-box-tabs li a.current {
+                background: #fff;
+                border: 1px solid #ffffff;
+                border-bottom: 0;
+                margin: 0;
+                }
+ul.content-box-tabs li a.currentlottabs {
+                background: aliceblue;
+                border: 1px solid aliceblue;
+                }
+
+.content-box-content {
+                padding: 10px;
+                font-size: 13px;
+                border-top: 1px solid #ffffff;
+                }
+                
+/************ Table ************/
+
+.tab-content table {
+                width: 100%;
+                border-collapse:collapse;
+                }
+                
+.tab-content table thead th {
+                font-weight: bold;
+                font-size: 14px;
+                background-color:#FFFFFF;
+                /*border-bottom: 1px solid #ddd;*/
+                }
+.tab-content tbody {
+                border-bottom: 1px solid #ddd;
+                }
+                
+.tab-content tbody tr {
+                background: #ffffff;
+                }
+              
+.tab-content tbody tr.alt-row {
+                /*background: #f3f3f3;*/
+                background: #ffffff;
+                }
+.tab-content table.bigtable th {
+                padding: 5px 3px 7px 4px;
+                }
+.tab-content table.bigtable td 
+{border-top: 1px solid #eee;
+	vertical-align:middle;
+                padding: 7px 3px 7px 4px;
+                }
+.tab-content table.bigtable .setcolumn 
+{
+	text-align:right;
+	width:25%;
+	padding:14px 30px 14px 4px;
+                } 
+.tab-content table.LineNoWrap td,#main-content table.LineNoWrap th 
+{
+	white-space:nowrap;
+}
+.tab-content table.bigtable td.ftbtntd {
+                padding: 4px 4px 4px 4px;
+                }
+.tab-content table.bigtable td.fticontd 
+{
+				vertical-align:middle;
+                padding: 7px;
+                }
+.tab-content table td
+{				/*border-top: 1px solid #eee;*/
+                padding: 7px;
+                line-height: 1.3em;
+                }
+.tab-content tr.leveltr
+{				
+                background-color:#FBFDFF;
+                }
+.tab-content table th 
+{
+                padding: 7px;
+                line-height: 1.3em;
+                }              
+/************ Shortcut Buttons ************/
+
+.shortcut-button {
+                border: 1px solid #ccc;
+                background: #f7f7f7 url('/_ft/_pro/img/pro/shortcut-button-bg.gif') top left no-repeat;
+                display: block;
+                width: 96px;
+                margin: 0 0 10px 0;}
+
+.shortcut-button span {
+                border: 1px solid #fff;
+                display:block;
+                padding: 15px 0px 8px 0px;
+                text-align: center;
+                color: rgb(11, 11, 11);
+                font-size: 13px;
+                line-height: 1.3em;
+                }
+
+.shortcut-button span img {
+                margin-bottom: 5px;margin-top:-4px;
+                }
+
+.shortcut-button:hover {
+                background: #fff;
+				
+                }
+				
+.shortcut-button span:hover {
+				color: #57a000; 
+                }
+ul.shortcut-buttons-set
+{
+	margin-top:-10px;margin-bottom:0px;height:100px;border:solid 1px transparent;padding-bottom:2px;
+}
+ul.shortcut-buttons-set li {
+                float: left;
+                margin: 0px 10px 0 0;
+				padding: 0 !important;
+				background: 0;
+                }
+#footer {
+text-align:center;
+color:#999999;
+				margin: 20px 0 0 0;
+				padding: 10px;
+				font-size: 90%;
+                }

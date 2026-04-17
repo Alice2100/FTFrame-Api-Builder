@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="errorText.Text" xml:space="preserve">
+    <value>FTDP V2.0 ...
+FTDP V1.1更新
+平台：
+	1、WebConfig加入参数requestValidationMode="2.0"
+	2、流程设计构件与表单系统绑定，实现流程设计服务
+	3、发布后标签表单元素自动置空
+SiteMatrix：
+	1、解决编辑窗口resize不能充满窗体和滚动条空隙问题
+	2、流程操作按钮可绑定流程设计控件，并可实现退回上一步
+	3、流程操作增加固定分支和固定状态值位置选项
+	4、修正V4.0表单系统已发现问题
+	5、表格固定列增加flowpos流程位置
+	6、datalist列定义增加另存功能设置
+	7、解决编辑区右键菜单位置不正确问题
+	8、解决导入页面时必需项为空问题
+	9、重构编辑时代码切换到编辑模式功能
+	10、编辑标签时现在不会再程序挂起
+	11、双击数据列表片段可直接定义列
+	12、后台取值时字典和多行SQL自动生成
+ServerSide：
+	1、重构表单流程操作，引入流程设计构件绑定
+	2、表单数据新增操作时，引入流水号构件绑定
+	3、在表单数据操作删除、批量状态、复制的基础上再增加另存为
+	4、流程日志增加列fpos，流程位置
+	5、后台取值自动识别动态新增行修改
+构件：
+	1、更新datalist数据列表，修正链接和特殊字符模糊查询问题
+	2、增加flowdesign流程设计构件，可在线设计流程与流转条件（支持@语法及[fid][flow][NULL]）
+	3、增加liquid流水号构件，实现自定义格式和全自增和分段自增多种方式
+	4、datalist数据列表构件增加数据另存功能，并自动开启修改模式
+	5、解决日历构件与jquery冲突问题
+	6、修改数据列表构件，调整翻页参数，可保留查询条件，直接取动态新增行
+	7、后台取值构件修改，可自动识别动态新增行取值
+FTDP V1.0更新：
+平台：
+	1、升级到Framework4.0，支持32/64位系统
+	2、升级默认MySQL数据库版本为5.6，升级Access数据库驱动程序AccessDatabaseEngine
+	3、重构权限系统，构件Role、Datalist、Menu与表单系统结合实现复杂权限配置
+	4、推出V4表单系统平台，废弃V3表单系统，设计新表单系统模式
+	5、表单操作按钮不再区分新增和修改，亦能支持一次更新多张表和多份数据
+	6、表单业务操作支持新版本数据库的事务操作
+	7、会话应用于独立的状态服务，而不是原先的进程模式，避免会话意外丢失
+	8、权限系统同时运用于普通页面、表单页面、构件片段等各级别
+SiteMatrix：
+	1、运用新表单系统，建数据业务模型，再绑定到表单元素，废弃V3表单设计模式
+	2、表单操作按钮新增AppendSQL和RedirectURL参数，额外执行SQL及跳转页面设置
+	3、升级新框架下的Editor编辑器问题
+	4、解决页面切换冗余操作，及造成页面空白数据丢失问题
+	5、可选定指定文件发布，亦可右键点击页面快速发布单个页面
+	6、解决构件覆盖时资源文件导入不完全导致文件缺失问题
+	7、更新同步功能，解决差量发布导致站点误覆盖问题
+	8、废弃二级子流程功能，将来由自定义流程和状态触发控件替代
+	9、配合新表单模式，相应同步、发布、导入、导出、模板功能升级
+	10、构件参数配置支持：选择实例数据源、SQL编辑及实时测试、Datalist列定义
+ServerSide：
+	1、升级window.js，form.js,portalbottom.js，解决跨浏览器、页面缓存、取参数、filter报错等问题
+	2、页面默认引入jquery1.9.1，可再页面直接使用jquery
+	2、增加@语法支持，在构件中广泛运用，且解析效率比原先大大提升
+	3、升级发布系统，且应用新表单系统
+	4、分离表单日志表，建立单独的流程操作日志表
+	5、WebConfig文件新增FormDataMode和ODBCProvider参数，支持旧版本表单模式和自定义数据驱动模式
+	6、精简表单发布后页面js，并修改表单提交参数提交为全部post方式
+	7、统一DateTime类型转字符串模式，避免在不同服务器上可能带来的转化结果不同
+	8、新增行存储为Dydata模式，大大减少新增行数据的频繁空读问题
+	9、发布时自动创建和更新指定表单数据表
+构件：
+	1、新增V4.Datalist数据列表构件，合并数据列表和数据操作菜单，新整合导出、复制、流程等操作，用来替代V3的workflow和workflowfuc
+	2、Datalist支持丰富的权限接口，适用范围更广，设定更便捷、运行速度更快、表现更丰富，并支持列排序，列宽拖动等效果
+	3、Role构件，前后台各新增片段（用户绑定资源、资源绑定用户、角色绑定数据、角色绑定状态）
+	3、新增Select构件，可在页面动态弹出层取值，支持动态参数和复选模式
+	4、新增Doc构件，Flash展示pdf文档功能，上传至服务器后自动转Flash9版本文件
+	5、workflow增加参数，可与role权限角色绑定
+	6、升级构件部署程序，使之能支持旧版本构件部署，只读文件问题等修改
+	7、构件清理，更换图标和分类，在SiteMatrix安装后，默认载入所有构件</value>
+  </data>
+</root>

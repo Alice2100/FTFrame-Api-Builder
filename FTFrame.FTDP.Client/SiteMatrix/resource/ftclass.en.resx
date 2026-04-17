@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="z021" xml:space="preserve">
+    <value>/*View code reference:</value>
+  </data>
+  <data name="z022" xml:space="preserve">
+    <value>/*List component methods, properties, events:</value>
+  </data>
+  <data name="z023" xml:space="preserve">
+    <value>Event callback:</value>
+  </data>
+  <data name="z024" xml:space="preserve">
+    <value>@beforeLoad: The event before obtaining data from the interface, with optional parameters being the component object</value>
+  </data>
+  <data name="z025" xml:space="preserve">
+    <value>@beforeSet: an event that has not yet been assigned a value after obtaining data from the interface, with optional parameters being the component object</value>
+  </data>
+  <data name="z026" xml:space="preserve">
+    <value>@afterLoad: Event after assignment, optional parameter is component object</value>
+  </data>
+  <data name="z027" xml:space="preserve">
+    <value>Custom method:</value>
+  </data>
+  <data name="z028" xml:space="preserve">
+    <value>Retention methods and attributes:</value>
+  </data>
+  <data name="z029" xml:space="preserve">
+    <value>: Load, optional parameter is the sequence parameter of apiUrl</value>
+  </data>
+  <data name="z030" xml:space="preserve">
+    <value>: Search</value>
+  </data>
+  <data name="z031" xml:space="preserve">
+    <value>: Reset</value>
+  </data>
+  <data name="z032" xml:space="preserve">
+    <value>: Export to Excel</value>
+  </data>
+  <data name="z033" xml:space="preserve">
+    <value>: Return selected object</value>
+  </data>
+  <data name="z034" xml:space="preserve">
+    <value>: File Download</value>
+  </data>
+  <data name="z035" xml:space="preserve">
+    <value>: Get call</value>
+  </data>
+  <data name="z036" xml:space="preserve">
+    <value>: Post call</value>
+  </data>
+  <data name="z037" xml:space="preserve">
+    <value>: Batch operations</value>
+  </data>
+  <data name="z038" xml:space="preserve">
+    <value>: The default attribute value is' 1 ', will it be automatically loaded</value>
+  </data>
+  <data name="z039" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="z040" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="z041" xml:space="preserve">
+    <value>End Date</value>
+  </data>
+  <data name="z042" xml:space="preserve">
+    <value>List component:</value>
+  </data>
+  <data name="z043" xml:space="preserve">
+    <value>Sequence Parameter</value>
+  </data>
+  <data name="z044" xml:space="preserve">
+    <value>Execute load</value>
+  </data>
+  <data name="z045" xml:space="preserve">
+    <value>Config</value>
+  </data>
+  <data name="z046" xml:space="preserve">
+    <value>Search Data Definition</value>
+  </data>
+  <data name="z047" xml:space="preserve">
+    <value>//Initialize data definitions, such as data from dropdown search boxes</value>
+  </data>
+  <data name="z048" xml:space="preserve">
+    <value>//Query parameter construction</value>
+  </data>
+  <data name="z049" xml:space="preserve">
+    <value>//Build upon reset</value>
+  </data>
+  <data name="z050" xml:space="preserve">
+    <value>//Load pre script, return false to block</value>
+  </data>
+  <data name="z051" xml:space="preserve">
+    <value>//Script before assignment, return false to block</value>
+  </data>
+  <data name="z052" xml:space="preserve">
+    <value>//Script after assignment</value>
+  </data>
+  <data name="z053" xml:space="preserve">
+    <value>List component registration:</value>
+  </data>
+  <data name="z054" xml:space="preserve">
+    <value>Open methods for list components: load (Paras), search for search(), reset reset(), customize method fun ('fname '), export Excel (maxRow, exportName), and retrieve the selected object selection(); The attribute loadauto defines whether to automatically load;</value>
+  </data>
+  <data name="z055" xml:space="preserve">
+    <value>List component references external methods:</value>
+  </data>
+  <data name="z056" xml:space="preserve">
+    <value>//Custom Script</value>
+  </data>
+  <data name="z057" xml:space="preserve">
+    <value>/*Form component methods, properties, events:</value>
+  </data>
+  <data name="z058" xml:space="preserve">
+    <value>@beforeGet: The event before obtaining data from the interface, with optional parameters being the component object</value>
+  </data>
+  <data name="z059" xml:space="preserve">
+    <value>@beforeSet: an event that has not yet been assigned a value after obtaining data from the interface, with optional parameters being the component object</value>
+  </data>
+  <data name="z060" xml:space="preserve">
+    <value>@afterSet: Event after assignment, optional parameter is component object</value>
+  </data>
+  <data name="z061" xml:space="preserve">
+    <value>@beforeSubmit: Event before submission, optional parameter is component object</value>
+  </data>
+  <data name="z062" xml:space="preserve">
+    <value>@afterSubmit: Event after successful submission, optional parameter is component object</value>
+  </data>
+  <data name="z063" xml:space="preserve">
+    <value>: Load data, where params is the sequence parameter of the interface and the string after/in the URL</value>
+  </data>
+  <data name="z064" xml:space="preserve">
+    <value>: Reset. When the optional parameter is true, all are left blank</value>
+  </data>
+  <data name="z065" xml:space="preserve">
+    <value>: Submit operation</value>
+  </data>
+  <data name="z066" xml:space="preserve">
+    <value>: File Download</value>
+  </data>
+  <data name="z067" xml:space="preserve">
+    <value>: Get call</value>
+  </data>
+  <data name="z068" xml:space="preserve">
+    <value>: Post call</value>
+  </data>
+  <data name="z069" xml:space="preserve">
+    <value> Cannot be empty</value>
+  </data>
+  <data name="z070" xml:space="preserve">
+    <value> Must be an integer</value>
+  </data>
+  <data name="z071" xml:space="preserve">
+    <value> Must be a number</value>
+  </data>
+  <data name="z072" xml:space="preserve">
+    <value> Must be in date format</value>
+  </data>
+  <data name="z073" xml:space="preserve">
+    <value> Must be a mobile phone number</value>
+  </data>
+  <data name="z074" xml:space="preserve">
+    <value> Must be an email address</value>
+  </data>
+  <data name="z075" xml:space="preserve">
+    <value> Must be ID number</value>
+  </data>
+  <data name="z076" xml:space="preserve">
+    <value> Must be a website address</value>
+  </data>
+  <data name="z077" xml:space="preserve">
+    <value> Must include Chinese</value>
+  </data>
+  <data name="z078" xml:space="preserve">
+    <value>The length must be between {1} and {2}</value>
+  </data>
+  <data name="z079" xml:space="preserve">
+    <value>The length must be no less than</value>
+  </data>
+  <data name="z080" xml:space="preserve">
+    <value>The length must not be greater than</value>
+  </data>
+  <data name="z081" xml:space="preserve">
+    <value>Form component:</value>
+  </data>
+  <data name="z082" xml:space="preserve">
+    <value>Execute fill</value>
+  </data>
+  <data name="z083" xml:space="preserve">
+    <value>//Custom JS</value>
+  </data>
+  <data name="z084" xml:space="preserve">
+    <value>//Data definition</value>
+  </data>
+  <data name="z085" xml:space="preserve">
+    <value>//Initialize data definition</value>
+  </data>
+  <data name="z086" xml:space="preserve">
+    <value>//Form Fill Definition</value>
+  </data>
+  <data name="z087" xml:space="preserve">
+    <value>//Form Submission Definition</value>
+  </data>
+  <data name="z088" xml:space="preserve">
+    <value>//Load pre script, return false to block</value>
+  </data>
+  <data name="z089" xml:space="preserve">
+    <value>//Script before assignment, return false to block</value>
+  </data>
+  <data name="z090" xml:space="preserve">
+    <value>//Script after assignment</value>
+  </data>
+  <data name="z091" xml:space="preserve">
+    <value>//Pre submission script, return false to block</value>
+  </data>
+  <data name="z092" xml:space="preserve">
+    <value>//Script after submission</value>
+  </data>
+  <data name="z093" xml:space="preserve">
+    <value>Form component registration:</value>
+  </data>
+  <data name="z094" xml:space="preserve">
+    <value>Open method for form components: load fill (params), submit submit(), reset reset(), customize method fun ('fname '), file download fileDownload (fileInfo) parameter params is the sequence parameter of the Get interface, fun is the callback function after submission;</value>
+  </data>
+  <data name="z095" xml:space="preserve">
+    <value>Form component references external methods:</value>
+  </data>
+  <data name="z096" xml:space="preserve">
+    <value>Note: Numbers should be assigned</value>
+  </data>
+  <data name="z097" xml:space="preserve">
+    <value>Note: An array should be assigned</value>
+  </data>
+  <data name="z098" xml:space="preserve">
+    <value>Generate from template</value>
+  </data>
+  <data name="z099" xml:space="preserve">
+    <value>=&gt; Unmatched</value>
+  </data>
+  <data name="z100" xml:space="preserve">
+    <value>Note: The value is a number</value>
+  </data>
+  <data name="z101" xml:space="preserve">
+    <value>Note: Values are arrays</value>
+  </data>
+  <data name="z102" xml:space="preserve">
+    <value>Name based on Api input parameters or automatically</value>
+  </data>
+</root>

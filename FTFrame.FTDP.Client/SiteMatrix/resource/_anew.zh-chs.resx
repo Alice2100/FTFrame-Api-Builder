@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApiList.ColBtn" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="ApiList.Copy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="ApiList.DataOP" xml:space="preserve">
+    <value>数据操作</value>
+  </data>
+  <data name="ApiList.label1" xml:space="preserve">
+    <value>可调用的数据操作接口</value>
+  </data>
+  <data name="Rule.BindFirst" xml:space="preserve">
+    <value>必须先绑定表</value>
+  </data>
+  <data name="Rule.btn_apipath" xml:space="preserve">
+    <value>过 滤</value>
+  </data>
+  <data name="Rule.btn_bindall" xml:space="preserve">
+    <value>绑 定</value>
+  </data>
+  <data name="Rule.btn_removeall" xml:space="preserve">
+    <value>解 除</value>
+  </data>
+  <data name="Rule.button1" xml:space="preserve">
+    <value>搜 索</value>
+  </data>
+  <data name="Rule.Copy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="Rule.deleteconfirm" xml:space="preserve">
+    <value>删除该节点同时删除该节点下的所有节点，是否继续？</value>
+  </data>
+  <data name="Rule.jiaoyan" xml:space="preserve">
+    <value>校验</value>
+  </data>
+  <data name="Rule.jiaoyan1" xml:space="preserve">
+    <value>不能为空</value>
+  </data>
+  <data name="Rule.jiaoyan2" xml:space="preserve">
+    <value>整数</value>
+  </data>
+  <data name="Rule.jiaoyan3" xml:space="preserve">
+    <value>数字</value>
+  </data>
+  <data name="Rule.jiaoyan4" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="Rule.label1" xml:space="preserve">
+    <value>选择Api接口，绑定目录应用</value>
+  </data>
+  <data name="Rule.label_apipath" xml:space="preserve">
+    <value>绑定接口</value>
+  </data>
+  <data name="Rule.label_caption" xml:space="preserve">
+    <value>名   称</value>
+  </data>
+  <data name="Rule.label_column" xml:space="preserve">
+    <value>绑定字段</value>
+  </data>
+  <data name="Rule.label_rule" xml:space="preserve">
+    <value>规则定义</value>
+  </data>
+  <data name="Rule.label_table" xml:space="preserve">
+    <value>绑定表</value>
+  </data>
+  <data name="Rule.leixing" xml:space="preserve">
+    <value>类型：</value>
+  </data>
+  <data name="Rule.Menu_Clone" xml:space="preserve">
+    <value>克隆(&amp;K)</value>
+  </data>
+  <data name="Rule.Menu_Dell" xml:space="preserve">
+    <value>删除(&amp;D)</value>
+  </data>
+  <data name="Rule.Menu_NewColumnRule" xml:space="preserve">
+    <value>新建字段规则(&amp;C)</value>
+  </data>
+  <data name="Rule.Menu_NewColumnRule_Bind" xml:space="preserve">
+    <value>通过绑定字段(&amp;B)</value>
+  </data>
+  <data name="Rule.Menu_NewColumnRule_Name" xml:space="preserve">
+    <value>通过输入名称(&amp;N)</value>
+  </data>
+  <data name="Rule.Menu_NewDir" xml:space="preserve">
+    <value>新建子目录(&amp;N)</value>
+  </data>
+  <data name="Rule.Menu_NewDir_Bind" xml:space="preserve">
+    <value>通过绑定接口(&amp;B)</value>
+  </data>
+  <data name="Rule.Menu_NewDir_Name" xml:space="preserve">
+    <value>通过输入名称(&amp;N)</value>
+  </data>
+  <data name="Rule.Menu_NewRootDir" xml:space="preserve">
+    <value>新建根目录(&amp;R)</value>
+  </data>
+  <data name="Rule.Menu_NewTableRule" xml:space="preserve">
+    <value>新建表规则(&amp;T)</value>
+  </data>
+  <data name="Rule.Menu_NewTableRule_Bind" xml:space="preserve">
+    <value>通过绑定表格(&amp;B)</value>
+  </data>
+  <data name="Rule.Menu_NewTableRule_Name" xml:space="preserve">
+    <value>通过输入名称(&amp;N)</value>
+  </data>
+  <data name="Rule.Menu_Refresh" xml:space="preserve">
+    <value>刷新(&amp;F)</value>
+  </data>
+  <data name="Rule.peizhibucunzai4" xml:space="preserve">
+    <value>配置中不存在同步</value>
+  </data>
+  <data name="Rule.peizhibucunzai5" xml:space="preserve">
+    <value>配置中不存在列</value>
+  </data>
+  <data name="Rule.shujubucunzai" xml:space="preserve">
+    <value>数据不存在</value>
+  </data>
+  <data name="Rule.weibangding" xml:space="preserve">
+    <value>[未绑定]</value>
+  </data>
+  <data name="Rule.weibangding2" xml:space="preserve">
+    <value>[未绑定接口 或 接口类型未知]</value>
+  </data>
+  <data name="Rule.wu" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="RuleC.Addnew" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="RuleC.cunzai" xml:space="preserve">
+    <value>存在</value>
+  </data>
+  <data name="RuleC.daijisuan" xml:space="preserve">
+    <value>带计算</value>
+  </data>
+  <data name="RuleC.dingzhi" xml:space="preserve">
+    <value>定值</value>
+  </data>
+  <data name="RuleC.listnotdefine" xml:space="preserve">
+    <value>列定义中未定义</value>
+  </data>
+  <data name="RuleC.mustdingzhi" xml:space="preserve">
+    <value>必须存在定值</value>
+  </data>
+  <data name="RuleC.mustjisuan" xml:space="preserve">
+    <value>必须带计算</value>
+  </data>
+  <data name="RuleC.myustvalidate" xml:space="preserve">
+    <value>必须存在校验</value>
+  </data>
+  <data name="RuleC.peizhibucunzai" xml:space="preserve">
+    <value>配置中不存在表</value>
+  </data>
+  <data name="RuleC.peizhibucunzaizid" xml:space="preserve">
+    <value>配置中不存在字段</value>
+  </data>
+  <data name="RuleC.peizhizhongbucunzai2" xml:space="preserve">
+    <value>配置中不存在新增</value>
+  </data>
+  <data name="RuleC.peizhizhongbucunzai3" xml:space="preserve">
+    <value>配置中不存在修改</value>
+  </data>
+  <data name="RuleC.tongbu" xml:space="preserve">
+    <value>同步</value>
+  </data>
+  <data name="RuleC.xiugai" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="RuleC.zidingyisql1" xml:space="preserve">
+    <value>自定义SQL中表不存在</value>
+  </data>
+  <data name="SitePara.button2" xml:space="preserve">
+    <value>增加判断条件</value>
+  </data>
+  <data name="SitePara.button3" xml:space="preserve">
+    <value>使用说明</value>
+  </data>
+  <data name="SitePara.button4" xml:space="preserve">
+    <value>选择接口</value>
+  </data>
+  <data name="SitePara.Help1" xml:space="preserve">
+    <value>1、在配置和SQL中用@para{name}来使用站点变量</value>
+  </data>
+  <data name="SitePara.Help10" xml:space="preserve">
+    <value>10、关闭站点参数窗体后，会刷新目标站点的变量定义，而无需重新发布页面</value>
+  </data>
+  <data name="SitePara.Help2" xml:space="preserve">
+    <value>2、带参数的变量使用为@para{name,a|b}，表示使用两个参数</value>
+  </data>
+  <data name="SitePara.Help3" xml:space="preserve">
+    <value>3、变量的name和参数都支持@code</value>
+  </data>
+  <data name="SitePara.Help4" xml:space="preserve">
+    <value>4、变量定义的内容中也同样支持@code和@para，实现变量和代码之间的调用</value>
+  </data>
+  <data name="SitePara.Help5" xml:space="preserve">
+    <value>5、变量参数在定义内容中使用@para1@到@para12@，支持12个参数</value>
+  </data>
+  <data name="SitePara.Help6" xml:space="preserve">
+    <value>6、条件定义同样支持@code和参数，但不支持变量</value>
+  </data>
+  <data name="SitePara.Help7" xml:space="preserve">
+    <value>7、条件定义还支持SQL取值，用@sql:定义</value>
+  </data>
+  <data name="SitePara.Help8" xml:space="preserve">
+    <value>8、支持操作执行，操作执行配置时支持@code、@para、@sql:、@api_，其中@api_为数据操作的接口可带@p@参数</value>
+  </data>
+  <data name="SitePara.Help9" xml:space="preserve">
+    <value>9、操作执行配置支持多项操作，用##分隔</value>
+  </data>
+  <data name="SitePara.label.Text" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="SitePara.label1" xml:space="preserve">
+    <value>标识</value>
+  </data>
+  <data name="SitePara.label2" xml:space="preserve">
+    <value>标题</value>
+  </data>
+  <data name="SitePara.label3" xml:space="preserve">
+    <value>说明</value>
+  </data>
+  <data name="SitePara.linkLabel.Text" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="SitePara.Msg1" xml:space="preserve">
+    <value>标识只能是英文数字下划线和.的组合</value>
+  </data>
+  <data name="SitePara.Msg2" xml:space="preserve">
+    <value>标识“{p}”已经存在，不能重复</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>当前下载进度</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>获取Api接口不存在</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>在获取接口中不存在</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>获取绑定为空</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>操作Api接口不存在</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>在操作接口中不存在</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>操作绑定为空</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>规则绑定的接口不存在</value>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>页面在本地不存在</value>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>组件或接口(指定类型)在本地不存在</value>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>详情</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>下载完成，下次打开应用程序后自动更新</value>
+  </data>
+  <data name="String20" xml:space="preserve">
+    <value>打开</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>下载出错</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>当前版本 {version} 为最新版本 或 未找到更新的内容</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>Api接口未定义</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>Api接口不存在</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>在接口中不存在</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>搜索定义 {row.Binding} 在数据列中不存在</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>获取和操作Api至少设置一个</value>
+  </data>
+</root>

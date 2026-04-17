@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="pageupdate.button1" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="pageupdate.button2" xml:space="preserve">
+    <value>全选</value>
+  </data>
+  <data name="pageupdate.button4" xml:space="preserve">
+    <value>选中需更新</value>
+  </data>
+  <data name="pageupdate_button1" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="pageupdate_col1" xml:space="preserve">
+    <value>文件名称</value>
+  </data>
+  <data name="pageupdate_col2" xml:space="preserve">
+    <value>版本最新</value>
+  </data>
+  <data name="pageupdate_col3" xml:space="preserve">
+    <value>本地更新</value>
+  </data>
+  <data name="pageupdate_wu" xml:space="preserve">
+    <value>（无）</value>
+  </data>
+  <data name="pageupdate_confirm" xml:space="preserve">
+    <value>更新后会替换选中的本地页面，是否继续？</value>
+  </data>
+  <data name="pageupdate_success" xml:space="preserve">
+    <value>更新成功</value>
+  </data>
+  <data name="PageAsist.TB5Caption" xml:space="preserve">
+    <value>页面辅助</value>
+  </data>
+  <data name="PageAsist.chongfu" xml:space="preserve">
+    <value>【重复】</value>
+  </data>
+  <data name="PageAsist.yifuzhi" xml:space="preserve">
+    <value>已复制</value>
+  </data>
+  <data name="PageAsist.jkdddd" xml:space="preserve">
+    <value>仅可对数据获取的主要片段进行操作</value>
+  </data>
+  <data name="PageAsist.jkdddd2" xml:space="preserve">
+    <value>仅可对数据列表、数据操作、数据获取的主要片段进行操作</value>
+  </data>
+  <data name="PageAsist.yishuaxinye" xml:space="preserve">
+    <value>已刷新页面辅助</value>
+  </data>
+  <data name="PageAsist.genggai" xml:space="preserve">
+    <value>更改</value>
+  </data>
+  <data name="PageAsist.copynew" xml:space="preserve">
+    <value>复制一个新的</value>
+  </data>
+  <data name="PageAsist.addnew" xml:space="preserve">
+    <value>新建一个新的</value>
+  </data>
+  <data name="PageAsist.yishanchu" xml:space="preserve">
+    <value>已删除组件</value>
+  </data>
+  <data name="PageAsist.kelongtihuan" xml:space="preserve">
+    <value>克隆并替换</value>
+  </data>
+  <data name="PageAsist.kelongnew" xml:space="preserve">
+    <value>克隆一个新的</value>
+  </data>
+  <data name="MainForm.openwithvscode" xml:space="preserve">
+    <value>用VSCode打开</value>
+  </data>
+  <data name="MainForm.ExportSinglePage" xml:space="preserve">
+    <value>导出该页面</value>
+  </data>
+  <data name="MainForm.BackUptoolStripMenuItem3" xml:space="preserve">
+    <value>历史备份</value>
+  </data>
+  <data name="MainForm.toolStripButton1" xml:space="preserve">
+    <value>快速发布当前打开激活页面</value>
+  </data>
+  <data name="MainForm.pa_div_fuzhi" xml:space="preserve">
+    <value>复制一个新的</value>
+  </data>
+  <data name="MainForm.pa_div_change" xml:space="preserve">
+    <value>更改</value>
+  </data>
+  <data name="MainForm.pa_div_del" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="MainForm.pa_div_dingwei" xml:space="preserve">
+    <value>定位</value>
+  </data>
+  <data name="MainForm.pa_part_clone_new" xml:space="preserve">
+    <value>克隆一个新的</value>
+  </data>
+  <data name="MainForm.pa_part_clone_change" xml:space="preserve">
+    <value>克隆并替换</value>
+  </data>
+  <data name="MainForm.pa_part_copyID" xml:space="preserve">
+    <value>复制标识</value>
+  </data>
+  <data name="MainForm.pa_part_setting" xml:space="preserve">
+    <value>绑定设置</value>
+  </data>
+  <data name="MainForm.pa_part_copyGetvalue" xml:space="preserve">
+    <value>复制异步方法</value>
+  </data>
+  <data name="MainForm.pa_part_del" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="MainForm.pa_part_copyLabel" xml:space="preserve">
+    <value>复制标签</value>
+  </data>
+  <data name="MainForm.pa_part_dingwei" xml:space="preserve">
+    <value>定位</value>
+  </data>
+  <data name="MainForm.pa_div_newdiv" xml:space="preserve">
+    <value>新建div层</value>
+  </data>
+  <data name="MainForm.pa_refresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="Editor.cloneToolStripMenuItem" xml:space="preserve">
+    <value>克隆构件实例</value>
+  </data>
+  <data name="Editor.cloneandreplaceToolStripMenuItem" xml:space="preserve">
+    <value>克隆构件实例并替换</value>
+  </data>
+  <data name="Editor.copypartidToolStripMenuItem" xml:space="preserve">
+    <value>复制片段标识</value>
+  </data>
+  <data name="Editor.ToolStdadadaripMenuItem" xml:space="preserve">
+    <value>复制片段标签</value>
+  </data>
+  <data name="ImportSel.noanypage" xml:space="preserve">
+    <value>没有任何页面</value>
+  </data>
+  <data name="ImportSel.canjustimportsingle" xml:space="preserve">
+    <value>只能导入单个页面</value>
+  </data>
+  <data name="ImportSel.label1" xml:space="preserve">
+    <value>新实例名称：</value>
+  </data>
+  <data name="ImportSel.button2" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ImportSel.button1" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="ImportSel.insertfailed" xml:space="preserve">
+    <value>插入失败!</value>
+  </data>
+  <data name="ImportSel.waid2second" xml:space="preserve">
+    <value>新片段未完全生成，是否继续等待2秒？</value>
+  </data>
+  <data name="ImportSel.waid5second" xml:space="preserve">
+    <value>确认后，开始执行替换，最长等待时间 5 秒！</value>
+  </data>
+  <data name="ImportSel.replacefailed" xml:space="preserve">
+    <value>新构件实例页面替换失败，请手动替换！</value>
+  </data>
+  <data name="ImportSel.pleasemanul" xml:space="preserve">
+    <value>未能执行替换，请手动替换！</value>
+  </data>
+  <data name="ImportSel.kelongfailed" xml:space="preserve">
+    <value>克隆失败!</value>
+  </data>
+  <data name="ImportSel.addfailed" xml:space="preserve">
+    <value>新构件实例页面添加失败，请手动替换！</value>
+  </data>
+  <data name="ImportSel.pleasemanul2" xml:space="preserve">
+    <value>未能执行添加，请手动添加！</value>
+  </data>
+  <data name="ImportSel.newcontrol" xml:space="preserve">
+    <value>新组件实例</value>
+  </data>
+  <data name="Option.delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Option.upload" xml:space="preserve">
+    <value>上传</value>
+  </data>
+  <data name="Option.current" xml:space="preserve">
+    <value>当前</value>
+  </data>
+  <data name="Option.mustopensite" xml:space="preserve">
+    <value>必须打开站点</value>
+  </data>
+  <data name="Option.filenotexist" xml:space="preserve">
+    <value>文件不存在！</value>
+  </data>
+  <data name="Option.domin123" xml:space="preserve">
+    <value>请指定上传网址，例如 http://www.abc.com 或 http://x.abc.com:81</value>
+  </data>
+  <data name="Option.uploading" xml:space="preserve">
+    <value>正在上传...</value>
+  </data>
+  <data name="Option.uploadsuccess" xml:space="preserve">
+    <value>上传成功！</value>
+  </data>
+  <data name="Option.pleaseselectfile" xml:space="preserve">
+    <value>请选择要上传到bin目录下的文件</value>
+  </data>
+  <data name="SiteImport.confirmpagereplace" xml:space="preserve">
+    <value>若页面 '{0}' 存在将被替换，继续吗？</value>
+  </data>
+  <data name="SplitPublish.Text" xml:space="preserve">
+    <value>分离发布</value>
+  </data>
+  <data name="SplitPublish.label1" xml:space="preserve">
+    <value>本地根目录</value>
+  </data>
+  <data name="SplitPublish.button1" xml:space="preserve">
+    <value>浏 览</value>
+  </data>
+  <data name="SplitPublish.label2" xml:space="preserve">
+    <value>站点根路径</value>
+  </data>
+  <data name="SplitPublish.checkBox1" xml:space="preserve">
+    <value>发布后文件名跟当前相同</value>
+  </data>
+  <data name="SplitPublish.label3" xml:space="preserve">
+    <value>注1：分离发布文件的本地相对于根目录的路径会映射在站点根路径。例如根目录为D:\abc，文件为D:\abc\x\1.html，站点根路径为main/则文件会被发布成main/x/1.aspx</value>
+  </data>
+  <data name="SplitPublish.label5" xml:space="preserve">
+    <value>注2：分离文件中的实例片段示例：&lt;ftdp:control id="abc_part" name="List" height="1px" width="100%"&gt;&lt;/ftdp:control&gt;。可右键复制片段标签获得。若要仅在发布时删除html元素，请在html元素加属性pubdel=true，则在发布时自动删除静态元素。</value>
+  </data>
+  <data name="SplitPublish.button2" xml:space="preserve">
+    <value>分离发布最近一次</value>
+  </data>
+  <data name="SplitPublish.label6" xml:space="preserve">
+    <value>最近一次分离发布</value>
+  </data>
+  <data name="SplitPublish.label4" xml:space="preserve">
+    <value>最近一次分离发布</value>
+  </data>
+  <data name="SplitPublish.label7" xml:space="preserve">
+    <value>前端框架</value>
+  </data>
+  <data name="SplitPublish.button3" xml:space="preserve">
+    <value>选择本地文件发布</value>
+  </data>
+  <data name="SplitPublish.button5" xml:space="preserve">
+    <value>服务器静态文件发布</value>
+  </data>
+  <data name="SplitPublish.button4" xml:space="preserve">
+    <value>关 闭</value>
+  </data>
+  <data name="SplitPublish.selwenjianjia" xml:space="preserve">
+    <value>请选择文件夹</value>
+  </data>
+  <data name="SplitPublish.wenjianjabunengweik" xml:space="preserve">
+    <value>文件夹路径不能为空</value>
+  </data>
+  <data name="SplitPublish.plaseselfile" xml:space="preserve">
+    <value>请选择文件</value>
+  </data>
+  <data name="SplitPublish.opensitefirst" xml:space="preserve">
+    <value>必须要先打开站点</value>
+  </data>
+  <data name="SplitPublish.lastpublished" xml:space="preserve">
+    <value>最近发布：</value>
+  </data>
+  <data name="SplitPublish.zhidingmulufirst" xml:space="preserve">
+    <value>请先指定本地根目录</value>
+  </data>
+  <data name="SplitPublish.zhidingmulufirst22" xml:space="preserve">
+    <value>请先指定站点根路径，以 / 结尾，顶级路径请输入  /</value>
+  </data>
+  <data name="SplitPublish.wenjianzaijx" xml:space="preserve">
+    <value>文件必须在本地根目录下面</value>
+  </data>
+  <data name="SplitPublish.chongfujianca" xml:space="preserve">
+    <value>片段实例出现重复，请检查！</value>
+  </data>
+  <data name="SplitPublish.pianduanbuunzai" xml:space="preserve">
+    <value>片段实例在当前站点中不存在！</value>
+  </data>
+  <data name="SplitPublish.weifaxianshili" xml:space="preserve">
+    <value>未发现任何片段实例</value>
+  </data>
+  <data name="SplitPublish.meiyouzujinjili" xml:space="preserve">
+    <value>没有最近发布分离文件的记录</value>
+  </data>
+  <data name="SplitPublish.qingxianzhidingjt" xml:space="preserve">
+    <value>请先指定服务器静态文件</value>
+  </data>
+  <data name="SplitPublish.qingxianzhidingjt2" xml:space="preserve">
+    <value>请先指定服务器静态文件，为磁盘绝对路径</value>
+  </data>
+  <data name="SplitPublish.qingxianzhidingjt23" xml:space="preserve">
+    <value>请先指定站点根路径，以 / 结尾，顶级路径请输入  /</value>
+  </data>
+  <data name="TagEdit.button6" xml:space="preserve">
+    <value>往前插入</value>
+  </data>
+  <data name="TagEdit.button5" xml:space="preserve">
+    <value>往后插入</value>
+  </data>
+  <data name="TagEdit.button4" xml:space="preserve">
+    <value>删除元素</value>
+  </data>
+  <data name="TagEdit.button3" xml:space="preserve">
+    <value>更新内部</value>
+  </data>
+  <data name="TagEdit.button1" xml:space="preserve">
+    <value>更新外部</value>
+  </data>
+  <data name="TagEdit.button2" xml:space="preserve">
+    <value>取 消</value>
+  </data>
+  <data name="TextEditor.button3" xml:space="preserve">
+    <value>帮助文档</value>
+  </data>
+  <data name="TextEditor.button7" xml:space="preserve">
+    <value>常用配置</value>
+  </data>
+  <data name="TextEditor.button4" xml:space="preserve">
+    <value>程序集调用</value>
+  </data>
+  <data name="TextEditor.button5" xml:space="preserve">
+    <value>脚本调用</value>
+  </data>
+  <data name="TextEditor.button6" xml:space="preserve">
+    <value>API调用</value>
+  </data>
+  <data name="Editor.cloneandAppendToolStripMenuItem" xml:space="preserve">
+    <value>克隆构件实例并追加</value>
+  </data>
+  <data name="MainForm.MenuViewInWeb" xml:space="preserve">
+    <value>浏览页面</value>
+  </data>
+  <data name="MainForm.ExportTableCols" xml:space="preserve">
+    <value>导出数据结构</value>
+  </data>
+  <data name="ToolMenu.QianDuan" xml:space="preserve">
+    <value>前端组件开发</value>
+  </data>
+  <data name="ToolMenu.QianDuanBackUp" xml:space="preserve">
+    <value>前端开发备份管理</value>
+  </data>
+  <data name="ToolMenu.SearchInConfig" xml:space="preserve">
+    <value>在配置中搜索</value>
+  </data>
+  <data name="ToolMenu.RuleDefine" xml:space="preserve">
+    <value>规则设计工具</value>
+  </data>
+  <data name="ToolMenu.Para" xml:space="preserve">
+    <value>站点参数定义</value>
+  </data>
+  <data name="ToolMenu.SitePara" xml:space="preserve">
+    <value>站点参数</value>
+  </data>
+  <data name="ToolMenu.QianDuanPage" xml:space="preserve">
+    <value>前端页面开发</value>
+  </data>
+  <data name="TextEditor.label.dataop" xml:space="preserve">
+    <value>数据操作高级列定义规则：
+
+1、不为空时默认返回所填字符串，而无视Name/Key输入；
+2、当配置为@sql:起始字符串，则返回该SQL查询值（首行首列）；
+
+配置项支持变量替换：
+1、序列参数@p[n]@，例如@p1@、@p2@；
+2、@key([name])，从输入参数获取，例如@key(username)；
+3、@code([define])，从定义好的后台方法中获取；
+4、@enum([define])，从站点参数定义的枚举获取；
+5、@dic([define])，从服务端定义的字典表获取；
+6、@para{[define]}，从站点参数定义中获取；
+7、@from([@table.col])，从其他字段的最终值获取；
+8、其他：@empty@ 空值、@newfid@ 新增时的主键值
+
+多行操作配置为重置或更新时，高级列需仅配置筛选条件</value>
+  </data>
+  <data name="TextEditor.label.dyvalue" xml:space="preserve">
+    <value>数据获取高级列定义规则：
+1、不为空时默认识别为sql，根据sql输出查询结果，若配置了多行或维表则输出为数组对象，否则返回该SQL查询结果的首行首列值；
+2、当配置为@code(起始字符串，则返回该后台方法的值；
+3、当配置为sql@code(起始字符串，则返回该后台方法的值作为sql再查询；
+4、当配置为str@code(起始字符串，则返回'原字段值以@val@作为参数调用后台方法'的值；
+5、当配置为@api_起始字符串，则返回调用该接口的json；
+6、当配置为@sql:起始字符串，则同1；
+配置项支持变量替换：
+1、序列参数@p[n]@，例如@p1@、@p2@；
+2、@key([name])，从待输出参数获取，例如@key(username)；
+3、@code([define])，从定义好的后台方法中获取；
+4、@enum([define])，从站点参数定义的枚举获取；
+5、@dic([define])，从服务端定义的字典表获取；
+6、@para{[define]}，从站点参数定义中获取；</value>
+  </data>
+  <data name="TextEditor.label.filterrule" xml:space="preserve">
+    <value>筛选规则（一般用于查询或更新）：
+
+一、以” 列名=值“ 的方式筛选数据（默认以主键列作为筛选列）
+ 1、列的定义
+	(1)、默认以服务端已配置主键列名（按表）；
+	(2)、组件参数”主键列名“可覆盖或重新定义该组件所有配置的筛选列名；
+	(3)、规则定义的每一项可再次覆盖以上定义，覆盖筛选列定义时必须也同时定义筛选值，例如@p1@,newId
+ 2、值的定义
+	(1)、默认以第一个序列参数作为筛选值，既@p1@；
+	(2)、组件参数”默认主键值“可覆盖或重新定义该组件所有配置的筛选值；
+	(3)、规则定义的每一项可再次覆盖以上定义，例如@p2@，或例如@key(newId)
+
+规则定义的每一项可以仅定义筛选值，也可筛选值和筛选列同时定义（用,隔开），不可单独定义筛选列
+
+二、自定义筛选条件
+ 1、where 起始字符串，例如 where name='@key(user)' and area='@p1@'
+
+三、配置项支持变量替换：
+1、序列参数@p[n]@，例如@p1@、@p2@；
+2、@key([name])，从输入参数获取，例如@key(username)；
+3、@code([define])，从定义好的后台方法中获取；
+4、@enum([define])，从站点参数定义的枚举获取；
+5、@dic([define])，从服务端定义的字典表获取；
+6、@para{[define]}，从站点参数定义中获取；
+7、@from([@table.col])，从其他字段的最终值获取；</value>
+  </data>
+  <data name="MainForm.ExportApiDic" xml:space="preserve">
+    <value>导出Api文档</value>
+  </data>
+</root>

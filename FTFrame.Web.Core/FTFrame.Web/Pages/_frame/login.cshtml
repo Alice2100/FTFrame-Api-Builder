@@ -1,0 +1,97 @@
+﻿@page
+@using FTFrame.Project.Core
+@using FTFrame.Tool
+@namespace FTFrame.Web.Pages._frame
+@model loginModel
+@{Layout = null;}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="FTFrame" />
+    <meta name="description" content="FTFrame" />
+    <title>FTFrame Web Api Management</title>
+    <link rel="stylesheet" href="/_ft/_pro/res/css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/_ft/_pro/res/css/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/_ft/_pro/res/css/invalid.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="/_ft/_pro/res/js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="/_ft/_pro/res/js/facebox.js"></script>
+    <script type="text/javascript" src="/_ft/_pro/res/js/jquery.wysiwyg.js"></script>
+</head>
+
+<body id="login">
+    <div id="login-wrapper" class="png_bg">
+        <div id="login-top" style="font-size:160%">
+            Web Api Management
+        </div> <!-- End #logn-top -->
+
+        <div id="login-content">
+
+            <form name="loginform" id="loginform" action="login@(Model.GetPath())" method="post" onsubmit="return logincheck()">
+
+                <div class="notification information png_bg">
+                    <div>
+                        Enter username and password
+                    </div>
+                </div>
+
+                <p>
+                    <label for="username">UserName</label>
+                    <input class="text-input" type="text" id="username" name="username" style="font-size:14px" />
+                </p>
+                <div class="clear"></div>
+                <p>
+                    <label for="password">PassWord</label>
+                    <input class="text-input" type="password" id="password" name="password" style="font-size:14px" />
+                </p>
+                @{
+                    if (session.GetString("LastEnterTime") != null)
+                    {
+                        TimeSpan ts1 = new TimeSpan(DateTime.Now.Ticks);
+                        TimeSpan ts2 = new TimeSpan(DateTime.Parse(session.GetString("LastEnterTime")).Ticks);
+                        TimeSpan ts = ts1.Subtract(ts2).Duration();
+                        int passMinutes = ts.Minutes;
+                        if (passMinutes < FTFrame.SysConst.ValidateShowTime)
+                        {
+                    <div class="clear"></div>
+                    <p>
+                                <label for="valicode">Validate Code</label>
+                                <a style="float:right;margin-left:11px" href="javascript:ChangeCode()" title="can not see the characters clearly"><img id=valiimg alt="can not see the characters clearly" style="vertical-align:top;display:none" border=0 /></a>
+                                <input class="text-input" type="text" id="valicode" name="valicode" title="Please enter the verification code" maxlength=8 style="width:100px" />
+                    </p>
+                        }
+                    } }
+                <div class="clear"></div>
+                @*<p id="remember-password">
+                    <input type="checkbox" name="staylogin" value=1 id="staylogin" style="margin-bottom:0px" /><label for="staylogin" style="display:inline;font-weight:normal;font-size:90%;float:none;width:auto">保留我的登录状态</label>
+                </p>*@
+                <div class="clear"></div>
+                <p>
+                    <input class="button button-old" type="submit" value="Login" />
+                </p>
+            </form>
+        </div> <!-- End #login-content -->
+        <div align=center class="clear">
+            <strong style="color:#bbbbbb">&copy; 2020 - 2030  ftframe.com </strong><font color="#999999">ftframe.ftdp.server</font>
+        </div>
+    </div> <!-- End #login-wrapper -->
+    <span id="msgspan" style="display:none">@(Model.ResultMsg)</span>
+    <script language="JavaScript" type="text/javascript">
+        function logincheck() { if (document.loginform.username.value == "") { alert("Enter user name"); return false; } document.loginform.submit(); return false; }
+
+        function ChangeCode() {
+            if (document.getElementById("valiimg") == null) return;
+            document.getElementById("valiimg").src = "res/ValidateCode?now=" + new Date().getTime();
+            document.getElementById("valiimg").style.display = "";
+        }
+        ChangeCode();
+        @{
+        if(!string.IsNullOrEmpty(Model.ResultMsg))
+            {
+         @:       alert("@Html.Raw(Model.ResultMsg)");
+            }
+        }
+    </script>
+    <!--<iframe src="http://www.ftframe.com" border=0 frameborder=0 height="0" width="0"></iframe>-->
+</body>
+</html>

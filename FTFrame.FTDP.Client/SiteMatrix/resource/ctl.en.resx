@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Api_List.text" xml:space="preserve">
+    <value>Api Call</value>
+  </data>
+  <data name="Api_List.1" xml:space="preserve">
+    <value>Self calling should be avoided</value>
+  </data>
+  <data name="Api_List.2" xml:space="preserve">
+    <value>Module</value>
+  </data>
+  <data name="Api_List.3" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Api_List.4" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Api_List.5" xml:space="preserve">
+    <value>Path</value>
+  </data>
+  <data name="Api_List.6" xml:space="preserve">
+    <value>Developer</value>
+  </data>
+  <data name="Api_List.7" xml:space="preserve">
+    <value>Data List</value>
+  </data>
+  <data name="Api_List.8" xml:space="preserve">
+    <value>Data Getting</value>
+  </data>
+  <data name="Api_List.9" xml:space="preserve">
+    <value>Data Operation</value>
+  </data>
+  <data name="Code_List.text" xml:space="preserve">
+    <value>Assembly Call</value>
+  </data>
+  <data name="Code_List.button1" xml:space="preserve">
+    <value>&amp;Save</value>
+  </data>
+  <data name="Code_List.button2" xml:space="preserve">
+    <value>&amp;Add</value>
+  </data>
+  <data name="Code_List.button3" xml:space="preserve">
+    <value>Synchronize Config</value>
+  </data>
+  <data name="Code_List.1" xml:space="preserve">
+    <value>Current developer:</value>
+  </data>
+  <data name="Code_List.2" xml:space="preserve">
+    <value>Developer</value>
+  </data>
+  <data name="Code_List.3" xml:space="preserve">
+    <value>Calling aliases</value>
+  </data>
+  <data name="Code_List.4" xml:space="preserve">
+    <value>Calling method</value>
+  </data>
+  <data name="Code_List.5" xml:space="preserve">
+    <value>Return</value>
+  </data>
+  <data name="Code_List.6" xml:space="preserve">
+    <value>Assembly</value>
+  </data>
+  <data name="Code_List.7" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="Code_List.8" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="Code_List.9" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Code_List.10" xml:space="preserve">
+    <value>Successfully saved</value>
+  </data>
+  <data name="Code_List.11" xml:space="preserve">
+    <value>It already exists and cannot be duplicated.</value>
+  </data>
+  <data name="Code_Select.text" xml:space="preserve">
+    <value>Choose Public Method</value>
+  </data>
+  <data name="Common_Select.text" xml:space="preserve">
+    <value>Common Configuration</value>
+  </data>
+  <data name="Common_Select.1" xml:space="preserve">
+    <value>No valid activation page</value>
+  </data>
+  <data name="Common_Select.2" xml:space="preserve">
+    <value>Module</value>
+  </data>
+  <data name="Common_Select.3" xml:space="preserve">
+    <value>Function</value>
+  </data>
+  <data name="Common_Select.4" xml:space="preserve">
+    <value>Configuration</value>
+  </data>
+  <data name="Common_Select.5" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="DataOP_Api.text" xml:space="preserve">
+    <value>Data Operation Api</value>
+  </data>
+  <data name="DataOP_Api.label2" xml:space="preserve">
+    <value>Routing</value>
+  </data>
+  <data name="DataOP_Api.label1" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="DataOP_Api.label9" xml:space="preserve">
+    <value>Input (hide if begin of _ )</value>
+  </data>
+  <data name="DataOP_Api.label10" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="DataOP_Api.label11" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="DataOP_Api.1" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="DataOP_Api.2" xml:space="preserve">
+    <value>Component settings error</value>
+  </data>
+  <data name="DataOPDefine.text" xml:space="preserve">
+    <value>Data Operation Set</value>
+  </data>
+  <data name="DataOPDefine.button1" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="DataOPDefine.button3" xml:space="preserve">
+    <value>&amp;Paste</value>
+  </data>
+  <data name="DataOPDefine.button6" xml:space="preserve">
+    <value>Unified Table</value>
+  </data>
+  <data name="DataOPDefine.label1" xml:space="preserve">
+    <value>The</value>
+  </data>
+  <data name="DataOPDefine.label2" xml:space="preserve">
+    <value>Column</value>
+  </data>
+  <data name="DataOPDefine.button4" xml:space="preserve">
+    <value>Replace</value>
+  </data>
+  <data name="DataOPDefine.button2" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="DataOPDefine.button11" xml:space="preserve">
+    <value>Name=Column</value>
+  </data>
+  <data name="DataOPDefine.button9" xml:space="preserve">
+    <value>API Define</value>
+  </data>
+  <data name="DataOPDefine.button10" xml:space="preserve">
+    <value>Quick Define</value>
+  </data>
+  <data name="DataOPDefine.button7" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="DataOPDefine.1" xml:space="preserve">
+    <value>Name value must be set when configuring sub tables</value>
+  </data>
+  <data name="DataOPDefine.2" xml:space="preserve">
+    <value>When configuring a subtable, the bound field must be set to the bound subtable name</value>
+  </data>
+  <data name="DataOPDefine.3" xml:space="preserve">
+    <value>When configuring a sub table reset, the filtering criteria for deleting data before resetting must be set, such as pfid='@p1@'</value>
+  </data>
+  <data name="DataOPDefine.4" xml:space="preserve">
+    <value>Sub Table</value>
+  </data>
+  <data name="DataOPDefine.5" xml:space="preserve">
+    <value>MultiLine</value>
+  </data>
+  <data name="DataOPDefine.6" xml:space="preserve">
+    <value>Name / Note</value>
+  </data>
+  <data name="DataOPDefine.7" xml:space="preserve">
+    <value>Used as a note and mandatory reminder</value>
+  </data>
+  <data name="DataOPDefine.8" xml:space="preserve">
+    <value>ID / Key</value>
+  </data>
+  <data name="DataOPDefine.9" xml:space="preserve">
+    <value>Bound Field</value>
+  </data>
+  <data name="DataOPDefine.10" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="DataOPDefine.11" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="DataOPDefine.12" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="DataOPDefine.13" xml:space="preserve">
+    <value>Reset reserved FID</value>
+  </data>
+  <data name="DataOPDefine.14" xml:space="preserve">
+    <value>Update Only</value>
+  </data>
+  <data name="DataOPDefine.15" xml:space="preserve">
+    <value>Add for Form</value>
+  </data>
+  <data name="DataOPDefine.16" xml:space="preserve">
+    <value>Reset for Form</value>
+  </data>
+  <data name="DataOPDefine.17" xml:space="preserve">
+    <value>Update for Form</value>
+  </data>
+  <data name="DataOPDefine.18" xml:space="preserve">
+    <value>Add for Json</value>
+  </data>
+  <data name="DataOPDefine.19" xml:space="preserve">
+    <value>Reset for Json</value>
+  </data>
+  <data name="DataOPDefine.20" xml:space="preserve">
+    <value>Update for Json</value>
+  </data>
+  <data name="DataOPDefine.21" xml:space="preserve">
+    <value>Validation</value>
+  </data>
+  <data name="DataOPDefine.22" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="DataOPDefine.23" xml:space="preserve">
+    <value>Empty then Null</value>
+  </data>
+  <data name="DataOPDefine.24" xml:space="preserve">
+    <value>Cannot be Empty</value>
+  </data>
+  <data name="DataOPDefine.25" xml:space="preserve">
+    <value>Integer</value>
+  </data>
+  <data name="DataOPDefine.26" xml:space="preserve">
+    <value>Numeral</value>
+  </data>
+  <data name="DataOPDefine.27" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="DataOPDefine.28" xml:space="preserve">
+    <value>Date: Empty then Null</value>
+  </data>
+  <data name="DataOPDefine.29" xml:space="preserve">
+    <value>Integer: Can be Empty</value>
+  </data>
+  <data name="DataOPDefine.30" xml:space="preserve">
+    <value>Integer: Empty then 0</value>
+  </data>
+  <data name="DataOPDefine.31" xml:space="preserve">
+    <value>Integer: Empty then -1</value>
+  </data>
+  <data name="DataOPDefine.32" xml:space="preserve">
+    <value>Integer: Empty then Null</value>
+  </data>
+  <data name="DataOPDefine.33" xml:space="preserve">
+    <value>Numeral: Can be Empty</value>
+  </data>
+  <data name="DataOPDefine.34" xml:space="preserve">
+    <value>Numeral: Empty then 0</value>
+  </data>
+  <data name="DataOPDefine.35" xml:space="preserve">
+    <value>Numeral: Empty then -1</value>
+  </data>
+  <data name="DataOPDefine.36" xml:space="preserve">
+    <value>Numeral: Empty then Null</value>
+  </data>
+  <data name="DataOPDefine.37" xml:space="preserve">
+    <value>Filter Rule</value>
+  </data>
+  <data name="DataOPDefine.38" xml:space="preserve">
+    <value>Supports @ syntax, if empty, defaults to the Default key value</value>
+  </data>
+  <data name="DataOPDefine.39" xml:space="preserve">
+    <value>(Expired ID)</value>
+  </data>
+  <data name="DataOPDefine.40" xml:space="preserve">
+    <value>Must then Validate</value>
+  </data>
+  <data name="DataOPDefine.41" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="DataOPDefine.42" xml:space="preserve">
+    <value>Operation</value>
+  </data>
+  <data name="DataOPDefine.43" xml:space="preserve">
+    <value>You must first configure the database connection string in the Tools option</value>
+  </data>
+  <data name="DataOPDefine.44" xml:space="preserve">
+    <value>The convenience development for this database type has not been completed yet. Please manually enter it</value>
+  </data>
+  <data name="DataOPDefine.45" xml:space="preserve">
+    <value>Name value must be set when configuring sub tables</value>
+  </data>
+  <data name="DataOPDefine.46" xml:space="preserve">
+    <value>When configuring a subtable, the bound field must be set to the bound subtable name</value>
+  </data>
+  <data name="DataOPDefineSon.text" xml:space="preserve">
+    <value>Subtable Data Operation</value>
+  </data>
+  <data name="DataOPDefineSon.1" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="DataOPDefineSon.2" xml:space="preserve">
+    <value>Special Value</value>
+  </data>
+  <data name="DataOPDefineSon.3" xml:space="preserve">
+    <value>Primary Key Value</value>
+  </data>
+  <data name="DataOPDefineSon.4" xml:space="preserve">
+    <value>Parent Table Primary Key Value</value>
+  </data>
+  <data name="DataOPDefineSon.5" xml:space="preserve">
+    <value>Parent Table Same Name Value</value>
+  </data>
+  <data name="DllList.text" xml:space="preserve">
+    <value>Select DLL file</value>
+  </data>
+  <data name="DllList.1" xml:space="preserve">
+    <value>No DLL file found</value>
+  </data>
+  <data name="DyValueApi.text" xml:space="preserve">
+    <value>Data Getting Api</value>
+  </data>
+  <data name="DyValueApi.label2" xml:space="preserve">
+    <value>Routting</value>
+  </data>
+  <data name="DyValueApi.label1" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="DyValueApi.label9" xml:space="preserve">
+    <value>Output</value>
+  </data>
+  <data name="DyValueApi.label10" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="DyValueApi.label11" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="DyValueApi.apidiaoyong" xml:space="preserve">
+    <value>Api Call</value>
+  </data>
+  <data name="DyValueApi.1" xml:space="preserve">
+    <value>Component Settings Error</value>
+  </data>
+  <data name="DyValueDefine.text" xml:space="preserve">
+    <value>Data Getting Set</value>
+  </data>
+  <data name="DyValueDefine.button1" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="DyValueDefine.button3" xml:space="preserve">
+    <value>&amp;Paste</value>
+  </data>
+  <data name="DyValueDefine.button6" xml:space="preserve">
+    <value>Unified Table</value>
+  </data>
+  <data name="DyValueDefine.label1" xml:space="preserve">
+    <value>the</value>
+  </data>
+  <data name="DyValueDefine.label2" xml:space="preserve">
+    <value>column</value>
+  </data>
+  <data name="DyValueDefine.button4" xml:space="preserve">
+    <value>Replace</value>
+  </data>
+  <data name="DyValueDefine.button8" xml:space="preserve">
+    <value>ID=Column</value>
+  </data>
+  <data name="DyValueDefine.button2" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="DyValueDefine.button9" xml:space="preserve">
+    <value>API Define</value>
+  </data>
+  <data name="DyValueDefine.button7" xml:space="preserve">
+    <value>Quick Define</value>
+  </data>
+  <data name="DyValueDefine.button5" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="DyValueDefine.0" xml:space="preserve">
+    <value>Synchronous</value>
+  </data>
+  <data name="DyValueDefine.1" xml:space="preserve">
+    <value>Single Row</value>
+  </data>
+  <data name="DyValueDefine.2" xml:space="preserve">
+    <value>Assignment</value>
+  </data>
+  <data name="DyValueDefine.3" xml:space="preserve">
+    <value>Asynchronous</value>
+  </data>
+  <data name="DyValueDefine.4" xml:space="preserve">
+    <value>Multiple Rows</value>
+  </data>
+  <data name="DyValueDefine.5" xml:space="preserve">
+    <value>Dimension List</value>
+  </data>
+  <data name="DyValueDefine.6" xml:space="preserve">
+    <value>Name / Note</value>
+  </data>
+  <data name="DyValueDefine.7" xml:space="preserve">
+    <value>Used as a note and mandatory reminder</value>
+  </data>
+  <data name="DyValueDefine.8" xml:space="preserve">
+    <value>ID / Key</value>
+  </data>
+  <data name="DyValueDefine.9" xml:space="preserve">
+    <value>Use to separate multiple element assignments</value>
+  </data>
+  <data name="DyValueDefine.10" xml:space="preserve">
+    <value>Bound Field</value>
+  </data>
+  <data name="DyValueDefine.11" xml:space="preserve">
+    <value>Filter Rule</value>
+  </data>
+  <data name="DyValueDefine.12" xml:space="preserve">
+    <value>Supports @syntax, {para} is JavaScript code, supports assignment from @p1@ to @p12@, defaults to key value if empty</value>
+  </data>
+  <data name="DyValueDefine.13" xml:space="preserve">
+    <value>Way</value>
+  </data>
+  <data name="DyValueDefine.14" xml:space="preserve">
+    <value>Getting Type</value>
+  </data>
+  <data name="DyValueDefine.15" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="DyValueDefine.16" xml:space="preserve">
+    <value>If it is empty, it will not take effect. @code is the code interface, sql@code SQL for code interface</value>
+  </data>
+  <data name="DyValueDefine.17" xml:space="preserve">
+    <value>Operation</value>
+  </data>
+  <data name="DyValueDefine.18" xml:space="preserve">
+    <value>You must first configure the database connection string in the Tools option</value>
+  </data>
+  <data name="DyValueDefine.19" xml:space="preserve">
+    <value>The convenience development for this database type has not been completed yet. Please manually enter it</value>
+  </data>
+  <data name="Js_List.text" xml:space="preserve">
+    <value>JS Method Call</value>
+  </data>
+  <data name="Js_List.1" xml:space="preserve">
+    <value>No valid activation page</value>
+  </data>
+  <data name="Js_List.2" xml:space="preserve">
+    <value>Module</value>
+  </data>
+  <data name="Js_List.3" xml:space="preserve">
+    <value>Function</value>
+  </data>
+  <data name="Js_List.4" xml:space="preserve">
+    <value>Method</value>
+  </data>
+  <data name="Js_List.5" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Js_List.6" xml:space="preserve">
+    <value>List Page Refresh</value>
+  </data>
+  <data name="Js_List.7" xml:space="preserve">
+    <value>The parameter is page number. If there is no parameter, refresh the current page number</value>
+  </data>
+  <data name="Js_List.8" xml:space="preserve">
+    <value>Get asynchronous methods</value>
+  </data>
+  <data name="Js_List.9" xml:space="preserve">
+    <value>Can pass 0 to 12 parameters</value>
+  </data>
+  <data name="Js_List.10" xml:space="preserve">
+    <value>Successfully saved</value>
+  </data>
+  <data name="Js_List.11" xml:space="preserve">
+    <value>Already exists, cannot be duplicated</value>
+  </data>
+  <data name="Js_List.12" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="Js_List.13" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="List_Api.text" xml:space="preserve">
+    <value>Data List API</value>
+  </data>
+  <data name="List_Api.label2" xml:space="preserve">
+    <value>Routing</value>
+  </data>
+  <data name="List_Api.label1" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="List_Api.label9" xml:space="preserve">
+    <value>Input</value>
+  </data>
+  <data name="List_Api.label10" xml:space="preserve">
+    <value>Reference/Data</value>
+  </data>
+  <data name="List_Api.label11" xml:space="preserve">
+    <value>Desc. (Parameter isExport, exportMax is for Export)</value>
+  </data>
+  <data name="List_Api.1" xml:space="preserve">
+    <value>Data List</value>
+  </data>
+  <data name="List_Api.2" xml:space="preserve">
+    <value>Sort fields[#]asc or desc[#]Multiple fields or fuzzy queries by field[#]Exact match query, such as a: 1; b: 2[#]Display quantity per page[#]Default no serial number 1 Sorts by page number, 2 Sorts by all numbers[#]Display which page, default first page</value>
+  </data>
+  <data name="List_Api.3" xml:space="preserve">
+    <value>Select/operate on single or multiple records (separated) according to the set primary key column name(,for split)</value>
+  </data>
+  <data name="List_Api.4" xml:space="preserve">
+    <value>The value of the setting column can be changed based on the primary key value for batch operations such as deletion/status</value>
+  </data>
+  <data name="List_Api.5" xml:space="preserve">
+    <value>Component settings error</value>
+  </data>
+  <data name="List_Api.label5" xml:space="preserve">
+    <value>Functional Identification</value>
+  </data>
+  <data name="List_Api.label6" xml:space="preserve">
+    <value>Option Control</value>
+  </data>
+  <data name="List_Api.label7" xml:space="preserve">
+    <value>Icon Definition</value>
+  </data>
+  <data name="List_Api.label3" xml:space="preserve">
+    <value>Choose built-in features or custom identification</value>
+  </data>
+  <data name="List_Api.label4" xml:space="preserve">
+    <value>List page checkbox verification method</value>
+  </data>
+  <data name="List_Api.label8" xml:space="preserve">
+    <value>Button icon definition, related to front-end framework</value>
+  </data>
+  <data name="PA_Div.RcheckBox1" xml:space="preserve">
+    <value>ID,Name Replace</value>
+  </data>
+  <data name="PA_Div.checkBox1" xml:space="preserve">
+    <value>Import from [DIV] template</value>
+  </data>
+  <data name="PA_Div.1" xml:space="preserve">
+    <value>ID must be entered</value>
+  </data>
+  <data name="PA_Div.2" xml:space="preserve">
+    <value>You must select a template</value>
+  </data>
+  <data name="PA_Div.3" xml:space="preserve">
+    <value>The HTML element with ID {0} already exists!</value>
+  </data>
+  <data name="PA_Div.4" xml:space="preserve">
+    <value>empty content</value>
+  </data>
+  <data name="PA_Div.5" xml:space="preserve">
+    <value>ID must be entered</value>
+  </data>
+  <data name="HisBack.text" xml:space="preserve">
+    <value>Historical backup - click to download</value>
+  </data>
+  <data name="HisBack.1" xml:space="preserve">
+    <value>This page has no backup</value>
+  </data>
+  <data name="HisBack.2" xml:space="preserve">
+    <value>Site File</value>
+  </data>
+  <data name="HisBack.3" xml:space="preserve">
+    <value>Download successful</value>
+  </data>
+  <data name="PageUpdate.text" xml:space="preserve">
+    <value>Page Update</value>
+  </data>
+  <data name="RawAll.defaulthidden" xml:space="preserve">
+    <value>Default Not Displayed</value>
+  </data>
+  <data name="RawAll.button8" xml:space="preserve">
+    <value>Quick Define</value>
+  </data>
+  <data name="RawAll.button9" xml:space="preserve">
+    <value>API Define</value>
+  </data>
+  <data name="RawAll.button7" xml:space="preserve">
+    <value>Select Column</value>
+  </data>
+  <data name="RawAll.label8" xml:space="preserve">
+    <value>Note/Description</value>
+  </data>
+  <data name="RawSelCol.text" xml:space="preserve">
+    <value>Column Bound Field</value>
+  </data>
+  <data name="RawSelCol.1" xml:space="preserve">
+    <value>You must first configure the database connection string in the Tools option</value>
+  </data>
+  <data name="RawSelCol.2" xml:space="preserve">
+    <value>Set at least one item for main table settings and fully customizable queries</value>
+  </data>
+  <data name="RawSelCol.3" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="RawSelCol.4" xml:space="preserve">
+    <value>Column Name</value>
+  </data>
+  <data name="RawSelCol.5" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="RawSelCol.6" xml:space="preserve">
+    <value>The convenience development for this database type has not been completed yet. Please manually enter it</value>
+  </data>
+  <data name="RawSelCols.text" xml:space="preserve">
+    <value>Quickly Define Columns</value>
+  </data>
+  <data name="RawSelCols.button1" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="RawSelCols.1" xml:space="preserve">
+    <value>Display</value>
+  </data>
+  <data name="RawSelCols.2" xml:space="preserve">
+    <value>Display Name</value>
+  </data>
+  <data name="RawSelCols.3" xml:space="preserve">
+    <value>Column Name</value>
+  </data>
+  <data name="RawSelCols.4" xml:space="preserve">
+    <value>Table Column Name</value>
+  </data>
+  <data name="RawSelCols.5" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="RawSelCols.6" xml:space="preserve">
+    <value>Table Field Description</value>
+  </data>
+  <data name="RawSelCols.7" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="RawSelCols.8" xml:space="preserve">
+    <value>Note/Description</value>
+  </data>
+  <data name="RawSelCols.9" xml:space="preserve">
+    <value>Up</value>
+  </data>
+  <data name="RawSelCols.10" xml:space="preserve">
+    <value>Down</value>
+  </data>
+  <data name="RawSelCols.11" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="RawSelCols.12" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="SelCol.1" xml:space="preserve">
+    <value>Does not exist in the database!</value>
+  </data>
+  <data name="SelCol.2" xml:space="preserve">
+    <value>Data Table</value>
+  </data>
+  <data name="SQL.OK" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="SQL.Close" xml:space="preserve">
+    <value>&amp;Close</value>
+  </data>
+  <data name="SQL.test" xml:space="preserve">
+    <value>&amp;Test</value>
+  </data>
+  <data name="SQL.textsql" xml:space="preserve">
+    <value>//Variable replacement, used to test SQL. Variables are separated by semicolons or line breaks, and key value pairs are separated by:
+//When using Select * for multi table queries, replacing * with @*@ will automatically remove duplicate columns</value>
+  </data>
+  <data name="SQL.1" xml:space="preserve">
+    <value>SQL template</value>
+  </data>
+  <data name="FormInput" xml:space="preserve">
+    <value>Form Input</value>
+  </data>
+  <data name="JsonInput" xml:space="preserve">
+    <value>Json Input</value>
+  </data>
+  <data name="fromNotSql" xml:space="preserve">
+    <value>The data source is not SQL, so this operation is not currently supported</value>
+  </data>
+  <data name="AsDatasource" xml:space="preserve">
+    <value>As a data source</value>
+  </data>
+  <data name="List_Api.label1x" xml:space="preserve">
+    <value>Operation Script</value>
+  </data>
+  <data name="List_Api.label2x" xml:space="preserve">
+    <value>Button Text</value>
+  </data>
+  <data name="RawSelCols.selall" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="Common_SelCols.Title" xml:space="preserve">
+    <value>Select Column</value>
+  </data>
+  <data name="PartQuick.Title" xml:space="preserve">
+    <value>Component Property Shortcut Setting</value>
+  </data>
+  <data name="List_Api_ExportFilename" xml:space="preserve">
+    <value>Custom Export Name</value>
+  </data>
+  <data name="HisBack.Download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="HisBack.Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="HisBack.IsRoll" xml:space="preserve">
+    <value>Are you sure you want to roll back this page?</value>
+  </data>
+  <data name="HisBack.RollBack" xml:space="preserve">
+    <value>RollBack</value>
+  </data>
+  <data name="HisBack.success" xml:space="preserve">
+    <value>Operation successful</value>
+  </data>
+  <data name="HisBack.IsRollSite" xml:space="preserve">
+    <value>Are you sure you want to roll back this version?</value>
+  </data>
+  <data name="VersionControl.btn1" xml:space="preserve">
+    <value>Generate by Latest</value>
+  </data>
+  <data name="VersionControl.btn2" xml:space="preserve">
+    <value>Generate by Time</value>
+  </data>
+  <data name="VersionControl.Desc" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="VersionControl.Detail" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="VersionControl.Text" xml:space="preserve">
+    <value>Site Version Management</value>
+  </data>
+  <data name="VersionControl.version" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="DyValueDefine.button12" xml:space="preserve">
+    <value>Form Generate</value>
+  </data>
+  <data name="dataop.api.1" xml:space="preserve">
+    <value>Modify , parameter 1 is primary key value</value>
+  </data>
+  <data name="dyvalue.api.1" xml:space="preserve">
+    <value>Detail , parameter 1 is primary key value</value>
+  </data>
+</root>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessActive" xml:space="preserve">
+    <value>生效</value>
+    <comment>生效</comment>
+  </data>
+  <data name="AccessActiveNot" xml:space="preserve">
+    <value>不生效</value>
+    <comment>不生效</comment>
+  </data>
+  <data name="AccessIP" xml:space="preserve">
+    <value>IP訪問控制</value>
+    <comment>IP访问控制</comment>
+  </data>
+  <data name="AccessIP_Des" xml:space="preserve">
+    <value>設置IP訪問控制的條件和形式</value>
+    <comment>设置IP访问控制的条件和形式</comment>
+  </data>
+  <data name="AccessIPCondition" xml:space="preserve">
+    <value>IP條件</value>
+    <comment>IP条件</comment>
+  </data>
+  <data name="AccessIPCondition_Des" xml:space="preserve">
+    <value>只有滿足條件的才允許訪問，設置方法：[IP]，或者[IP]-[IP]，多項之間用“;”隔開，比如：10.10.9.8;10.10.9.8-10.10.9.18</value>
+    <comment>只有满足条件的才允许访问，设置方法：[IP]，或者[IP]-[IP]，多项之间用“;”隔开，比如：10.10.9.8;10.10.9.8-10.10.9.18</comment>
+  </data>
+  <data name="AccessIPConditionSide" xml:space="preserve">
+    <value>IP條件置反</value>
+    <comment>IP条件置反</comment>
+  </data>
+  <data name="AccessIPConditionSide_Des" xml:space="preserve">
+    <value>把允許條件置反，之後允許條件的相反條件才可以訪問</value>
+    <comment>把允许条件置反，之后允许条件的相反条件才可以访问</comment>
+  </data>
+  <data name="AccessIPControl" xml:space="preserve">
+    <value>IP控制</value>
+    <comment>IP控制</comment>
+  </data>
+  <data name="AccessIPControl_Des" xml:space="preserve">
+    <value>定義IP設置是否生效</value>
+    <comment>定义IP设置是否生效</comment>
+  </data>
+  <data name="AccessJump" xml:space="preserve">
+    <value>跳轉</value>
+    <comment>跳转</comment>
+  </data>
+  <data name="AccessJump_Des" xml:space="preserve">
+    <value>不允許訪問的時候，跳轉地址設置</value>
+    <comment>不允许访问的时候，跳转地址设置</comment>
+  </data>
+  <data name="AccessJumpAddress" xml:space="preserve">
+    <value>跳轉地址</value>
+    <comment>跳转地址</comment>
+  </data>
+  <data name="AccessJumpAddress_Des" xml:space="preserve">
+    <value>設置跳轉的位址</value>
+    <comment>设置跳转到地址</comment>
+  </data>
+  <data name="AccessJumpControl" xml:space="preserve">
+    <value>跳轉設置</value>
+    <comment>跳转设置</comment>
+  </data>
+  <data name="AccessJumpControl_Des" xml:space="preserve">
+    <value>定義跳轉設置是否生效</value>
+    <comment>定义跳转设置是否生效</comment>
+  </data>
+  <data name="AccessMain" xml:space="preserve">
+    <value>訪問控制</value>
+    <comment>访问控制</comment>
+  </data>
+  <data name="AccessMain_Des" xml:space="preserve">
+    <value>設置訪問控制的條件和形式</value>
+    <comment>设置访问控制的条件和形式</comment>
+  </data>
+  <data name="AccessNormal" xml:space="preserve">
+    <value>正常</value>
+    <comment>正常</comment>
+  </data>
+  <data name="AccessNormalNot" xml:space="preserve">
+    <value>置反</value>
+    <comment>置反</comment>
+  </data>
+  <data name="AccessSession" xml:space="preserve">
+    <value>會話訪問控制</value>
+    <comment>会话访问控制</comment>
+  </data>
+  <data name="AccessSession_Des" xml:space="preserve">
+    <value>設置會話訪問控制的條件和形式</value>
+    <comment>设置会话访问控制的条件和形式</comment>
+  </data>
+  <data name="AccessSessionCondition" xml:space="preserve">
+    <value>會話條件</value>
+    <comment>会话条件</comment>
+  </data>
+  <data name="AccessSessionCondition_Des" xml:space="preserve">
+    <value>只有滿足條件的才允許訪問，設置方法：[會話名稱]=[會話值]，或者[會話名稱]!=[會話值]，多項之間用“;”隔開，比如：aaa=value1;bbb!=value2</value>
+    <comment>只有满足条件的才允许访问，设置方法：[会话名称]=[会话值]，或者[会话名称]!=[会话值]，多项之间用“;”隔开，比如：aaa=value1;bbb!=value2</comment>
+  </data>
+  <data name="AccessSessionConditionSide" xml:space="preserve">
+    <value>會話條件置反</value>
+    <comment>会话条件置反</comment>
+  </data>
+  <data name="AccessSessionConditionSide_Des" xml:space="preserve">
+    <value>把允許條件置反，之後允許條件的相反條件才可以訪問</value>
+    <comment>把允许条件置反，之后允许条件的相反条件才可以访问</comment>
+  </data>
+  <data name="AccessSessionControl" xml:space="preserve">
+    <value>會話控制</value>
+    <comment>会话控制</comment>
+  </data>
+  <data name="AccessSessionControl_Des" xml:space="preserve">
+    <value>定義會話設置是否生效</value>
+    <comment>定义会话设置是否生效</comment>
+  </data>
+  <data name="AccessTip" xml:space="preserve">
+    <value>提示</value>
+    <comment>提示</comment>
+  </data>
+  <data name="AccessTip_Des" xml:space="preserve">
+    <value>不允許訪問的時候，提示資訊設置</value>
+    <comment>不允许访问的时候，提示信息设置</comment>
+  </data>
+  <data name="AccessTipContent" xml:space="preserve">
+    <value>提示內容</value>
+    <comment>提示内容</comment>
+  </data>
+  <data name="AccessTipContent_Des" xml:space="preserve">
+    <value>设置提示的内容。@开头为js脚本</value>
+    <comment>设置提示的内容</comment>
+  </data>
+  <data name="AccessTipControl" xml:space="preserve">
+    <value>提示設置</value>
+    <comment>提示设置</comment>
+  </data>
+  <data name="AccessTipControl_Des" xml:space="preserve">
+    <value>定義提示設置是否生效</value>
+    <comment>定义提示设置是否生效</comment>
+  </data>
+  <data name="b1" xml:space="preserve">
+    <value>设置片斷宽度</value>
+    <comment>***Set Control Width,num.px or num</comment>
+  </data>
+  <data name="b10" xml:space="preserve">
+    <value>後臺片斷</value>
+    <comment>***the Back Parts</comment>
+  </data>
+  <data name="b2" xml:space="preserve">
+    <value>设置片斷高度</value>
+    <comment>***Set Control Height,num.px or num</comment>
+  </data>
+  <data name="b3" xml:space="preserve">
+    <value>設置為portal</value>
+    <comment>Set as Portal</comment>
+  </data>
+  <data name="b4" xml:space="preserve">
+    <value>設置構件名稱</value>
+    <comment>Set Control Name</comment>
+  </data>
+  <data name="b5" xml:space="preserve">
+    <value>設置構件資料源</value>
+    <comment>Set Control Datasource</comment>
+  </data>
+  <data name="b6" xml:space="preserve">
+    <value>設置控制資料共用模式</value>
+    <comment>Set Control Data Share Type</comment>
+  </data>
+  <data name="b7" xml:space="preserve">
+    <value>構件資訊</value>
+    <comment>the Control Info</comment>
+  </data>
+  <data name="b8" xml:space="preserve">
+    <value>片斷資訊</value>
+    <comment>***the Part Info</comment>
+  </data>
+  <data name="b9" xml:space="preserve">
+    <value>前臺片斷</value>
+    <comment>***the Fore Parts</comment>
+  </data>
+  <data name="c1" xml:space="preserve">
+    <value>主體</value>
+    <comment>Main</comment>
+  </data>
+  <data name="c10" xml:space="preserve">
+    <value>片斷高度</value>
+    <comment>Part Height</comment>
+  </data>
+  <data name="c11" xml:space="preserve">
+    <value>片斷寬度</value>
+    <comment>Part Width</comment>
+  </data>
+  <data name="c12" xml:space="preserve">
+    <value>Portal模式</value>
+    <comment>As Portal</comment>
+  </data>
+  <data name="c13" xml:space="preserve">
+    <value>樣式</value>
+    <comment>Style</comment>
+  </data>
+  <data name="c2" xml:space="preserve">
+    <value>資訊</value>
+    <comment>Info</comment>
+  </data>
+  <data name="c3" xml:space="preserve">
+    <value>構件資訊</value>
+    <comment>Control Info</comment>
+  </data>
+  <data name="c4" xml:space="preserve">
+    <value>片斷資訊</value>
+    <comment>Part Info</comment>
+  </data>
+  <data name="c5" xml:space="preserve">
+    <value>前臺片斷</value>
+    <comment>***Fore Parts</comment>
+  </data>
+  <data name="c6" xml:space="preserve">
+    <value>後臺片斷</value>
+    <comment>***Back Parts</comment>
+  </data>
+  <data name="c7" xml:space="preserve">
+    <value>構件資料</value>
+    <comment>Control Data</comment>
+  </data>
+  <data name="c8" xml:space="preserve">
+    <value>資料共用</value>
+    <comment>Data Share</comment>
+  </data>
+  <data name="c9" xml:space="preserve">
+    <value>構件名稱</value>
+    <comment>Control Name</comment>
+  </data>
+  <data name="ctlpara" xml:space="preserve">
+    <value>Control Parameter</value>
+  </data>
+  <data name="m1" xml:space="preserve">
+    <value>克隆時無構件id</value>
+    <comment>Control ID not found when clone!</comment>
+  </data>
+  <data name="m2" xml:space="preserve">
+    <value>getPartHtml Error!</value>
+    <comment>getPartHtml Error!</comment>
+  </data>
+  <data name="m3" xml:space="preserve">
+    <value>給編輯器添加片斷時,片斷id或者編輯器為空.</value>
+    <comment>part id or editor is null when add part to editor!</comment>
+  </data>
+  <data name="m4" xml:space="preserve">
+    <value>片斷元素丟失!</value>
+    <comment>Part Element Lost!</comment>
+  </data>
+  <data name="NotSet" xml:space="preserve">
+    <value>(未设置)</value>
+  </data>
+</root>

@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+	  <Version>1.0.3</Version>
+    <AssemblyName>FT_DyValue</AssemblyName>
+    <RootNamespace>FT_DyValue</RootNamespace>
+	  <Authors>MaoBinbin</Authors>
+	  <Company>$(Authors)</Company>
+	  <Description>Non-commercial use,Unauthorized prohibition</Description>
+	  <Copyright>All rights are reserved by MaoBinbin,Contact:d4soft@126.com</Copyright>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <OutputPath>C:\01_ft\publish\ftsite\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <OutputPath>C:\01_ft\publish\ftsite\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\FTFrame.Base.Core\FTFrame.Base.Core.csproj" />
+    <ProjectReference Include="..\..\FTFrame.Core\FTFrame.Core.csproj" />
+    <ProjectReference Include="..\..\FTFrame.DB.Core\FTFrame.DB.Core.csproj" />
+    <ProjectReference Include="..\..\FTFrame.Project.Core\FTFrame.Project.Core.csproj" />
+    <ProjectReference Include="..\..\FTFrame.Server.Core\FTFrame.Server.Core.csproj" />
+    <ProjectReference Include="..\..\FTFrame.Tool.Core\FTFrame.Tool.Core.csproj" />
+  </ItemGroup>
+
+</Project>

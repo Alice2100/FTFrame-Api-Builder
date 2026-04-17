@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApiList.ColBtn" xml:space="preserve">
+    <value>Operation</value>
+  </data>
+  <data name="ApiList.Copy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="ApiList.DataOP" xml:space="preserve">
+    <value>Data Operation</value>
+  </data>
+  <data name="ApiList.label1" xml:space="preserve">
+    <value>Callable Data Operation Api</value>
+  </data>
+  <data name="Rule.BindFirst" xml:space="preserve">
+    <value>Table must be bound first</value>
+  </data>
+  <data name="Rule.btn_apipath" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="Rule.btn_bindall" xml:space="preserve">
+    <value>Bind</value>
+  </data>
+  <data name="Rule.btn_removeall" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="Rule.button1" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Rule.Copy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="Rule.deleteconfirm" xml:space="preserve">
+    <value>Delete this node and delete all nodes under it. Do you want to continue?</value>
+  </data>
+  <data name="Rule.jiaoyan" xml:space="preserve">
+    <value>Validate</value>
+  </data>
+  <data name="Rule.jiaoyan1" xml:space="preserve">
+    <value>No Empty</value>
+  </data>
+  <data name="Rule.jiaoyan2" xml:space="preserve">
+    <value>Integer</value>
+  </data>
+  <data name="Rule.jiaoyan3" xml:space="preserve">
+    <value>Numeral</value>
+  </data>
+  <data name="Rule.jiaoyan4" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Rule.label1" xml:space="preserve">
+    <value>Select And Bind</value>
+  </data>
+  <data name="Rule.label_apipath" xml:space="preserve">
+    <value>Bind Api</value>
+  </data>
+  <data name="Rule.label_caption" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Rule.label_column" xml:space="preserve">
+    <value>Bind Column</value>
+  </data>
+  <data name="Rule.label_rule" xml:space="preserve">
+    <value>Rule Define</value>
+  </data>
+  <data name="Rule.label_table" xml:space="preserve">
+    <value>Bind Table</value>
+  </data>
+  <data name="Rule.leixing" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="Rule.Menu_Clone" xml:space="preserve">
+    <value>&amp;Clone</value>
+  </data>
+  <data name="Rule.Menu_Dell" xml:space="preserve">
+    <value>&amp;Delete</value>
+  </data>
+  <data name="Rule.Menu_NewColumnRule" xml:space="preserve">
+    <value>New &amp;Field Rule</value>
+  </data>
+  <data name="Rule.Menu_NewColumnRule_Bind" xml:space="preserve">
+    <value>&amp;By Binding Field</value>
+  </data>
+  <data name="Rule.Menu_NewColumnRule_Name" xml:space="preserve">
+    <value>By Entering &amp;Name</value>
+  </data>
+  <data name="Rule.Menu_NewDir" xml:space="preserve">
+    <value>&amp;New Subdirectory</value>
+  </data>
+  <data name="Rule.Menu_NewDir_Bind" xml:space="preserve">
+    <value>&amp;By Binding Api</value>
+  </data>
+  <data name="Rule.Menu_NewDir_Name" xml:space="preserve">
+    <value>By Entering &amp;Name</value>
+  </data>
+  <data name="Rule.Menu_NewRootDir" xml:space="preserve">
+    <value>New &amp;Root Directory</value>
+  </data>
+  <data name="Rule.Menu_NewTableRule" xml:space="preserve">
+    <value>New &amp;Table Rule</value>
+  </data>
+  <data name="Rule.Menu_NewTableRule_Bind" xml:space="preserve">
+    <value>By &amp;Binding Table</value>
+  </data>
+  <data name="Rule.Menu_NewTableRule_Name" xml:space="preserve">
+    <value>By Entering &amp;Name</value>
+  </data>
+  <data name="Rule.Menu_Refresh" xml:space="preserve">
+    <value>&amp;Refresh</value>
+  </data>
+  <data name="Rule.peizhibucunzai4" xml:space="preserve">
+    <value>There is no synchronization in the configuration</value>
+  </data>
+  <data name="Rule.peizhibucunzai5" xml:space="preserve">
+    <value>Column does not exist in the configuration</value>
+  </data>
+  <data name="Rule.shujubucunzai" xml:space="preserve">
+    <value>Data Does Not Exist</value>
+  </data>
+  <data name="Rule.weibangding" xml:space="preserve">
+    <value>[Unbound]</value>
+  </data>
+  <data name="Rule.weibangding2" xml:space="preserve">
+    <value>[Unbound Api or Unknown Api Type]</value>
+  </data>
+  <data name="Rule.wu" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="RuleC.Addnew" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="RuleC.cunzai" xml:space="preserve">
+    <value>Exist</value>
+  </data>
+  <data name="RuleC.daijisuan" xml:space="preserve">
+    <value>With Calculation</value>
+  </data>
+  <data name="RuleC.dingzhi" xml:space="preserve">
+    <value>Constant value</value>
+  </data>
+  <data name="RuleC.listnotdefine" xml:space="preserve">
+    <value>Undefined in column definition</value>
+  </data>
+  <data name="RuleC.mustdingzhi" xml:space="preserve">
+    <value>Constant value must exist</value>
+  </data>
+  <data name="RuleC.mustjisuan" xml:space="preserve">
+    <value>Must Include calculation</value>
+  </data>
+  <data name="RuleC.myustvalidate" xml:space="preserve">
+    <value>Verification must exist</value>
+  </data>
+  <data name="RuleC.peizhibucunzai" xml:space="preserve">
+    <value>Table does not exist in the configuration</value>
+  </data>
+  <data name="RuleC.peizhibucunzaizid" xml:space="preserve">
+    <value>Field does not exist in the configuration</value>
+  </data>
+  <data name="RuleC.peizhizhongbucunzai2" xml:space="preserve">
+    <value>There is no new addition in the configuration</value>
+  </data>
+  <data name="RuleC.peizhizhongbucunzai3" xml:space="preserve">
+    <value>No modify exist in the configuration</value>
+  </data>
+  <data name="RuleC.tongbu" xml:space="preserve">
+    <value>Synchronous</value>
+  </data>
+  <data name="RuleC.xiugai" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="RuleC.zidingyisql1" xml:space="preserve">
+    <value>The table does not exist in the custom SQL</value>
+  </data>
+  <data name="SitePara.button2" xml:space="preserve">
+    <value>Add Judgment</value>
+  </data>
+  <data name="SitePara.button3" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="SitePara.button4" xml:space="preserve">
+    <value>Sel. Api</value>
+  </data>
+  <data name="SitePara.Help1" xml:space="preserve">
+    <value>1. Use @para{name} to use site variables in configuration or SQL</value>
+  </data>
+  <data name="SitePara.Help10" xml:space="preserve">
+    <value>10. After closing the site parameter form, the variable definitions of the target site will be refreshed without the need to republish the page</value>
+  </data>
+  <data name="SitePara.Help2" xml:space="preserve">
+    <value>2. The variable with parameters is used as @para{name, a|b}, indicating the use of two parameters</value>
+  </data>
+  <data name="SitePara.Help3" xml:space="preserve">
+    <value>3. The name and parameters of variables both support @code</value>
+  </data>
+  <data name="SitePara.Help4" xml:space="preserve">
+    <value>4. The content of variable definitions also supports @code and @para, enabling calls between variables and code</value>
+  </data>
+  <data name="SitePara.Help5" xml:space="preserve">
+    <value>5. Variable parameters are defined using @para1@ to @para12@ in the content, supporting 12 parameters</value>
+  </data>
+  <data name="SitePara.Help6" xml:space="preserve">
+    <value>6. Condition definitions also support @code and parameters, but do not support variables</value>
+  </data>
+  <data name="SitePara.Help7" xml:space="preserve">
+    <value>7. Condition definitions also support SQL values, defined using @sql:</value>
+  </data>
+  <data name="SitePara.Help8" xml:space="preserve">
+    <value>8. Support operation execution. When configuring operation execution, support @code, @para, @sql:, @api_, where @api_ is the interface for data operations and can use the @p@ parameter</value>
+  </data>
+  <data name="SitePara.Help9" xml:space="preserve">
+    <value>9. Operation execution configuration supports multiple operations, separated by ##</value>
+  </data>
+  <data name="SitePara.label.Text" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="SitePara.label1" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="SitePara.label2" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="SitePara.label3" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="SitePara.linkLabel.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="SitePara.Msg1" xml:space="preserve">
+    <value>The identification can only be a combination of English,numerical,underline,dot</value>
+  </data>
+  <data name="SitePara.Msg2" xml:space="preserve">
+    <value>The identifier '{p}' already exists and cannot be duplicated</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>Download Progress</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>Data Getting Api interface does not exist</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>Does not exist in the Data Getting interface</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>Getting binding as empty</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>Data Operation Api interface does not exist</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>Not present in the Data Operation interface</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>Data Operation binding is empty</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>The interface bound by the rule does not exist</value>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>The page does not exist locally</value>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>The component or interface (specified type) does not exist locally</value>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Download completed, automatically updated next time the application is opened</value>
+  </data>
+  <data name="String20" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>Download Error</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>The current version {version} is the latest version or no updated content found</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>Api interface not defined</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>Api interface does not exist</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>Not present in the interface</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>Search definition {row. Binding} does not exist in the data column</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>Set at least one API for obtaining and operating</value>
+  </data>
+</root>

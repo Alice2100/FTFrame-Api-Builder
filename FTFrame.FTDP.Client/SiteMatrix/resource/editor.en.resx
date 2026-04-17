@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BGColor" xml:space="preserve">
+    <value>Back Color</value>
+  </data>
+  <data name="CodeCopy" xml:space="preserve">
+    <value>&amp;Copy</value>
+  </data>
+  <data name="CodeCut" xml:space="preserve">
+    <value>Cu&amp;t</value>
+  </data>
+  <data name="CodeDelete" xml:space="preserve">
+    <value>&amp;Delete</value>
+  </data>
+  <data name="CodePaste" xml:space="preserve">
+    <value>&amp;Paste</value>
+  </data>
+  <data name="CodeRedo" xml:space="preserve">
+    <value>&amp;Redo</value>
+  </data>
+  <data name="CodeUndo" xml:space="preserve">
+    <value>&amp;Undo</value>
+  </data>
+  <data name="m1" xml:space="preserve">
+    <value>Files doesn't save yet. Save now?</value>
+    <comment>Document Havn't been saved, Saved ?</comment>
+  </data>
+  <data name="m2" xml:space="preserve">
+    <value>Cannot save pages. Check whether the pages contain the BODY tag.</value>
+    <comment>保存页面出错！可能页面不包含Body元素！</comment>
+  </data>
+  <data name="m3" xml:space="preserve">
+    <value>Cannot open pages. Check whether the pages contain the BODY tag.</value>
+    <comment>打开页面出错！可能页面不包含Body元素！</comment>
+  </data>
+  <data name="m4" xml:space="preserve">
+    <value>Failed to add part to page.</value>
+    <comment>add part to page failed!</comment>
+  </data>
+  <data name="pageClearContentToolStripMenuItem" xml:space="preserve">
+    <value>&amp;Clear Content</value>
+  </data>
+  <data name="pageCopyToolStripMenuItem" xml:space="preserve">
+    <value>&amp;Copy</value>
+  </data>
+  <data name="pageCutToolStripMenuItem" xml:space="preserve">
+    <value>Cu&amp;t</value>
+  </data>
+  <data name="PageDelete" xml:space="preserve">
+    <value>&amp;Delete</value>
+  </data>
+  <data name="pageDeleteColumnToolStripMenuItem" xml:space="preserve">
+    <value>Delete &amp;Column</value>
+  </data>
+  <data name="pageDeleteRowToolStripMenuItem" xml:space="preserve">
+    <value>Delete &amp;Row</value>
+  </data>
+  <data name="pageEditTagToolStripMenuItem" xml:space="preserve">
+    <value>&amp;Edit Tag</value>
+  </data>
+  <data name="pageInsertColumnToolStripMenuItem" xml:space="preserve">
+    <value>Insert Colu&amp;mn</value>
+  </data>
+  <data name="pageInsertRowToolStripMenuItem" xml:space="preserve">
+    <value>Insert Ro&amp;w</value>
+  </data>
+  <data name="pageInsertTableToolStripMenuItem" xml:space="preserve">
+    <value>&amp;Insert Table</value>
+  </data>
+  <data name="pageMergeCellDownToolStripMenuItem" xml:space="preserve">
+    <value>Merge Cell &amp;Down</value>
+  </data>
+  <data name="pageMergeCellRightToolStripMenuItem" xml:space="preserve">
+    <value>Merge Cell &amp;Right</value>
+  </data>
+  <data name="pageMergeCellToolStripMenuItem" xml:space="preserve">
+    <value>Merge Cell &amp;Left</value>
+  </data>
+  <data name="pageMergeCellUpToolStripMenuItem" xml:space="preserve">
+    <value>Merge Cell &amp;Up</value>
+  </data>
+  <data name="pagePasteToolStripMenuItem" xml:space="preserve">
+    <value>&amp;Paste</value>
+  </data>
+  <data name="pageRedoToolStripMenuItem" xml:space="preserve">
+    <value>&amp;Redo</value>
+  </data>
+  <data name="pageSelectTableToolStripMenuItem" xml:space="preserve">
+    <value>&amp;Select Table</value>
+  </data>
+  <data name="pageSplitColumnToolStripMenuItem" xml:space="preserve">
+    <value>Split Cell to Colum&amp;ns</value>
+  </data>
+  <data name="pageSplitRowToolStripMenuItem" xml:space="preserve">
+    <value>Split Cell to R&amp;ows</value>
+  </data>
+  <data name="pageTableToolStripMenuItem" xml:space="preserve">
+    <value>&amp;Table</value>
+  </data>
+  <data name="pageUndoToolStripMenuItem" xml:space="preserve">
+    <value>&amp;Undo</value>
+  </data>
+  <data name="s1" xml:space="preserve">
+    <value>Now saving pages...</value>
+    <comment>正在保存页面：</comment>
+  </data>
+  <data name="s2" xml:space="preserve">
+    <value>Changing to code mode...</value>
+  </data>
+  <data name="s3" xml:space="preserve">
+    <value>Changing to view mode...</value>
+  </data>
+  <data name="s4" xml:space="preserve">
+    <value>Changing to edit mode...</value>
+  </data>
+  <data name="SelectionMargin" xml:space="preserve">
+    <value>Selection Margin</value>
+  </data>
+  <data name="tabCode" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="tabDesign" xml:space="preserve">
+    <value>Design</value>
+  </data>
+  <data name="tabPreview" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="TheFontName" xml:space="preserve">
+    <value>Font Name</value>
+  </data>
+  <data name="TheFontSize" xml:space="preserve">
+    <value>Font Size</value>
+  </data>
+  <data name="toolStripLabel1" xml:space="preserve">
+    <value>Ch:</value>
+  </data>
+  <data name="toolStripLabel2" xml:space="preserve">
+    <value>Col:</value>
+  </data>
+  <data name="WordWrap" xml:space="preserve">
+    <value>Word Wrap</value>
+  </data>
+  <data name="editformdatamenu" xml:space="preserve">
+    <value>Bind Data(&amp;X)</value>
+  </data>
+  <data name="CopyApiToolStripMenuItem" xml:space="preserve">
+    <value>Copy API Information</value>
+  </data>
+  <data name="copypagepathToolStripMenuItem" xml:space="preserve">
+    <value>Copy Page Path</value>
+  </data>
+  <data name="toolStripMenuPartP" xml:space="preserve">
+    <value>Component Shortcut Property</value>
+  </data>
+  <data name="toolStripMenuPartPDefine" xml:space="preserve">
+    <value>Setting</value>
+  </data>
+  <data name="addcontrolblank" xml:space="preserve">
+    <value>Component can only be inserted in editable areas</value>
+  </data>
+  <data name="MenuAddControl" xml:space="preserve">
+    <value>Insert Component</value>
+  </data>
+  <data name="MenuAddControlDataOP" xml:space="preserve">
+    <value>Data Operation</value>
+  </data>
+  <data name="MenuAddControlDyValue" xml:space="preserve">
+    <value>Data Getting</value>
+  </data>
+  <data name="MenuAddControlList" xml:space="preserve">
+    <value>Data List</value>
+  </data>
+</root>

@@ -1,0 +1,8 @@
+﻿@model Microsoft.AspNetCore.Http.HttpContext
+@{
+}
+<br />
+@for(int i=0;i<(int)ViewData["viewpara"];i++)
+{
+<p>@i :  @Model.Request.Query["a"].FirstOrDefault()   ;;; @DateTime.Now</p>
+}

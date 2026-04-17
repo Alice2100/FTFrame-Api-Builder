@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="bianjiqiys" xml:space="preserve">
+    <value>Editor Style</value>
+  </data>
+  <data name="biaoti" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="bugjiance" xml:space="preserve">
+    <value>Bug Detection</value>
+  </data>
+  <data name="bugjiancejihuo" xml:space="preserve">
+    <value>Bug Detect Active Page</value>
+  </data>
+  <data name="caozuo" xml:space="preserve">
+    <value>Operation</value>
+  </data>
+  <data name="chongfutagwei" xml:space="preserve">
+    <value>Duplicate, Tag is</value>
+  </data>
+  <data name="chulizhong" xml:space="preserve">
+    <value>Processing</value>
+  </data>
+  <data name="dakaiwenjian" xml:space="preserve">
+    <value>Open File</value>
+  </data>
+  <data name="dangqianjihuo" xml:space="preserve">
+    <value>Current Activation Page</value>
+  </data>
+  <data name="daorudange" xml:space="preserve">
+    <value>Import Single Page</value>
+  </data>
+  <data name="dingwei" xml:space="preserve">
+    <value>Positioning</value>
+  </data>
+  <data name="fabuchenggong" xml:space="preserve">
+    <value>Successfully Published</value>
+  </data>
+  <data name="fenlifabu" xml:space="preserve">
+    <value>Separate Publish</value>
+  </data>
+  <data name="guanbi" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="htmlyuansubiaoz" xml:space="preserve">
+    <value>HTML Element ID</value>
+  </data>
+  <data name="idtihuannamefz" xml:space="preserve">
+    <value>ID,Name Replace</value>
+  </data>
+  <data name="jibie" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="jinggao" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="jinxianshipeizhi" xml:space="preserve">
+    <value>Only Configurable</value>
+  </data>
+  <data name="jiushujushj" xml:space="preserve">
+    <value>Upgrading Data Structures</value>
+  </data>
+  <data name="kaifaqianm" xml:space="preserve">
+    <value>Developer Name</value>
+  </data>
+  <data name="kaishi" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="kelue" xml:space="preserve">
+    <value>Can be omitted</value>
+  </data>
+  <data name="kepeizhishujugaoji" xml:space="preserve">
+    <value>Configurable (Data/Advanced)</value>
+  </data>
+  <data name="kuaisfabujihuo" xml:space="preserve">
+    <value>Publish Active Page</value>
+  </data>
+  <data name="kuaisufabu" xml:space="preserve">
+    <value>Save And Publish</value>
+  </data>
+  <data name="leixing" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="lianjiechuan" xml:space="preserve">
+    <value>Connection String</value>
+  </data>
+  <data name="miaosu" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="morenqianduan" xml:space="preserve">
+    <value>Front-end Show</value>
+  </data>
+  <data name="morenshuchu" xml:space="preserve">
+    <value>Default Output</value>
+  </data>
+  <data name="position" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="qita" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="quanbu" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="RuleToolMenuItem3" xml:space="preserve">
+    <value>Rule Design Tool</value>
+  </data>
+  <data name="showforkepeizhi" xml:space="preserve">
+    <value>Only Display Configurable</value>
+  </data>
+  <data name="shuaxin" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="shujucaozuosz" xml:space="preserve">
+    <value>Data Operation Setting</value>
+  </data>
+  <data name="shujuhuoqusz" xml:space="preserve">
+    <value>Data Getting Setting</value>
+  </data>
+  <data name="shujukulj" xml:space="preserve">
+    <value>Database Connection</value>
+  </data>
+  <data name="shujukushengji" xml:space="preserve">
+    <value>数据库升级</value>
+  </data>
+  <data name="shujuliebiaosz" xml:space="preserve">
+    <value>Data List Setting</value>
+  </data>
+  <data name="shuruid" xml:space="preserve">
+    <value>Input ID</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>New Form Page</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>FileBox</value>
+  </data>
+  <data name="String100" xml:space="preserve">
+    <value>绑定表单数据源字段</value>
+  </data>
+  <data name="String101" xml:space="preserve">
+    <value>绑定数据字段，亦可以后再绑定</value>
+  </data>
+  <data name="String102" xml:space="preserve">
+    <value>选择</value>
+  </data>
+  <data name="String103" xml:space="preserve">
+    <value>表单标识参数</value>
+  </data>
+  <data name="String104" xml:space="preserve">
+    <value>定义表单标识参数，默认为fid，例如绑定父级表单的值可使用pid</value>
+  </data>
+  <data name="String105" xml:space="preserve">
+    <value>Data Operation</value>
+  </data>
+  <data name="String106" xml:space="preserve">
+    <value>Flow &amp; Data Operation</value>
+  </data>
+  <data name="String107" xml:space="preserve">
+    <value>表单权限</value>
+  </data>
+  <data name="String108" xml:space="preserve">
+    <value>设置该表单元素值允许被修改的状态值，默认为全部可修改，多个状态值用,隔开</value>
+  </data>
+  <data name="String109" xml:space="preserve">
+    <value>绑定数据表</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>Label</value>
+  </data>
+  <data name="String110" xml:space="preserve">
+    <value>设置该流程绑定的数据表标识，@开头为全表名，为空或输入错误将导致该流程操作不生效</value>
+  </data>
+  <data name="String111" xml:space="preserve">
+    <value>0.修改权限开启</value>
+  </data>
+  <data name="String112" xml:space="preserve">
+    <value>设定该页面为修改页面，并应用角色绑定的修改权限。可同时开启修改和查看权限。</value>
+  </data>
+  <data name="String113" xml:space="preserve">
+    <value>1.查看权限开启</value>
+  </data>
+  <data name="String114" xml:space="preserve">
+    <value>设定该页面为查看页面，并应用角色绑定的查看权限。可同时开启修改和查看权限。</value>
+  </data>
+  <data name="String115" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="String116" xml:space="preserve">
+    <value>开启</value>
+  </data>
+  <data name="String117" xml:space="preserve">
+    <value>2.主表标识</value>
+  </data>
+  <data name="String118" xml:space="preserve">
+    <value>设置数据主表标识，若@开头则为全表名。</value>
+  </data>
+  <data name="String119" xml:space="preserve">
+    <value>3.主参数变量</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="String120" xml:space="preserve">
+    <value>即获取主表数据的fid的request参数，默认为fid</value>
+  </data>
+  <data name="String121" xml:space="preserve">
+    <value>5.绑定用户</value>
+  </data>
+  <data name="String122" xml:space="preserve">
+    <value>绑定新增者的用户名，支持@语法，为空表示不设置。在应用规则中应用。例如：@session[asso_name]</value>
+  </data>
+  <data name="String123" xml:space="preserve">
+    <value>6.数据筛选</value>
+  </data>
+  <data name="String124" xml:space="preserve">
+    <value>设置数据筛选条件，支持@语法，为空表示不设置。在应用规则中应用。例如：a.cid='@session[r]' and a.did like '%@request[a]%'</value>
+  </data>
+  <data name="String125" xml:space="preserve">
+    <value>7.角色构件绑定</value>
+  </data>
+  <data name="String126" xml:space="preserve">
+    <value>指定角色构件的数据源，并应用角色构件所指定的数据和状态进行修改、查看和删除权限的绑定，为空表示不设置。在应用规则中应用。</value>
+  </data>
+  <data name="String127" xml:space="preserve">
+    <value>8.角色构件会话名</value>
+  </data>
+  <data name="String128" xml:space="preserve">
+    <value>指定要过滤的会话名，与角色构件的"获取用户的SQL"对应，例如asso_id获取ID,asso_name获取账户名,asso_realname获取真实用户名，asso_userrole获取当前用户角色。在应用规则中应用。</value>
+  </data>
+  <data name="String129" xml:space="preserve">
+    <value>9.应用规则</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="String130" xml:space="preserve">
+    <value>对以上四种权限规则，进行自定义组合，可用and/or/()自由组合，设置全自定义SQL时失效。权限说明：%m%:绑定用户,%e%:数据筛选,%f%:角色绑定fid,%s%:角色绑定状态</value>
+  </data>
+  <data name="String131" xml:space="preserve">
+    <value>4.指定状态值</value>
+  </data>
+  <data name="String132" xml:space="preserve">
+    <value>只允许显示指定状态值的数据，例如“0,1,2,3”，支持@语法。为空表示不设置。</value>
+  </data>
+  <data name="String133" xml:space="preserve">
+    <value>提示信息</value>
+  </data>
+  <data name="String134" xml:space="preserve">
+    <value>禁止被访问时，显示的提醒信息。@开头则为js脚本</value>
+  </data>
+  <data name="String135" xml:space="preserve">
+    <value>页面跳转</value>
+  </data>
+  <data name="String136" xml:space="preserve">
+    <value>禁止被访问时，跳转的页面地址，为空表示不设置。</value>
+  </data>
+  <data name="String137" xml:space="preserve">
+    <value>状态类型</value>
+  </data>
+  <data name="String138" xml:space="preserve">
+    <value>固定状态</value>
+  </data>
+  <data name="String139" xml:space="preserve">
+    <value>退到上一步</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>新增动作</value>
+  </data>
+  <data name="String140" xml:space="preserve">
+    <value>绑定流程设计</value>
+  </data>
+  <data name="String141" xml:space="preserve">
+    <value>定义执行该操作后的状态类型</value>
+  </data>
+  <data name="String142" xml:space="preserve">
+    <value>流程设计构件</value>
+  </data>
+  <data name="String143" xml:space="preserve">
+    <value>由绑定的流程设计构件指定操作后的行为</value>
+  </data>
+  <data name="String144" xml:space="preserve">
+    <value>固定分支</value>
+  </data>
+  <data name="String145" xml:space="preserve">
+    <value>绑定流程构件时，若下一步有分支流程，且当分支流程可能同时满足流转条件时，需设定固定分支流程ID值，该值为流程设计构件的分支箭头的ID。</value>
+  </data>
+  <data name="String146" xml:space="preserve">
+    <value>固定状态值位置</value>
+  </data>
+  <data name="String147" xml:space="preserve">
+    <value>在实现流程构件与固定状态值混用时，若当前类型为固定状态值，则需设定该固定状态值在流程设计中所对应的位置，即流程设计构件的对象的ID。</value>
+  </data>
+  <data name="String148" xml:space="preserve">
+    <value>可另存为（设置目标保存
+的列名，不设置不生效，
+表由saveto(tag)指定）</value>
+  </data>
+  <data name="String149" xml:space="preserve">
+    <value>Version Management</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>修改动作</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>Reset Operation</value>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>表单属性</value>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>数据操作验证</value>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>Summary Filter</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>填报人员...</value>
+  </data>
+  <data name="String20" xml:space="preserve">
+    <value>强制会员型</value>
+  </data>
+  <data name="String21" xml:space="preserve">
+    <value>匿名型</value>
+  </data>
+  <data name="String22" xml:space="preserve">
+    <value>自动型</value>
+  </data>
+  <data name="String23" xml:space="preserve">
+    <value>表单校验规则</value>
+  </data>
+  <data name="String24" xml:space="preserve">
+    <value>选择表单填报者的会员限制条件</value>
+  </data>
+  <data name="String25" xml:space="preserve">
+    <value>定义该表单的输入校验规则</value>
+  </data>
+  <data name="String26" xml:space="preserve">
+    <value>完成后提示信息</value>
+  </data>
+  <data name="String27" xml:space="preserve">
+    <value>定义表单提交完成后提示的信息，为空表示不提示。@开头则为js脚本</value>
+  </data>
+  <data name="String28" xml:space="preserve">
+    <value>完成后转向地址</value>
+  </data>
+  <data name="String29" xml:space="preserve">
+    <value>定义表单提交完成后转向的地址，为空表示返回原页面</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>汇总人员...</value>
+  </data>
+  <data name="String30" xml:space="preserve">
+    <value>表单使用者</value>
+  </data>
+  <data name="String31" xml:space="preserve">
+    <value>填报人员</value>
+  </data>
+  <data name="String32" xml:space="preserve">
+    <value>汇总人员</value>
+  </data>
+  <data name="String33" xml:space="preserve">
+    <value>确定(&amp;O)</value>
+  </data>
+  <data name="String34" xml:space="preserve">
+    <value>取消(&amp;C)</value>
+  </data>
+  <data name="String35" xml:space="preserve">
+    <value>1、一条规则必须为布尔表达式（也可用a?b:c）。\r\n2、元素值的获取方法为@getValue[abcd]@。\r\n3、支持其它合法的Javascript脚本。</value>
+  </data>
+  <data name="String36" xml:space="preserve">
+    <value>规则定义（布尔类型）</value>
+  </data>
+  <data name="String37" xml:space="preserve">
+    <value>规则描述（规则为False时提示）</value>
+  </data>
+  <data name="String38" xml:space="preserve">
+    <value>表单元素只能使用在表单页面上</value>
+  </data>
+  <data name="String39" xml:space="preserve">
+    <value>该元素只能使用在汇总页面上</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>Form Element</value>
+  </data>
+  <data name="String40" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="String41" xml:space="preserve">
+    <value>Current Element</value>
+  </data>
+  <data name="String42" xml:space="preserve">
+    <value>Element ID</value>
+  </data>
+  <data name="String43" xml:space="preserve">
+    <value>Element identification must be a combination of English, numbers, and underscores</value>
+  </data>
+  <data name="String44" xml:space="preserve">
+    <value>The same identifier is used for data binding between elements</value>
+  </data>
+  <data name="String45" xml:space="preserve">
+    <value>Element ID</value>
+  </data>
+  <data name="String46" xml:space="preserve">
+    <value>Define 定义元素的标识</value>
+  </data>
+  <data name="String47" xml:space="preserve">
+    <value>Form Element Property</value>
+  </data>
+  <data name="String48" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="String49" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>Input</value>
+  </data>
+  <data name="String50" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="String51" xml:space="preserve">
+    <value>使用类型</value>
+  </data>
+  <data name="String52" xml:space="preserve">
+    <value>选择该元素要使用类型</value>
+  </data>
+  <data name="String53" xml:space="preserve">
+    <value>输入规则</value>
+  </data>
+  <data name="String54" xml:space="preserve">
+    <value>用Javascript来定义输入规则，可以用@this@来获取该元素，用@thisValue@来获取该元素的值，必须而且只能返回布尔值。例如：if(@thisValue@&gt;10){alert('error');return false}return true;</value>
+  </data>
+  <data name="String55" xml:space="preserve">
+    <value>显示文字</value>
+  </data>
+  <data name="String56" xml:space="preserve">
+    <value>值</value>
+  </data>
+  <data name="String57" xml:space="preserve">
+    <value>选中状态</value>
+  </data>
+  <data name="String58" xml:space="preserve">
+    <value>注：值不能为空，并且不能出现相同的值。</value>
+  </data>
+  <data name="String59" xml:space="preserve">
+    <value>值不能为空，并且不能出现相同的值。</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="String60" xml:space="preserve">
+    <value>选项定义</value>
+  </data>
+  <data name="String61" xml:space="preserve">
+    <value>定义该元素的选项和选项的状态</value>
+  </data>
+  <data name="String62" xml:space="preserve">
+    <value>Filter Action</value>
+  </data>
+  <data name="String63" xml:space="preserve">
+    <value>过滤方式</value>
+  </data>
+  <data name="String64" xml:space="preserve">
+    <value>选择汇总过滤的方式</value>
+  </data>
+  <data name="String65" xml:space="preserve">
+    <value>按会员</value>
+  </data>
+  <data name="String66" xml:space="preserve">
+    <value>按表单</value>
+  </data>
+  <data name="String67" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="String68" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="String69" xml:space="preserve">
+    <value>自定义规则</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>TextArea</value>
+  </data>
+  <data name="String70" xml:space="preserve">
+    <value>自定义生成规则，除了系统默认生成规则外，可以用Javascript脚本自定义生成规则，其中年、月、日元素的取法分别为@DateYear@、@DateMonth@、@DateDay@。</value>
+  </data>
+  <data name="String71" xml:space="preserve">
+    <value>User Input</value>
+  </data>
+  <data name="String72" xml:space="preserve">
+    <value>流程及新增动作</value>
+  </data>
+  <data name="String73" xml:space="preserve">
+    <value>流程及修改动作</value>
+  </data>
+  <data name="String74" xml:space="preserve">
+    <value>Flow Action</value>
+  </data>
+  <data name="String75" xml:space="preserve">
+    <value>固定状态值</value>
+  </data>
+  <data name="String76" xml:space="preserve">
+    <value>定义该动作发生后，表单的状态值。默认新增和修改动作会使该表单状态值置为0</value>
+  </data>
+  <data name="String77" xml:space="preserve">
+    <value>表单标识</value>
+  </data>
+  <data name="String78" xml:space="preserve">
+    <value>定义表单的标识，用来区分不同业务类型的表单。命名尽量采用数字或简短的英文字母。（4.0版本起该项已作废）</value>
+  </data>
+  <data name="String79" xml:space="preserve">
+    <value>Dynamic Rows</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>RadioBox</value>
+  </data>
+  <data name="String80" xml:space="preserve">
+    <value>Serial Number</value>
+  </data>
+  <data name="String81" xml:space="preserve">
+    <value>默认新增行数</value>
+  </data>
+  <data name="String82" xml:space="preserve">
+    <value>新增标识</value>
+  </data>
+  <data name="String83" xml:space="preserve">
+    <value>定义默认的新增行数，为0表示不产生默认新增行数</value>
+  </data>
+  <data name="String84" xml:space="preserve">
+    <value>新增行按钮的标识，在一个页面中不能重复</value>
+  </data>
+  <data name="String85" xml:space="preserve">
+    <value>序号起始值</value>
+  </data>
+  <data name="String86" xml:space="preserve">
+    <value>定义序号的起始值</value>
+  </data>
+  <data name="String87" xml:space="preserve">
+    <value>一级子流程</value>
+  </data>
+  <data name="String88" xml:space="preserve">
+    <value>二级子流程</value>
+  </data>
+  <data name="String89" xml:space="preserve">
+    <value>一级子流程状态</value>
+  </data>
+  <data name="String891" xml:space="preserve">
+    <value>二级子流程状态</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>CheckBox</value>
+  </data>
+  <data name="String90" xml:space="preserve">
+    <value>一级子流程标识</value>
+  </data>
+  <data name="String901" xml:space="preserve">
+    <value>二级子流程标识</value>
+  </data>
+  <data name="String91" xml:space="preserve">
+    <value>定义该一级子流程触发后的状态值，1|2表示同时修改主流程状态为2</value>
+  </data>
+  <data name="String911" xml:space="preserve">
+    <value>定义该二级子流程触发后的状态值，1|2表示同时修改一级子流程状态为2，1|2|3表示同时修改一级子流程和主流程状态分别为2和3</value>
+  </data>
+  <data name="String92" xml:space="preserve">
+    <value>定义该一级子流程的标识，只能为英文字母或数字</value>
+  </data>
+  <data name="String921" xml:space="preserve">
+    <value>定义该二级子流程的标识，只能为英文字母或数字</value>
+  </data>
+  <data name="String93" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="String931" xml:space="preserve">
+    <value>Modify </value>
+  </data>
+  <data name="String94" xml:space="preserve">
+    <value>定义是否兼带修改功能，0为不兼带，1为兼带</value>
+  </data>
+  <data name="String941" xml:space="preserve">
+    <value>定义是否兼带修改功能，0为不兼带，1为兼带</value>
+  </data>
+  <data name="String95" xml:space="preserve">
+    <value>上级流程标识</value>
+  </data>
+  <data name="String96" xml:space="preserve">
+    <value>定义该二级子流程的上级流程标识，只能为英文字母或数字</value>
+  </data>
+  <data name="String97" xml:space="preserve">
+    <value>Create GUID ID</value>
+  </data>
+  <data name="String98" xml:space="preserve">
+    <value>Update Controls</value>
+  </data>
+  <data name="String99" xml:space="preserve">
+    <value>Bound Field</value>
+  </data>
+  <data name="toolStripExportApiDoc" xml:space="preserve">
+    <value>Export Api Document</value>
+  </data>
+  <data name="updateProductMenu" xml:space="preserve">
+    <value>Check Product Updates</value>
+  </data>
+  <data name="vscodepath" xml:space="preserve">
+    <value>VSCode Program Path</value>
+  </data>
+  <data name="waibuchengxu" xml:space="preserve">
+    <value>External Programs</value>
+  </data>
+  <data name="wenjian" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="windowliebiao" xml:space="preserve">
+    <value>Window List</value>
+  </data>
+  <data name="xuanzezhiding" xml:space="preserve">
+    <value>Select Specified Page</value>
+  </data>
+  <data name="yangshikuandu" xml:space="preserve">
+    <value>Style Width</value>
+  </data>
+  <data name="yanzhong" xml:space="preserve">
+    <value>Serious</value>
+  </data>
+  <data name="yemiancztool" xml:space="preserve">
+    <value>Page Assistant</value>
+  </data>
+  <data name="yiban" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="yuansucztool" xml:space="preserve">
+    <value>Element Assistant</value>
+  </data>
+  <data name="yuming" xml:space="preserve">
+    <value>Domain</value>
+  </data>
+  <data name="zhandian" xml:space="preserve">
+    <value>Site</value>
+  </data>
+  <data name="zhandianlbhb" xml:space="preserve">
+    <value>站点列表按钮合并</value>
+  </data>
+  <data name="zhenggezhandian" xml:space="preserve">
+    <value>All Site</value>
+  </data>
+  <data name="zhongyao" xml:space="preserve">
+    <value>Important</value>
+  </data>
+  <data name="zujian" xml:space="preserve">
+    <value>Component</value>
+  </data>
+</root>

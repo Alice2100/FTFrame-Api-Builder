@@ -1,0 +1,71 @@
+﻿@page
+@using FTFrame.Tool
+@using FTFrame;
+@inject Project.QC.Test.IStrOP  iStrOP
+@model FTFrame.Web.Core.Pages.AaModel
+@{
+    Layout = "~/Layouts/TestLayout.cshtml";
+}
+
+@Model.Msg
+
+@{
+    <br />
+}
+
+get Request Para
+<br />
+@{
+    string aa = HttpContext.Request.Query["a"].FirstOrDefault();
+}
+@aa
+<br>test session
+<br />
+@{
+    session.SetString("bbb","Hello Session");
+    var str0 = session.GetString("bbb");
+
+    @str0
+}
+<br />
+@{
+    session.Set<DateTime>("aaa", DateTime.Now);
+    var str1 = session.Get<DateTime>("aaa").ToString();
+    @str1
+}
+<br>test ip
+<br />
+@{
+    @str.GetIPAddress().ToString()
+    <br>
+    @str.GetCombID()
+}
+<br />
+RootPath :
+@SysConst.RootPath
+<br />
+配置文件获取 ConnStr:
+@SysConst.ConnString
+<p>依赖注入测试</p>
+@iStrOP.Plus("456", "789")
+<p>分视图示例</p>
+@await Html.PartialAsync("Parts/PartTest", HttpContext, new ViewDataDictionary(ViewData) {
+{ "viewpara", 8 }
+})
+
+@section SecTest
+    {
+    <p style="color:blue">插入到模板的额外区域</p>
+}
+
+@{
+    List<Project.QC.Test.UserInfo> users = new Project.QC.Test.UserInfoService().GetUserInfos();
+}
+@foreach (var user in users)
+{
+    <div>
+        <span>@user.Fid</span>
+        <span>@user.Name</span>
+        <span>@user.Addtime.ToString("yyyy-MM-dd HH:mm")</span>
+    </div>
+}

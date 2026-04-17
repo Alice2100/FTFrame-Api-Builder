@@ -1,0 +1,9 @@
+﻿@page
+@using FTFrame;
+@using FTFrame.Tool;
+@using FTFrame.DBClient;
+@using Microsoft.AspNetCore.Http.Extensions;
+@{Layout = null;}
+@{
+	FTFrame.Server.Core.Api.PostManJson(HttpContext); 
+}

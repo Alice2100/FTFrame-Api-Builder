@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Api_List.text" xml:space="preserve">
+    <value>Api调用</value>
+  </data>
+  <data name="Api_List.1" xml:space="preserve">
+    <value>应避免自我调用</value>
+  </data>
+  <data name="Api_List.2" xml:space="preserve">
+    <value>模块</value>
+  </data>
+  <data name="Api_List.3" xml:space="preserve">
+    <value>功能</value>
+  </data>
+  <data name="Api_List.4" xml:space="preserve">
+    <value>说明</value>
+  </data>
+  <data name="Api_List.5" xml:space="preserve">
+    <value>路径</value>
+  </data>
+  <data name="Api_List.6" xml:space="preserve">
+    <value>开发者</value>
+  </data>
+  <data name="Api_List.7" xml:space="preserve">
+    <value>数据列表</value>
+  </data>
+  <data name="Api_List.8" xml:space="preserve">
+    <value>数据获取</value>
+  </data>
+  <data name="Api_List.9" xml:space="preserve">
+    <value>数据操作</value>
+  </data>
+  <data name="Code_List.text" xml:space="preserve">
+    <value>程序集方法调用</value>
+  </data>
+  <data name="Code_List.button1" xml:space="preserve">
+    <value>保存(&amp;S)</value>
+  </data>
+  <data name="Code_List.button2" xml:space="preserve">
+    <value>新增(&amp;A)</value>
+  </data>
+  <data name="Code_List.button3" xml:space="preserve">
+    <value>同步其他开发者配置</value>
+  </data>
+  <data name="Code_List.1" xml:space="preserve">
+    <value>当前开发者：</value>
+  </data>
+  <data name="Code_List.2" xml:space="preserve">
+    <value>开发者</value>
+  </data>
+  <data name="Code_List.3" xml:space="preserve">
+    <value>调用别名</value>
+  </data>
+  <data name="Code_List.4" xml:space="preserve">
+    <value>调用方法</value>
+  </data>
+  <data name="Code_List.5" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="Code_List.6" xml:space="preserve">
+    <value>程序集</value>
+  </data>
+  <data name="Code_List.7" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="Code_List.8" xml:space="preserve">
+    <value>选择</value>
+  </data>
+  <data name="Code_List.9" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Code_List.10" xml:space="preserve">
+    <value>保存成功</value>
+  </data>
+  <data name="Code_List.11" xml:space="preserve">
+    <value>已存在，不能重复。</value>
+  </data>
+  <data name="Code_Select.text" xml:space="preserve">
+    <value>选择公共方法</value>
+  </data>
+  <data name="Common_Select.text" xml:space="preserve">
+    <value>常用配置</value>
+  </data>
+  <data name="Common_Select.1" xml:space="preserve">
+    <value>无有效激活页面</value>
+  </data>
+  <data name="Common_Select.2" xml:space="preserve">
+    <value>模块</value>
+  </data>
+  <data name="Common_Select.3" xml:space="preserve">
+    <value>功能</value>
+  </data>
+  <data name="Common_Select.4" xml:space="preserve">
+    <value>配置</value>
+  </data>
+  <data name="Common_Select.5" xml:space="preserve">
+    <value>说明</value>
+  </data>
+  <data name="DataOP_Api.text" xml:space="preserve">
+    <value>数据操作 Api</value>
+  </data>
+  <data name="DataOP_Api.label2" xml:space="preserve">
+    <value>接口路由</value>
+  </data>
+  <data name="DataOP_Api.label1" xml:space="preserve">
+    <value>接口描述</value>
+  </data>
+  <data name="DataOP_Api.label9" xml:space="preserve">
+    <value>输入（_开头不显示）</value>
+  </data>
+  <data name="DataOP_Api.label10" xml:space="preserve">
+    <value>Name列</value>
+  </data>
+  <data name="DataOP_Api.label11" xml:space="preserve">
+    <value>说明</value>
+  </data>
+  <data name="DataOP_Api.1" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="DataOP_Api.2" xml:space="preserve">
+    <value>组件设置错误</value>
+  </data>
+  <data name="DataOPDefine.text" xml:space="preserve">
+    <value>数据操作 设置</value>
+  </data>
+  <data name="DataOPDefine.button1" xml:space="preserve">
+    <value>确定(&amp;O)</value>
+  </data>
+  <data name="DataOPDefine.button3" xml:space="preserve">
+    <value>粘贴(&amp;P)</value>
+  </data>
+  <data name="DataOPDefine.button6" xml:space="preserve">
+    <value>统一表名</value>
+  </data>
+  <data name="DataOPDefine.label1" xml:space="preserve">
+    <value>第</value>
+  </data>
+  <data name="DataOPDefine.label2" xml:space="preserve">
+    <value>列</value>
+  </data>
+  <data name="DataOPDefine.button4" xml:space="preserve">
+    <value>替换</value>
+  </data>
+  <data name="DataOPDefine.button2" xml:space="preserve">
+    <value>取消(&amp;C)</value>
+  </data>
+  <data name="DataOPDefine.button11" xml:space="preserve">
+    <value>Name=列名</value>
+  </data>
+  <data name="DataOPDefine.button9" xml:space="preserve">
+    <value>API定义</value>
+  </data>
+  <data name="DataOPDefine.button10" xml:space="preserve">
+    <value>快速定义</value>
+  </data>
+  <data name="DataOPDefine.button7" xml:space="preserve">
+    <value>帮助文档</value>
+  </data>
+  <data name="DataOPDefine.1" xml:space="preserve">
+    <value>配置子表时必须设置Name值</value>
+  </data>
+  <data name="DataOPDefine.2" xml:space="preserve">
+    <value>配置子表时绑定字段必须设置为绑定的子表名</value>
+  </data>
+  <data name="DataOPDefine.3" xml:space="preserve">
+    <value>配置子表重置时，必须设置重置前删除数据的筛选条件，例如 pfid='@p1@'</value>
+  </data>
+  <data name="DataOPDefine.4" xml:space="preserve">
+    <value>子表</value>
+  </data>
+  <data name="DataOPDefine.5" xml:space="preserve">
+    <value>多行</value>
+  </data>
+  <data name="DataOPDefine.6" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="DataOPDefine.7" xml:space="preserve">
+    <value>作为备注和必填提醒时使用</value>
+  </data>
+  <data name="DataOPDefine.8" xml:space="preserve">
+    <value>Name值</value>
+  </data>
+  <data name="DataOPDefine.9" xml:space="preserve">
+    <value>绑定字段</value>
+  </data>
+  <data name="DataOPDefine.10" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="DataOPDefine.11" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="DataOPDefine.12" xml:space="preserve">
+    <value>重置</value>
+  </data>
+  <data name="DataOPDefine.13" xml:space="preserve">
+    <value>重置保留FID</value>
+  </data>
+  <data name="DataOPDefine.14" xml:space="preserve">
+    <value>仅更新</value>
+  </data>
+  <data name="DataOPDefine.15" xml:space="preserve">
+    <value>新增Form</value>
+  </data>
+  <data name="DataOPDefine.16" xml:space="preserve">
+    <value>重置Form</value>
+  </data>
+  <data name="DataOPDefine.17" xml:space="preserve">
+    <value>更新Form</value>
+  </data>
+  <data name="DataOPDefine.18" xml:space="preserve">
+    <value>新增Json</value>
+  </data>
+  <data name="DataOPDefine.19" xml:space="preserve">
+    <value>重置Json</value>
+  </data>
+  <data name="DataOPDefine.20" xml:space="preserve">
+    <value>更新Json</value>
+  </data>
+  <data name="DataOPDefine.21" xml:space="preserve">
+    <value>验证</value>
+  </data>
+  <data name="DataOPDefine.22" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="DataOPDefine.23" xml:space="preserve">
+    <value>为空值null</value>
+  </data>
+  <data name="DataOPDefine.24" xml:space="preserve">
+    <value>不能为空</value>
+  </data>
+  <data name="DataOPDefine.25" xml:space="preserve">
+    <value>整数</value>
+  </data>
+  <data name="DataOPDefine.26" xml:space="preserve">
+    <value>数字</value>
+  </data>
+  <data name="DataOPDefine.27" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="DataOPDefine.28" xml:space="preserve">
+    <value>日期：为空值null</value>
+  </data>
+  <data name="DataOPDefine.29" xml:space="preserve">
+    <value>整数：可以为空</value>
+  </data>
+  <data name="DataOPDefine.30" xml:space="preserve">
+    <value>整数：为空值 0</value>
+  </data>
+  <data name="DataOPDefine.31" xml:space="preserve">
+    <value>整数：为空值-1</value>
+  </data>
+  <data name="DataOPDefine.32" xml:space="preserve">
+    <value>整数：为空值null</value>
+  </data>
+  <data name="DataOPDefine.33" xml:space="preserve">
+    <value>数字：可以为空</value>
+  </data>
+  <data name="DataOPDefine.34" xml:space="preserve">
+    <value>数字：为空值 0</value>
+  </data>
+  <data name="DataOPDefine.35" xml:space="preserve">
+    <value>数字：为空值-1</value>
+  </data>
+  <data name="DataOPDefine.36" xml:space="preserve">
+    <value>数字：为空值null</value>
+  </data>
+  <data name="DataOPDefine.37" xml:space="preserve">
+    <value>筛选规则</value>
+  </data>
+  <data name="DataOPDefine.38" xml:space="preserve">
+    <value>支持@语法，为空则默认为DefaultFid值</value>
+  </data>
+  <data name="DataOPDefine.39" xml:space="preserve">
+    <value>ID值</value>
+  </data>
+  <data name="DataOPDefine.40" xml:space="preserve">
+    <value>验证时必须</value>
+  </data>
+  <data name="DataOPDefine.41" xml:space="preserve">
+    <value>高级</value>
+  </data>
+  <data name="DataOPDefine.42" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="DataOPDefine.43" xml:space="preserve">
+    <value>必须先在工具-》选项中配置数据库连接串</value>
+  </data>
+  <data name="DataOPDefine.44" xml:space="preserve">
+    <value>该数据库类型还没完成便捷性开发，请手动输入</value>
+  </data>
+  <data name="DataOPDefine.45" xml:space="preserve">
+    <value>配置子表时必须设置Name值</value>
+  </data>
+  <data name="DataOPDefine.46" xml:space="preserve">
+    <value>配置子表时绑定字段必须设置为绑定的子表名</value>
+  </data>
+  <data name="DataOPDefineSon.text" xml:space="preserve">
+    <value>子表数据操作</value>
+  </data>
+  <data name="DataOPDefineSon.1" xml:space="preserve">
+    <value>默认</value>
+  </data>
+  <data name="DataOPDefineSon.2" xml:space="preserve">
+    <value>特殊值</value>
+  </data>
+  <data name="DataOPDefineSon.3" xml:space="preserve">
+    <value>主键值</value>
+  </data>
+  <data name="DataOPDefineSon.4" xml:space="preserve">
+    <value>父表主键值</value>
+  </data>
+  <data name="DataOPDefineSon.5" xml:space="preserve">
+    <value>父表同名值</value>
+  </data>
+  <data name="DllList.text" xml:space="preserve">
+    <value>选择dll文件</value>
+  </data>
+  <data name="DllList.1" xml:space="preserve">
+    <value>没找到dll文件</value>
+  </data>
+  <data name="DyValueApi.text" xml:space="preserve">
+    <value>数据获取 Api</value>
+  </data>
+  <data name="DyValueApi.label2" xml:space="preserve">
+    <value>接口路由</value>
+  </data>
+  <data name="DyValueApi.label1" xml:space="preserve">
+    <value>接口描述</value>
+  </data>
+  <data name="DyValueApi.label9" xml:space="preserve">
+    <value>输出</value>
+  </data>
+  <data name="DyValueApi.label10" xml:space="preserve">
+    <value>ID列</value>
+  </data>
+  <data name="DyValueApi.label11" xml:space="preserve">
+    <value>说明</value>
+  </data>
+  <data name="DyValueApi.apidiaoyong" xml:space="preserve">
+    <value>Api调用</value>
+  </data>
+  <data name="DyValueApi.1" xml:space="preserve">
+    <value>组件设置错误</value>
+  </data>
+  <data name="DyValueDefine.text" xml:space="preserve">
+    <value>数据获取 设置</value>
+  </data>
+  <data name="DyValueDefine.button1" xml:space="preserve">
+    <value>确定(&amp;O)</value>
+  </data>
+  <data name="DyValueDefine.button3" xml:space="preserve">
+    <value>粘贴(&amp;P)</value>
+  </data>
+  <data name="DyValueDefine.button6" xml:space="preserve">
+    <value>统一表名</value>
+  </data>
+  <data name="DyValueDefine.label1" xml:space="preserve">
+    <value>第</value>
+  </data>
+  <data name="DyValueDefine.label2" xml:space="preserve">
+    <value>列</value>
+  </data>
+  <data name="DyValueDefine.button4" xml:space="preserve">
+    <value>替换</value>
+  </data>
+  <data name="DyValueDefine.button8" xml:space="preserve">
+    <value>ID=列名</value>
+  </data>
+  <data name="DyValueDefine.button2" xml:space="preserve">
+    <value>取消(&amp;C)</value>
+  </data>
+  <data name="DyValueDefine.button9" xml:space="preserve">
+    <value>API定义</value>
+  </data>
+  <data name="DyValueDefine.button7" xml:space="preserve">
+    <value>快速定义</value>
+  </data>
+  <data name="DyValueDefine.button5" xml:space="preserve">
+    <value>帮助文档</value>
+  </data>
+  <data name="DyValueDefine.0" xml:space="preserve">
+    <value>同步</value>
+  </data>
+  <data name="DyValueDefine.1" xml:space="preserve">
+    <value>单行取值</value>
+  </data>
+  <data name="DyValueDefine.2" xml:space="preserve">
+    <value>赋值</value>
+  </data>
+  <data name="DyValueDefine.3" xml:space="preserve">
+    <value>异步</value>
+  </data>
+  <data name="DyValueDefine.4" xml:space="preserve">
+    <value>动态新增</value>
+  </data>
+  <data name="DyValueDefine.5" xml:space="preserve">
+    <value>维表</value>
+  </data>
+  <data name="DyValueDefine.6" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="DyValueDefine.7" xml:space="preserve">
+    <value>作为备注和必填提醒时使用</value>
+  </data>
+  <data name="DyValueDefine.8" xml:space="preserve">
+    <value>ID值</value>
+  </data>
+  <data name="DyValueDefine.9" xml:space="preserve">
+    <value>用,隔开表示多个元素赋值</value>
+  </data>
+  <data name="DyValueDefine.10" xml:space="preserve">
+    <value>绑定字段</value>
+  </data>
+  <data name="DyValueDefine.11" xml:space="preserve">
+    <value>筛选规则</value>
+  </data>
+  <data name="DyValueDefine.12" xml:space="preserve">
+    <value>支持@语法，{para}为js代码，支持@p1@到@p12@赋值，为空则默认为DefaultFid值</value>
+  </data>
+  <data name="DyValueDefine.13" xml:space="preserve">
+    <value>方式</value>
+  </data>
+  <data name="DyValueDefine.14" xml:space="preserve">
+    <value>取值</value>
+  </data>
+  <data name="DyValueDefine.15" xml:space="preserve">
+    <value>高级</value>
+  </data>
+  <data name="DyValueDefine.16" xml:space="preserve">
+    <value>为空不生效，@code为code接口，sql@code为code接口sql</value>
+  </data>
+  <data name="DyValueDefine.17" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="DyValueDefine.18" xml:space="preserve">
+    <value>必须先在工具-》选项中配置数据库连接串</value>
+  </data>
+  <data name="DyValueDefine.19" xml:space="preserve">
+    <value>该数据库类型还没完成便捷性开发，请手动输入</value>
+  </data>
+  <data name="Js_List.text" xml:space="preserve">
+    <value>JS方法调用</value>
+  </data>
+  <data name="Js_List.1" xml:space="preserve">
+    <value>无有效激活页面</value>
+  </data>
+  <data name="Js_List.2" xml:space="preserve">
+    <value>模块</value>
+  </data>
+  <data name="Js_List.3" xml:space="preserve">
+    <value>功能</value>
+  </data>
+  <data name="Js_List.4" xml:space="preserve">
+    <value>方法</value>
+  </data>
+  <data name="Js_List.5" xml:space="preserve">
+    <value>说明</value>
+  </data>
+  <data name="Js_List.6" xml:space="preserve">
+    <value>列表页刷新</value>
+  </data>
+  <data name="Js_List.7" xml:space="preserve">
+    <value>参数为页码，无参数则刷新当前页码</value>
+  </data>
+  <data name="Js_List.8" xml:space="preserve">
+    <value>获取异步方法</value>
+  </data>
+  <data name="Js_List.9" xml:space="preserve">
+    <value>可传递0到12个参数</value>
+  </data>
+  <data name="Js_List.10" xml:space="preserve">
+    <value>保存成功</value>
+  </data>
+  <data name="Js_List.11" xml:space="preserve">
+    <value>已存在，不能重复</value>
+  </data>
+  <data name="Js_List.12" xml:space="preserve">
+    <value>选择</value>
+  </data>
+  <data name="Js_List.13" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="List_Api.text" xml:space="preserve">
+    <value>列表 Api</value>
+  </data>
+  <data name="List_Api.label2" xml:space="preserve">
+    <value>接口路由</value>
+  </data>
+  <data name="List_Api.label1" xml:space="preserve">
+    <value>接口描述</value>
+  </data>
+  <data name="List_Api.label9" xml:space="preserve">
+    <value>输入</value>
+  </data>
+  <data name="List_Api.label10" xml:space="preserve">
+    <value>参考值/数据列</value>
+  </data>
+  <data name="List_Api.label11" xml:space="preserve">
+    <value>说明 （隐藏参数 isExport，exportMax 为导出Excel）</value>
+  </data>
+  <data name="List_Api.1" xml:space="preserve">
+    <value>列表</value>
+  </data>
+  <data name="List_Api.2" xml:space="preserve">
+    <value>排序字段[#]asc或desc[#]多字段或按字段模糊查询[#]完全匹配查询，例如a:1;b:2[#]每页显示数量[#]默认无序号 1按每页排序号，2按全部排序号[#]显示第几页，默认第一页</value>
+  </data>
+  <data name="List_Api.3" xml:space="preserve">
+    <value>按设定的主键列名，选择/操作单条或多条记录（,隔开）</value>
+  </data>
+  <data name="List_Api.4" xml:space="preserve">
+    <value>按主键值，更改设定列的值，用于删除/状态等简单操作</value>
+  </data>
+  <data name="List_Api.5" xml:space="preserve">
+    <value>组件设置错误</value>
+  </data>
+  <data name="List_Api.label5" xml:space="preserve">
+    <value>功能标识</value>
+  </data>
+  <data name="List_Api.label6" xml:space="preserve">
+    <value>选项控制</value>
+  </data>
+  <data name="List_Api.label7" xml:space="preserve">
+    <value>图标定义</value>
+  </data>
+  <data name="List_Api.label3" xml:space="preserve">
+    <value>选择内置功能或自定义标识</value>
+  </data>
+  <data name="List_Api.label4" xml:space="preserve">
+    <value>列表页复选框验证方式</value>
+  </data>
+  <data name="List_Api.label8" xml:space="preserve">
+    <value>按钮图标定义，与前端框架相关</value>
+  </data>
+  <data name="PA_Div.RcheckBox1" xml:space="preserve">
+    <value>ID、Name替换</value>
+  </data>
+  <data name="PA_Div.checkBox1" xml:space="preserve">
+    <value>从[DIV]模板导入</value>
+  </data>
+  <data name="PA_Div.1" xml:space="preserve">
+    <value>必须输入ID</value>
+  </data>
+  <data name="PA_Div.2" xml:space="preserve">
+    <value>必须选择一个模板</value>
+  </data>
+  <data name="PA_Div.3" xml:space="preserve">
+    <value>ID为 {0} 的HTML元素已经存在！</value>
+  </data>
+  <data name="PA_Div.4" xml:space="preserve">
+    <value>空内容</value>
+  </data>
+  <data name="PA_Div.5" xml:space="preserve">
+    <value>必须输入ID</value>
+  </data>
+  <data name="HisBack.text" xml:space="preserve">
+    <value>历史备份 - 点击下载</value>
+  </data>
+  <data name="HisBack.1" xml:space="preserve">
+    <value>该页面没有备份</value>
+  </data>
+  <data name="HisBack.2" xml:space="preserve">
+    <value>站点文件</value>
+  </data>
+  <data name="HisBack.3" xml:space="preserve">
+    <value>下载成功</value>
+  </data>
+  <data name="PageUpdate.text" xml:space="preserve">
+    <value>页面更新</value>
+  </data>
+  <data name="RawAll.defaulthidden" xml:space="preserve">
+    <value>默认不显示</value>
+  </data>
+  <data name="RawAll.button8" xml:space="preserve">
+    <value>快速定义</value>
+  </data>
+  <data name="RawAll.button9" xml:space="preserve">
+    <value>API定义</value>
+  </data>
+  <data name="RawAll.button7" xml:space="preserve">
+    <value>选择数据列</value>
+  </data>
+  <data name="RawAll.label8" xml:space="preserve">
+    <value>说明/描述</value>
+  </data>
+  <data name="RawSelCol.text" xml:space="preserve">
+    <value>列绑定字段</value>
+  </data>
+  <data name="RawSelCol.1" xml:space="preserve">
+    <value>必须先在工具-》选项中配置数据库连接串</value>
+  </data>
+  <data name="RawSelCol.2" xml:space="preserve">
+    <value>主表设置和全自定义查询至少设置一项</value>
+  </data>
+  <data name="RawSelCol.3" xml:space="preserve">
+    <value>说明</value>
+  </data>
+  <data name="RawSelCol.4" xml:space="preserve">
+    <value>列名</value>
+  </data>
+  <data name="RawSelCol.5" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="RawSelCol.6" xml:space="preserve">
+    <value>该数据库类型还没完成便捷性开发，请手动输入</value>
+  </data>
+  <data name="RawSelCols.text" xml:space="preserve">
+    <value>快速定义列</value>
+  </data>
+  <data name="RawSelCols.button1" xml:space="preserve">
+    <value>确定(&amp;O)</value>
+  </data>
+  <data name="RawSelCols.1" xml:space="preserve">
+    <value>显示</value>
+  </data>
+  <data name="RawSelCols.2" xml:space="preserve">
+    <value>显示列名</value>
+  </data>
+  <data name="RawSelCols.3" xml:space="preserve">
+    <value>列名</value>
+  </data>
+  <data name="RawSelCols.4" xml:space="preserve">
+    <value>表列名</value>
+  </data>
+  <data name="RawSelCols.5" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="RawSelCols.6" xml:space="preserve">
+    <value>表字段说明</value>
+  </data>
+  <data name="RawSelCols.7" xml:space="preserve">
+    <value>说明</value>
+  </data>
+  <data name="RawSelCols.8" xml:space="preserve">
+    <value>列说明/描述</value>
+  </data>
+  <data name="RawSelCols.9" xml:space="preserve">
+    <value>上</value>
+  </data>
+  <data name="RawSelCols.10" xml:space="preserve">
+    <value>下</value>
+  </data>
+  <data name="RawSelCols.11" xml:space="preserve">
+    <value>顶</value>
+  </data>
+  <data name="RawSelCols.12" xml:space="preserve">
+    <value>底</value>
+  </data>
+  <data name="SelCol.1" xml:space="preserve">
+    <value>在数据库中不存在！</value>
+  </data>
+  <data name="SelCol.2" xml:space="preserve">
+    <value>数据表</value>
+  </data>
+  <data name="SQL.OK" xml:space="preserve">
+    <value>确定(&amp;O)</value>
+  </data>
+  <data name="SQL.Close" xml:space="preserve">
+    <value>关闭(&amp;C)</value>
+  </data>
+  <data name="SQL.test" xml:space="preserve">
+    <value>测试(&amp;T)</value>
+  </data>
+  <data name="SQL.textsql" xml:space="preserve">
+    <value>//变量替换，用来测试SQL。变量间用分号或换行隔开，键值对用 : 隔开
+//多表查询用Select * 时，*替换为 @*@，则自动去除重复列</value>
+  </data>
+  <data name="SQL.1" xml:space="preserve">
+    <value>SQL模板</value>
+  </data>
+  <data name="FormInput" xml:space="preserve">
+    <value>Form 输入</value>
+  </data>
+  <data name="JsonInput" xml:space="preserve">
+    <value>Json 输入</value>
+  </data>
+  <data name="fromNotSql" xml:space="preserve">
+    <value>数据源非SQL，暂不支持该操作</value>
+  </data>
+  <data name="AsDatasource" xml:space="preserve">
+    <value>作为数据源</value>
+  </data>
+  <data name="List_Api.label1x" xml:space="preserve">
+    <value>操作脚本</value>
+  </data>
+  <data name="List_Api.label2x" xml:space="preserve">
+    <value>按钮文字</value>
+  </data>
+  <data name="RawSelCols.selall" xml:space="preserve">
+    <value>全选</value>
+  </data>
+  <data name="Common_SelCols.Title" xml:space="preserve">
+    <value>列选择</value>
+  </data>
+  <data name="PartQuick.Title" xml:space="preserve">
+    <value>组件属性快捷设置</value>
+  </data>
+  <data name="List_Api_ExportFilename" xml:space="preserve">
+    <value>导出文件名</value>
+  </data>
+  <data name="HisBack.Download" xml:space="preserve">
+    <value>下载</value>
+  </data>
+  <data name="HisBack.Export" xml:space="preserve">
+    <value>导出</value>
+  </data>
+  <data name="HisBack.IsRoll" xml:space="preserve">
+    <value>确定要回滚该页面吗？</value>
+  </data>
+  <data name="HisBack.RollBack" xml:space="preserve">
+    <value>回滚</value>
+  </data>
+  <data name="HisBack.success" xml:space="preserve">
+    <value>操作成功</value>
+  </data>
+  <data name="HisBack.IsRollSite" xml:space="preserve">
+    <value>确定要回滚该版本吗？</value>
+  </data>
+  <data name="VersionControl.btn1" xml:space="preserve">
+    <value>按最新生成版本</value>
+  </data>
+  <data name="VersionControl.btn2" xml:space="preserve">
+    <value>按时间生成版本</value>
+  </data>
+  <data name="VersionControl.Desc" xml:space="preserve">
+    <value>注释</value>
+  </data>
+  <data name="VersionControl.Detail" xml:space="preserve">
+    <value>明细</value>
+  </data>
+  <data name="VersionControl.Text" xml:space="preserve">
+    <value>站点版本管理</value>
+  </data>
+  <data name="VersionControl.version" xml:space="preserve">
+    <value>版本号</value>
+  </data>
+  <data name="DyValueDefine.button12" xml:space="preserve">
+    <value>生成表单</value>
+  </data>
+  <data name="dataop.api.1" xml:space="preserve">
+    <value>修改，参数1为主键值</value>
+  </data>
+  <data name="dyvalue.api.1" xml:space="preserve">
+    <value>详情，参数1为主键值</value>
+  </data>
+</root>

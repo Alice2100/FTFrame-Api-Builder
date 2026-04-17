@@ -1,0 +1,533 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="bindgetcheckbox" xml:space="preserve">
+    <value>自定义</value>
+  </data>
+  <data name="button10" xml:space="preserve">
+    <value>六 列</value>
+  </data>
+  <data name="button11" xml:space="preserve">
+    <value>选  择</value>
+  </data>
+  <data name="button13" xml:space="preserve">
+    <value>八 列</value>
+  </data>
+  <data name="button15" xml:space="preserve">
+    <value>从接口导入</value>
+  </data>
+  <data name="button16" xml:space="preserve">
+    <value>清 空</value>
+  </data>
+  <data name="button18" xml:space="preserve">
+    <value>从获取接口导入</value>
+  </data>
+  <data name="button19" xml:space="preserve">
+    <value>从操作接口导入</value>
+  </data>
+  <data name="button20" xml:space="preserve">
+    <value>从操作接口生成</value>
+  </data>
+  <data name="button21" xml:space="preserve">
+    <value>保 存 Ctrl+S</value>
+  </data>
+  <data name="button22" xml:space="preserve">
+    <value>从获取接口生成</value>
+  </data>
+  <data name="button27" xml:space="preserve">
+    <value>站点参数 Ctrl+P</value>
+  </data>
+  <data name="button29" xml:space="preserve">
+    <value>配  置</value>
+  </data>
+  <data name="button3" xml:space="preserve">
+    <value>预 览 Ctrl+E</value>
+  </data>
+  <data name="button4" xml:space="preserve">
+    <value>导 出 Ctrl+W</value>
+  </data>
+  <data name="button5" xml:space="preserve">
+    <value>发 布 Ctrl+Q</value>
+  </data>
+  <data name="button9" xml:space="preserve">
+    <value>四 列</value>
+  </data>
+  <data name="checkbox3" xml:space="preserve">
+    <value>实时预览</value>
+  </data>
+  <data name="dataGridView1.col.0" xml:space="preserve">
+    <value>显示</value>
+  </data>
+  <data name="dataGridView1.col.1" xml:space="preserve">
+    <value>绑定</value>
+  </data>
+  <data name="dataGridView1.col.2" xml:space="preserve">
+    <value>宽度</value>
+  </data>
+  <data name="dataGridView1.col.3" xml:space="preserve">
+    <value>冻结</value>
+  </data>
+  <data name="dataGridView1.col.4" xml:space="preserve">
+    <value>排序</value>
+  </data>
+  <data name="dataGridView1.col.5" xml:space="preserve">
+    <value>选框</value>
+  </data>
+  <data name="dataGridView1.col.6" xml:space="preserve">
+    <value>模板</value>
+  </data>
+  <data name="dataGridView1.col.7" xml:space="preserve">
+    <value>剪切</value>
+  </data>
+  <data name="dataGridView1.col.8" xml:space="preserve">
+    <value>插入</value>
+  </data>
+  <data name="dgv2.col.0" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="dgv2.col.1" xml:space="preserve">
+    <value>绑定</value>
+  </data>
+  <data name="dgv2.col.2" xml:space="preserve">
+    <value>占位符</value>
+  </data>
+  <data name="dgv2.col.3" xml:space="preserve">
+    <value>样式</value>
+  </data>
+  <data name="dgv2.col.4" xml:space="preserve">
+    <value>初始化/模板</value>
+  </data>
+  <data name="dgv2.col.5" xml:space="preserve">
+    <value>剪切</value>
+  </data>
+  <data name="dgv2.col.6" xml:space="preserve">
+    <value>插入</value>
+  </data>
+  <data name="dgv3.col.0" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="dgv3.col.1" xml:space="preserve">
+    <value>文字</value>
+  </data>
+  <data name="dgv3.col.10" xml:space="preserve">
+    <value>剪切</value>
+  </data>
+  <data name="dgv3.col.11" xml:space="preserve">
+    <value>插入</value>
+  </data>
+  <data name="dgv3.col.2" xml:space="preserve">
+    <value>图标</value>
+  </data>
+  <data name="dgv3.col.3" xml:space="preserve">
+    <value>朴素</value>
+  </data>
+  <data name="dgv3.col.4" xml:space="preserve">
+    <value>圆角</value>
+  </data>
+  <data name="dgv3.col.5" xml:space="preserve">
+    <value>尺寸</value>
+  </data>
+  <data name="dgv3.col.6" xml:space="preserve">
+    <value>圆形</value>
+  </data>
+  <data name="dgv3.col.7" xml:space="preserve">
+    <value>分组止</value>
+  </data>
+  <data name="dgv3.col.8" xml:space="preserve">
+    <value>分组始</value>
+  </data>
+  <data name="dgv3.col.9" xml:space="preserve">
+    <value>事件</value>
+  </data>
+  <data name="dgv4.col.0" xml:space="preserve">
+    <value>显示</value>
+  </data>
+  <data name="dgv4.col.1" xml:space="preserve">
+    <value>绑定</value>
+  </data>
+  <data name="dgv4.col.10" xml:space="preserve">
+    <value>剪切</value>
+  </data>
+  <data name="dgv4.col.11" xml:space="preserve">
+    <value>插入</value>
+  </data>
+  <data name="dgv4.col.2" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="dgv4.col.3" xml:space="preserve">
+    <value>占位符</value>
+  </data>
+  <data name="dgv4.col.4" xml:space="preserve">
+    <value>样式</value>
+  </data>
+  <data name="dgv4.col.5" xml:space="preserve">
+    <value>禁用</value>
+  </data>
+  <data name="dgv4.col.6" xml:space="preserve">
+    <value>初始化</value>
+  </data>
+  <data name="dgv4.col.7" xml:space="preserve">
+    <value>模板/属性</value>
+  </data>
+  <data name="dgv4.col.8" xml:space="preserve">
+    <value>校验</value>
+  </data>
+  <data name="dgv4.col.9" xml:space="preserve">
+    <value>布局</value>
+  </data>
+  <data name="label1" xml:space="preserve">
+    <value>Vue组件名称</value>
+  </data>
+  <data name="label10" xml:space="preserve">
+    <value>表格</value>
+  </data>
+  <data name="label11" xml:space="preserve">
+    <value>高度</value>
+  </data>
+  <data name="label12" xml:space="preserve">
+    <value>最大高度</value>
+  </data>
+  <data name="label13" xml:space="preserve">
+    <value>分页</value>
+  </data>
+  <data name="label14" xml:space="preserve">
+    <value>表单</value>
+  </data>
+  <data name="label15" xml:space="preserve">
+    <value>样式</value>
+  </data>
+  <data name="label16" xml:space="preserve">
+    <value>标签宽度</value>
+  </data>
+  <data name="label17" xml:space="preserve">
+    <value>标签对齐</value>
+  </data>
+  <data name="label18" xml:space="preserve">
+    <value>行模板</value>
+  </data>
+  <data name="label19" xml:space="preserve">
+    <value>自定义行的布局方式，例如（每行显示两项四列）：
+&lt;el-row&gt;&lt;el-col :span="12"&gt;@ITEM@&lt;/el-col&gt;&lt;el-col :span="12"&gt;@ITEM@&lt;/el-col&gt;&lt;/el-row&gt;</value>
+  </data>
+  <data name="label2" xml:space="preserve">
+    <value>显示标题</value>
+  </data>
+  <data name="label20" xml:space="preserve">
+    <value>自定义按钮行的布局方式，例如：
+&lt;el-row&gt;&lt;el-col&gt;@BUTTON@&lt;/el-col&gt;&lt;/el-row&gt;</value>
+  </data>
+  <data name="label21" xml:space="preserve">
+    <value>按钮模板</value>
+  </data>
+  <data name="label22" xml:space="preserve">
+    <value>示例：10,20,50</value>
+  </data>
+  <data name="label23" xml:space="preserve">
+    <value>文本设置支持@para{key,[para]...}</value>
+  </data>
+  <data name="label24" xml:space="preserve">
+    <value>布局调整</value>
+  </data>
+  <data name="label4" xml:space="preserve">
+    <value>数据获取Api</value>
+  </data>
+  <data name="label7" xml:space="preserve">
+    <value>数据列表Api</value>
+  </data>
+  <data name="label8" xml:space="preserve">
+    <value>Api网址</value>
+  </data>
+  <data name="label9" xml:space="preserve">
+    <value>数据操作Api</value>
+  </data>
+  <data name="List111" xml:space="preserve">
+    <value>分页调整</value>
+  </data>
+  <data name="list_border" xml:space="preserve">
+    <value>边框</value>
+  </data>
+  <data name="list_loading" xml:space="preserve">
+    <value>Loading加载</value>
+  </data>
+  <data name="list_pagerbackground" xml:space="preserve">
+    <value>背景色</value>
+  </data>
+  <data name="list_pagerhidden" xml:space="preserve">
+    <value>隐藏分页</value>
+  </data>
+  <data name="list_pagerjumper" xml:space="preserve">
+    <value>跳页</value>
+  </data>
+  <data name="list_pagersmall" xml:space="preserve">
+    <value>小型分页</value>
+  </data>
+  <data name="list_pagertotal" xml:space="preserve">
+    <value>总数</value>
+  </data>
+  <data name="list_stripe" xml:space="preserve">
+    <value>斑马纹</value>
+  </data>
+  <data name="list_style" xml:space="preserve">
+    <value>样式</value>
+  </data>
+  <data name="tab2.page1" xml:space="preserve">
+    <value>1 初始化</value>
+  </data>
+  <data name="tab2.page2" xml:space="preserve">
+    <value>2 载入前</value>
+  </data>
+  <data name="tab2.page3" xml:space="preserve">
+    <value>3 赋值前</value>
+  </data>
+  <data name="tab2.page4" xml:space="preserve">
+    <value>4 赋值后</value>
+  </data>
+  <data name="tab2.page5" xml:space="preserve">
+    <value>5 自定义</value>
+  </data>
+  <data name="tab2.page6" xml:space="preserve">
+    <value>6 样 式</value>
+  </data>
+  <data name="tab3.page10" xml:space="preserve">
+    <value>4 赋值后</value>
+  </data>
+  <data name="tab3.page11" xml:space="preserve">
+    <value>7 自定义</value>
+  </data>
+  <data name="tab3.page12" xml:space="preserve">
+    <value>9 样 式</value>
+  </data>
+  <data name="tab3.page13" xml:space="preserve">
+    <value>5 提交前</value>
+  </data>
+  <data name="tab3.page14" xml:space="preserve">
+    <value>6 提交后</value>
+  </data>
+  <data name="tab3.page15" xml:space="preserve">
+    <value>8 附加数据对象</value>
+  </data>
+  <data name="tab3.page7" xml:space="preserve">
+    <value>1 初始化</value>
+  </data>
+  <data name="tab3.page8" xml:space="preserve">
+    <value>2 获取前</value>
+  </data>
+  <data name="tab3.page9" xml:space="preserve">
+    <value>3 赋值前</value>
+  </data>
+  <data name="tp1" xml:space="preserve">
+    <value>1 基 础 </value>
+  </data>
+  <data name="tp2" xml:space="preserve">
+    <value>2 数据列</value>
+  </data>
+  <data name="tp3" xml:space="preserve">
+    <value>3 搜索框</value>
+  </data>
+  <data name="tp4" xml:space="preserve">
+    <value>4 按 钮 </value>
+  </data>
+  <data name="tp5" xml:space="preserve">
+    <value>5 脚 本</value>
+  </data>
+  <data name="tp6" xml:space="preserve">
+    <value>6 其 他</value>
+  </data>
+  <data name="tt1" xml:space="preserve">
+    <value>1 基 础 </value>
+  </data>
+  <data name="tt2" xml:space="preserve">
+    <value>2 表单行</value>
+  </data>
+  <data name="tt3" xml:space="preserve">
+    <value>3 按 钮 </value>
+  </data>
+  <data name="tt4" xml:space="preserve">
+    <value>4 获取绑定</value>
+  </data>
+  <data name="tt5" xml:space="preserve">
+    <value>5 操作绑定</value>
+  </data>
+  <data name="tt6" xml:space="preserve">
+    <value>6 脚 本</value>
+  </data>
+  <data name="tt7" xml:space="preserve">
+    <value>7 其 他</value>
+  </data>
+  <data name="z001" xml:space="preserve">
+    <value>存在布局设置时，所有字段的布局都必须设置1到24的整数。</value>
+  </data>
+  <data name="z002" xml:space="preserve">
+    <value>且必须满足从上之下恰好能以合为24的按组获取。</value>
+  </data>
+  <data name="z003" xml:space="preserve">
+    <value>有组件没有名称</value>
+  </data>
+  <data name="z004" xml:space="preserve">
+    <value>组件重名：</value>
+  </data>
+  <data name="z005" xml:space="preserve">
+    <value>组件名称只能是英文数字下划线或目录斜杠</value>
+  </data>
+  <data name="z006" xml:space="preserve">
+    <value>自定义脚本的“方法名及$emit回调”必须在上一行增加以//开始的注释</value>
+  </data>
+  <data name="z007" xml:space="preserve">
+    <value>否则不会出现在组件使用描述中</value>
+  </data>
+  <data name="z008" xml:space="preserve">
+    <value>前端组件开发</value>
+  </data>
+  <data name="z009" xml:space="preserve">
+    <value>该组件没有名称，不能保存</value>
+  </data>
+  <data name="z010" xml:space="preserve">
+    <value>支持</value>
+  </data>
+  <data name="z011" xml:space="preserve">
+    <value>没有定义Api</value>
+  </data>
+  <data name="z012" xml:space="preserve">
+    <value>组件名必须为英文开头，只能包含英文数字和下划线或目录斜杠</value>
+  </data>
+  <data name="z013" xml:space="preserve">
+    <value>'&lt;'开头为模板，否则为附加属性。支持$(Bind),$(Bind.L)...</value>
+  </data>
+  <data name="z014" xml:space="preserve">
+    <value>组件名必须为英文开头，只能包含英文数字和下划线</value>
+  </data>
+  <data name="z015" xml:space="preserve">
+    <value>发布成功，可以在线浏览</value>
+  </data>
+  <data name="z016" xml:space="preserve">
+    <value>从服务器更新最新版本，本地同名组件将被替换，同时未保存的设置将会丢失，是否继续？</value>
+  </data>
+  <data name="z017" xml:space="preserve">
+    <value>更新完毕</value>
+  </data>
+  <data name="z018" xml:space="preserve">
+    <value>输入参数，多个参数用 | 隔开</value>
+  </data>
+  <data name="z019" xml:space="preserve">
+    <value>该接口未创建前端组件，是否创建？</value>
+  </data>
+  <data name="z020" xml:space="preserve">
+    <value>未找到指定页面</value>
+  </data>
+</root>

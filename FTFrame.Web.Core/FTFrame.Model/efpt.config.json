@@ -1,0 +1,88 @@
+﻿{
+   "CodeGenerationMode": 0,
+   "ContextClassName": "FTFrameContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": null,
+   "ProjectRootNamespace": "FTFrame.Model",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 2,
+   "Tables": [
+      {
+         "Name": "[dbo].[ft_ctrl_list_files]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ft_ctrl_list_files_bind]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ft_flow_his]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ft_flow_list]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ft_flow_next]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ft_flow_next_user]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ft_ftdp_apidoc]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ft_ftdp_apiset]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ft_ftdp_codeset]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ft_ftdp_formflog]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ft_ftdp_formolog]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ft_site_formflog]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ft_site_formolog]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ft_sites]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "DESKTOP-R86H2A2.Supervise",
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": false,
+   "UseHandleBars": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseNoConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false
+}

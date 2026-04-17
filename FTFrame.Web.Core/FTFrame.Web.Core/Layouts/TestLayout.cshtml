@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FTFrame.Web.Core</title>
+    <base href="~/" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link href="css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <app>
+        <div class="sidebar">
+            <div class="top-row pl-4 navbar navbar-dark">
+                <a class="navbar-brand" href="">FTFrame.Web.Core</a>
+                <button class="navbar-toggler">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse">
+                <ul class="nav flex-column">
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="" Match="All">
+                            <span class="oi oi-home" aria-hidden="true"></span> Home
+                        </a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="counter">
+                            <span class="oi oi-plus" aria-hidden="true"></span> Counter
+                        </a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="fetchdata">
+                            <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
+                        </a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="Aa?a=paraAValue">
+                            <span class="oi oi-list-rich" aria-hidden="true"></span> Razor测试
+                        </a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link active" href="bb">
+                            <span class="oi oi-list-rich" aria-hidden="true"></span> Blazor测试
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="top-row px-4">
+                <a href="https://docs.microsoft.com/en-us/aspnet/" target="_blank">About</a>
+            </div>
+
+            <div class="content px-4">
+                @RenderBody()
+            </div>
+        </div>
+    </app>
+    @RenderSection(name: "SecTest", required: false)
+</body></html>

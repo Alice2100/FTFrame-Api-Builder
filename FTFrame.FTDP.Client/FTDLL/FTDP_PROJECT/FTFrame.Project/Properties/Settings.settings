@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FTFrame.Project.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FTFrame_Project_SMS_MobsetApi" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://sms3.mobset.com:8080/Api</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

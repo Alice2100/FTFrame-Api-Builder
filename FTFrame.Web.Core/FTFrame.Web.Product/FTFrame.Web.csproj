@@ -1,0 +1,134 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RazorCompileOnPublish>false</RazorCompileOnPublish>
+    <UserSecretsId>d2ff42b0-c831-4f71-85ea-165ca914104d</UserSecretsId>
+	<PreserveCompilationContext>true</PreserveCompilationContext>
+	<DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\_ft\_ftfiles\**" />
+    <Content Remove="wwwroot\_ft\_ftfiles\**" />
+    <EmbeddedResource Remove="wwwroot\_ft\_ftfiles\**" />
+    <None Remove="wwwroot\_ft\_ftfiles\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="FTFrame.Project.Core.deps.json" />
+    <Content Remove="FTFrame.Server.Core.deps.json" />
+    <Content Remove="wwwroot\_ft\_front\lib\base.js" />
+    <Content Remove="wwwroot\_ft\_front\lib\config.js" />
+    <Content Remove="wwwroot\_ft\_lib\list.res\func1712271 - zh.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="FTFrame.Dynamic.Core.dll" />
+    <None Remove="FTFrame.Project.Core.dll" />
+    <None Remove="FTFrame.Server.Core.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\_ft\lib\axios.min.js" />
+    <None Include="wwwroot\_ft\lib\axios.min.map.js" />
+    <None Include="wwwroot\_ft\lib\base.js" />
+    <None Include="wwwroot\_ft\lib\config.js" />
+    <None Include="wwwroot\_ft\lib\element-ui\index.js" />
+    <None Include="wwwroot\_ft\lib\ftdp_vue.js" />
+    <None Include="wwwroot\_ft\lib\httpVueLoader.js" />
+    <None Include="wwwroot\_ft\lib\vue.js" />
+    <None Include="wwwroot\_ft\_front\com\NewCom1.vue" />
+    <None Include="wwwroot\_ft\_front\com\NewCom1.vue.com" />
+    <None Include="wwwroot\_ft\_front\com\NewCom1_Form.vue" />
+    <None Include="wwwroot\_ft\_front\com\NewCom1_Form.vue.com" />
+    <None Include="wwwroot\_ft\_front\com\NewCom1_List.vue" />
+    <None Include="wwwroot\_ft\_front\com\NewCom1_List.vue.com" />
+    <None Include="wwwroot\_ft\_front\com\NewCom_List.vue" />
+    <None Include="wwwroot\_ft\_front\com\NewCom_List.vue.com" />
+    <None Include="wwwroot\_ft\_front\com\NewCom_Mod.vue" />
+    <None Include="wwwroot\_ft\_front\com\NewCom_Mod.vue.com" />
+    <None Include="wwwroot\_ft\_front\lib\axios.min.js" />
+    <None Include="wwwroot\_ft\_front\lib\axios.min.map.js" />
+    <None Include="wwwroot\_ft\_front\lib\base.js" />
+    <None Include="wwwroot\_ft\_front\lib\config.js" />
+    <None Include="wwwroot\_ft\_front\lib\element-ui\index.js" />
+    <None Include="wwwroot\_ft\_front\lib\ftdp_vue.js" />
+    <None Include="wwwroot\_ft\_front\lib\httpVueLoader.js" />
+    <None Include="wwwroot\_ft\_front\lib\vue.js" />
+    <None Include="wwwroot\_ft\_ftres\js\ftmain.js" />
+    <None Include="wwwroot\_ft\_ftres\js\ftmain_bk.js" />
+    <None Include="wwwroot\_ft\_ftres\js\ftmain_layui.js" />
+    <None Include="wwwroot\_ft\_ftres\js\jquery-1.9.1.min.js" />
+    <None Include="wwwroot\_ft\_ftres\js\jquery-ui-1.10.3.custom.min.js" />
+    <None Include="wwwroot\_ft\_ftres\js\jquery-ui.min.js" />
+    <None Include="wwwroot\_ft\_ftres\js\jquery.ajaxupload.js" />
+    <None Include="wwwroot\_ft\_ftres\js\jquery.cleditor.js" />
+    <None Include="wwwroot\_ft\_ftres\js\jquery.cleditor.min.js" />
+    <None Include="wwwroot\_ft\_ftres\js\jquery.jqprint-0.3.js" />
+    <None Include="wwwroot\_ft\_ftres\js\jquery.scrollTo-1.4.3.1-min.js" />
+    <None Include="wwwroot\_ft\_ftres\js\jquery.ui.datepicker-zh-CN.js" />
+    <None Include="wwwroot\_ft\_ftres\js\jquery.ztree.all-3.5.min.js" />
+    <None Include="wwwroot\_ft\_ftres\js\jquery.ztree.core-3.5.min.js" />
+    <None Include="wwwroot\_ft\_ftres\js\json2.js" />
+    <None Include="wwwroot\_ft\_ftres\js\layui_overwrite.js" />
+    <None Include="wwwroot\_ft\_lib\list.res\func.js" />
+    <None Include="wwwroot\_ft\_lib\list.res\func0204.js" />
+    <None Include="wwwroot\_ft\_lib\list.res\func140721.js" />
+    <None Include="wwwroot\_ft\_lib\list.res\func1712271 - zh.js" />
+    <None Include="wwwroot\_ft\_lib\list.res\func1712271.js" />
+    <None Include="wwwroot\_ft\_lib\list.res\func200605_layui - 副本.js" />
+    <None Include="wwwroot\_ft\_lib\list.res\func200605_layui.js" />
+    <None Include="wwwroot\_ft\_lib\list.res\splith.cur" />
+    <None Include="wwwroot\_ft\_lib\upload.res\ftdpuploadsave.ashx" />
+    <None Include="wwwroot\_ft\_lib\upload.res\jquery.uploadify.js" />
+    <None Include="wwwroot\_ft\_lib\upload.res\jquery.uploadify.min.js" />
+    <None Include="wwwroot\_ft\_lib\upload.res\uploadify.swf" />
+    <None Include="wwwroot\_ft\_pro\js\echarts.common.min.js" />
+    <None Include="wwwroot\_ft\_pro\js\jquery.qrcode.min.js" />
+    <None Include="wwwroot\_ft\_pro\js\layui_overwrite.js" />
+    <None Include="wwwroot\_ft\_pro\js\pub\jquery.ztree.all-3.5.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.13.0" />
+    <PackageReference Include="FTFrame.Base.Core" Version="1.0.1" />
+    <PackageReference Include="FTFrame.Core" Version="1.0.5" />
+    <PackageReference Include="FTFrame.DB.Core" Version="1.0.8" />
+    <PackageReference Include="FTFrame.Model" Version="1.0.1" />
+    <PackageReference Include="FTFrame.Project.Core" Version="1.0.0" />
+    <PackageReference Include="FTFrame.Server.Core" Version="2.0.1" />
+    <PackageReference Include="FTFrame.Tool.Core" Version="1.0.6" />
+    <PackageReference Include="FT_DataOp" Version="1.0.2" />
+    <PackageReference Include="FT_DyValue" Version="1.0.3" />
+    <PackageReference Include="FT_List" Version="1.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.27" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.27" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.14" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\_ft\_front\preview\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="FTFrame.Dynamic.Core.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+</Project>

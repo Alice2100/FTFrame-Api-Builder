@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>C:\01_ft\publish\ftsite\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>C:\01_ft\publish\ftsite\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FTFrame.Base.Core\FTFrame.Base.Core.csproj" />
+    <ProjectReference Include="..\FTFrame.BLL\FTFrame.BLL.csproj" />
+    <ProjectReference Include="..\FTFrame.Project.Core\FTFrame.Project.Core.csproj" />
+    <ProjectReference Include="..\FTFrame.Tool.Core\FTFrame.Tool.Core.csproj" />
+  </ItemGroup>
+
+</Project>

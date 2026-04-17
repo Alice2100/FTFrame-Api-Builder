@@ -1,0 +1,741 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="MenuFileAddSite" xml:space="preserve">
+    <value>添加站点(&amp;A)...</value>
+  </data>
+  <data name="MenuFileSaveAll" xml:space="preserve">
+    <value>全部保存(&amp;L)</value>
+  </data>
+  <data name="MenuFileOpenFreeFile" xml:space="preserve">
+    <value>打开自由文件(&amp;O)...</value>
+  </data>
+  <data name="MenuFileOpenSite" xml:space="preserve">
+    <value>打开站点(&amp;P)...</value>
+  </data>
+  <data name="MenuFileRegisterSite" xml:space="preserve">
+    <value>注册站点(&amp;R)...</value>
+  </data>
+  <data name="MenuFileSaveFile" xml:space="preserve">
+    <value>保存文件(&amp;S)</value>
+  </data>
+  <data name="MenuFile" xml:space="preserve">
+    <value>文件(&amp;F)</value>
+  </data>
+  <data name="MenuFileLastSites" xml:space="preserve">
+    <value>最近打开的站点(&amp;I)</value>
+  </data>
+  <data name="MenuFileFileSaveAs" xml:space="preserve">
+    <value>文件另存为(&amp;V)...</value>
+  </data>
+  <data name="MenuFileCloseFile" xml:space="preserve">
+    <value>关闭文件(&amp;C)</value>
+  </data>
+  <data name="MenuFileExit" xml:space="preserve">
+    <value>退出(&amp;X)</value>
+  </data>
+  <data name="MenuFileLastFiles" xml:space="preserve">
+    <value>最近打开的文件(&amp;F)</value>
+  </data>
+  <data name="MenuFileNewFreeFile" xml:space="preserve">
+    <value>新建自由文件(&amp;N)...</value>
+  </data>
+  <data name="MenuFileCloseSite" xml:space="preserve">
+    <value>关闭站点(&amp;T)</value>
+  </data>
+  <data name="MenuFormatAlignCenter" xml:space="preserve">
+    <value>居中对齐(&amp;C)</value>
+  </data>
+  <data name="MenuFormat" xml:space="preserve">
+    <value>格式(&amp;M)</value>
+  </data>
+  <data name="MenuEdit" xml:space="preserve">
+    <value>编辑(&amp;E)</value>
+  </data>
+  <data name="MenuEditAddSnippet" xml:space="preserve">
+    <value>增加碎片(&amp;S)</value>
+  </data>
+  <data name="MenuEditClonePart" xml:space="preserve">
+    <value>克隆片断(&amp;O)</value>
+  </data>
+  <data name="MenuEditCopy" xml:space="preserve">
+    <value>复制(&amp;C)</value>
+  </data>
+  <data name="MenuEditCreatePart" xml:space="preserve">
+    <value>生成新片断(&amp;N)</value>
+  </data>
+  <data name="MenuEditCut" xml:space="preserve">
+    <value>剪切(&amp;T)</value>
+  </data>
+  <data name="MenuEditDelete" xml:space="preserve">
+    <value>删除(&amp;D)</value>
+  </data>
+  <data name="MenuEditEditTag" xml:space="preserve">
+    <value>编辑标签(&amp;E)</value>
+  </data>
+  <data name="MenuEditFind" xml:space="preserve">
+    <value>查找(&amp;F)...</value>
+  </data>
+  <data name="MenuEditPaste" xml:space="preserve">
+    <value>粘贴(&amp;P)</value>
+  </data>
+  <data name="MenuEditRedo" xml:space="preserve">
+    <value>重复(&amp;R)</value>
+  </data>
+  <data name="MenuEditReplace" xml:space="preserve">
+    <value>替换(&amp;L)...</value>
+  </data>
+  <data name="MenuEditSelectAll" xml:space="preserve">
+    <value>全选(&amp;A)</value>
+  </data>
+  <data name="MenuEditUndo" xml:space="preserve">
+    <value>撤销(&amp;U)</value>
+  </data>
+  <data name="MenuFormatAlignDefault" xml:space="preserve">
+    <value>默认对齐(&amp;D)</value>
+  </data>
+  <data name="MenuFormatAlignLeft" xml:space="preserve">
+    <value>向左对齐(&amp;L)</value>
+  </data>
+  <data name="MenuFormatAlignRight" xml:space="preserve">
+    <value>向右对齐(&amp;R)</value>
+  </data>
+  <data name="MenuFormatBackColor" xml:space="preserve">
+    <value>背景色(&amp;A)</value>
+  </data>
+  <data name="MenuFormatBlockFormat" xml:space="preserve">
+    <value>块格式(&amp;O)</value>
+  </data>
+  <data name="MenuFormatBlockFormatHeading1" xml:space="preserve">
+    <value>&amp;4 标题1</value>
+  </data>
+  <data name="MenuFormatBlockFormatNormal" xml:space="preserve">
+    <value>&amp;0 默认</value>
+  </data>
+  <data name="MenuFormatBold" xml:space="preserve">
+    <value>粗体(&amp;B)</value>
+  </data>
+  <data name="MenuFormatForeColor" xml:space="preserve">
+    <value>前景色(&amp;F)...</value>
+  </data>
+  <data name="MenuFormatIndent" xml:space="preserve">
+    <value>增加缩进(&amp;N)</value>
+  </data>
+  <data name="MenuFormatItalic" xml:space="preserve">
+    <value>斜体(&amp;I)</value>
+  </data>
+  <data name="MenuFormatLayer" xml:space="preserve">
+    <value>浮层(&amp;Y)</value>
+  </data>
+  <data name="MenuFormatLayerBack" xml:space="preserve">
+    <value>浮层置后(&amp;B)</value>
+  </data>
+  <data name="MenuFormatLayerCancel" xml:space="preserve">
+    <value>取消(&amp;C)</value>
+  </data>
+  <data name="MenuFormatLayerFore" xml:space="preserve">
+    <value>浮层置前(&amp;F)</value>
+  </data>
+  <data name="MenuFormatLayerSet" xml:space="preserve">
+    <value>设置(&amp;S)</value>
+  </data>
+  <data name="MenuFormatLinethrough" xml:space="preserve">
+    <value>删除线(&amp;T)</value>
+  </data>
+  <data name="MenuFormatLTR" xml:space="preserve">
+    <value>从左到右(&amp;L)</value>
+  </data>
+  <data name="MenuFormatRTL" xml:space="preserve">
+    <value>从右到左(&amp;R)</value>
+  </data>
+  <data name="MenuFormatStyle" xml:space="preserve">
+    <value>样式(&amp;S)...</value>
+  </data>
+  <data name="MenuFormatSubscript" xml:space="preserve">
+    <value>下标(&amp;P)</value>
+  </data>
+  <data name="MenuFormatSuperscript" xml:space="preserve">
+    <value>上标(&amp;I)</value>
+  </data>
+  <data name="MenuFormatUnderline" xml:space="preserve">
+    <value>下划线(&amp;U)</value>
+  </data>
+  <data name="MenuFormatUnindent" xml:space="preserve">
+    <value>减少缩进(&amp;E)</value>
+  </data>
+  <data name="MenuHelp" xml:space="preserve">
+    <value>帮助(&amp;H)</value>
+  </data>
+  <data name="MenuHelpAbout" xml:space="preserve">
+    <value>关于(&amp;A)...</value>
+  </data>
+  <data name="MenuHelpD4SoftHomePage" xml:space="preserve">
+    <value>FTDP主页(&amp;D)</value>
+  </data>
+  <data name="MenuHelpD4System" xml:space="preserve">
+    <value>FTDP帮助主题(&amp;S)</value>
+  </data>
+  <data name="MenuHelpSendFeedback" xml:space="preserve">
+    <value>发送反馈(&amp;F)...</value>
+  </data>
+  <data name="MenuHelpFTDPClient" xml:space="preserve">
+    <value>FTDP帮助主题(&amp;M)</value>
+  </data>
+  <data name="MenuLanguage" xml:space="preserve">
+    <value>语言(&amp;L)</value>
+  </data>
+  <data name="MenuPage" xml:space="preserve">
+    <value>网页(&amp;P)</value>
+  </data>
+  <data name="MenuPageCancelLink" xml:space="preserve">
+    <value>取消链接(&amp;C)</value>
+  </data>
+  <data name="MenuPageClearTable" xml:space="preserve">
+    <value>清除表格内容(&amp;C)</value>
+  </data>
+  <data name="MenuPageDeleteColumn" xml:space="preserve">
+    <value>删除列(&amp;C)</value>
+  </data>
+  <data name="MenuPageDeleteRow" xml:space="preserve">
+    <value>删除行(&amp;R)</value>
+  </data>
+  <data name="MenuPageDivWrap" xml:space="preserve">
+    <value>Div自动换行(&amp;D)</value>
+  </data>
+  <data name="MenuPageEditTable" xml:space="preserve">
+    <value>编辑表格(&amp;E)</value>
+  </data>
+  <data name="MenuPageElementButton" xml:space="preserve">
+    <value>按钮</value>
+  </data>
+  <data name="MenuPageElementCheckBox" xml:space="preserve">
+    <value>复选框</value>
+  </data>
+  <data name="MenuPageElementFrame" xml:space="preserve">
+    <value>框架</value>
+  </data>
+  <data name="MenuPageElementHorizon" xml:space="preserve">
+    <value>水平线</value>
+  </data>
+  <data name="MenuPageElementImage" xml:space="preserve">
+    <value>图片</value>
+  </data>
+  <data name="MenuPageElementInputFile" xml:space="preserve">
+    <value>文件框</value>
+  </data>
+  <data name="MenuPageElementInputHidden" xml:space="preserve">
+    <value>隐含框</value>
+  </data>
+  <data name="MenuPageElementInputPassword" xml:space="preserve">
+    <value>密码框</value>
+  </data>
+  <data name="MenuPageElementInputReset" xml:space="preserve">
+    <value>重置按钮</value>
+  </data>
+  <data name="MenuPageElementInputText" xml:space="preserve">
+    <value>字符框</value>
+  </data>
+  <data name="MenuPageElementMarquee" xml:space="preserve">
+    <value>移动区</value>
+  </data>
+  <data name="MenuPageElementMultipleSelect" xml:space="preserve">
+    <value>多选框</value>
+  </data>
+  <data name="MenuPageElementPanel" xml:space="preserve">
+    <value>区域框</value>
+  </data>
+  <data name="MenuPageElementParagraph" xml:space="preserve">
+    <value>段落</value>
+  </data>
+  <data name="MenuPageElementRadio" xml:space="preserve">
+    <value>单选框</value>
+  </data>
+  <data name="MenuPageElementSelect" xml:space="preserve">
+    <value>选择框</value>
+  </data>
+  <data name="MenuPageElementSubmitButton" xml:space="preserve">
+    <value>提交按钮</value>
+  </data>
+  <data name="MenuPageElementSubmitImage" xml:space="preserve">
+    <value>图片按钮</value>
+  </data>
+  <data name="MenuPageElementTextArea" xml:space="preserve">
+    <value>文本框</value>
+  </data>
+  <data name="MenuPageInsertColumn" xml:space="preserve">
+    <value>插入列(&amp;M)</value>
+  </data>
+  <data name="MenuPageInsertElement" xml:space="preserve">
+    <value>插入元素(&amp;T)</value>
+  </data>
+  <data name="MenuPageInsertLink" xml:space="preserve">
+    <value>插入链接(&amp;K)</value>
+  </data>
+  <data name="MenuPageInsertRow" xml:space="preserve">
+    <value>插入行(&amp;W)</value>
+  </data>
+  <data name="MenuPageInsertTable" xml:space="preserve">
+    <value>插入表格(&amp;I)...</value>
+  </data>
+  <data name="MenuPageMergeCellDown" xml:space="preserve">
+    <value>向下合并单元格(&amp;D)</value>
+  </data>
+  <data name="MenuPageMergeCellLeft" xml:space="preserve">
+    <value>向左合并单元格(&amp;L)</value>
+  </data>
+  <data name="MenuPageMergeCellRight" xml:space="preserve">
+    <value>向右合并单元格(&amp;R)</value>
+  </data>
+  <data name="MenuPageMergeCellUp" xml:space="preserve">
+    <value>向上合并单元格(&amp;U)</value>
+  </data>
+  <data name="MenuPageSelectTable" xml:space="preserve">
+    <value>选中表格(&amp;S)</value>
+  </data>
+  <data name="MenuPageSpanWrap" xml:space="preserve">
+    <value>Span自动换行(&amp;P)</value>
+  </data>
+  <data name="MenuPageSplit2Columns" xml:space="preserve">
+    <value>分割成列(&amp;N)</value>
+  </data>
+  <data name="MenuPageSplit2Rows" xml:space="preserve">
+    <value>分割成行(&amp;O)</value>
+  </data>
+  <data name="MenuSite" xml:space="preserve">
+    <value>站点(&amp;S)</value>
+  </data>
+  <data name="MenuSiteCheck" xml:space="preserve">
+    <value>站点检测并报告(&amp;C)...</value>
+  </data>
+  <data name="MenuSiteExportSite" xml:space="preserve">
+    <value>导出站点(&amp;E)...</value>
+  </data>
+  <data name="MenuSiteExportTemplate" xml:space="preserve">
+    <value>导出为模板(&amp;X)...</value>
+  </data>
+  <data name="MenuSiteImportPage" xml:space="preserve">
+    <value>导入页面(&amp;G)...</value>
+  </data>
+  <data name="MenuSiteImportSite" xml:space="preserve">
+    <value>导入站点(&amp;I)...</value>
+  </data>
+  <data name="MenuSiteImportTemplate" xml:space="preserve">
+    <value>导入模板(&amp;T)...</value>
+  </data>
+  <data name="MenuSiteManage" xml:space="preserve">
+    <value>管理(&amp;M)...</value>
+  </data>
+  <data name="MenuSitePublish" xml:space="preserve">
+    <value>发布(&amp;P)...</value>
+  </data>
+  <data name="MenuSiteRefreshShare" xml:space="preserve">
+    <value>共享数据源更新(&amp;U)</value>
+  </data>
+  <data name="MenuSiteSave" xml:space="preserve">
+    <value>保存(&amp;S)</value>
+  </data>
+  <data name="MenuSiteSynchro" xml:space="preserve">
+    <value>同步(&amp;Y)...</value>
+  </data>
+  <data name="MenuSiteTamplateManage" xml:space="preserve">
+    <value>模板管理(&amp;G)...</value>
+  </data>
+  <data name="MenuTool" xml:space="preserve">
+    <value>工具(&amp;T)</value>
+  </data>
+  <data name="MenuToolContentSet" xml:space="preserve">
+    <value>转到内容管理(&amp;C)</value>
+  </data>
+  <data name="MenuToolControlManage" xml:space="preserve">
+    <value>控件管理(&amp;M)...</value>
+  </data>
+  <data name="MenuToolDNS" xml:space="preserve">
+    <value>设置本地DNS解析(&amp;N)...</value>
+  </data>
+  <data name="MenuToolOption" xml:space="preserve">
+    <value>选项(&amp;O)...</value>
+  </data>
+  <data name="MenuToolSystemSet" xml:space="preserve">
+    <value>转到系统管理(&amp;S)</value>
+  </data>
+  <data name="MenuView" xml:space="preserve">
+    <value>视图(&amp;V)</value>
+  </data>
+  <data name="MenuViewAlive" xml:space="preserve">
+    <value>实时拉伸(&amp;L)</value>
+  </data>
+  <data name="MenuViewBorder" xml:space="preserve">
+    <value>边框(&amp;B)</value>
+  </data>
+  <data name="MenuViewCode" xml:space="preserve">
+    <value>代码(&amp;C)</value>
+  </data>
+  <data name="MenuViewDesign" xml:space="preserve">
+    <value>设计(&amp;D)</value>
+  </data>
+  <data name="MenuViewGrid" xml:space="preserve">
+    <value>对齐线(&amp;G)</value>
+  </data>
+  <data name="MenuViewPreview" xml:space="preserve">
+    <value>预览(&amp;V)</value>
+  </data>
+  <data name="MenuViewProperty" xml:space="preserve">
+    <value>属性区(&amp;P)</value>
+  </data>
+  <data name="MenuViewTag" xml:space="preserve">
+    <value>标签(&amp;G)</value>
+  </data>
+  <data name="MenuViewToolBox" xml:space="preserve">
+    <value>工具箱(&amp;T)</value>
+  </data>
+  <data name="MenuViewWorkSpace" xml:space="preserve">
+    <value>工作区(&amp;W)</value>
+  </data>
+  <data name="MenuWindow" xml:space="preserve">
+    <value>窗口(&amp;W)</value>
+  </data>
+  <data name="MenuWindowAllClose" xml:space="preserve">
+    <value>全部关闭(&amp;A)</value>
+  </data>
+  <data name="MenuWindowCascade" xml:space="preserve">
+    <value>重叠(&amp;C)</value>
+  </data>
+  <data name="MenuWindowTileHorizontal" xml:space="preserve">
+    <value>水平排列(&amp;H)</value>
+  </data>
+  <data name="MenuWindowTileVertical" xml:space="preserve">
+    <value>垂直排列(&amp;V)</value>
+  </data>
+  <data name="MenuFormatBlockAddress" xml:space="preserve">
+    <value>&amp;1 地址</value>
+  </data>
+  <data name="MenuFormatBlockFormatFormatted" xml:space="preserve">
+    <value>&amp;2 已编排的格式</value>
+  </data>
+  <data name="MenuFormatBlockFormatHeading2" xml:space="preserve">
+    <value>&amp;5 标题2</value>
+  </data>
+  <data name="MenuFormatBlockFormatHeading3" xml:space="preserve">
+    <value>&amp;6 标题3</value>
+  </data>
+  <data name="MenuFormatBlockFormatHeading4" xml:space="preserve">
+    <value>&amp;7 标题4</value>
+  </data>
+  <data name="MenuFormatBlockFormatHeading5" xml:space="preserve">
+    <value>&amp;8 标题5</value>
+  </data>
+  <data name="MenuFormatBlockFormatHeading6" xml:space="preserve">
+    <value>&amp;9 标题6</value>
+  </data>
+  <data name="MenuFormatBlockFormatParagraph" xml:space="preserve">
+    <value>&amp;3 段落</value>
+  </data>
+  <data name="MenuSiteClearFiles" xml:space="preserve">
+    <value>清除未使用的文件(&amp;R)</value>
+  </data>
+  <data name="ResetLayerOut" xml:space="preserve">
+    <value>重置布局</value>
+  </data>
+  <data name="ShowHiddenSiteTool" xml:space="preserve">
+    <value>站点工具条</value>
+  </data>
+  <data name="ShowHiddenTextTool" xml:space="preserve">
+    <value>编辑工具条</value>
+  </data>
+  <data name="T1Border" xml:space="preserve">
+    <value>边框</value>
+  </data>
+  <data name="T1Code" xml:space="preserve">
+    <value>代码</value>
+  </data>
+  <data name="T1Copy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="T1Cut" xml:space="preserve">
+    <value>剪切</value>
+  </data>
+  <data name="T1Design" xml:space="preserve">
+    <value>设计</value>
+  </data>
+  <data name="T1Grid" xml:space="preserve">
+    <value>对齐线</value>
+  </data>
+  <data name="T1Help" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="T1Live" xml:space="preserve">
+    <value>实时拉伸</value>
+  </data>
+  <data name="T1NewFreeFile" xml:space="preserve">
+    <value>新建自由文件</value>
+  </data>
+  <data name="T1OpenFreeFile" xml:space="preserve">
+    <value>打开自由文件</value>
+  </data>
+  <data name="T1Paste" xml:space="preserve">
+    <value>粘贴</value>
+  </data>
+  <data name="T1Preview" xml:space="preserve">
+    <value>预览</value>
+  </data>
+  <data name="T1Redo" xml:space="preserve">
+    <value>重复</value>
+  </data>
+  <data name="T1SaveAllFile" xml:space="preserve">
+    <value>全部保存</value>
+  </data>
+  <data name="T1SaveFile" xml:space="preserve">
+    <value>保存文件</value>
+  </data>
+  <data name="T1Search" xml:space="preserve">
+    <value>查找</value>
+  </data>
+  <data name="T1Tag" xml:space="preserve">
+    <value>标签</value>
+  </data>
+  <data name="T1Undo" xml:space="preserve">
+    <value>撤销</value>
+  </data>
+  <data name="T2AlignLeft" xml:space="preserve">
+    <value>向左对齐</value>
+  </data>
+  <data name="T2AlignMiddle" xml:space="preserve">
+    <value>居中对齐</value>
+  </data>
+  <data name="T2AlignRight" xml:space="preserve">
+    <value>向右对齐</value>
+  </data>
+  <data name="T2BackColor" xml:space="preserve">
+    <value>背景色</value>
+  </data>
+  <data name="T2Block" xml:space="preserve">
+    <value>块格式</value>
+  </data>
+  <data name="T2Bold" xml:space="preserve">
+    <value>粗体</value>
+  </data>
+  <data name="T2EditTag" xml:space="preserve">
+    <value>编辑标签</value>
+  </data>
+  <data name="T2Font" xml:space="preserve">
+    <value>字体</value>
+  </data>
+  <data name="T2ForeColor" xml:space="preserve">
+    <value>前景色</value>
+  </data>
+  <data name="T2Indent" xml:space="preserve">
+    <value>增加缩进</value>
+  </data>
+  <data name="T2Italic" xml:space="preserve">
+    <value>斜体</value>
+  </data>
+  <data name="T2Layer" xml:space="preserve">
+    <value>浮层</value>
+  </data>
+  <data name="T2Size" xml:space="preserve">
+    <value>字体大小</value>
+  </data>
+  <data name="T2Underline" xml:space="preserve">
+    <value>下划线</value>
+  </data>
+  <data name="T2UnIndent" xml:space="preserve">
+    <value>减少缩进</value>
+  </data>
+  <data name="T3CloseSite" xml:space="preserve">
+    <value>关闭站点</value>
+  </data>
+  <data name="T3ControlManage" xml:space="preserve">
+    <value>控件管理</value>
+  </data>
+  <data name="T3OpenSite" xml:space="preserve">
+    <value>打开站点</value>
+  </data>
+  <data name="T3PageImport" xml:space="preserve">
+    <value>导入页面</value>
+  </data>
+  <data name="T3SaveSite" xml:space="preserve">
+    <value>保存站点</value>
+  </data>
+  <data name="T3SiteAdd" xml:space="preserve">
+    <value>添加站点</value>
+  </data>
+  <data name="T3SiteCheck" xml:space="preserve">
+    <value>站点检测并报告</value>
+  </data>
+  <data name="T3SiteExport" xml:space="preserve">
+    <value>站点导出</value>
+  </data>
+  <data name="T3SiteImport" xml:space="preserve">
+    <value>站点导入</value>
+  </data>
+  <data name="T3SiteManage" xml:space="preserve">
+    <value>站点管理</value>
+  </data>
+  <data name="T3SitePublish" xml:space="preserve">
+    <value>站点发布</value>
+  </data>
+  <data name="T3SiteRegister" xml:space="preserve">
+    <value>站点注册</value>
+  </data>
+  <data name="T3SycronSite" xml:space="preserve">
+    <value>站点同步</value>
+  </data>
+  <data name="T3TemplateExport" xml:space="preserve">
+    <value>导出为模板</value>
+  </data>
+  <data name="T3TemplateImport" xml:space="preserve">
+    <value>导入模板</value>
+  </data>
+  <data name="T3TemplateManage" xml:space="preserve">
+    <value>模板管理</value>
+  </data>
+  <data name="T3UpdateData" xml:space="preserve">
+    <value>更新共享数据源</value>
+  </data>
+  <data name="toolbar_property" xml:space="preserve">
+    <value>属性区</value>
+  </data>
+  <data name="toolbar_toolbox" xml:space="preserve">
+    <value>工具箱</value>
+  </data>
+  <data name="toolbar_workpace" xml:space="preserve">
+    <value>工作区</value>
+  </data>
+  <data name="MenuFileOpenWebPage" xml:space="preserve">
+    <value>打开网址(&amp;W)...</value>
+  </data>
+  <data name="T1OpenWebPage" xml:space="preserve">
+    <value>打开网址</value>
+  </data>
+  <data name="MenuViewWebView" xml:space="preserve">
+    <value>浏览器预览(&amp;O)</value>
+  </data>
+  <data name="MenuSiteMofidyCSS" xml:space="preserve">
+    <value>编辑站点样式(&amp;L)</value>
+  </data>
+  <data name="MenuEditAdvance" xml:space="preserve">
+    <value>高级(&amp;A)</value>
+  </data>
+  <data name="MenuEditAdvEle2Label" xml:space="preserve">
+    <value>表单元素转为标签</value>
+  </data>
+  <data name="MenuViewInWeb" xml:space="preserve">
+    <value>浏览页面</value>
+  </data>
+</root>

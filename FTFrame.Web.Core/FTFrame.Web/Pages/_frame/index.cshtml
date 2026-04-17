@@ -1,0 +1,111 @@
+﻿@page
+@using FTFrame.Project.Core
+@using FTFrame.Tool
+@model FTFrame.Web.Pages._frame.indexModel
+@{Layout = null;}
+@{if (!ProjectFilter.Page(HttpContext)) return;}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="/_ft/_layui/admin/layUI/css/layui.css" rel="stylesheet" />
+    <link href="/_ft/_layui/admin/layUI/css/layui.mobile.css" rel="stylesheet" />
+    <link href="/_ft/_layui/admin/layUI/css/modules/code.css" rel="stylesheet" />
+    <link href="/_ft/_layui/admin/layUI/css/modules/layer/default/layer.css" rel="stylesheet" />
+    <link href="/_ft/_layui/admin/layUI/css/modules/laydate/default/laydate.css" rel="stylesheet" />
+    <script src="/_ft/_layui/admin/Scripts/jquery-3.4.1.js"></script>
+    <script src="/_ft/_layui/admin/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="/_ft/_layui/admin/layUI/layui.all.js"></script>
+    <script src="/_ft/_layui/admin/layUI/layui.js"></script>
+
+    <title>FTFrame Web Api Management</title>
+    <script type="text/javascript">
+        function tab1(num) {
+            $("#iframeMain").removeAttr("src")
+            if (num == 1) {
+                $("#iframeMain").attr("src", "/_ft/_layui/admin/tab1.html");
+            }
+            else if (num == 2) {
+                $("#iframeMain").attr("src", "/_ft/_layui/admin/tab2.html");
+            }
+
+        }
+        function link(url) {
+            $("#iframeMain").removeAttr("src");
+            if (url.indexOf('?') > 0) $("#iframeMain").attr("src", url + "&rdn=" + new Date().getTime());
+            else $("#iframeMain").attr("src", url + "?rdn=" + new Date().getTime());
+        }
+    </script>
+</head>
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header">
+            <div class="layui-logo">Web Api Management</div>
+            <ul class="layui-nav layui-layout-left">
+                <!--li class="layui-nav-item"><a href="javascript:link('/_ft/_base/dic?name=sys&tag=sys')">Dictioonary</a></!--li>
+                <li class="layui-nav-item"><a href="javascript:link('/_ft/_base/flowlist')">Flow</a></li>
+                <li-- class="layui-nav-item"><a href="javascript:link('/_template/sys/flowlist')">Flow Dev</a></li-->
+                <li class="layui-nav-item"><a href="javascript:link('/_ft/_base/apilist')">Api Document</a></li>
+                <li class="layui-nav-item"><a href="javascript:link('/_ft/_base/frontlist')">Front-end List</a></li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">Others</a>
+                    <dl class="layui-nav-child">
+                        <!--dd><a href="javascript:link('/_pro/admin/user.aspx')">组织架构</a></!--dd>
+                        <dd><a href="javascript:link('/_pro/admin/role.aspx')">角色权限</a></dd-->
+                        <dd><a href="/_ft/_base/apilist" target="_blank">Api Document</a></dd>
+                        <dd><a href="/_ft/_base/frontlist" target="_blank">Front-end List</a></dd>
+                    </dl>
+                </li>
+            </ul>
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item">
+                    <a href="javascript:;">@(UserTool.CurUser()?.RealName)</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:void(0)">Basic information</a></dd>
+                        <dd><a href="javascript:void(0)">Security Setting</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href="javascript:void(0)" onclick="location.href='login?logout=true&n='+(new Date().getTime())">Log Out</a></li>
+            </ul>
+        </div>
+
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a class="" href="javascript:;">Main</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:link('/_ft/_base/apilist')">Api Document</a></dd>
+                            <dd><a href="javascript:link('/_ft/_base/frontlist')">Front-end List</a></dd>
+                        </dl>
+                    </li>
+                    @*<li class="layui-nav-item">
+                        <a class="" href="javascript:;">Menu 2</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:void(0)">Item 1</a></dd>
+                            <dd><a href="javascript:void(0)">Item 2</a></dd>
+                            <dd><a href="javascript:void(0)">Item 3</a></dd>
+                        </dl>
+                    </li>*@
+                </ul>
+            </div>
+        </div>
+
+        <div class="layui-body" style='padding-left:4px;background:#ffffff'>
+            <iframe id="iframeMain" width="100%" style="height: 99.6%" frameborder="0"></iframe>
+        </div>
+
+        <div class="layui-footer">
+            © ftframe.com
+        </div>
+    </div>
+    <script src="/_ft/_layui/layui.js"></script>
+    <script>
+        layui.use('element', function () {
+            var element = layui.element;
+
+        });
+        link('/_ft/_base/apilist');
+    </script>
+</body>
+</html>

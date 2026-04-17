@@ -1,0 +1,533 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="bindgetcheckbox" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="button10" xml:space="preserve">
+    <value>6 Columns</value>
+  </data>
+  <data name="button11" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="button13" xml:space="preserve">
+    <value>8 Columns</value>
+  </data>
+  <data name="button15" xml:space="preserve">
+    <value>Import From Api</value>
+  </data>
+  <data name="button16" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="button18" xml:space="preserve">
+    <value>Import from Getting Api</value>
+  </data>
+  <data name="button19" xml:space="preserve">
+    <value>Import from Operation Api</value>
+  </data>
+  <data name="button20" xml:space="preserve">
+    <value>Generate from Operation Api</value>
+  </data>
+  <data name="button21" xml:space="preserve">
+    <value>Save Ctrl+S</value>
+  </data>
+  <data name="button22" xml:space="preserve">
+    <value>Generate from Getting Api</value>
+  </data>
+  <data name="button27" xml:space="preserve">
+    <value>Param. Ctrl+P</value>
+  </data>
+  <data name="button29" xml:space="preserve">
+    <value>Config</value>
+  </data>
+  <data name="button3" xml:space="preserve">
+    <value>Preview Ctrl+E</value>
+  </data>
+  <data name="button4" xml:space="preserve">
+    <value>Export Ctrl+W</value>
+  </data>
+  <data name="button5" xml:space="preserve">
+    <value>Publish Ctrl+Q</value>
+  </data>
+  <data name="button9" xml:space="preserve">
+    <value>4 Columns</value>
+  </data>
+  <data name="checkbox3" xml:space="preserve">
+    <value>Live Preview</value>
+  </data>
+  <data name="dataGridView1.col.0" xml:space="preserve">
+    <value>Display</value>
+  </data>
+  <data name="dataGridView1.col.1" xml:space="preserve">
+    <value>Bind</value>
+  </data>
+  <data name="dataGridView1.col.2" xml:space="preserve">
+    <value>Width</value>
+  </data>
+  <data name="dataGridView1.col.3" xml:space="preserve">
+    <value>Freeze</value>
+  </data>
+  <data name="dataGridView1.col.4" xml:space="preserve">
+    <value>Sort</value>
+  </data>
+  <data name="dataGridView1.col.5" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="dataGridView1.col.6" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="dataGridView1.col.7" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="dataGridView1.col.8" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="dgv2.col.0" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="dgv2.col.1" xml:space="preserve">
+    <value>Bind</value>
+  </data>
+  <data name="dgv2.col.2" xml:space="preserve">
+    <value>Placeholder</value>
+  </data>
+  <data name="dgv2.col.3" xml:space="preserve">
+    <value>Style</value>
+  </data>
+  <data name="dgv2.col.4" xml:space="preserve">
+    <value>Initialize/Template</value>
+  </data>
+  <data name="dgv2.col.5" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="dgv2.col.6" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="dgv3.col.0" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="dgv3.col.1" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="dgv3.col.10" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="dgv3.col.11" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="dgv3.col.2" xml:space="preserve">
+    <value>Icon</value>
+  </data>
+  <data name="dgv3.col.3" xml:space="preserve">
+    <value>Simple</value>
+  </data>
+  <data name="dgv3.col.4" xml:space="preserve">
+    <value>Fillet</value>
+  </data>
+  <data name="dgv3.col.5" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="dgv3.col.6" xml:space="preserve">
+    <value>Circle</value>
+  </data>
+  <data name="dgv3.col.7" xml:space="preserve">
+    <value>Group End</value>
+  </data>
+  <data name="dgv3.col.8" xml:space="preserve">
+    <value>Group Start</value>
+  </data>
+  <data name="dgv3.col.9" xml:space="preserve">
+    <value>Event</value>
+  </data>
+  <data name="dgv4.col.0" xml:space="preserve">
+    <value>Display</value>
+  </data>
+  <data name="dgv4.col.1" xml:space="preserve">
+    <value>Bind</value>
+  </data>
+  <data name="dgv4.col.10" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="dgv4.col.11" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="dgv4.col.2" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="dgv4.col.3" xml:space="preserve">
+    <value>Placeholder</value>
+  </data>
+  <data name="dgv4.col.4" xml:space="preserve">
+    <value>Style</value>
+  </data>
+  <data name="dgv4.col.5" xml:space="preserve">
+    <value>Disable</value>
+  </data>
+  <data name="dgv4.col.6" xml:space="preserve">
+    <value>Initialize</value>
+  </data>
+  <data name="dgv4.col.7" xml:space="preserve">
+    <value>Template/Property</value>
+  </data>
+  <data name="dgv4.col.8" xml:space="preserve">
+    <value>Validation</value>
+  </data>
+  <data name="dgv4.col.9" xml:space="preserve">
+    <value>Layout</value>
+  </data>
+  <data name="label1" xml:space="preserve">
+    <value>Vue Component</value>
+  </data>
+  <data name="label10" xml:space="preserve">
+    <value>Table</value>
+  </data>
+  <data name="label11" xml:space="preserve">
+    <value>Height</value>
+  </data>
+  <data name="label12" xml:space="preserve">
+    <value>Max-Height</value>
+  </data>
+  <data name="label13" xml:space="preserve">
+    <value>Pagination</value>
+  </data>
+  <data name="label14" xml:space="preserve">
+    <value>Form</value>
+  </data>
+  <data name="label15" xml:space="preserve">
+    <value>Style</value>
+  </data>
+  <data name="label16" xml:space="preserve">
+    <value>Label Width</value>
+  </data>
+  <data name="label17" xml:space="preserve">
+    <value>Label Alignment</value>
+  </data>
+  <data name="label18" xml:space="preserve">
+    <value>Row Template</value>
+  </data>
+  <data name="label19" xml:space="preserve">
+    <value>Customize the layout of rows, for example (display two items and four columns per row):
+&lt;el-row&gt;&lt;el-col :span="12"&gt;@ITEM@&lt;/el-col&gt;&lt;el-col :span="12"&gt;@ITEM@&lt;/el-col&gt;&lt;/el-row&gt;</value>
+  </data>
+  <data name="label2" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="label20" xml:space="preserve">
+    <value>Customize the layout of button rows, for example:
+&lt;el-row&gt;&lt;el-col&gt;@BUTTON@&lt;/el-col&gt;&lt;/el-row&gt;</value>
+  </data>
+  <data name="label21" xml:space="preserve">
+    <value>Button Template</value>
+  </data>
+  <data name="label22" xml:space="preserve">
+    <value>Example: 10,20,50</value>
+  </data>
+  <data name="label23" xml:space="preserve">
+    <value>Text Settings Support @para{key,[para]...}</value>
+  </data>
+  <data name="label24" xml:space="preserve">
+    <value>Layout Adjustment</value>
+  </data>
+  <data name="label4" xml:space="preserve">
+    <value>Getting Api</value>
+  </data>
+  <data name="label7" xml:space="preserve">
+    <value>Data List Api</value>
+  </data>
+  <data name="label8" xml:space="preserve">
+    <value>Api Website</value>
+  </data>
+  <data name="label9" xml:space="preserve">
+    <value>Operation Api</value>
+  </data>
+  <data name="List111" xml:space="preserve">
+    <value>Paging Adjustment</value>
+  </data>
+  <data name="list_border" xml:space="preserve">
+    <value>Border</value>
+  </data>
+  <data name="list_loading" xml:space="preserve">
+    <value>Show Loading</value>
+  </data>
+  <data name="list_pagerbackground" xml:space="preserve">
+    <value>Background</value>
+  </data>
+  <data name="list_pagerhidden" xml:space="preserve">
+    <value>Hide Pagination</value>
+  </data>
+  <data name="list_pagerjumper" xml:space="preserve">
+    <value>Jump Pagination</value>
+  </data>
+  <data name="list_pagersmall" xml:space="preserve">
+    <value>Small Pagination</value>
+  </data>
+  <data name="list_pagertotal" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="list_stripe" xml:space="preserve">
+    <value>Zebra-Stripe</value>
+  </data>
+  <data name="list_style" xml:space="preserve">
+    <value>Style</value>
+  </data>
+  <data name="tab2.page1" xml:space="preserve">
+    <value>1 Initialize</value>
+  </data>
+  <data name="tab2.page2" xml:space="preserve">
+    <value>2 Before Loading</value>
+  </data>
+  <data name="tab2.page3" xml:space="preserve">
+    <value>3 Before Setting</value>
+  </data>
+  <data name="tab2.page4" xml:space="preserve">
+    <value>4 After Setting</value>
+  </data>
+  <data name="tab2.page5" xml:space="preserve">
+    <value>5 Custom</value>
+  </data>
+  <data name="tab2.page6" xml:space="preserve">
+    <value>6 Style</value>
+  </data>
+  <data name="tab3.page10" xml:space="preserve">
+    <value>4 After Setting</value>
+  </data>
+  <data name="tab3.page11" xml:space="preserve">
+    <value>7 Custom</value>
+  </data>
+  <data name="tab3.page12" xml:space="preserve">
+    <value>9 Style</value>
+  </data>
+  <data name="tab3.page13" xml:space="preserve">
+    <value>5 Before Submission</value>
+  </data>
+  <data name="tab3.page14" xml:space="preserve">
+    <value>6 After Submission</value>
+  </data>
+  <data name="tab3.page15" xml:space="preserve">
+    <value>8 Additional Data Object</value>
+  </data>
+  <data name="tab3.page7" xml:space="preserve">
+    <value>1 Initialize</value>
+  </data>
+  <data name="tab3.page8" xml:space="preserve">
+    <value>2 Before Getting</value>
+  </data>
+  <data name="tab3.page9" xml:space="preserve">
+    <value>3 Before Setting</value>
+  </data>
+  <data name="tp1" xml:space="preserve">
+    <value>1 Basic</value>
+  </data>
+  <data name="tp2" xml:space="preserve">
+    <value>2 Columns</value>
+  </data>
+  <data name="tp3" xml:space="preserve">
+    <value>3 Search</value>
+  </data>
+  <data name="tp4" xml:space="preserve">
+    <value>4 Buttons</value>
+  </data>
+  <data name="tp5" xml:space="preserve">
+    <value>5 Script</value>
+  </data>
+  <data name="tp6" xml:space="preserve">
+    <value>6 Other</value>
+  </data>
+  <data name="tt1" xml:space="preserve">
+    <value>1 Basic</value>
+  </data>
+  <data name="tt2" xml:space="preserve">
+    <value>2 Rows</value>
+  </data>
+  <data name="tt3" xml:space="preserve">
+    <value>3 Buttons</value>
+  </data>
+  <data name="tt4" xml:space="preserve">
+    <value>4 Getting Bind</value>
+  </data>
+  <data name="tt5" xml:space="preserve">
+    <value>5 Operation Bind</value>
+  </data>
+  <data name="tt6" xml:space="preserve">
+    <value>6 Script</value>
+  </data>
+  <data name="tt7" xml:space="preserve">
+    <value>7 Other</value>
+  </data>
+  <data name="z001" xml:space="preserve">
+    <value>When there are layout settings, the layout of all fields must be set as integers from 1 to 24.</value>
+  </data>
+  <data name="z002" xml:space="preserve">
+    <value>And it must meet the requirement of obtaining groups from top to bottom that can be combined into 24.</value>
+  </data>
+  <data name="z003" xml:space="preserve">
+    <value>There are components without names</value>
+  </data>
+  <data name="z004" xml:space="preserve">
+    <value>Component duplicate name:</value>
+  </data>
+  <data name="z005" xml:space="preserve">
+    <value>The component name can only be an English numeric underline or a directory slash</value>
+  </data>
+  <data name="z006" xml:space="preserve">
+    <value>The custom script's  method name and $emit callback must be annotated with comments starting with//on the previous line</value>
+  </data>
+  <data name="z007" xml:space="preserve">
+    <value>Otherwise, it will not appear in the component usage description</value>
+  </data>
+  <data name="z008" xml:space="preserve">
+    <value>Front-end Component Development</value>
+  </data>
+  <data name="z009" xml:space="preserve">
+    <value>This component has no name and cannot be saved</value>
+  </data>
+  <data name="z010" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="z011" xml:space="preserve">
+    <value>No defined Api</value>
+  </data>
+  <data name="z012" xml:space="preserve">
+    <value>The component name must start with English and can only contain English numbers, underscores, or directory slashes</value>
+  </data>
+  <data name="z013" xml:space="preserve">
+    <value>The beginning of '&lt;' is a template, otherwise it is an additional attribute. Support $(Bind), $(Bind. L)...</value>
+  </data>
+  <data name="z014" xml:space="preserve">
+    <value>Component names must start with English and can only contain English numbers and underscores</value>
+  </data>
+  <data name="z015" xml:space="preserve">
+    <value>Successfully published, available for online browsing</value>
+  </data>
+  <data name="z016" xml:space="preserve">
+    <value>Updating the latest version from the server will replace the local component with the same name, and any unsaved settings will be lost. Do you want to continue?</value>
+  </data>
+  <data name="z017" xml:space="preserve">
+    <value>Update completed</value>
+  </data>
+  <data name="z018" xml:space="preserve">
+    <value>Input parameters, multiple parameters separated by |</value>
+  </data>
+  <data name="z019" xml:space="preserve">
+    <value>This Api has not created a front-end component. Do you want to create it?</value>
+  </data>
+  <data name="z020" xml:space="preserve">
+    <value>The specified page was not found</value>
+  </data>
+</root>

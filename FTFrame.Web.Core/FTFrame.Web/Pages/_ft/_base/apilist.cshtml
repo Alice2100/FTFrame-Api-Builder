@@ -1,0 +1,88 @@
+﻿@page
+@using FTFrame;
+@using FTFrame.Tool;
+@using FTFrame.Project.Core
+@using FTFrame.DBClient;
+@using Microsoft.AspNetCore.Http.Extensions;
+@{Layout = null;}
+@{if (!ProjectFilter.Page(HttpContext)) return;}
+@{ if (!FTFrame.Server.Core.AccessControl.Accessed(HttpContext, 0, "", 0, 0, "", 0, 0, "", 0, "")) { Output.Write(FTFrame.Server.Core.AccessControl.AccesseInfo(0, "", 0, "")); return; }}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+@{ FTFrame.Server.Core.JsCss.GetAppend(HttpContext); }
+<HTML xmlns:ftdp=xmlns:ftdp>
+    <HEAD>
+        <TITLE></TITLE>
+        <META content="TEXT/HTML; CHARSET=UTF-8" http-equiv=CONTENT-TYPE />
+        <META name=GENERATOR content="MSHTML 11.00.10570.1001" />
+        @{await Html.RenderPartialAsync("../../_ft/_template/head_jqueryui");}
+        <STYLE>
+        </STYLE>
+    </HEAD>
+    <BODY>
+        <!--top background start-->
+        <DIV class=main_top_middle>
+            <DIV class=main_top_left>
+                <DIV class=main_top_right>
+                    <!--top background end-->
+                    <DIV id=body-wrapper>
+                        <DIV id=main-content>
+                            <DIV class=clear></DIV>
+                            <DIV class=content-box>
+                                <DIV class=content-box-header>
+                                    <DIV class=content-box-updown align=right><IMG src="@SysConst.SubPath/_ft/_pro/res/images/down.gif" /></DIV>
+                                    <H3>Api Document</H3>
+                                    <UL class=content-box-tabs>
+                                        <LI><A class=default-tab href="#tab1">Api Document</A></LI>
+                                    </UL>
+                                    <DIV class=clear></DIV>
+                                </DIV>
+                                <DIV class=content-box-content>
+                                    <DIV class=main_bottom_middle>
+                                        <DIV class=main_bottom_left></DIV>
+                                        <DIV class=main_bottom_right>
+                                            <DIV id=tab1 class="tab-content default-tab ftdp_list">
+                                                @{
+                                                    if (FTFrame.Server.Core.AccessControl.Accessed(HttpContext, 0, "", 0, 0, "", 0, 0, "", 0, ""))
+                                                    {
+                                                        <SPAN id=8d1cda67_a4b1_43ec_9b0f_5f9cd775cade_part_0_span style="HEIGHT: 1px; WIDTH: 100%">
+                                                            @{FT.List.Fore.List.Output(HttpContext, Output, "ftdp", "List", "8ffd5627_23c8_4cb4_b055_93b477e8d31e_ctrl", "8d1cda67_a4b1_43ec_9b0f_5f9cd775cade_part", "6mfw", "menutablestyle}}{menurowstyle}}{menucolstyle}}{menucolsearchstyle}}TEXT-ALIGN: right{csslisthead}}{csslistsearchtext}_input}MARGIN-RIGHT: 4px{csslistsearchselect}_sel}{csslisttitletr}}background:#c0c0ff{cssselecttitletd}}BORDER-RIGHT: #f1f1f1 1px solid; BORDER-BOTTOM: #f1f1f1 1px solid; BORDER-LEFT: #f1f1f1 1px solid{csslisttitletd1}}BORDER-RIGHT: #f1f1f1 1px solid; BORDER-BOTTOM: #f1f1f1 1px solid; BORDER-LEFT: #f1f1f1 1px solid{csslisttitletd2}}BORDER-RIGHT: #f1f1f1 1px solid; BORDER-BOTTOM: #f1f1f1 1px solid{csslisttitletd3}}BORDER-RIGHT: #f1f1f1 1px solid; BORDER-BOTTOM: #f1f1f1 1px solid{csslisttitletd4}}BORDER-RIGHT: #f1f1f1 1px solid; BORDER-BOTTOM: #f1f1f1 1px solid{csslisttitletd5}}BORDER-RIGHT: #f1f1f1 1px solid; BORDER-BOTTOM: #f1f1f1 1px solid{csslisttitletd6}}BORDER-RIGHT: #f1f1f1 1px solid; BORDER-BOTTOM: #f1f1f1 1px solid{csslisttitletd7}}BORDER-RIGHT: #f1f1f1 1px solid; BORDER-BOTTOM: #f1f1f1 1px solid{csslisttitletd8}}BORDER-RIGHT: #f1f1f1 1px solid; BORDER-BOTTOM: #f1f1f1 1px solid{csslisttitletd9}}BORDER-RIGHT: #f1f1f1 1px solid; BORDER-BOTTOM: #f1f1f1 1px solid{csslisttitletd10}}{csslisttitletd11}}{csslisttitletd12}}{csslisttitletdother}}{csslisttr0}ftlisttr0}{csslisttr1}ftlisttr1}{csslisttrcacu}ftlisttrcacu}background:#EEEEEE{cssselecttd}}BORDER-RIGHT: #f1f1f1 1px solid; BORDER-BOTTOM: #f1f1f1 1px solid; BORDER-LEFT: #f1f1f1 1px solid{csslisttd1}}BORDER-RIGHT: #f1f1f1 1px solid; BORDER-BOTTOM: #f1f1f1 1px solid; BORDER-LEFT: #f1f1f1 1px solid{csslisttd2}}BORDER-RIGHT: #f1f1f1 1px solid; BORDER-BOTTOM: #f1f1f1 1px solid{csslisttd3}}BORDER-RIGHT: #f1f1f1 1px solid; BORDER-BOTTOM: #f1f1f1 1px solid{csslisttd4}}BORDER-RIGHT: #f1f1f1 1px solid; BORDER-BOTTOM: #f1f1f1 1px solid{csslisttd5}}BORDER-RIGHT: #f1f1f1 1px solid; BORDER-BOTTOM: #f1f1f1 1px solid{csslisttd6}}BORDER-RIGHT: #f1f1f1 1px solid; BORDER-BOTTOM: #f1f1f1 1px solid{csslisttd7}}BORDER-RIGHT: #f1f1f1 1px solid; BORDER-BOTTOM: #f1f1f1 1px solid{csslisttd8}}BORDER-RIGHT: #f1f1f1 1px solid; BORDER-BOTTOM: #f1f1f1 1px solid{csslisttd9}}BORDER-RIGHT: #f1f1f1 1px solid; BORDER-BOTTOM: #f1f1f1 1px solid{csslisttd10}}{csslisttd11}}{csslisttd12}}{csslisttdother}}{cssturnpagetb}}{cssturnpagetr}}{cssturnpagetd}}BORDER-TOP: #f1f1f1 1px solid; BORDER-RIGHT: #f1f1f1 1px solid; BORDER-LEFT: #f1f1f1 1px solid{cssturnpagetbtop}}{cssturnpagetrtop}}{cssturnpagetdtop}list_b_rl}{cssturnpageinput}}width:40px{cssturnpageselect}_select}{savecolstyle}}width:90%", "JQueryUI", "apilist", 2, "/_ft/_ftres/progress.gif", 1,
+                                                        "dl_tr_bg(this,'@color1','@color2')", 10, "First", "Previous", "Next", "Last", "Total %C %T Pages %P %B(goto)Page %I Page Size %N", "The total number of records is 0", 3, 1, "#ffffcc", "#ffffff", "#ececff", 1, 1, "order by apipath", "", "", "", "", ""
+                                                        , "Developer#wu3R6j6ayud/13CfRG6Ltg==#auto;left#DevUser####0&&&|||Path#KFRnKYNlf6Tjxg4DYeB43A==#auto;left#ApiPath####0&&&|||Note#VW65MyS3aDqZCf8MAz5xLw==#auto;left#####0&&&|||Module#0ncPhbHtt496nV98DkEooA==#auto;left#pagecaption####0&&&|||ApiType#FDxNvHHlYxV0lDRCcr2Jv6+0YXZZElulwrNNRjnoX/BzjChoMzLljw/72P5BUA3f6LpUZY+8Xo7ZuQYB8kCKpQ==#auto;left#ApiType####0&&&|||Net#XjfnYKLBigD11tkU+G067g==#auto;left##copyText(location.href.substring(0,location.href.indexOf('/_base/'))+'/_base/postman?id=[fid]');alert('Copy successful! Can be imported in PostMan');###0&&&|||Java#7g949P3mrR4prAuiaamMBg==#auto;left##copyText(location.href.substring(0,location.href.indexOf('/_base/'))+'/_base/postman?type=java&id=[fid]');alert('Copy successful! Can be imported in PostMan');###0&&&|||Input#weu7TUfrspPxY95/i60fgQ==#auto;left#####1&&&|||Output#IsYqESIN+1T5qpI+sWQl9g==#auto;left#####0&&&|||Updated#GsHMdv2O/HZqAWRMpDIa6sk0H6aeUdPkdsvLsLzNBSLGjEssR6M2SlDyJwT9Sc/AI1yzS0ZIwI9moUuN8pTOdQ==#auto;left#modtime####0&&&"
+                                                                  , "", 1, "", "", "select * FROM ft_ftdp_apidoc WHERE 1=1", "", "", "", "", "", "FTDP"
+                                                                  , "@code(str.TurnPageVue,$1|$2|$3|$4|$5)", "@code(str.TurnPageVue,$1|$2|$3|$4|$5)", "", 1, 0, "", "", "", "ApiPath;DevUser;Mimo;pagecaption", "Multi field fuzzy query, separated by semicolons as 'or' query", "@code(pro.ApiSchStrict)", 1, 1, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "user_id", "%m% and %e% and %f% and %s%", "", "", "", "", "", "user_id", "%m% and %e% and %f% and %s%", "", "appbannerguanli_2", "", "", "", "", "user_id", "%m% and %e% and %f% and %s%", "", "", "", "", "", "", "user_id", "%m% and %e% and %f% and %s%", "", "", 1000, 1, "Export[##][##]export_direct[##][##]common");
+                                                            }
+                                                        </SPAN>
+                                                    }
+                                                    else { Output.Write(FTFrame.Server.Core.AccessControl.AccesseInfo(0, "", 0, "")); }
+                                                }
+                                                <DIV class=clear></DIV>
+                                            </DIV>
+                                        </DIV>
+                                    </DIV>
+                                    @{await Html.RenderPartialAsync("../../_ft/_template/tail");}
+                                </DIV>
+                            </DIV><!--bottom background start-->
+                            <DIV class=main_bottom_middle>
+                                <DIV class=main_bottom_left></DIV>
+                                <DIV class=main_bottom_right>
+                                    <DIV style="BORDER-TOP: red 1px solid; BORDER-RIGHT: red 1px solid; BORDER-BOTTOM: red 1px solid; BORDER-LEFT: red 1px solid; DISPLAY: none">
+                                        1111&nbsp;<FONT style="BACKGROUND-COLOR: #008000" color=#ffffff>新增图片</FONT> 1111111111 111<FONT style="BACKGROUND-COLOR: #008000" color=#ffffff>修改图片</FONT>11111
+                                        <DIV></DIV>
+                                        <DIV></DIV>
+                                    </DIV>
+                                </DIV>
+                            </DIV>
+                        </DIV>
+                    </DIV>
+                </DIV>
+            </DIV>
+        </DIV><TEXTAREA id=copyinput style="HEIGHT: 0px; WIDTH: 0px; opacity: 0" width="0" height="0" type="text"></TEXTAREA>
+
+    </BODY>
+</HTML>
+<script language='javascript' id='ftdp_page_js'>
+    function copyText(str) {
+        document.getElementById("copyinput").value = str;
+        document.getElementById("copyinput").select();
+        document.execCommand("copy");
+    }</script>

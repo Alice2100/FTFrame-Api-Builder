@@ -1,0 +1,59 @@
+﻿@using FTFrame;
+@using FTFrame.Tool;
+@using FTFrame.Project.Core
+@using FTFrame.DBClient;
+@using Microsoft.AspNetCore.Http.Extensions;
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<HTML xmlns:ftdp=xmlns:ftdp>
+<HEAD>
+    <TITLE>@(ViewData["title"])</TITLE>
+    <META content="TEXT/HTML; CHARSET=UTF-8" http-equiv=CONTENT-TYPE />
+    <META name=GENERATOR content="MSHTML 11.00.10570.1001" />
+    @{await Html.RenderPartialAsync("../../_ft/_template/head_jqueryui");}
+    <STYLE>
+    </STYLE>
+</HEAD>
+<BODY>
+    <!--top background start-->
+    <DIV class=main_top_middle>
+        <DIV class=main_top_left>
+            <DIV class=main_top_right>
+                <!--top background end-->
+                <DIV id=body-wrapper>
+                    <DIV id=main-content>
+                        <DIV class=clear></DIV>
+                        <DIV class=content-box>
+                            <DIV class=content-box-header>
+                                <DIV class=content-box-updown align=right><IMG src="@SysConst.SubPath/_ft/_pro/res/images/down.gif" /></DIV>
+                                <H3>@(ViewData["title"])</H3>
+                                <UL class=content-box-tabs>
+                                    <LI><A class=default-tab href="#tab1">@(ViewData["title"])</A></LI>
+                                </UL>
+                                <DIV class=clear></DIV>
+                            </DIV>
+                            <DIV class=content-box-content>
+                                <DIV class=main_bottom_middle>
+                                    <DIV class=main_bottom_left></DIV>
+                                    <DIV class=main_bottom_right>
+                                        <DIV id=tab1 class="tab-content default-tab ftdp_list">
+                                            @RenderBody()
+                                            <DIV class=clear></DIV>
+                                        </DIV>
+                                    </DIV>
+                                </DIV>
+                                @{await Html.RenderPartialAsync("../../_ft/_template/tail");}
+                            </DIV>
+                        </DIV><!--bottom background start-->
+                        <DIV class=main_bottom_middle>
+                            <DIV class=main_bottom_left></DIV>
+                            <DIV class=main_bottom_right>
+                            </DIV>
+                        </DIV>
+                    </DIV>
+                </DIV>
+            </DIV>
+        </DIV>
+    </DIV><TEXTAREA id=copyinput style="HEIGHT: 0px; WIDTH: 0px; opacity: 0" width="0" height="0" type="text"></TEXTAREA>
+
+</BODY>
+</HTML>

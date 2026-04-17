@@ -1,0 +1,13 @@
+/*FTDP Control,This Code Created By FTDP Deploy Tool
+Build By Maobb 2007-6-10
+Code Deploy Time is:2020-06-05 09:49:47*/
+using System;
+using FTDP;
+using FTDP.Tool;
+using System.Text.RegularExpressions;
+namespace FT.Dataop
+{
+public class ftdpcontrolsql
+{
+}
+}

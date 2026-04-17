@@ -1,0 +1,1381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{971E3C26-28C0-44EC-BBEB-808590D248AC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SiteMatrix</RootNamespace>
+    <AssemblyName>FTDP</AssemblyName>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\SiteMatrix.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\SiteMatrix.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.SHDocVw">
+      <HintPath>..\..\..\00_link\Res\sm_res\AxInterop.SHDocVw.dll</HintPath>
+    </Reference>
+    <Reference Include="d4htmlinterface">
+      <HintPath>..\..\..\00_link\Res\sm_res\d4htmlinterface.dll</HintPath>
+    </Reference>
+    <Reference Include="FlatTabControl">
+      <HintPath>..\..\..\00_link\Res\sm_res\FlatTabControl.dll</HintPath>
+    </Reference>
+    <Reference Include="htmleditocx">
+      <HintPath>..\..\..\00_link\Res\sm_res\htmleditocx.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\00_link\Res\sm_res\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.TextEditor">
+      <HintPath>..\..\..\00_link\Res\sm_res\ICSharpCode.TextEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.d4codeEditInterface">
+      <HintPath>..\..\..\00_link\Res\sm_res\Interop.d4codeEditInterface.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.IShellLinkVB">
+      <HintPath>..\..\..\00_link\Res\sm_res\Interop.IShellLinkVB.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.SHDocVw">
+      <HintPath>..\..\..\00_link\Res\sm_res\Interop.SHDocVw.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Microsoft.mshtml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\00_link\Res\sm_res\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="sceditocx">
+      <HintPath>..\..\..\00_link\Res\sm_res\sceditocx.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ToolBox">
+      <HintPath>..\..\..\00_link\Res\sm_res\ToolBox.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classes\compress.cs" />
+    <Compile Include="classes\controls.cs" />
+    <Compile Include="classes\database.cs" />
+    <Compile Include="classes\EditorEvent.cs" />
+    <Compile Include="classes\FileExplorer.cs" />
+    <Compile Include="classes\FormEditorConverter.cs" />
+    <Compile Include="classes\FtpLib.cs" />
+    <Compile Include="classes\globalconst.cs" />
+    <Compile Include="classes\globalfunction.cs" />
+    <Compile Include="classes\ImageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="classes\Licence.cs" />
+    <Compile Include="classes\LicenceProvider.cs" />
+    <Compile Include="classes\Obj.cs" />
+    <Compile Include="classes\PageAsist.cs" />
+    <Compile Include="classes\PageWare.cs" />
+    <Compile Include="classes\PropertyAdapter.cs" />
+    <Compile Include="classes\PropertyBag.cs" />
+    <Compile Include="classes\PropertyControlInfo.cs" />
+    <Compile Include="classes\PropertyFormElement.cs" />
+    <Compile Include="classes\PropertySite.cs" />
+    <Compile Include="classes\ResClass.cs" />
+    <Compile Include="classes\site.cs" />
+    <Compile Include="classes\StyleEditorAdapter.cs" />
+    <Compile Include="classes\StyleEditorConverter.cs" />
+    <Compile Include="classes\PropertyFormElementData.cs" />
+    <Compile Include="classes\bug.cs" />
+    <Compile Include="forms\AddControl2Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\AddDir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\AddPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\AddSite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\BugCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\BugCheck.Designer.cs">
+      <DependentUpon>BugCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\control\DataOpDefine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\control\DataOpDefine.Designer.cs">
+      <DependentUpon>DataOpDefine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\control\PA_Div.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\control\PA_Div.Designer.cs">
+      <DependentUpon>PA_Div.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\control\EleAssis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\control\EleAssis.Designer.cs">
+      <DependentUpon>EleAssis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\control\SelTable_MySql.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\control\SelTable_MySql.Designer.cs">
+      <DependentUpon>SelTable_MySql.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\control\SelCol_SqlServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\control\SelCol_SqlServer.Designer.cs">
+      <DependentUpon>SelCol_SqlServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\control\TableTag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\control\TableTag.Designer.cs">
+      <DependentUpon>TableTag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\control\DataBind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\control\BackValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\control\RowAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\control\DyValueDefine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\control\DyValueDefine.Designer.cs">
+      <DependentUpon>DyValueDefine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\control\PageAssis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\control\PageAssis.Designer.cs">
+      <DependentUpon>PageAssis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\control\SelCol_MySql.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\control\SelCol_MySql.Designer.cs">
+      <DependentUpon>SelCol_MySql.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\ErrorReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FindReplace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FindReplace.Designer.cs">
+      <DependentUpon>FindReplace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormData.Designer.cs">
+      <DependentUpon>FormData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormName.Designer.cs">
+      <DependentUpon>FormName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\ImportPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\ImportPage.Designer.cs">
+      <DependentUpon>ImportPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\ImportSel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\ImportSel.Designer.cs">
+      <DependentUpon>ImportSel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\InputName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\InputName.Designer.cs">
+      <DependentUpon>InputName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\LoadStat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\LoadStat.Designer.cs">
+      <DependentUpon>LoadStat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\ModifyDNS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\ModifyDNS.Designer.cs">
+      <DependentUpon>ModifyDNS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\NewControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\OpenWebPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\OpenWebPage.Designer.cs">
+      <DependentUpon>OpenWebPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\PartImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Property.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\RulesEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\RulesEditor.Designer.cs">
+      <DependentUpon>RulesEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\SiteAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\SiteExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\SiteExport.Designer.cs">
+      <DependentUpon>SiteExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\SiteList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\SitePublish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\SiteReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\SiteReport.Designer.cs">
+      <DependentUpon>SiteReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\SiteUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Snippet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Snippet.Designer.cs">
+      <DependentUpon>Snippet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\SplitPublish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\SplitPublish.Designer.cs">
+      <DependentUpon>SplitPublish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\StyleBuilder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\TemplateManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\TemplateManage.Designer.cs">
+      <DependentUpon>TemplateManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\TextEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\TextEditor.Designer.cs">
+      <DependentUpon>TextEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\ToolBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\UpdateParts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\UpdateParts.Designer.cs">
+      <DependentUpon>UpdateParts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Workspace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\ModifyCSS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\ModifyCSS.Designer.cs">
+      <DependentUpon>ModifyCSS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\OptionsEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\OptionsEditor.Designer.cs">
+      <DependentUpon>OptionsEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\TableName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\TableName.Designer.cs">
+      <DependentUpon>TableName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\PublishSel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\PublishSel.Designer.cs">
+      <DependentUpon>PublishSel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\control\GetControlData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\control\GetControlData.Designer.cs">
+      <DependentUpon>GetControlData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\control\SQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\JsHelper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\JsHelper.Designer.cs">
+      <DependentUpon>JsHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\BugResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\BugResult.Designer.cs">
+      <DependentUpon>BugResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>main.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="forms\AddControl2Page.resx">
+      <DependentUpon>AddControl2Page.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\AddDir.resx">
+      <DependentUpon>AddDir.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\AddPage.resx">
+      <DependentUpon>AddPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\AddSite.resx">
+      <DependentUpon>AddSite.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\BugCheck.resx">
+      <DependentUpon>BugCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\control\DataOpDefine.resx">
+      <DependentUpon>DataOpDefine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\control\PA_Div.resx">
+      <DependentUpon>PA_Div.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\control\EleAssis.resx">
+      <DependentUpon>EleAssis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\control\SelTable_MySql.resx">
+      <DependentUpon>SelTable_MySql.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\control\SelCol_SqlServer.resx">
+      <DependentUpon>SelCol_SqlServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\control\TableTag.resx">
+      <DependentUpon>TableTag.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\control\DataBind.resx">
+      <DependentUpon>DataBind.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\control\BackValue.resx">
+      <DependentUpon>BackValue.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\control\RowAll.resx">
+      <DependentUpon>RowAll.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\control\DyValueDefine.resx">
+      <DependentUpon>DyValueDefine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\control\PageAssis.resx">
+      <DependentUpon>PageAssis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\control\SelCol_MySql.resx">
+      <DependentUpon>SelCol_MySql.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Editor.resx">
+      <DependentUpon>Editor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\ErrorReport.resx">
+      <DependentUpon>ErrorReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FindReplace.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FindReplace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormData.resx">
+      <DependentUpon>FormData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormName.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\ImportPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ImportPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\ImportSel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ImportSel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\InputName.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InputName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\LoadStat.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoadStat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Login.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\ModifyDNS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ModifyDNS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\NewControl.resx">
+      <DependentUpon>NewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\OpenWebPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpenWebPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\PartImage.resx">
+      <DependentUpon>PartImage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Property.resx">
+      <DependentUpon>Property.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\RulesEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RulesEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\SiteAdd.resx">
+      <DependentUpon>SiteAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\SiteExport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SiteExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\SiteList.resx">
+      <DependentUpon>SiteList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\SitePublish.resx">
+      <DependentUpon>SitePublish.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\SiteReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SiteReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\SiteUpdate.resx">
+      <DependentUpon>SiteUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Snippet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Snippet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\SplitPublish.resx">
+      <DependentUpon>SplitPublish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\StyleBuilder.resx">
+      <DependentUpon>StyleBuilder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\TemplateManage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TemplateManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\TextEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TextEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\ToolBox.resx">
+      <DependentUpon>ToolBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\UpdateParts.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UpdateParts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Workspace.resx">
+      <DependentUpon>Workspace.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\ModifyCSS.resx">
+      <DependentUpon>ModifyCSS.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\OptionsEditor.resx">
+      <DependentUpon>OptionsEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\TableName.resx">
+      <DependentUpon>TableName.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\PublishSel.resx">
+      <DependentUpon>PublishSel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\control\GetControlData.resx">
+      <DependentUpon>GetControlData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\control\SQL.resx">
+      <DependentUpon>SQL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\JsHelper.resx">
+      <DependentUpon>JsHelper.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\BugResult.resx">
+      <DependentUpon>BugResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>main.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\GetNode.resx">
+      <DependentUpon>GetNode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\about.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\about.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\about.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\about.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\addcontrol.en.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>addcontrol.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\addcontrol.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\addcontrol.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\addcontrol.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\adddir.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\adddir.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\adddir.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\adddir.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\addpage.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\addpage.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\addpage.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\addpage.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\addsite.en.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>addsite.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\addsite.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\addsite.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\addsite.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\editor.en.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>editor.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\editor.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\editor.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\editor.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\errorreport.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\errorreport.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\errorreport.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\errorreport.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\findreplace.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\findreplace.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\findreplace.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\findreplace.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\getnode.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\getnode.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\getnode.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\getnode.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\importpage.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\importpage.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\importpage.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\importpage.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\inputname.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\inputname.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\inputname.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\inputname.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\loading.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\loading.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\loading.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\loading.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\loadstat.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\loadstat.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\loadstat.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\loadstat.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\mainbox.en.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>mainbox.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\mainbox.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\mainbox.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\mainbox.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\mainform.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\mainform.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\mainform.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\mainform.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\SiteImport.resx">
+      <DependentUpon>SiteImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\TagEdit.resx">
+      <DependentUpon>TagEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\SiteClear.resx">
+      <DependentUpon>SiteClear.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Options.resx">
+      <DependentUpon>Options.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\modifydns.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\modifydns.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\modifydns.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\modifydns.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\openwebpage.en.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>openwebpage.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\openwebpage.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\openwebpage.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\openwebpage.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\option.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\option.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\option.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\option.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\partimage.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\partimage.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\partimage.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\partimage.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\siteadd.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\siteadd.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\siteadd.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\siteadd.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\siteclear.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\siteclear.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\siteclear.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\siteclear.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\siteexport.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\siteexport.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\siteexport.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\siteexport.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\siteimport.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\siteimport.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\siteimport.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\siteimport.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\sitelist.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\sitelist.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\sitelist.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\sitelist.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\sitepublish.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\sitepublish.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\sitepublish.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\sitepublish.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\sitereport.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\sitereport.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\sitereport.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\sitereport.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\siteupdate.en.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>siteupdate.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\siteupdate.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\siteupdate.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\siteupdate.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\snippet.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\snippet.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\snippet.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\snippet.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\stylebuilder.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\stylebuilder.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\stylebuilder.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\stylebuilder.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\tagedit.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\tagedit.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\tagedit.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\tagedit.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\templatemanage.en.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>templatemanage.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\templatemanage.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\templatemanage.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\templatemanage.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\toolbox.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\toolbox.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\toolbox.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\toolbox.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\workspace.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\workspace.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\workspace.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\workspace.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\_controls.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\_controls.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\_controls.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\_controls.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\_globalconst.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\_globalconst.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\_globalconst.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\_globalconst.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\_globalfunctions.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\_globalfunctions.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\_globalfunctions.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\_globalfunctions.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\_pageware.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\_pageware.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\_pageware.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\_pageware.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\_propertysite.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\_propertysite.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\_propertysite.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\_propertysite.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\_site.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\_site.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\_site.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\_site.zh-tw.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resource\form.zh-chs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="classes\style.cs">
+    </Compile>
+    <Compile Include="forms\SiteImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\SiteImport.Designer.cs">
+      <DependentUpon>SiteImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\TagEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\TagEdit.Designer.cs">
+      <DependentUpon>TagEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\SiteClear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\SiteClear.Designer.cs">
+      <DependentUpon>SiteClear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\GetNode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\GetNode.Designer.cs">
+      <DependentUpon>GetNode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="resource\addcontrol.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>addcontrol.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="resource\addsite.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>addsite.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="resource\editor.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>editor.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="resource\mainbox.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mainbox.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="resource\openwebpage.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>openwebpage.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="resource\siteupdate.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>siteupdate.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="resource\templatemanage.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>templatemanage.en.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="Resources\7syslive0_013.ico" />
+    <Content Include="Resources\7syslive0_03.ico" />
+    <Content Include="main.ico" />
+    <Content Include="Resources\loading.jpg" />
+    <Content Include="Resources\loading2.jpg" />
+    <Content Include="Resources\保存.gif" />
+    <Content Include="Resources\克隆实例.gif" />
+    <Content Include="Resources\克隆片段.gif" />
+    <Content Include="Resources\关闭.gif" />
+    <Content Include="Resources\删除.gif" />
+    <Content Include="Resources\刷新.gif" />
+    <Content Include="Resources\发布.gif" />
+    <Content Include="Resources\同步.gif" />
+    <Content Include="Resources\导入.gif" />
+    <Content Include="Resources\导出.gif" />
+    <Content Include="Resources\打开.gif" />
+    <Content Include="Resources\新建实例.gif" />
+    <Content Include="Resources\新建片段.gif" />
+    <Content Include="Resources\更新数据.gif" />
+    <Content Include="Resources\检测报告.gif" />
+    <Content Include="Resources\模板导入.gif" />
+    <Content Include="Resources\模板导出.gif" />
+    <Content Include="Resources\模板管理.gif" />
+    <Content Include="Resources\添加.gif" />
+    <Content Include="Resources\站点注册.gif" />
+    <Content Include="Resources\管理.gif" />
+    <Content Include="Resources\页面导入.gif" />
+    <Content Include="Resources\页面导出.gif" />
+    <None Include="Resources\ymdr.gif" />
+    <None Include="Resources\ymdc.gif" />
+    <None Include="Resources\xjsl.gif" />
+    <None Include="Resources\xjpd.gif" />
+    <None Include="Resources\tb.gif" />
+    <None Include="Resources\sx.gif" />
+    <None Include="Resources\sc.gif" />
+    <None Include="Resources\page.gif" />
+    <None Include="Resources\mbgl.gif" />
+    <None Include="Resources\mbdr.gif" />
+    <None Include="Resources\mbdc.gif" />
+    <None Include="Resources\klsl.gif" />
+    <None Include="Resources\klpd.gif" />
+    <None Include="Resources\jcbg.gif" />
+    <None Include="Resources\gxsj.gif" />
+    <None Include="Resources\gl.gif" />
+    <None Include="Resources\gb.gif" />
+    <None Include="Resources\fb.gif" />
+    <None Include="Resources\dr.gif" />
+    <None Include="Resources\dk.gif" />
+    <None Include="Resources\dc.gif" />
+    <None Include="Resources\baocun.gif" />
+    <None Include="Resources\zdzc.gif" />
+    <None Include="Resources\tj.gif" />
+    <None Include="Resources\main.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\FTDP.Util\FTDP.Util.csproj">
+      <Project>{cdc399a2-3173-41a6-a1da-f08ec65d9b29}</Project>
+      <Name>FTDP.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

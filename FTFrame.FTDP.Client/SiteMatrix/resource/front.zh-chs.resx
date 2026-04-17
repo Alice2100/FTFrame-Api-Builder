@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Temp.001" xml:space="preserve">
+    <value>无模板关联</value>
+  </data>
+  <data name="Temp.002" xml:space="preserve">
+    <value>模板不存在</value>
+  </data>
+  <data name="Temp.003" xml:space="preserve">
+    <value>取消模板关联</value>
+  </data>
+  <data name="Temp.004" xml:space="preserve">
+    <value>存在页面没有标识</value>
+  </data>
+  <data name="Temp.005" xml:space="preserve">
+    <value>页面标识只能是英文数字下划线</value>
+  </data>
+  <data name="Temp.006" xml:space="preserve">
+    <value>存在模板没有名称</value>
+  </data>
+  <data name="Temp.007" xml:space="preserve">
+    <value>前端页面开发</value>
+  </data>
+  <data name="Temp.008" xml:space="preserve">
+    <value>该组件没有名称，不能保存</value>
+  </data>
+  <data name="Temp.009" xml:space="preserve">
+    <value>组件名称只能是英文数字下划线</value>
+  </data>
+  <data name="Temp.010" xml:space="preserve">
+    <value>自定义脚本的“方法名及$emit回调”必须在上一行增加以 // 开始的注释</value>
+  </data>
+  <data name="Temp.011" xml:space="preserve">
+    <value>否则不会出现在组件使用描述中</value>
+  </data>
+  <data name="Temp.012" xml:space="preserve">
+    <value>组件名必须为英文开头，只能包含英文数字和下划线</value>
+  </data>
+  <data name="Temp.013" xml:space="preserve">
+    <value>页面名必须为英文开头，只能包含英文数字和下划线</value>
+  </data>
+  <data name="Temp.014" xml:space="preserve">
+    <value>发布成功，可以在线浏览</value>
+  </data>
+  <data name="Temp.015" xml:space="preserve">
+    <value>确定要取消模板关联吗 ?</value>
+  </data>
+  <data name="Temp.016" xml:space="preserve">
+    <value>已生成页面 NoName_FromTemp,在页面Tab页进行编辑</value>
+  </data>
+  <data name="Temp.bindorcancel" xml:space="preserve">
+    <value>取消模板关联</value>
+  </data>
+  <data name="Temp.button11" xml:space="preserve">
+    <value>预 览 Ctrl+E</value>
+  </data>
+  <data name="Temp.button12" xml:space="preserve">
+    <value>保 存</value>
+  </data>
+  <data name="Temp.button21" xml:space="preserve">
+    <value>保 存 Ctrl+S</value>
+  </data>
+  <data name="Temp.button3" xml:space="preserve">
+    <value>保 存 Ctrl+S</value>
+  </data>
+  <data name="Temp.button4" xml:space="preserve">
+    <value>发 布 Ctrl+Q</value>
+  </data>
+  <data name="Temp.button5" xml:space="preserve">
+    <value>导 出 Ctrl+W</value>
+  </data>
+  <data name="Temp.button6" xml:space="preserve">
+    <value>浏 览</value>
+  </data>
+  <data name="Temp.button7" xml:space="preserve">
+    <value>配 置</value>
+  </data>
+  <data name="Temp.button8" xml:space="preserve">
+    <value>转页面 Ctrl+P</value>
+  </data>
+  <data name="Temp.dgv.comdefine.col.1" xml:space="preserve">
+    <value>组件标识</value>
+  </data>
+  <data name="Temp.dgv.comdefine.col.2" xml:space="preserve">
+    <value>组件描述</value>
+  </data>
+  <data name="Temp.dgv.comdefine.col.3" xml:space="preserve">
+    <value>回调</value>
+  </data>
+  <data name="Temp.dgv.comdefine.col.4" xml:space="preserve">
+    <value>回调描述</value>
+  </data>
+  <data name="Temp.dgv.paradefine.col.1" xml:space="preserve">
+    <value>参数标识</value>
+  </data>
+  <data name="Temp.dgv.paradefine.col.2" xml:space="preserve">
+    <value>参数描述</value>
+  </data>
+  <data name="Temp.dgv.paradefine.col.3" xml:space="preserve">
+    <value>默认值</value>
+  </data>
+  <data name="Temp.dgvpage.comdefine.col.1" xml:space="preserve">
+    <value>组件描述</value>
+  </data>
+  <data name="Temp.dgvpage.comdefine.col.2" xml:space="preserve">
+    <value>关联组件</value>
+  </data>
+  <data name="Temp.dgvpage.comdefine.col.3" xml:space="preserve">
+    <value>回调描述</value>
+  </data>
+  <data name="Temp.dgvpage.comdefine.col.4" xml:space="preserve">
+    <value>关联回调</value>
+  </data>
+  <data name="Temp.dgvpage.paradefine.col.1" xml:space="preserve">
+    <value>参数描述</value>
+  </data>
+  <data name="Temp.dgvpage.paradefine.col.2" xml:space="preserve">
+    <value>参数定义</value>
+  </data>
+  <data name="Temp.dgvpage.paradefine.col.3" xml:space="preserve">
+    <value>默认值</value>
+  </data>
+  <data name="Temp.label1" xml:space="preserve">
+    <value>模板名称</value>
+  </data>
+  <data name="Temp.label2" xml:space="preserve">
+    <value>模板描述</value>
+  </data>
+  <data name="Temp.label23" xml:space="preserve">
+    <value>参数定义</value>
+  </data>
+  <data name="Temp.label26" xml:space="preserve">
+    <value>组件定义</value>
+  </data>
+  <data name="Temp.label27" xml:space="preserve">
+    <value>关联模板</value>
+  </data>
+  <data name="Temp.label29" xml:space="preserve">
+    <value>页面标识</value>
+  </data>
+  <data name="Temp.label30" xml:space="preserve">
+    <value>页面名称</value>
+  </data>
+  <data name="Temp.label32" xml:space="preserve">
+    <value>页面代码</value>
+  </data>
+  <data name="Temp.label33" xml:space="preserve">
+    <value>参数定义</value>
+  </data>
+  <data name="Temp.label7" xml:space="preserve">
+    <value>组件定义</value>
+  </data>
+  <data name="Temp.label8" xml:space="preserve">
+    <value>模板代码</value>
+  </data>
+  <data name="Temp.linklabel1" xml:space="preserve">
+    <value>窗口编辑</value>
+  </data>
+  <data name="Temp.linklabel2" xml:space="preserve">
+    <value>点击生成</value>
+  </data>
+  <data name="Temp.linklabel3" xml:space="preserve">
+    <value>生成预览</value>
+  </data>
+  <data name="Temp.linklabel4" xml:space="preserve">
+    <value>窗口编辑</value>
+  </data>
+  <data name="Temp.tabPage16" xml:space="preserve">
+    <value>1 页 面</value>
+  </data>
+  <data name="Temp.tabPage17" xml:space="preserve">
+    <value>2 模 板</value>
+  </data>
+  <data name="Temp.tp1" xml:space="preserve">
+    <value>模板定义</value>
+  </data>
+  <data name="Temp.tp2" xml:space="preserve">
+    <value>页面定义</value>
+  </data>
+  <data name="TempConfig.button1" xml:space="preserve">
+    <value>选择导出目录</value>
+  </data>
+  <data name="TempConfig.checkBox1" xml:space="preserve">
+    <value>保存即导出</value>
+  </data>
+  <data name="TempConfig.label2" xml:space="preserve">
+    <value>Eslint程序位置（设置此项时，导出 vue文件时自动格式化）</value>
+  </data>
+  <data name="TempPageBackUp.dgv.0" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="TempPageBackUp.dgv.1" xml:space="preserve">
+    <value>标题</value>
+  </data>
+  <data name="TempPageBackUp.dgv.2" xml:space="preserve">
+    <value>更新时间</value>
+  </data>
+  <data name="TempPageBackUp.dgv.3" xml:space="preserve">
+    <value>开发者</value>
+  </data>
+  <data name="TempPageBackUp.dgv.4" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="TempPageBackUp.get" xml:space="preserve">
+    <value>获取</value>
+  </data>
+  <data name="TempSelTemp.001" xml:space="preserve">
+    <value>选定</value>
+  </data>
+  <data name="TempSelTemp.dgv.0" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="TempSelTemp.dgv.1" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="TempSelTemp.dgv.2" xml:space="preserve">
+    <value>操作</value>
+  </data>
+</root>

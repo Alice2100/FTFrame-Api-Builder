@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+	  <Version>2.0.1</Version>
+	  <Authors>MaoBinbin</Authors>
+	  <Company>$(Authors)</Company>
+	  <Description>Commercial,Unauthorized prohibition</Description>
+	  <Copyright>All rights are reserved by MaoBinbin,Contact:d4soft@126.com</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <OutputPath>C:\01_ft\publish\ftsite\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <OutputPath>C:\01_ft\publish\ftsite\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+  </PropertyGroup>
+	<PropertyGroup>
+		<PackageReadmeFile>readme.md</PackageReadmeFile>
+	</PropertyGroup>
+	<!--<PropertyGroup>
+		<PackageLicenseExpression>GPL-1.0-only</PackageLicenseExpression>
+	</PropertyGroup>-->
+	<ItemGroup>
+		<None Include="readme.md" Pack="true" PackagePath="" />
+	</ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AngleSharp" Version="0.14.0" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.11.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="3.7.0" />
+    <PackageReference Include="SharpZipLib" Version="1.4.2" />
+    <PackageReference Include="System.CodeDom" Version="4.7.0" />
+    <PackageReference Include="System.Data.OleDb" Version="4.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FTFrame.Base.Core\FTFrame.Base.Core.csproj" />
+    <ProjectReference Include="..\FTFrame.Core\FTFrame.Core.csproj" />
+    <ProjectReference Include="..\FTFrame.Project.Core\FTFrame.Project.Core.csproj" />
+    <ProjectReference Include="..\FTFrame.Tool.Core\FTFrame.Tool.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="readme.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

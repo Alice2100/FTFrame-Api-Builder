@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="pageupdate.button1" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="pageupdate.button2" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="pageupdate.button4" xml:space="preserve">
+    <value>Select Outdated</value>
+  </data>
+  <data name="pageupdate_button1" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="pageupdate_col1" xml:space="preserve">
+    <value>File Name</value>
+  </data>
+  <data name="pageupdate_col2" xml:space="preserve">
+    <value>Latest Version</value>
+  </data>
+  <data name="pageupdate_col3" xml:space="preserve">
+    <value>Local Version</value>
+  </data>
+  <data name="pageupdate_wu" xml:space="preserve">
+    <value>(None)</value>
+  </data>
+  <data name="pageupdate_confirm" xml:space="preserve">
+    <value>After the update, the selected local page will be replaced. Do you want to continue?</value>
+  </data>
+  <data name="pageupdate_success" xml:space="preserve">
+    <value>Update Success</value>
+  </data>
+  <data name="PageAsist.TB5Caption" xml:space="preserve">
+    <value>Page Assistance</value>
+  </data>
+  <data name="PageAsist.chongfu" xml:space="preserve">
+    <value>[Repetition]</value>
+  </data>
+  <data name="PageAsist.yifuzhi" xml:space="preserve">
+    <value>Replicated</value>
+  </data>
+  <data name="PageAsist.jkdddd" xml:space="preserve">
+    <value>Only the main fragments of data acquisition can be operated on</value>
+  </data>
+  <data name="PageAsist.jkdddd2" xml:space="preserve">
+    <value>Only the main fragments of data list, data operation, and data acquisition can be operated on</value>
+  </data>
+  <data name="PageAsist.yishuaxinye" xml:space="preserve">
+    <value>Page assistance refreshed</value>
+  </data>
+  <data name="PageAsist.genggai" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="PageAsist.copynew" xml:space="preserve">
+    <value>Copy a New One</value>
+  </data>
+  <data name="PageAsist.addnew" xml:space="preserve">
+    <value>Create a New One</value>
+  </data>
+  <data name="PageAsist.yishanchu" xml:space="preserve">
+    <value>Component deleted</value>
+  </data>
+  <data name="PageAsist.kelongtihuan" xml:space="preserve">
+    <value>Clone and Replace</value>
+  </data>
+  <data name="PageAsist.kelongnew" xml:space="preserve">
+    <value>Clone a New One</value>
+  </data>
+  <data name="MainForm.openwithvscode" xml:space="preserve">
+    <value>Open with VSCode</value>
+  </data>
+  <data name="MainForm.ExportSinglePage" xml:space="preserve">
+    <value>Export This Page</value>
+  </data>
+  <data name="MainForm.BackUptoolStripMenuItem3" xml:space="preserve">
+    <value>Historical Backup</value>
+  </data>
+  <data name="MainForm.toolStripButton1" xml:space="preserve">
+    <value>Publish Activation Page</value>
+  </data>
+  <data name="MainForm.pa_div_fuzhi" xml:space="preserve">
+    <value>Copy a New One</value>
+  </data>
+  <data name="MainForm.pa_div_change" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="MainForm.pa_div_del" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="MainForm.pa_div_dingwei" xml:space="preserve">
+    <value>Positioning</value>
+  </data>
+  <data name="MainForm.pa_part_clone_new" xml:space="preserve">
+    <value>Clone a New One</value>
+  </data>
+  <data name="MainForm.pa_part_clone_change" xml:space="preserve">
+    <value>Clone and Replace</value>
+  </data>
+  <data name="MainForm.pa_part_copyID" xml:space="preserve">
+    <value>Copy ID</value>
+  </data>
+  <data name="MainForm.pa_part_setting" xml:space="preserve">
+    <value>Binding Setting</value>
+  </data>
+  <data name="MainForm.pa_part_copyGetvalue" xml:space="preserve">
+    <value>Copy Asynchronous Method</value>
+  </data>
+  <data name="MainForm.pa_part_del" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="MainForm.pa_part_copyLabel" xml:space="preserve">
+    <value>Copy HTML</value>
+  </data>
+  <data name="MainForm.pa_part_dingwei" xml:space="preserve">
+    <value>Positioning</value>
+  </data>
+  <data name="MainForm.pa_div_newdiv" xml:space="preserve">
+    <value>Create a New DIV Layer</value>
+  </data>
+  <data name="MainForm.pa_refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="Editor.cloneToolStripMenuItem" xml:space="preserve">
+    <value>Clone Component</value>
+  </data>
+  <data name="Editor.cloneandreplaceToolStripMenuItem" xml:space="preserve">
+    <value>Clone Component and Replace</value>
+  </data>
+  <data name="Editor.copypartidToolStripMenuItem" xml:space="preserve">
+    <value>Copy Part ID</value>
+  </data>
+  <data name="Editor.ToolStdadadaripMenuItem" xml:space="preserve">
+    <value>Copy Part HTML</value>
+  </data>
+  <data name="ImportSel.noanypage" xml:space="preserve">
+    <value>There are no pages available</value>
+  </data>
+  <data name="ImportSel.canjustimportsingle" xml:space="preserve">
+    <value>Only a single page can be imported</value>
+  </data>
+  <data name="ImportSel.label1" xml:space="preserve">
+    <value>New instance name:</value>
+  </data>
+  <data name="ImportSel.button2" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ImportSel.button1" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ImportSel.insertfailed" xml:space="preserve">
+    <value>Insertion failed!</value>
+  </data>
+  <data name="ImportSel.waid2second" xml:space="preserve">
+    <value>The new segment has not been fully generated. Do you want to continue waiting for 2 seconds?</value>
+  </data>
+  <data name="ImportSel.waid5second" xml:space="preserve">
+    <value>After confirmation, start executing the replacement, with a maximum waiting time of 5 seconds!</value>
+  </data>
+  <data name="ImportSel.replacefailed" xml:space="preserve">
+    <value>New component instance page replacement failed, please manually replace!</value>
+  </data>
+  <data name="ImportSel.pleasemanul" xml:space="preserve">
+    <value>Failed to perform replacement, please manually replace!</value>
+  </data>
+  <data name="ImportSel.kelongfailed" xml:space="preserve">
+    <value>Cloning failed!</value>
+  </data>
+  <data name="ImportSel.addfailed" xml:space="preserve">
+    <value>New component instance page addition failed, please manually replace!</value>
+  </data>
+  <data name="ImportSel.pleasemanul2" xml:space="preserve">
+    <value>Failed to perform add, please manually add!</value>
+  </data>
+  <data name="ImportSel.newcontrol" xml:space="preserve">
+    <value>New component instance</value>
+  </data>
+  <data name="Option.delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Option.upload" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="Option.current" xml:space="preserve">
+    <value>Current</value>
+  </data>
+  <data name="Option.mustopensite" xml:space="preserve">
+    <value>Site must be opened</value>
+  </data>
+  <data name="Option.filenotexist" xml:space="preserve">
+    <value>The file does not exist!</value>
+  </data>
+  <data name="Option.domin123" xml:space="preserve">
+    <value>Please specify the upload URL, for example http://www.abc.com Or http://x.abc.com:81</value>
+  </data>
+  <data name="Option.uploading" xml:space="preserve">
+    <value>Uploading</value>
+  </data>
+  <data name="Option.uploadsuccess" xml:space="preserve">
+    <value>Upload successful!</value>
+  </data>
+  <data name="Option.pleaseselectfile" xml:space="preserve">
+    <value>Please select the file to upload to the bin directory</value>
+  </data>
+  <data name="SiteImport.confirmpagereplace" xml:space="preserve">
+    <value>If the page '{0}' exists, it will be replaced. Continue?</value>
+  </data>
+  <data name="SplitPublish.Text" xml:space="preserve">
+    <value>Separate Publish</value>
+  </data>
+  <data name="SplitPublish.label1" xml:space="preserve">
+    <value>Local root directory</value>
+  </data>
+  <data name="SplitPublish.button1" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="SplitPublish.label2" xml:space="preserve">
+    <value>Site Root Path</value>
+  </data>
+  <data name="SplitPublish.checkBox1" xml:space="preserve">
+    <value>The file name will be the same as the current one after publishing</value>
+  </data>
+  <data name="SplitPublish.label3" xml:space="preserve">
+    <value>Note 1: The local path of the separated publishing file relative to the root directory will be mapped to the site root path. For example, if the root directory is D: \ abc, the file is D: \ abc \ x \ 1. HTML, and the site root path is main/, the file will be published as main/x/1. aspx
+
+ 
+笔记</value>
+  </data>
+  <data name="SplitPublish.label5" xml:space="preserve">
+    <value>Note 2: Example of separating instance fragments in a file:&lt;ftdp: control id="abc_part" name="List" height="1px" width="100%"&gt;&lt;/ftdp: control&gt;. You can right-click to copy the clip label to obtain it. If you want to delete HTML elements only at publishing time, add the attribute pubdel=true to the HTML elements to automatically delete static elements at publishing time.</value>
+  </data>
+  <data name="SplitPublish.button2" xml:space="preserve">
+    <value>Separate and publish the last time</value>
+  </data>
+  <data name="SplitPublish.label6" xml:space="preserve">
+    <value>Last Separation Release</value>
+  </data>
+  <data name="SplitPublish.label4" xml:space="preserve">
+    <value>Last Separation Release</value>
+  </data>
+  <data name="SplitPublish.label7" xml:space="preserve">
+    <value>Front-end frame</value>
+  </data>
+  <data name="SplitPublish.button3" xml:space="preserve">
+    <value>Select local file publishing</value>
+  </data>
+  <data name="SplitPublish.button5" xml:space="preserve">
+    <value>Server static file publishing</value>
+  </data>
+  <data name="SplitPublish.button4" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="SplitPublish.selwenjianjia" xml:space="preserve">
+    <value>Please select a folder</value>
+  </data>
+  <data name="SplitPublish.wenjianjabunengweik" xml:space="preserve">
+    <value>The folder path cannot be empty</value>
+  </data>
+  <data name="SplitPublish.plaseselfile" xml:space="preserve">
+    <value>Please select a file</value>
+  </data>
+  <data name="SplitPublish.opensitefirst" xml:space="preserve">
+    <value>You must first open the site</value>
+  </data>
+  <data name="SplitPublish.lastpublished" xml:space="preserve">
+    <value>Recently released:</value>
+  </data>
+  <data name="SplitPublish.zhidingmulufirst" xml:space="preserve">
+    <value>Please specify the local root directory first</value>
+  </data>
+  <data name="SplitPublish.zhidingmulufirst22" xml:space="preserve">
+    <value>Please specify the root path of the site first, ending in/, and enter the top-level path/</value>
+  </data>
+  <data name="SplitPublish.wenjianzaijx" xml:space="preserve">
+    <value>The file must be located under the local root directory</value>
+  </data>
+  <data name="SplitPublish.chongfujianca" xml:space="preserve">
+    <value>Duplicate fragment instances, please check!</value>
+  </data>
+  <data name="SplitPublish.pianduanbuunzai" xml:space="preserve">
+    <value>The fragment instance does not exist in the current site!</value>
+  </data>
+  <data name="SplitPublish.weifaxianshili" xml:space="preserve">
+    <value>No fragment instances found</value>
+  </data>
+  <data name="SplitPublish.meiyouzujinjili" xml:space="preserve">
+    <value>There is no record of recently released detached files</value>
+  </data>
+  <data name="SplitPublish.qingxianzhidingjt" xml:space="preserve">
+    <value>Please specify the server static file first</value>
+  </data>
+  <data name="SplitPublish.qingxianzhidingjt2" xml:space="preserve">
+    <value>Please first specify the server static file as the absolute path to the disk</value>
+  </data>
+  <data name="SplitPublish.qingxianzhidingjt23" xml:space="preserve">
+    <value>Please specify the root path of the site first, ending in/, and enter the top-level path/</value>
+  </data>
+  <data name="TagEdit.button6" xml:space="preserve">
+    <value>Insert Front</value>
+  </data>
+  <data name="TagEdit.button5" xml:space="preserve">
+    <value>Insert After</value>
+  </data>
+  <data name="TagEdit.button4" xml:space="preserve">
+    <value>Delete Element</value>
+  </data>
+  <data name="TagEdit.button3" xml:space="preserve">
+    <value>Update Internal</value>
+  </data>
+  <data name="TagEdit.button1" xml:space="preserve">
+    <value>Update External</value>
+  </data>
+  <data name="TagEdit.button2" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="TextEditor.button3" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="TextEditor.button7" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="TextEditor.button4" xml:space="preserve">
+    <value>Assembly</value>
+  </data>
+  <data name="TextEditor.button5" xml:space="preserve">
+    <value>Script</value>
+  </data>
+  <data name="TextEditor.button6" xml:space="preserve">
+    <value>API Call</value>
+  </data>
+  <data name="Editor.cloneandAppendToolStripMenuItem" xml:space="preserve">
+    <value>Clone Component and Append</value>
+  </data>
+  <data name="MainForm.MenuViewInWeb" xml:space="preserve">
+    <value>Browse Page</value>
+  </data>
+  <data name="MainForm.ExportTableCols" xml:space="preserve">
+    <value>Export Data Structure</value>
+  </data>
+  <data name="ToolMenu.QianDuan" xml:space="preserve">
+    <value>Front-end Component Generate</value>
+  </data>
+  <data name="ToolMenu.QianDuanBackUp" xml:space="preserve">
+    <value>Front-end Backup</value>
+  </data>
+  <data name="ToolMenu.SearchInConfig" xml:space="preserve">
+    <value>Search in Configuration</value>
+  </data>
+  <data name="ToolMenu.RuleDefine" xml:space="preserve">
+    <value>Rule Design Tool</value>
+  </data>
+  <data name="ToolMenu.Para" xml:space="preserve">
+    <value>Site Parameters</value>
+  </data>
+  <data name="ToolMenu.SitePara" xml:space="preserve">
+    <value>Site Parameters</value>
+  </data>
+  <data name="ToolMenu.QianDuanPage" xml:space="preserve">
+    <value>Front-end Page Generate</value>
+  </data>
+  <data name="TextEditor.label.dataop" xml:space="preserve">
+    <value>Advanced column definition rules for data operations:
+1. When not empty, the default return is the filled string, ignoring the input of Name/Key;
+2. When configured as @sql: starting string, return the SQL query value (first row, first column);
+Configuration item supports variable replacement:
+1. Sequence parameters @p[n]@, such as @p1@, @p2@;
+2. @key ([name]), obtained from input parameters, such as @key (username);
+3. @code ([define]), obtained from the defined backend method;
+4. @enum ([define]), obtained from the enumeration defined by the site parameters;
+5. @dic ([define]), obtained from the dictionary table defined by the server;
+6. @para {[define]}, obtained from the site parameter definition;
+7. @from ([@table. col]), obtained from the final values of other fields;
+8. Other: @empty@ null value, @newfid@ primary key value when adding
+When configuring multiple row operations to reset or update, the advanced column only needs to configure filtering conditions</value>
+  </data>
+  <data name="TextEditor.label.dyvalue" xml:space="preserve">
+    <value>Advanced column definition rules for data acquisition:
+1. When not empty, it is recognized as SQL by default. The query results are output based on SQL. If multiple rows or dimension tables are configured, they are output as array objects. Otherwise, the first row and first column values of the SQL query results are returned;
+2. When configured as @code (starting string), return the value of the backend method;
+3. When configured as sql@code (Starting string, return the value of the backend method as SQL and then query;);
+4. When configured as str@code (Starting string, return the value of 'calling the backend method with @val@ as a parameter for the original field value';
+5. When configured as @api_ starting string, return the JSON that calls the interface;
+6. When configured as @SQL: starting string, it is the same as 1;
+Configuration item supports variable replacement:
+1. Sequence parameters @p[n]@, such as @p1@, @p2@;
+2. @key ([name]), obtained from the output parameter, for example @key(username);
+3. @code ([define]), obtained from the defined backend method;
+4. @enum ([define]), obtained from the enumeration defined by the site parameters;
+5. @dic ([define]), obtained from the dictionary table defined by the server;
+6. @para {[define]}, obtained from the site parameter definition;</value>
+  </data>
+  <data name="TextEditor.label.filterrule" xml:space="preserve">
+    <value>Filtering rules (generally used for querying or updating):
+1、 Filter data using column name=value (default to primary key column as filter column)
+1. Definition of columns
+(1) By default, the primary key column names are configured on the server (by table);
+(2) The component parameter "primary key column name" can overwrite or redefine all configured filtering column names of the component;
+(3) Each item in the rule definition can be overwritten by the above definition again. When overwriting the filter column definition, the filter value must also be defined at the same time, such as @p1@, newId
+2. Definition of Value
+(1) By default, the first sequence parameter is used as the filtering value, i.e. @p1@;
+(2) The default primary key value of the component parameter can override or redefine the filtering values for all configurations of the component;
+(3) Each item in the rule definition can once again override the above definition, such as @p2@, or for example @key(newId)
+Each item defined by the rule can have only filter values defined, or both filter values and filter columns can be defined simultaneously (separated by,), and filter columns cannot be defined separately
+2、 Custom filtering criteria
+1. Where starting string, for example, where name='@key(user)'and area='@p1@'
+3、 Configuration item supports variable replacement:
+1. Sequence parameters @p[n]@, such as @p1@, @p2@;
+2. @key ([name]), obtained from input parameters, such as @key(username);
+3. @code([define]), obtained from the defined backend method;
+4. @enum([define]), obtained from the enumeration defined by the site parameters;
+5. @dic([define]), obtained from the dictionary table defined by the server;
+6. @para{[define]}, obtained from the site parameter definition;
+7. @from([@table. col]), obtained from the final values of other fields;</value>
+  </data>
+  <data name="MainForm.ExportApiDic" xml:space="preserve">
+    <value>Export API Document</value>
+  </data>
+</root>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="m1" xml:space="preserve">
+    <value>このアトレスが存在しなかった。</value>
+  </data>
+  <data name="m2" xml:space="preserve">
+    <value>もう一度失敗を発表した，アトレスzipの公文書を見付けなかったです。</value>
+    <comment>last site.zip not Exist! can not republish!</comment>
+  </data>
+  <data name="m3" xml:space="preserve">
+    <value>FTDPザ-バ-に連がって失敗した，検査してザ-バ-は配置してください。</value>
+    <comment>Server not correct installed or not FTDP Server!</comment>
+  </data>
+  <data name="m4" xml:space="preserve">
+    <value>ザ-バ-の上でアトレスは版本が当地よりきっかけのが高かった，続けましたか。 </value>
+    <comment>site version in server is newer than local?would you continue?</comment>
+  </data>
+  <data name="m5" xml:space="preserve">
+    <value>失敗したと発表しました。 </value>
+    <comment>Publish Error!</comment>
+  </data>
+  <data name="m6" xml:space="preserve">
+    <value>アトレスは成功したと発表しました！</value>
+    <comment>Publishing Success!</comment>
+  </data>
+  <data name="m7" xml:space="preserve">
+    <value>ペ-ジ面の断片を消除する時アトレスで木の中でこのペ-ジ面を見付けなかったです。 </value>
+    <comment>can not found this page in site tree when delete part in page!</comment>
+  </data>
+  <data name="m8" xml:space="preserve">
+    <value>ペ-ジ面の断片を消除する時このペ-ジ面を見付けなかったです。 </value>
+    <comment>can not found this page when delete part in page!</comment>
+  </data>
+  <data name="s1" xml:space="preserve">
+    <value>溶けて公文書を抑えた ...</value>
+    <comment>discompressing...</comment>
+  </data>
+  <data name="s10" xml:space="preserve">
+    <value>アトレスのファイラ- をコピ-した ...</value>
+    <comment>Copying site folder</comment>
+  </data>
+  <data name="s11" xml:space="preserve">
+    <value>コピ-してアトレスは設立した ...</value>
+    <comment>Copying site config</comment>
+  </data>
+  <data name="s12" xml:space="preserve">
+    <value>lib 公文書を準備した ...</value>
+    <comment>Ready lib files****************8/.</comment>
+  </data>
+  <data name="s13" xml:space="preserve">
+    <value>初めのlibを溶かした ...</value>
+    <comment>Initializing lib  </comment>
+  </data>
+  <data name="s14" xml:space="preserve">
+    <value>圧縮してアトレスはZipに到着した ...</value>
+    <comment>Compressing Site Zip</comment>
+  </data>
+  <data name="s15" xml:space="preserve">
+    <value>保存してもうペ-ジ面を開いた ...</value>
+    <comment>Saving opened pages ...</comment>
+  </data>
+  <data name="s16" xml:space="preserve">
+    <value>整頓して臨時のファイラ- があいていた ...</value>
+    <comment>Clearing tmp Directory</comment>
+  </data>
+  <data name="s17" xml:space="preserve">
+    <value>アトレスのファイラ- をコピ-した ...</value>
+  </data>
+  <data name="s18" xml:space="preserve">
+    <value>コピ-してアトレスは設立した ...</value>
+  </data>
+  <data name="s19" xml:space="preserve">
+    <value>lib 公文書を準備した ...</value>
+  </data>
+  <data name="s2" xml:space="preserve">
+    <value>config 公文書をコピ-した ...</value>
+    <comment>copying config file...</comment>
+  </data>
+  <data name="s20" xml:space="preserve">
+    <value>初めのlibを溶かした ...</value>
+  </data>
+  <data name="s21" xml:space="preserve">
+    <value>圧縮してアトレスはZipに到着した ...</value>
+  </data>
+  <data name="s22" xml:space="preserve">
+    <value>ザ-バ-の状態を検査した ...</value>
+    <comment>Checking Server Stat</comment>
+  </data>
+  <data name="s23" xml:space="preserve">
+    <value>ァップロ-ドのアトレスは包んだ ...</value>
+    <comment>Uploading Site Package...</comment>
+  </data>
+  <data name="s24" xml:space="preserve">
+    <value>ザ-バ-はアトレスを発表していた ...</value>
+    <comment>Server is publishing this site..</comment>
+  </data>
+  <data name="s25" xml:space="preserve">
+    <value>成功したと発表した ...</value>
+    <comment>Publishing Success!</comment>
+  </data>
+  <data name="s3" xml:space="preserve">
+    <value>index 公文書をコピ-した ...</value>
+    <comment>copying index file...</comment>
+  </data>
+  <data name="s4" xml:space="preserve">
+    <value>dll 公文書をコピ-した ...</value>
+  </data>
+  <data name="s5" xml:space="preserve">
+    <value>resource 公文書をコピ-した ...</value>
+    <comment>copying resource file...</comment>
+  </data>
+  <data name="s6" xml:space="preserve">
+    <value>原始的なアトレス公文書を消除した ...</value>
+    <comment>deleting ordinary site file...???</comment>
+  </data>
+  <data name="s7" xml:space="preserve">
+    <value>新しいアトレス公文書をコピ-した ...</value>
+    <comment>copying new site file...</comment>
+  </data>
+  <data name="s8" xml:space="preserve">
+    <value>臨時の公文書を消除した ...</value>
+    <comment>deleting temp file...</comment>
+  </data>
+  <data name="s9" xml:space="preserve">
+    <value>整頓して臨時の目録があいていた ...</value>
+    <comment>Clearing tmp Directory</comment>
+  </data>
+</root>

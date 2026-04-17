@@ -1,0 +1,738 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="MenuFileAddSite" xml:space="preserve">
+    <value>アトレスを添える(&amp; A) ...</value>
+  </data>
+  <data name="MenuFileSaveAll" xml:space="preserve">
+    <value>全部保存する(&amp; L) </value>
+  </data>
+  <data name="MenuFileOpenFreeFile" xml:space="preserve">
+    <value>自由文書を開く(&amp; O) ...</value>
+  </data>
+  <data name="MenuFileOpenSite" xml:space="preserve">
+    <value>アトレスを開く(&amp; P) ...</value>
+  </data>
+  <data name="MenuFileRegisterSite" xml:space="preserve">
+    <value>アトレスを登録する(&amp; R) ...</value>
+  </data>
+  <data name="MenuFileSaveFile" xml:space="preserve">
+    <value>文書を保存する(&amp; S) </value>
+  </data>
+  <data name="MenuFile" xml:space="preserve">
+    <value>公文書(&amp; F) </value>
+  </data>
+  <data name="MenuFileLastSites" xml:space="preserve">
+    <value>このあいだ開けたアトレス(&amp; I) </value>
+  </data>
+  <data name="MenuFileFileSaveAs" xml:space="preserve">
+    <value>公文書は別に保存する(&amp; V) ...</value>
+  </data>
+  <data name="MenuFileCloseFile" xml:space="preserve">
+    <value>公文書を閉じる(&amp; C) </value>
+  </data>
+  <data name="MenuFileExit" xml:space="preserve">
+    <value>退出する(&amp; X) </value>
+  </data>
+  <data name="MenuFileLastFiles" xml:space="preserve">
+    <value>このあいだ開いた公文書(&amp; F)</value>
+  </data>
+  <data name="MenuFileNewFreeFile" xml:space="preserve">
+    <value>新しく自由文書をビルドする(&amp; N) ...</value>
+  </data>
+  <data name="MenuFileCloseSite" xml:space="preserve">
+    <value>アトレスを閉じる(&amp; T) </value>
+  </data>
+  <data name="MenuFormatAlignCenter" xml:space="preserve">
+    <value>均等割付(&amp; C) </value>
+  </data>
+  <data name="MenuFormat" xml:space="preserve">
+    <value>書式(&amp; M) </value>
+  </data>
+  <data name="MenuEdit" xml:space="preserve">
+    <value>編集(&amp; E) </value>
+  </data>
+  <data name="MenuEditAddSnippet" xml:space="preserve">
+    <value>断片をふやす(&amp; S) </value>
+  </data>
+  <data name="MenuEditClonePart" xml:space="preserve">
+    <value>断片をクロ-ンする(&amp; O) </value>
+  </data>
+  <data name="MenuEditCopy" xml:space="preserve">
+    <value>コピ-する(&amp; C) </value>
+  </data>
+  <data name="MenuEditCreatePart" xml:space="preserve">
+    <value>新しい断片を生成する(&amp; N) </value>
+  </data>
+  <data name="MenuEditCut" xml:space="preserve">
+    <value>剪断する(&amp; T) </value>
+  </data>
+  <data name="MenuEditDelete" xml:space="preserve">
+    <value>削除する(&amp; D) </value>
+  </data>
+  <data name="MenuEditEditTag" xml:space="preserve">
+    <value>ラベルを編集する(&amp; E) </value>
+  </data>
+  <data name="MenuEditFind" xml:space="preserve">
+    <value>捜す(&amp; F) ...</value>
+  </data>
+  <data name="MenuEditPaste" xml:space="preserve">
+    <value>はる(&amp; P) </value>
+  </data>
+  <data name="MenuEditRedo" xml:space="preserve">
+    <value>反復する(&amp; R) </value>
+  </data>
+  <data name="MenuEditReplace" xml:space="preserve">
+    <value>交替する(&amp; L) ...</value>
+  </data>
+  <data name="MenuEditSelectAll" xml:space="preserve">
+    <value>全部選ぶ(&amp; A) </value>
+  </data>
+  <data name="MenuEditUndo" xml:space="preserve">
+    <value>撤回する(&amp; U) </value>
+  </data>
+  <data name="MenuFormatAlignDefault" xml:space="preserve">
+    <value>デフォルト揃え(&amp; D) </value>
+  </data>
+  <data name="MenuFormatAlignLeft" xml:space="preserve">
+    <value>左揃え(&amp; L) </value>
+  </data>
+  <data name="MenuFormatAlignRight" xml:space="preserve">
+    <value>右揃え(&amp; R) </value>
+  </data>
+  <data name="MenuFormatBackColor" xml:space="preserve">
+    <value>背景の色(&amp; A) </value>
+  </data>
+  <data name="MenuFormatBlockFormat" xml:space="preserve">
+    <value>塊り書式(&amp; O)</value>
+  </data>
+  <data name="MenuFormatBlockFormatHeading1" xml:space="preserve">
+    <value>&amp;4 タイトル1</value>
+  </data>
+  <data name="MenuFormatBlockFormatNormal" xml:space="preserve">
+    <value>&amp;0 デフォルト</value>
+  </data>
+  <data name="MenuFormatBold" xml:space="preserve">
+    <value>太体(&amp; B) </value>
+  </data>
+  <data name="MenuFormatForeColor" xml:space="preserve">
+    <value>前景の色(&amp; F) ...</value>
+  </data>
+  <data name="MenuFormatIndent" xml:space="preserve">
+    <value>インデントを増加する(&amp; N) </value>
+  </data>
+  <data name="MenuFormatItalic" xml:space="preserve">
+    <value>イタリック(&amp; I) </value>
+  </data>
+  <data name="MenuFormatLayer" xml:space="preserve">
+    <value>浮き出層(&amp; Y) </value>
+  </data>
+  <data name="MenuFormatLayerBack" xml:space="preserve">
+    <value>浮き出層は後に置く(&amp; B) </value>
+  </data>
+  <data name="MenuFormatLayerCancel" xml:space="preserve">
+    <value>取り消す(&amp; C) </value>
+  </data>
+  <data name="MenuFormatLayerFore" xml:space="preserve">
+    <value>浮き出層は前に置く(&amp; F) </value>
+  </data>
+  <data name="MenuFormatLayerSet" xml:space="preserve">
+    <value>設定する(&amp; S) </value>
+  </data>
+  <data name="MenuFormatLinethrough" xml:space="preserve">
+    <value>削除ライン(&amp; T) </value>
+  </data>
+  <data name="MenuFormatLTR" xml:space="preserve">
+    <value>左から右へ(&amp; L) </value>
+  </data>
+  <data name="MenuFormatRTL" xml:space="preserve">
+    <value>右から左へ(&amp; R) </value>
+  </data>
+  <data name="MenuFormatStyle" xml:space="preserve">
+    <value>様式(&amp; S) ...</value>
+  </data>
+  <data name="MenuFormatSubscript" xml:space="preserve">
+    <value>添え字(&amp; P) </value>
+  </data>
+  <data name="MenuFormatSuperscript" xml:space="preserve">
+    <value>スーパースクリプト(&amp; I) </value>
+  </data>
+  <data name="MenuFormatUnderline" xml:space="preserve">
+    <value>アンダーライン(&amp; U) </value>
+  </data>
+  <data name="MenuFormatUnindent" xml:space="preserve">
+    <value>インデントを減少する(&amp; E) </value>
+  </data>
+  <data name="MenuHelp" xml:space="preserve">
+    <value>説明する(&amp; H) </value>
+  </data>
+  <data name="MenuHelpAbout" xml:space="preserve">
+    <value>に関する(&amp; A) ...</value>
+  </data>
+  <data name="MenuHelpD4SoftHomePage" xml:space="preserve">
+    <value>Maobinbinホ-ムペ-ジ(&amp; D) </value>
+  </data>
+  <data name="MenuHelpD4System" xml:space="preserve">
+    <value>FTDPヘルプテ-マ(&amp; S) </value>
+  </data>
+  <data name="MenuHelpSendFeedback" xml:space="preserve">
+    <value>発信してフィ-ドバックする(&amp; F) ...</value>
+  </data>
+  <data name="MenuHelpFTDPClient" xml:space="preserve">
+    <value>FTDPClientヘルプテ-マ(&amp; M) </value>
+  </data>
+  <data name="MenuLanguage" xml:space="preserve">
+    <value>言語(&amp; L) </value>
+  </data>
+  <data name="MenuPage" xml:space="preserve">
+    <value>ホ-ムぺ-ジ(&amp; P) </value>
+  </data>
+  <data name="MenuPageCancelLink" xml:space="preserve">
+    <value>リンクを取り消す(&amp; C) </value>
+  </data>
+  <data name="MenuPageClearTable" xml:space="preserve">
+    <value>表の内容をクリアする(&amp; C) </value>
+  </data>
+  <data name="MenuPageDeleteColumn" xml:space="preserve">
+    <value>列を削除する(&amp; C) </value>
+  </data>
+  <data name="MenuPageDeleteRow" xml:space="preserve">
+    <value>行を削除する(&amp; R) </value>
+  </data>
+  <data name="MenuPageDivWrap" xml:space="preserve">
+    <value>Div自動的に改行する(&amp; D) </value>
+  </data>
+  <data name="MenuPageEditTable" xml:space="preserve">
+    <value>表を編集する(&amp; E) </value>
+  </data>
+  <data name="MenuPageElementButton" xml:space="preserve">
+    <value>ボタンを押す</value>
+  </data>
+  <data name="MenuPageElementCheckBox" xml:space="preserve">
+    <value>チェックボックス</value>
+  </data>
+  <data name="MenuPageElementFrame" xml:space="preserve">
+    <value>ボックス</value>
+  </data>
+  <data name="MenuPageElementHorizon" xml:space="preserve">
+    <value>水平線 </value>
+  </data>
+  <data name="MenuPageElementImage" xml:space="preserve">
+    <value>絵 </value>
+  </data>
+  <data name="MenuPageElementInputFile" xml:space="preserve">
+    <value>公文書ボックス </value>
+  </data>
+  <data name="MenuPageElementInputHidden" xml:space="preserve">
+    <value>ヒドゥン・ボックス</value>
+  </data>
+  <data name="MenuPageElementInputPassword" xml:space="preserve">
+    <value>パスワ-ドボックス</value>
+  </data>
+  <data name="MenuPageElementInputReset" xml:space="preserve">
+    <value>重置ボタン</value>
+  </data>
+  <data name="MenuPageElementInputText" xml:space="preserve">
+    <value>字符框</value>
+  </data>
+  <data name="MenuPageElementMarquee" xml:space="preserve">
+    <value>移動エアリア</value>
+  </data>
+  <data name="MenuPageElementMultipleSelect" xml:space="preserve">
+    <value>チェックボックス</value>
+  </data>
+  <data name="MenuPageElementPanel" xml:space="preserve">
+    <value>地域ボックス </value>
+  </data>
+  <data name="MenuPageElementParagraph" xml:space="preserve">
+    <value>段落</value>
+  </data>
+  <data name="MenuPageElementRadio" xml:space="preserve">
+    <value>ラジオボタン</value>
+  </data>
+  <data name="MenuPageElementSelect" xml:space="preserve">
+    <value>オプションボタン</value>
+  </data>
+  <data name="MenuPageElementSubmitButton" xml:space="preserve">
+    <value>提出ボタン</value>
+  </data>
+  <data name="MenuPageElementSubmitImage" xml:space="preserve">
+    <value>テクスチャボタン</value>
+  </data>
+  <data name="MenuPageElementTextArea" xml:space="preserve">
+    <value>テキストボックス</value>
+  </data>
+  <data name="MenuPageInsertColumn" xml:space="preserve">
+    <value>列を挿入する(&amp; M) </value>
+  </data>
+  <data name="MenuPageInsertElement" xml:space="preserve">
+    <value>要素を挿入する(&amp; T) </value>
+  </data>
+  <data name="MenuPageInsertLink" xml:space="preserve">
+    <value>リンクを挿入する(&amp; K) </value>
+  </data>
+  <data name="MenuPageInsertRow" xml:space="preserve">
+    <value>行を挿入する(&amp; W) </value>
+  </data>
+  <data name="MenuPageInsertTable" xml:space="preserve">
+    <value>表を挿入する(&amp; I) ...</value>
+  </data>
+  <data name="MenuPageMergeCellDown" xml:space="preserve">
+    <value>下へセルを合弁する(&amp; D) </value>
+  </data>
+  <data name="MenuPageMergeCellLeft" xml:space="preserve">
+    <value>左へセルを合弁する(&amp; L) </value>
+  </data>
+  <data name="MenuPageMergeCellRight" xml:space="preserve">
+    <value>右へセルを合弁する(&amp; R) </value>
+  </data>
+  <data name="MenuPageMergeCellUp" xml:space="preserve">
+    <value>上へセルを合弁する(&amp; U) </value>
+  </data>
+  <data name="MenuPageSelectTable" xml:space="preserve">
+    <value>表を選択する(&amp; S)</value>
+  </data>
+  <data name="MenuPageSpanWrap" xml:space="preserve">
+    <value>Spanが自動に改行する(&amp; P) </value>
+  </data>
+  <data name="MenuPageSplit2Columns" xml:space="preserve">
+    <value>列に分割する(&amp; N) </value>
+  </data>
+  <data name="MenuPageSplit2Rows" xml:space="preserve">
+    <value>行に分割する(&amp; O) </value>
+  </data>
+  <data name="MenuSite" xml:space="preserve">
+    <value>サイト(&amp; S) </value>
+  </data>
+  <data name="MenuSiteCheck" xml:space="preserve">
+    <value>サイトを検測して報告する(&amp; C) ...</value>
+  </data>
+  <data name="MenuSiteExportSite" xml:space="preserve">
+    <value>サイトを導出する(&amp; E) ...</value>
+  </data>
+  <data name="MenuSiteExportTemplate" xml:space="preserve">
+    <value>テンプレートとして導出する(&amp; X) ...</value>
+  </data>
+  <data name="MenuSiteImportPage" xml:space="preserve">
+    <value>ペ-ジを導入する(&amp; G) ...</value>
+  </data>
+  <data name="MenuSiteImportSite" xml:space="preserve">
+    <value>サイトを導入する(&amp; I) ...</value>
+  </data>
+  <data name="MenuSiteImportTemplate" xml:space="preserve">
+    <value>テンプレートを導入する(&amp; T) ...</value>
+  </data>
+  <data name="MenuSiteManage" xml:space="preserve">
+    <value>管理する(&amp; M) ...</value>
+  </data>
+  <data name="MenuSitePublish" xml:space="preserve">
+    <value>発表する(&amp; P) ...</value>
+  </data>
+  <data name="MenuSiteRefreshShare" xml:space="preserve">
+    <value>共有データリソースの更新(&amp; U) </value>
+  </data>
+  <data name="MenuSiteSave" xml:space="preserve">
+    <value>保存する(&amp; S) </value>
+  </data>
+  <data name="MenuSiteSynchro" xml:space="preserve">
+    <value>同期(&amp; Y) ...</value>
+  </data>
+  <data name="MenuSiteTamplateManage" xml:space="preserve">
+    <value>テンプレート管理(&amp; G) ...</value>
+  </data>
+  <data name="MenuTool" xml:space="preserve">
+    <value>ツール(&amp; T) </value>
+  </data>
+  <data name="MenuToolContentSet" xml:space="preserve">
+    <value>内容管理に転換する(&amp; C)</value>
+  </data>
+  <data name="MenuToolControlManage" xml:space="preserve">
+    <value>コンポーネント管理(&amp; M) ...</value>
+  </data>
+  <data name="MenuToolDNS" xml:space="preserve">
+    <value>ローカル DNS解析を設定する(&amp; N) ...</value>
+  </data>
+  <data name="MenuToolOption" xml:space="preserve">
+    <value>オブジェクション(&amp; O) ...</value>
+  </data>
+  <data name="MenuToolSystemSet" xml:space="preserve">
+    <value>システム管理にかわる(&amp; S) </value>
+  </data>
+  <data name="MenuView" xml:space="preserve">
+    <value>ビュ(&amp; V) </value>
+  </data>
+  <data name="MenuViewAlive" xml:space="preserve">
+    <value>リアル・タィムストレッチング(&amp; L) </value>
+  </data>
+  <data name="MenuViewBorder" xml:space="preserve">
+    <value>額縁(&amp; B) </value>
+  </data>
+  <data name="MenuViewCode" xml:space="preserve">
+    <value>コード(&amp; C) </value>
+  </data>
+  <data name="MenuViewDesign" xml:space="preserve">
+    <value>デサイン(&amp; D) </value>
+  </data>
+  <data name="MenuViewGrid" xml:space="preserve">
+    <value>揃えライン(&amp; G) </value>
+  </data>
+  <data name="MenuViewPreview" xml:space="preserve">
+    <value>プレビュー(&amp; V) </value>
+  </data>
+  <data name="MenuViewProperty" xml:space="preserve">
+    <value>属性アリア(&amp; P) </value>
+  </data>
+  <data name="MenuViewTag" xml:space="preserve">
+    <value>ラベル(&amp; G) </value>
+  </data>
+  <data name="MenuViewToolBox" xml:space="preserve">
+    <value>グロ-ブコンパ-トメント(&amp; T) </value>
+  </data>
+  <data name="MenuViewWorkSpace" xml:space="preserve">
+    <value>ワークエリア(&amp; W) </value>
+  </data>
+  <data name="MenuWindow" xml:space="preserve">
+    <value>ウインドー(&amp; W) </value>
+  </data>
+  <data name="MenuWindowAllClose" xml:space="preserve">
+    <value>全部閉じる(&amp; A) </value>
+  </data>
+  <data name="MenuWindowCascade" xml:space="preserve">
+    <value>重なる(&amp; C) </value>
+  </data>
+  <data name="MenuWindowTileHorizontal" xml:space="preserve">
+    <value>水平に配列する(&amp; H) </value>
+  </data>
+  <data name="MenuWindowTileVertical" xml:space="preserve">
+    <value>垂直に配列する(&amp; V) </value>
+  </data>
+  <data name="MenuFormatBlockAddress" xml:space="preserve">
+    <value>&amp;1 アドレス</value>
+  </data>
+  <data name="MenuFormatBlockFormatFormatted" xml:space="preserve">
+    <value>&amp;2 もう組み立てた書式 </value>
+  </data>
+  <data name="MenuFormatBlockFormatHeading2" xml:space="preserve">
+    <value>&amp;5 タイトル2</value>
+  </data>
+  <data name="MenuFormatBlockFormatHeading3" xml:space="preserve">
+    <value>&amp;6 タイトル3</value>
+  </data>
+  <data name="MenuFormatBlockFormatHeading4" xml:space="preserve">
+    <value>&amp;7 タイトル4</value>
+  </data>
+  <data name="MenuFormatBlockFormatHeading5" xml:space="preserve">
+    <value>&amp;8 タイトル5</value>
+  </data>
+  <data name="MenuFormatBlockFormatHeading6" xml:space="preserve">
+    <value>&amp;9 タイトル6</value>
+  </data>
+  <data name="MenuFormatBlockFormatParagraph" xml:space="preserve">
+    <value>&amp;3 段落 </value>
+  </data>
+  <data name="MenuSiteClearFiles" xml:space="preserve">
+    <value>使用しない文書をクリアする(&amp; R) </value>
+  </data>
+  <data name="ResetLayerOut" xml:space="preserve">
+    <value>もう一度配置をおいた </value>
+  </data>
+  <data name="ShowHiddenSiteTool" xml:space="preserve">
+    <value>サイトツールバー</value>
+  </data>
+  <data name="ShowHiddenTextTool" xml:space="preserve">
+    <value>編集ツールバー </value>
+  </data>
+  <data name="T1Border" xml:space="preserve">
+    <value>額縁 </value>
+  </data>
+  <data name="T1Code" xml:space="preserve">
+    <value>コード </value>
+  </data>
+  <data name="T1Copy" xml:space="preserve">
+    <value>コピ-する </value>
+  </data>
+  <data name="T1Cut" xml:space="preserve">
+    <value>カットする</value>
+  </data>
+  <data name="T1Design" xml:space="preserve">
+    <value>デサインする</value>
+  </data>
+  <data name="T1Grid" xml:space="preserve">
+    <value>揃えライン</value>
+  </data>
+  <data name="T1Help" xml:space="preserve">
+    <value>説明</value>
+  </data>
+  <data name="T1Live" xml:space="preserve">
+    <value>リアル・タィムストレッチングでした</value>
+  </data>
+  <data name="T1NewFreeFile" xml:space="preserve">
+    <value>自由公文書を新しくビルトする</value>
+  </data>
+  <data name="T1OpenFreeFile" xml:space="preserve">
+    <value>自由公文書を開いく</value>
+  </data>
+  <data name="T1Paste" xml:space="preserve">
+    <value>貼る</value>
+  </data>
+  <data name="T1Preview" xml:space="preserve">
+    <value>プレビュー</value>
+  </data>
+  <data name="T1Redo" xml:space="preserve">
+    <value>重複</value>
+  </data>
+  <data name="T1SaveAllFile" xml:space="preserve">
+    <value>全部保存する</value>
+  </data>
+  <data name="T1SaveFile" xml:space="preserve">
+    <value>保存ドキュメント</value>
+  </data>
+  <data name="T1Search" xml:space="preserve">
+    <value>探す</value>
+  </data>
+  <data name="T1Tag" xml:space="preserve">
+    <value>ラベル </value>
+  </data>
+  <data name="T1Undo" xml:space="preserve">
+    <value>撤回する</value>
+  </data>
+  <data name="T2AlignLeft" xml:space="preserve">
+    <value>左揃え</value>
+  </data>
+  <data name="T2AlignMiddle" xml:space="preserve">
+    <value>中央揃え</value>
+  </data>
+  <data name="T2AlignRight" xml:space="preserve">
+    <value>右揃え</value>
+  </data>
+  <data name="T2BackColor" xml:space="preserve">
+    <value>背景の色</value>
+  </data>
+  <data name="T2Block" xml:space="preserve">
+    <value>塊り書式</value>
+  </data>
+  <data name="T2Bold" xml:space="preserve">
+    <value>太体</value>
+  </data>
+  <data name="T2EditTag" xml:space="preserve">
+    <value>ラベルを編集する</value>
+  </data>
+  <data name="T2Font" xml:space="preserve">
+    <value>フォント</value>
+  </data>
+  <data name="T2ForeColor" xml:space="preserve">
+    <value>前景の色</value>
+  </data>
+  <data name="T2Indent" xml:space="preserve">
+    <value>インデントを増加する</value>
+  </data>
+  <data name="T2Italic" xml:space="preserve">
+    <value>イタリック</value>
+  </data>
+  <data name="T2Layer" xml:space="preserve">
+    <value>浮き出層</value>
+  </data>
+  <data name="T2Size" xml:space="preserve">
+    <value>フォントサイズ</value>
+  </data>
+  <data name="T2Underline" xml:space="preserve">
+    <value>アンダーライン</value>
+  </data>
+  <data name="T2UnIndent" xml:space="preserve">
+    <value>インデントを減少する</value>
+  </data>
+  <data name="T3CloseSite" xml:space="preserve">
+    <value>サイトを閉じる</value>
+  </data>
+  <data name="T3ControlManage" xml:space="preserve">
+    <value>コンポーネント管理</value>
+  </data>
+  <data name="T3OpenSite" xml:space="preserve">
+    <value>サイトを開く</value>
+  </data>
+  <data name="T3PageImport" xml:space="preserve">
+    <value>ペ-ジを導入する</value>
+  </data>
+  <data name="T3SaveSite" xml:space="preserve">
+    <value>サイトを保存する</value>
+  </data>
+  <data name="T3SiteAdd" xml:space="preserve">
+    <value>サイトを添加する</value>
+  </data>
+  <data name="T3SiteCheck" xml:space="preserve">
+    <value>サイトを検測して報告する</value>
+  </data>
+  <data name="T3SiteExport" xml:space="preserve">
+    <value>サイトを導出する</value>
+  </data>
+  <data name="T3SiteImport" xml:space="preserve">
+    <value>サイトを導入する</value>
+  </data>
+  <data name="T3SiteManage" xml:space="preserve">
+    <value>サイト管理</value>
+  </data>
+  <data name="T3SitePublish" xml:space="preserve">
+    <value>サイト発表</value>
+  </data>
+  <data name="T3SiteRegister" xml:space="preserve">
+    <value>サイト登録</value>
+  </data>
+  <data name="T3SycronSite" xml:space="preserve">
+    <value>サイト同期</value>
+  </data>
+  <data name="T3TemplateExport" xml:space="preserve">
+    <value>テンプレートとして導出する</value>
+  </data>
+  <data name="T3TemplateImport" xml:space="preserve">
+    <value>テンプレートを導入する</value>
+  </data>
+  <data name="T3TemplateManage" xml:space="preserve">
+    <value>テンプレート管理</value>
+  </data>
+  <data name="T3UpdateData" xml:space="preserve">
+    <value>共有データソースを更新する</value>
+  </data>
+  <data name="toolbar_property" xml:space="preserve">
+    <value>属性アリア</value>
+  </data>
+  <data name="toolbar_toolbox" xml:space="preserve">
+    <value>ツールボックス</value>
+  </data>
+  <data name="toolbar_workpace" xml:space="preserve">
+    <value>ワークエリア</value>
+  </data>
+  <data name="MenuFileOpenWebPage" xml:space="preserve">
+    <value>インタネット・サイトを開く(&amp; W) ...</value>
+  </data>
+  <data name="T1OpenWebPage" xml:space="preserve">
+    <value>インタネット・サイトを開く </value>
+  </data>
+  <data name="MenuViewWebView" xml:space="preserve">
+    <value>イクスポロ-は事前に眼を通す(&amp; O) </value>
+  </data>
+  <data name="MenuSiteMofidyCSS" xml:space="preserve">
+    <value>Modify Site Sty&amp;le</value>
+  </data>
+  <data name="MenuEditAdvance" xml:space="preserve">
+    <value>&amp;Advance</value>
+  </data>
+  <data name="MenuEditAdvEle2Label" xml:space="preserve">
+    <value>FormElement to Label</value>
+  </data>
+</root>

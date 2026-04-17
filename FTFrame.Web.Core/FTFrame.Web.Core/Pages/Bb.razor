@@ -1,0 +1,126 @@
+﻿@page "/bb"
+@inject IJSRuntime JsRuntime;
+@inject Project.QC.Test.IStrOP  iStrOP
+@using FTFrame.DBClient;
+@using FTFrame.Tool;
+@using QCTest = Project.QC.Test;
+<h1>Counter</h1>
+
+<p>随机数字: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">随机数字</button>
+
+@code {
+    int currentCount = new Random().Next(1, 9999);
+
+    void IncrementCount()
+    {
+        currentCount = new Random().Next(1, 9999);
+    }
+}
+
+<p>操作提示c#: <font color=red>@showMsg</font></p>
+<p>操作提示JS: <font color=red id="msgarea"></font></p>
+<button class="btn btn-primary" @onclick="AddUser">增加用户 王成</button>
+
+@code {
+    string showMsg = "";
+    void AddUser()
+    {
+        AddUser("王成");
+    }
+    void AddUser(string name)
+    {
+        string fid = str.GetCombID();
+        using (DB db = new DB())
+        {
+            db.Open();
+            string sql = "insert into Test_user(fid,name,addtime)";
+            sql += "values(@fid,@name,@addtime)";
+            db.execSql(sql, new PR[] {
+                new PR("@fid",fid),
+                new PR("@name",name),
+                new PR("@addtime",DateTime.Now)
+            });
+            showMsg = "王成添加成功！";
+        }
+    }
+}
+
+<h1>等待响应测试</h1>
+
+<button type="button" class="btn btn-primary" @onclick="WaitDemo">
+    等待响应
+</button>
+@code {
+
+    private async void WaitDemo()
+    {
+        await JsRuntime.InvokeAsync<string>("InnerHTML", "msgarea", "Loading...");
+        System.Threading.Thread.Sleep(2000);
+        await JsRuntime.InvokeAsync<string>("InnerHTML", "msgarea", "Loading...OK");
+    }
+}
+
+<h1>c#调用JavaScript方法</h1>
+
+<button type="button" class="btn btn-primary" @onclick="AddUserName">
+    增加用户
+</button>
+<input @ref="newUserNameEle" type="text" id="newUserName" />
+@code {
+    ElementRef newUserNameEle;
+    private async void AddUserName()
+    {
+        var val = await JsRuntime.InvokeAsync<string>("GetValueByElement", newUserNameEle);
+        //下面方法也可以，通过id参数传递
+        //var val =await JsRuntime.InvokeAsync<string>("GetValueById", "newUserName");
+        if (val.Trim() == "") showMsg = "用户姓名不能为空";
+        else
+        {
+            AddUser(val.Trim());
+            showMsg = "新增用户成功！" + val;
+        }
+        StateHasChanged();
+    }
+}
+
+<h1>JavaScript调用c#方法</h1>
+
+<button type="button" class="btn btn-primary" onclick="AddUser()">
+    增加用户
+</button>
+<input type="text" id="newUserName2" />
+@code {
+    [JSInvokable]
+    public static string AddUserName(string name)
+    {
+        if (name == null || name.Trim() == "") return "用户姓名不能为空";
+        else
+        {
+            string fid = str.GetCombID();
+            using (DB db = new DB())
+            {
+                db.Open();
+                string sql = "insert into Test_user(fid,name,addtime)";
+                sql += "values(@fid,@name,@addtime)";
+                db.execSql(sql, new PR[] {
+                    new PR("@fid",fid),
+                    new PR("@name",name),
+                    new PR("@addtime",DateTime.Now)
+                });
+            }
+            return null;
+        }
+    }
+}
+
+<p>依赖注入测试</p>
+@iStrOP.Plus("11", "22")
+
+@code {
+    protected override void OnAfterRender()
+    {
+        //JsRuntime.InvokeAsync<object>("alert", "AfterRender");
+    }
+}

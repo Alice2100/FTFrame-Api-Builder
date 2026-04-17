@@ -1,0 +1,20 @@
+/****** Object:  Table [dbo].[FC_WorkFlow_Detail]    Script Date: 03/01/2015 22:36:14 ******/
+DROP TABLE [dbo].[FC_WorkFlow_Detail]
+GO
+/****** Object:  Table [dbo].[FC_WorkFlow_List]    Script Date: 03/01/2015 22:36:14 ******/
+ALTER TABLE [dbo].[FC_WorkFlow_List] DROP CONSTRAINT [DF_FC_WorkFlow_List_dydata]
+GO
+DROP TABLE [dbo].[FC_WorkFlow_List]
+GO
+/****** Object:  Table [dbo].[FC_WorkFlow_Step]    Script Date: 03/01/2015 22:36:14 ******/
+DROP TABLE [dbo].[FC_WorkFlow_Step]
+GO
+/****** Object:  Table [dbo].[FC_WorkFlow_User]    Script Date: 03/01/2015 22:36:14 ******/
+DROP TABLE [dbo].[FC_WorkFlow_User]
+GO
+/****** Object:  Table [dbo].[FC_WorkFlow_User_Dy]    Script Date: 03/01/2015 22:36:14 ******/
+DROP TABLE [dbo].[FC_WorkFlow_User_Dy]
+GO
+/****** Object:  Table [dbo].[FC_WorkFlow_User_Except]    Script Date: 03/01/2015 22:36:15 ******/
+DROP TABLE [dbo].[FC_WorkFlow_User_Except]
+GO

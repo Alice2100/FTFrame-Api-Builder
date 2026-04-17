@@ -1,0 +1,176 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32314.265
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTDP.Client", "FTDP.Client.csproj", "{971E3C26-28C0-44EC-BBEB-808590D248AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTDP.Util", "..\FTDLL\FTDP.Util\FTDP.Util.csproj", "{CDC399A2-3173-41A6-A1DA-F08EC65D9B29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICSharpCode.TextEditor", "..\ICSharpCode.TextEditor\ICSharpCode.TextEditor.csproj", "{2D18BE89-D210-49EB-A9DD-2246FBB3DF6D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controls", "Controls", "{96D5F043-EC0F-43F0-A39B-2D6AB7C56FA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataOP_Client", "..\Control.Src\DataOP\DataOP_Client.csproj", "{5C37CB93-F913-4173-B991-132691A88676}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DyValue_Client", "..\Control.Src\DyValue\DyValue_Client.csproj", "{55327189-B1E5-4DAC-8A80-0E6310C768D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "List_Client", "..\Control.Src\List\List_Client.csproj", "{17B05DA0-C59A-4CBE-B1C4-B058957E17F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DyNum_Client", "..\Control.Src\DyNum\DyNum_Client.csproj", "{A78C0E4E-001D-426C-A453-0ED00FC69E82}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Update", "Update", "{89936F1C-AC39-4166-9974-5341492D6247}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Update_4", "..\Update_0\Update_4.csproj", "{518290FE-345A-4285-A0D2-1013B4CFBCC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Update_5", "..\..\Product_o\Update\Update_5\Update_5.csproj", "{19E35DC9-B0B9-4308-94AB-B9E18F84C363}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Update_6", "..\..\Product_o\Update\Update_6\Update_6.csproj", "{A0737068-4B75-43ED-B2CE-C326B13A7C65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{971E3C26-28C0-44EC-BBEB-808590D248AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{971E3C26-28C0-44EC-BBEB-808590D248AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{971E3C26-28C0-44EC-BBEB-808590D248AC}.Debug|x86.ActiveCfg = Debug|x86
+		{971E3C26-28C0-44EC-BBEB-808590D248AC}.Debug|x86.Build.0 = Debug|x86
+		{971E3C26-28C0-44EC-BBEB-808590D248AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{971E3C26-28C0-44EC-BBEB-808590D248AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{971E3C26-28C0-44EC-BBEB-808590D248AC}.Release|x86.ActiveCfg = Release|x86
+		{971E3C26-28C0-44EC-BBEB-808590D248AC}.Release|x86.Build.0 = Release|x86
+		{CDC399A2-3173-41A6-A1DA-F08EC65D9B29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDC399A2-3173-41A6-A1DA-F08EC65D9B29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDC399A2-3173-41A6-A1DA-F08EC65D9B29}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CDC399A2-3173-41A6-A1DA-F08EC65D9B29}.Debug|x86.Build.0 = Debug|Any CPU
+		{CDC399A2-3173-41A6-A1DA-F08EC65D9B29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDC399A2-3173-41A6-A1DA-F08EC65D9B29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDC399A2-3173-41A6-A1DA-F08EC65D9B29}.Release|x86.ActiveCfg = Release|Any CPU
+		{CDC399A2-3173-41A6-A1DA-F08EC65D9B29}.Release|x86.Build.0 = Release|Any CPU
+		{2D18BE89-D210-49EB-A9DD-2246FBB3DF6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D18BE89-D210-49EB-A9DD-2246FBB3DF6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D18BE89-D210-49EB-A9DD-2246FBB3DF6D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2D18BE89-D210-49EB-A9DD-2246FBB3DF6D}.Debug|x86.Build.0 = Debug|Any CPU
+		{2D18BE89-D210-49EB-A9DD-2246FBB3DF6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D18BE89-D210-49EB-A9DD-2246FBB3DF6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D18BE89-D210-49EB-A9DD-2246FBB3DF6D}.Release|x86.ActiveCfg = Release|Any CPU
+		{2D18BE89-D210-49EB-A9DD-2246FBB3DF6D}.Release|x86.Build.0 = Release|Any CPU
+		{5C37CB93-F913-4173-B991-132691A88676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C37CB93-F913-4173-B991-132691A88676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C37CB93-F913-4173-B991-132691A88676}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5C37CB93-F913-4173-B991-132691A88676}.Debug|x86.Build.0 = Debug|Any CPU
+		{5C37CB93-F913-4173-B991-132691A88676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C37CB93-F913-4173-B991-132691A88676}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C37CB93-F913-4173-B991-132691A88676}.Release|x86.ActiveCfg = Release|Any CPU
+		{5C37CB93-F913-4173-B991-132691A88676}.Release|x86.Build.0 = Release|Any CPU
+		{55327189-B1E5-4DAC-8A80-0E6310C768D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55327189-B1E5-4DAC-8A80-0E6310C768D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55327189-B1E5-4DAC-8A80-0E6310C768D3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{55327189-B1E5-4DAC-8A80-0E6310C768D3}.Debug|x86.Build.0 = Debug|Any CPU
+		{55327189-B1E5-4DAC-8A80-0E6310C768D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55327189-B1E5-4DAC-8A80-0E6310C768D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55327189-B1E5-4DAC-8A80-0E6310C768D3}.Release|x86.ActiveCfg = Release|Any CPU
+		{55327189-B1E5-4DAC-8A80-0E6310C768D3}.Release|x86.Build.0 = Release|Any CPU
+		{17B05DA0-C59A-4CBE-B1C4-B058957E17F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17B05DA0-C59A-4CBE-B1C4-B058957E17F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17B05DA0-C59A-4CBE-B1C4-B058957E17F5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{17B05DA0-C59A-4CBE-B1C4-B058957E17F5}.Debug|x86.Build.0 = Debug|Any CPU
+		{17B05DA0-C59A-4CBE-B1C4-B058957E17F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17B05DA0-C59A-4CBE-B1C4-B058957E17F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17B05DA0-C59A-4CBE-B1C4-B058957E17F5}.Release|x86.ActiveCfg = Release|Any CPU
+		{17B05DA0-C59A-4CBE-B1C4-B058957E17F5}.Release|x86.Build.0 = Release|Any CPU
+		{A78C0E4E-001D-426C-A453-0ED00FC69E82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A78C0E4E-001D-426C-A453-0ED00FC69E82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A78C0E4E-001D-426C-A453-0ED00FC69E82}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A78C0E4E-001D-426C-A453-0ED00FC69E82}.Debug|x86.Build.0 = Debug|Any CPU
+		{A78C0E4E-001D-426C-A453-0ED00FC69E82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A78C0E4E-001D-426C-A453-0ED00FC69E82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A78C0E4E-001D-426C-A453-0ED00FC69E82}.Release|x86.ActiveCfg = Release|Any CPU
+		{A78C0E4E-001D-426C-A453-0ED00FC69E82}.Release|x86.Build.0 = Release|Any CPU
+		{518290FE-345A-4285-A0D2-1013B4CFBCC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{518290FE-345A-4285-A0D2-1013B4CFBCC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{518290FE-345A-4285-A0D2-1013B4CFBCC2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{518290FE-345A-4285-A0D2-1013B4CFBCC2}.Debug|x86.Build.0 = Debug|Any CPU
+		{518290FE-345A-4285-A0D2-1013B4CFBCC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{518290FE-345A-4285-A0D2-1013B4CFBCC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{518290FE-345A-4285-A0D2-1013B4CFBCC2}.Release|x86.ActiveCfg = Release|Any CPU
+		{518290FE-345A-4285-A0D2-1013B4CFBCC2}.Release|x86.Build.0 = Release|Any CPU
+		{19E35DC9-B0B9-4308-94AB-B9E18F84C363}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19E35DC9-B0B9-4308-94AB-B9E18F84C363}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19E35DC9-B0B9-4308-94AB-B9E18F84C363}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{19E35DC9-B0B9-4308-94AB-B9E18F84C363}.Debug|x86.Build.0 = Debug|Any CPU
+		{19E35DC9-B0B9-4308-94AB-B9E18F84C363}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19E35DC9-B0B9-4308-94AB-B9E18F84C363}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19E35DC9-B0B9-4308-94AB-B9E18F84C363}.Release|x86.ActiveCfg = Release|Any CPU
+		{19E35DC9-B0B9-4308-94AB-B9E18F84C363}.Release|x86.Build.0 = Release|Any CPU
+		{A0737068-4B75-43ED-B2CE-C326B13A7C65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0737068-4B75-43ED-B2CE-C326B13A7C65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0737068-4B75-43ED-B2CE-C326B13A7C65}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A0737068-4B75-43ED-B2CE-C326B13A7C65}.Debug|x86.Build.0 = Debug|Any CPU
+		{A0737068-4B75-43ED-B2CE-C326B13A7C65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0737068-4B75-43ED-B2CE-C326B13A7C65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0737068-4B75-43ED-B2CE-C326B13A7C65}.Release|x86.ActiveCfg = Release|Any CPU
+		{A0737068-4B75-43ED-B2CE-C326B13A7C65}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5C37CB93-F913-4173-B991-132691A88676} = {96D5F043-EC0F-43F0-A39B-2D6AB7C56FA4}
+		{55327189-B1E5-4DAC-8A80-0E6310C768D3} = {96D5F043-EC0F-43F0-A39B-2D6AB7C56FA4}
+		{17B05DA0-C59A-4CBE-B1C4-B058957E17F5} = {96D5F043-EC0F-43F0-A39B-2D6AB7C56FA4}
+		{A78C0E4E-001D-426C-A453-0ED00FC69E82} = {96D5F043-EC0F-43F0-A39B-2D6AB7C56FA4}
+		{518290FE-345A-4285-A0D2-1013B4CFBCC2} = {89936F1C-AC39-4166-9974-5341492D6247}
+		{19E35DC9-B0B9-4308-94AB-B9E18F84C363} = {89936F1C-AC39-4166-9974-5341492D6247}
+		{A0737068-4B75-43ED-B2CE-C326B13A7C65} = {89936F1C-AC39-4166-9974-5341492D6247}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF4FC4F9-2A72-4A61-ABD6-92C03297406C}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://alice2100.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\Control.Src\\DataOP\\DataOP_Client.csproj
+		SccProjectTopLevelParentUniqueName1 = FTDP.IDE.sln
+		SccProjectName1 = ../../FTDP.2024/DataOP
+		SccLocalPath1 = ..\\Control.Src\\DataOP
+		SccProjectUniqueName2 = ..\\Control.Src\\DyNum\\DyNum_Client.csproj
+		SccProjectTopLevelParentUniqueName2 = FTDP.IDE.sln
+		SccProjectName2 = ../../Control.Src/DyNum
+		SccLocalPath2 = ..\\Control.Src\\DyNum
+		SccProjectUniqueName3 = ..\\Control.Src\\DyValue\\DyValue_Client.csproj
+		SccProjectTopLevelParentUniqueName3 = FTDP.IDE.sln
+		SccProjectName3 = ../../Control.Src/DyValue
+		SccLocalPath3 = ..\\Control.Src\\DyValue
+		SccProjectUniqueName4 = ..\\Control.Src\\List\\List_Client.csproj
+		SccProjectTopLevelParentUniqueName4 = FTDP.IDE.sln
+		SccProjectName4 = ../../Control.Src/List
+		SccLocalPath4 = ..\\Control.Src\\List
+		SccProjectUniqueName5 = ..\\FTDLL\\FTDP.Util\\FTDP.Util.csproj
+		SccProjectName5 = ../../FTDLL/FTDP.Util
+		SccLocalPath5 = ..\\FTDLL\\FTDP.Util
+		SccProjectUniqueName6 = ..\\ICSharpCode.TextEditor\\ICSharpCode.TextEditor.csproj
+		SccProjectName6 = ../../ICSharpCode.TextEditor
+		SccLocalPath6 = ..\\ICSharpCode.TextEditor
+		SccProjectUniqueName7 = FTDP.Client.csproj
+		SccLocalPath7 = .
+		SccProjectUniqueName8 = ..\\Update_0\\Update_4.csproj
+		SccProjectTopLevelParentUniqueName8 = FTDP.IDE.sln
+		SccProjectName8 = ../../Update_0
+		SccLocalPath8 = ..\\Update_0
+		SccProjectUniqueName9 = ..\\..\\Product_o\\Update\\Update_5\\Update_5.csproj
+		SccProjectTopLevelParentUniqueName9 = FTDP.IDE.sln
+		SccProjectName9 = ../../FTDP.IDE/Update_5
+		SccLocalPath9 = ..\\..\\Product_o\\Update\\Update_5
+		SccProjectUniqueName10 = ..\\..\\Product_o\\Update\\Update_6\\Update_6.csproj
+		SccProjectTopLevelParentUniqueName10 = FTDP.IDE.sln
+		SccProjectName10 = ../../FTDP.IDE/Update_6
+		SccLocalPath10 = ..\\..\\Product_o\\Update\\Update_6
+	EndGlobalSection
+EndGlobal

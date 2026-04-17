@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="addControlToolStripMenuItem" xml:space="preserve">
+    <value>添加构件(&amp;A)...</value>
+  </data>
+  <data name="captionASCToolStripMenuItem" xml:space="preserve">
+    <value>标题升序</value>
+  </data>
+  <data name="captionASCToolStripMenuItem1" xml:space="preserve">
+    <value>标题升序</value>
+  </data>
+  <data name="captionDESCToolStripMenuItem" xml:space="preserve">
+    <value>标题降序</value>
+  </data>
+  <data name="captionDESCToolStripMenuItem1" xml:space="preserve">
+    <value>标题降序</value>
+  </data>
+  <data name="cloneControlInstanceToolStripMenuItem" xml:space="preserve">
+    <value>克隆实例(&amp;C)...</value>
+  </data>
+  <data name="clonePartInstanceToolStripMenuItem" xml:space="preserve">
+    <value>克隆片断(&amp;C)</value>
+  </data>
+  <data name="collapseAllToolStripMenuItem" xml:space="preserve">
+    <value>全部折叠(&amp;C)</value>
+  </data>
+  <data name="collapseAllToolStripMenuItem1" xml:space="preserve">
+    <value>全部折叠(&amp;L)</value>
+  </data>
+  <data name="ControlTabAddControl" xml:space="preserve">
+    <value>添加构件</value>
+  </data>
+  <data name="ControlTabCloneInstance" xml:space="preserve">
+    <value>克隆实例</value>
+  </data>
+  <data name="ControlTabClonePart" xml:space="preserve">
+    <value>克隆片断</value>
+  </data>
+  <data name="ControlTabDelete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="ControlTabNewInstance" xml:space="preserve">
+    <value>新建实例</value>
+  </data>
+  <data name="ControlTabNewPart" xml:space="preserve">
+    <value>新建片断</value>
+  </data>
+  <data name="deleteControlInstanceToolStripMenuItem" xml:space="preserve">
+    <value>删除实例(&amp;D)</value>
+  </data>
+  <data name="deleteControlToolStripMenuItem" xml:space="preserve">
+    <value>删除构件(&amp;D)</value>
+  </data>
+  <data name="deletePageToolStripMenuItem" xml:space="preserve">
+    <value>删除页面(&amp;D)</value>
+  </data>
+  <data name="deleteToolStripMenuItem" xml:space="preserve">
+    <value>删除(&amp;D)</value>
+  </data>
+  <data name="deleteToolStripMenuItem1" xml:space="preserve">
+    <value>删除片断(&amp;D)</value>
+  </data>
+  <data name="expandAllToolStripMenuItem" xml:space="preserve">
+    <value>全部展开(&amp;E)</value>
+  </data>
+  <data name="expandAllToolStripMenuItem1" xml:space="preserve">
+    <value>全部展开(&amp;E)</value>
+  </data>
+  <data name="FileNameASC" xml:space="preserve">
+    <value>文件名升序</value>
+  </data>
+  <data name="FilesListDelete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="FilesListNewFile" xml:space="preserve">
+    <value>新建文件</value>
+  </data>
+  <data name="FilesListNewFolder" xml:space="preserve">
+    <value>新建文件夹</value>
+  </data>
+  <data name="FilesListOpen" xml:space="preserve">
+    <value>打开</value>
+  </data>
+  <data name="nameASCToolStripMenuItem" xml:space="preserve">
+    <value>名称升序</value>
+  </data>
+  <data name="nameDESCToolStripMenuItem" xml:space="preserve">
+    <value>名称降序</value>
+  </data>
+  <data name="newControlInstance1ToolStripMenuItem" xml:space="preserve">
+    <value>新建实例(&amp;N)...</value>
+  </data>
+  <data name="newControlInstance2ToolStripMenuItem" xml:space="preserve">
+    <value>新建实例(&amp;N)...</value>
+  </data>
+  <data name="newDirectoryToolStripMenuItem" xml:space="preserve">
+    <value>新建目录(&amp;R)...</value>
+  </data>
+  <data name="newPageToolStripMenuItem" xml:space="preserve">
+    <value>新建页面(&amp;P)...</value>
+  </data>
+  <data name="newPartInstanceToolStripMenuItem" xml:space="preserve">
+    <value>新建片断(&amp;N)</value>
+  </data>
+  <data name="openPageToolStripMenuItem" xml:space="preserve">
+    <value>打开页面(&amp;O)</value>
+  </data>
+  <data name="openPageToolStripMenuItem1" xml:space="preserve">
+    <value>打开页面(&amp;O)</value>
+  </data>
+  <data name="refreshToolStripMenuItem" xml:space="preserve">
+    <value>刷新(&amp;R)</value>
+  </data>
+  <data name="refreshToolStripMenuItem1" xml:space="preserve">
+    <value>刷新(&amp;R)</value>
+  </data>
+  <data name="showCaptionToolStripMenuItem" xml:space="preserve">
+    <value> 显示标题(&amp;A)</value>
+  </data>
+  <data name="showCaptionToolStripMenuItem1" xml:space="preserve">
+    <value> 显示标题(&amp;P)</value>
+  </data>
+  <data name="showFileNameToolStripMenuItem" xml:space="preserve">
+    <value>显示文件名(&amp;F)</value>
+  </data>
+  <data name="showNameToolStripMenuItem" xml:space="preserve">
+    <value>显示名称(&amp;M)</value>
+  </data>
+  <data name="SiteTabDelete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="SiteTabNewFile" xml:space="preserve">
+    <value>新建页面...</value>
+  </data>
+  <data name="SiteTabNewFolder" xml:space="preserve">
+    <value>新建目录...</value>
+  </data>
+  <data name="SiteTabOpenFile" xml:space="preserve">
+    <value>打开页面</value>
+  </data>
+  <data name="SiteTabRefresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="sortByFilenameDESCToolStripMenuItem1" xml:space="preserve">
+    <value>文件名降序</value>
+  </data>
+  <data name="sortByToolStripMenuItem" xml:space="preserve">
+    <value>按...排序(&amp;S)</value>
+  </data>
+  <data name="sortByToolStripMenuItem1" xml:space="preserve">
+    <value>按...排序(&amp;S)</value>
+  </data>
+  <data name="timeASCToolStripMenuItem" xml:space="preserve">
+    <value>更新时间升序</value>
+  </data>
+  <data name="timeDESCToolStripMenuItem" xml:space="preserve">
+    <value>更新时间降序</value>
+  </data>
+  <data name="pubpagemenuitem" xml:space="preserve">
+    <value>快速发布(&amp;X)</value>
+  </data>
+</root>
