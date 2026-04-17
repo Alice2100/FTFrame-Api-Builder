@@ -49,11 +49,12 @@
 ![image-20240305153231047](https://s2.loli.net/2024/03/05/WLNtC4H3iDGlQyx.png)
 ![image-20240305150837058](https://s2.loli.net/2024/03/05/r1C6UkXjELGYPBs.png)
 
-Document ：
+
+Online Document ：
 
 http://www.ftframe.com/ftdp/ftdoc.html
 
-Download :
+Release Download :
 
 https://github.com/Alice2100/FTFrame-Api-Builder/releases/tag/v11.0.0
 
