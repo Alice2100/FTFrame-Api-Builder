@@ -18,14 +18,14 @@ namespace FTFrame.Project.Core.Service
     public class AliyunLogService
     {
         private static ILogServiceClient client = null;
-        private static string LogGroupTopic = "Paihuo";
+        private static string LogGroupTopic = "***";
         private static string LogStoreName = ConfigHelper.GetConfigValue("Aliyun:LogStoreName");
         private static ILogServiceClient Client()
         {
             if (client != null) return client;
             var clientBuilder = new HttpLogServiceClientBuilder();
-            clientBuilder.Endpoint("cn-hangzhou.log.aliyuncs.com", "paihuo-dev");
-            clientBuilder.Credential("LTAI5tEEh6aquFbDuKKfUBhE", "vwM53SybGiMzw0wQYRxg6DaWyYIopz");
+            clientBuilder.Endpoint("***", "***");
+            clientBuilder.Credential("***", "***");
             client = clientBuilder.Build();
             return client;
         }
